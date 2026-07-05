@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katie Jergens" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>1.2 Binary and ASCII - CS1 — Columbia Grammar</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "1.2 Binary and ASCII";
+        var mkdocs_page_input_path = "unit1/notes_binary_and_ascii.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CS1 — Columbia Grammar
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 1 — Binary, ASCII, and Scratch</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_how_computers_work/">1.1 How Computers Work</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">1.2 Binary and ASCII</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-ascii-letters-are-numbers">1. ASCII — Letters Are Numbers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-binary-everything-is-a-binary-number">2. Binary — Everything Is a Binary Number</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#review-base-10-decimal">Review: Base 10 (Decimal)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#base-2-binary">Base 2 (Binary)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-converting-binary-decimal">3. Converting Binary → Decimal</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-converting-decimal-binary">4. Converting Decimal → Binary</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-binary-addition">5. Binary Addition</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#check-your-understanding">Check Your Understanding</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#answer-key">Answer Key</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_scratch/">1.3 Scratch</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 2 — Java Basics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_java_structure/">2.1 Java Structure, Variables, and Operations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_scanner/">2.2 Scanner and User Input</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 3 — Conditionals and While Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_conditionals/">3.1 Conditional Code Blocks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_while_loops/">3.2 While Loops</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 4 — For Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_for_loops/">4.1 For Loops</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 5 — Strings and Math</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_strings/">5.1 Strings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_math/">5.2 The Math Class</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project1/">Project 1: Scratch Remix</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project2/">Project 2: Word Guessing Adventure</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CS1 — Columbia Grammar</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Unit 1 — Binary, ASCII, and Scratch</li>
+      <li class="breadcrumb-item active">1.2 Binary and ASCII</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="binary-and-ascii">Binary and ASCII</h1>
+<hr />
+<h2 id="1-ascii-letters-are-numbers">1. ASCII — Letters Are Numbers</h2>
+<p>Computers only understand numbers. So how do they store text?</p>
+<p><strong>ASCII</strong> (American Standard Code for Information Interchange) is a system that assigns a number to every character: letters, digits, punctuation, and special characters.</p>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>ASCII Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A</code></td>
+<td>65</td>
+</tr>
+<tr>
+<td><code>B</code></td>
+<td>66</td>
+</tr>
+<tr>
+<td><code>Z</code></td>
+<td>90</td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td>97</td>
+</tr>
+<tr>
+<td><code>z</code></td>
+<td>122</td>
+</tr>
+<tr>
+<td><code>0</code></td>
+<td>48</td>
+</tr>
+<tr>
+<td><code>9</code></td>
+<td>57</td>
+</tr>
+<tr>
+<td>space</td>
+<td>32</td>
+</tr>
+</tbody>
+</table>
+<p>When your program stores the String <code>"Hello"</code>, the computer stores the numbers <code>72 101 108 108 111</code>. Text is always numbers underneath.</p>
+<hr />
+<h2 id="2-binary-everything-is-a-binary-number">2. Binary — Everything Is a Binary Number</h2>
+<p>Numbers themselves are stored in <strong>binary</strong> (base 2) — using only the digits <code>0</code> and <code>1</code>.</p>
+<h3 id="review-base-10-decimal">Review: Base 10 (Decimal)</h3>
+<p>In the number system you use every day, each position represents a power of 10:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>  4    2    7
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  ↑    ↑    ↑
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a> 10²  10¹  10⁰
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>(100) (10)  (1)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Value: 4×100 + 2×10 + 7×1 = 427
+</code></pre></div>
+<h3 id="base-2-binary">Base 2 (Binary)</h3>
+<p>Binary works the same way, but each position represents a power of 2:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>  1    0    1    1
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  ↑    ↑    ↑    ↑
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  2³   2²   2¹   2⁰
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a> (8)  (4)  (2)  (1)
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Value: 1×8 + 0×4 + 1×2 + 1×1 = 11
+</code></pre></div>
+<p>Each <code>0</code> or <code>1</code> is called a <strong>bit</strong>. 8 bits = 1 <strong>byte</strong>.</p>
+<hr />
+<h2 id="3-converting-binary-decimal">3. Converting Binary → Decimal</h2>
+<p>Write out the positional values (powers of 2), multiply each bit, then add.</p>
+<p><strong>Example: <code>1101</code></strong></p>
+<table>
+<thead>
+<tr>
+<th>Bit</th>
+<th>Position value</th>
+<th>Contribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total: 8 + 4 + 0 + 1 = 13</strong></p>
+<p><strong>Common powers of 2 to memorize:</strong></p>
+<table>
+<thead>
+<tr>
+<th>2⁰</th>
+<th>2¹</th>
+<th>2²</th>
+<th>2³</th>
+<th>2⁴</th>
+<th>2⁵</th>
+<th>2⁶</th>
+<th>2⁷</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>8</td>
+<td>16</td>
+<td>32</td>
+<td>64</td>
+<td>128</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-converting-decimal-binary">4. Converting Decimal → Binary</h2>
+<p>Repeatedly divide by 2 and record the remainders. Read remainders bottom to top.</p>
+<p><strong>Example: 13 → binary</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>13 ÷ 2 = 6  remainder 1  ← last bit
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a> 6 ÷ 2 = 3  remainder 0
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a> 3 ÷ 2 = 1  remainder 1
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a> 1 ÷ 2 = 0  remainder 1  ← first bit
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Read bottom to top: 1101
+</code></pre></div>
+<p>Check: <code>1101</code> = 8 + 4 + 0 + 1 = 13 ✓</p>
+<hr />
+<h2 id="5-binary-addition">5. Binary Addition</h2>
+<p>Binary addition uses the same rules as decimal, just with 2 digits:</p>
+<table>
+<thead>
+<tr>
+<th>+</th>
+<th>0</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong></td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>1</td>
+<td>10 (write 0, carry 1)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example: <code>1010 + 0111</code></strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>  1 0 1 0
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>+ 0 1 1 1
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>---------
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  carry: 1 1 1
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  result: 1 0 0 0 1 → 17
+</code></pre></div>
+<p>Check: 10 + 7 = 17 ✓</p>
+<p>Key rule: <code>1 + 1 = 10</code> in binary (write 0, carry 1). <code>1 + 1 + 1 = 11</code> (write 1, carry 1).</p>
+<hr />
+<h2 id="check-your-understanding">Check Your Understanding</h2>
+<p><strong>1.</strong> What is the decimal value of binary <code>10110</code>?</p>
+<p><strong>2.</strong> Convert 25 to binary.</p>
+<p><strong>3.</strong> Add in binary: <code>0110 + 0101</code></p>
+<p><strong>4.</strong> What ASCII value represents the letter <code>'A'</code>? What about <code>'a'</code>?</p>
+<p><strong>5.</strong> Why does <code>'a'</code> have a higher ASCII value than <code>'A'</code>?</p>
+<hr />
+<h2 id="answer-key">Answer Key</h2>
+<p><strong>1.</strong> <code>10110</code>: 16 + 0 + 4 + 2 + 0 = <strong>22</strong></p>
+<p><strong>2.</strong> 25 → binary:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>25 ÷ 2 = 12  r 1
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>12 ÷ 2 =  6  r 0
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a> 6 ÷ 2 =  3  r 0
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a> 3 ÷ 2 =  1  r 1
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a> 1 ÷ 2 =  0  r 1
+</code></pre></div>
+Read bottom to top: <strong>11001</strong> (check: 16+8+0+0+1 = 25 ✓)</p>
+<p><strong>3.</strong> <code>0110 + 0101</code>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>  0 1 1 0
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>+ 0 1 0 1
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>---------
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  1 0 1 1  → 8+2+1 = 11
+</code></pre></div>
+Check: 6 + 5 = 11 ✓</p>
+<p><strong>4.</strong> <code>'A'</code> = 65, <code>'a'</code> = 97</p>
+<p><strong>5.</strong> Lowercase letters come after uppercase in the ASCII table — they were assigned higher numbers when the standard was designed.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../notes_how_computers_work/" class="btn btn-neutral float-left" title="1.1 How Computers Work"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../notes_scratch/" class="btn btn-neutral float-right" title="1.3 Scratch">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../notes_how_computers_work/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../notes_scratch/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

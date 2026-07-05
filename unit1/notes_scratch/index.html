@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katie Jergens" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>1.3 Scratch - CS1 — Columbia Grammar</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "1.3 Scratch";
+        var mkdocs_page_input_path = "unit1/notes_scratch.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CS1 — Columbia Grammar
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 1 — Binary, ASCII, and Scratch</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_how_computers_work/">1.1 How Computers Work</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_binary_and_ascii/">1.2 Binary and ASCII</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">1.3 Scratch</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-scratch">What Is Scratch?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#core-programming-concepts-in-scratch-and-in-java">Core Programming Concepts in Scratch (and in Java)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-sequence">1. Sequence</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-variables">2. Variables</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-conditionals">3. Conditionals</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-loops">4. Loops</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#5-events">5. Events</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-bridge">The Bridge</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 2 — Java Basics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_java_structure/">2.1 Java Structure, Variables, and Operations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_scanner/">2.2 Scanner and User Input</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 3 — Conditionals and While Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_conditionals/">3.1 Conditional Code Blocks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_while_loops/">3.2 While Loops</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 4 — For Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_for_loops/">4.1 For Loops</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 5 — Strings and Math</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_strings/">5.1 Strings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_math/">5.2 The Math Class</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project1/">Project 1: Scratch Remix</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project2/">Project 2: Word Guessing Adventure</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CS1 — Columbia Grammar</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Unit 1 — Binary, ASCII, and Scratch</li>
+      <li class="breadcrumb-item active">1.3 Scratch</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="introduction-to-programming-with-scratch">Introduction to Programming with Scratch</h1>
+<hr />
+<h2 id="what-is-scratch">What Is Scratch?</h2>
+<p>Scratch is a <strong>block-based visual programming language</strong>. Instead of typing code, you drag and snap together colored blocks that represent instructions. The result is a program — the same fundamental thing you'll build in Java.</p>
+<p>You've used Scratch in middle school. In this unit, we're using it deliberately: every concept you see in Scratch has a direct equivalent in Java. The goal is not to become a Scratch expert — it's to see the structure of programming before we add Java's syntax on top.</p>
+<hr />
+<h2 id="core-programming-concepts-in-scratch-and-in-java">Core Programming Concepts in Scratch (and in Java)</h2>
+<h3 id="1-sequence">1. Sequence</h3>
+<p>Programs run <strong>top to bottom</strong>, one instruction at a time, in order.</p>
+<p>In Scratch, blocks in a script execute from the top block down. If you want something to happen first, it goes on top.</p>
+<p>In Java, statements inside <code>main</code> execute in order, line by line.</p>
+<hr />
+<h3 id="2-variables">2. Variables</h3>
+<p>A <strong>variable</strong> is a named container for a value that can change.</p>
+<p>In Scratch: use <strong>Make a Variable</strong>, give it a name, and use <strong>set [ ] to</strong> and <strong>change [ ] by</strong> blocks.</p>
+<p>In Java:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div></p>
+<p>Same idea — a name, a value, the ability to update it.</p>
+<hr />
+<h3 id="3-conditionals">3. Conditionals</h3>
+<p>A <strong>conditional</strong> runs code only if a condition is true.</p>
+<p>In Scratch: <code>if &lt; &gt; then</code> and <code>if &lt; &gt; then / else</code> blocks.</p>
+<p>In Java:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">score</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You win!&quot;</span><span class="p">);</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Keep going.&quot;</span><span class="p">);</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">}</span>
+</code></pre></div></p>
+<p>The diamond-shaped condition slots in Scratch correspond to the <code>( )</code> in Java's <code>if</code> statement.</p>
+<hr />
+<h3 id="4-loops">4. Loops</h3>
+<p>A <strong>loop</strong> repeats code multiple times without copy-pasting.</p>
+<table>
+<thead>
+<tr>
+<th>Scratch block</th>
+<th>Java equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>forever</code></td>
+<td><code>while (true)</code></td>
+</tr>
+<tr>
+<td><code>repeat (10)</code></td>
+<td><code>for (int i = 0; i &lt; 10; i++)</code></td>
+</tr>
+<tr>
+<td><code>repeat until &lt; &gt;</code></td>
+<td><code>while (!condition)</code></td>
+</tr>
+</tbody>
+</table>
+<p>The idea is the same: a chunk of code that runs again and again, either a fixed number of times or until a condition is met.</p>
+<hr />
+<h3 id="5-events">5. Events</h3>
+<p>In Scratch, scripts start when something happens — "when green flag clicked", "when key pressed".</p>
+<p>In Java, the equivalent is the <strong>main method</strong> — the entry point where your program begins:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="c1">// your program starts here</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+</code></pre></div></p>
+<hr />
+<h2 id="the-bridge">The Bridge</h2>
+<table>
+<thead>
+<tr>
+<th>Scratch concept</th>
+<th>Java equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Script (blocks top to bottom)</td>
+<td>Statements in <code>main</code></td>
+</tr>
+<tr>
+<td>Variable block</td>
+<td><code>int x = 0;</code></td>
+</tr>
+<tr>
+<td><code>if &lt; &gt; then</code></td>
+<td><code>if (condition) { }</code></td>
+</tr>
+<tr>
+<td><code>repeat (n)</code></td>
+<td><code>for</code> loop</td>
+</tr>
+<tr>
+<td><code>forever</code> / <code>repeat until</code></td>
+<td><code>while</code> loop</td>
+</tr>
+<tr>
+<td>When green flag clicked</td>
+<td><code>public static void main(...)</code></td>
+</tr>
+<tr>
+<td>Say [ ]</td>
+<td><code>System.out.println(...)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Every program you write this year — in Scratch or Java — uses these same building blocks. The language changes; the structure doesn't.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../notes_binary_and_ascii/" class="btn btn-neutral float-left" title="1.2 Binary and ASCII"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../unit2/notes_java_structure/" class="btn btn-neutral float-right" title="2.1 Java Structure, Variables, and Operations">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../notes_binary_and_ascii/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../unit2/notes_java_structure/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

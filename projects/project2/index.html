@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katie Jergens" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Project 2: Word Guessing Adventure - CS1 — Columbia Grammar</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Project 2: Word Guessing Adventure";
+        var mkdocs_page_input_path = "projects/project2.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CS1 — Columbia Grammar
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 1 — Binary, ASCII, and Scratch</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_how_computers_work/">1.1 How Computers Work</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_binary_and_ascii/">1.2 Binary and ASCII</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_scratch/">1.3 Scratch</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 2 — Java Basics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_java_structure/">2.1 Java Structure, Variables, and Operations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_scanner/">2.2 Scanner and User Input</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 3 — Conditionals and While Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_conditionals/">3.1 Conditional Code Blocks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_while_loops/">3.2 While Loops</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 4 — For Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_for_loops/">4.1 For Loops</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 5 — Strings and Math</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_strings/">5.1 Strings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_math/">5.2 The Math Class</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../project1/">Project 1: Scratch Remix</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Project 2: Word Guessing Adventure</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#string-methods-youll-need">String Methods You'll Need</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#example-game-session">Example Game Session</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coding-tips-level-1">Coding Tips: Level 1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coding-tips-level-2">Coding Tips: Level 2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#required-import">Required Import</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#level-up-optional">Level-Up (Optional)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#grading-rubric">Grading Rubric</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CS1 — Columbia Grammar</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Projects</li>
+      <li class="breadcrumb-item active">Project 2: Word Guessing Adventure</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="project-2-word-guessing-adventure">Project 2: Word Guessing Adventure</h1>
+<p><strong>CS1 — Ms. Jergens</strong></p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p><strong>Learning Goal:</strong> Build a text-based word-guessing game inspired by Wordle. You'll practice variables, <code>if</code> statements, <code>while</code> loops, <code>Scanner</code> for input, and String methods to create a complete interactive program.</p>
+<p><strong>Game Objective:</strong> The player gets up to 6 guesses to find all the letters in a secret 4-letter word. If they succeed, they advance to Level 2: up to 3 tries to guess the full word.</p>
+<hr />
+<h2 id="string-methods-youll-need">String Methods You'll Need</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>What it does</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.length()</code></td>
+<td>Number of characters</td>
+<td><code>"cave".length()</code> → <code>4</code></td>
+</tr>
+<tr>
+<td><code>.contains()</code></td>
+<td>Checks if a substring is inside</td>
+<td><code>"cave".contains("a")</code> → <code>true</code></td>
+</tr>
+<tr>
+<td><code>.equals()</code></td>
+<td>Compares two Strings exactly</td>
+<td><code>"cave".equals("Cave")</code> → <code>false</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="example-game-session">Example Game Session</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Welcome to Word Guessing Adventure!
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>============== LEVEL 1: Guess the letters ==============
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>The secret word has 4 letters. All letters are unique. You have 6 guesses.
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Guess a letter: a
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Correct! Letters: a
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Guess a letter: b
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>Incorrect! Letters: a
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>Guess a letter: c
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Correct! Letters: ac
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>Guess a letter: e
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>Correct! Letters: ace
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>Guess a letter: v
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>Correct! Letters: acev
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>Congratulations! You guessed all the letters.
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>============== LEVEL 2: Guess the word ==============
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>Guess the secret word. You have 3 guesses.
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>Letters: acev
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>Guess the word: evca
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>Incorrect! Letters: acev
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>Guess the word: cave
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>Correct!
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>Congratulations! You guessed the secret word.
+</code></pre></div>
+<hr />
+<h2 id="coding-tips-level-1">Coding Tips: Level 1</h2>
+<p>Create variables to track:
+- The secret word
+- The correctly guessed letters (as a String, starting <code>""</code>)
+- The number of guesses used
+- The maximum number of guesses (6)</p>
+<p>Use a <code>Scanner</code> and a loop where each iteration:</p>
+<ol>
+<li>Prompts the user for a letter and reads it</li>
+<li>Converts input to lowercase for consistency</li>
+<li>Checks: Is the letter in the secret word? Has it already been guessed?</li>
+<li>If new and correct: add it to your correct-guesses String</li>
+<li>If not: inform the user (incorrect guesses still count toward the limit)</li>
+</ol>
+<p>The loop should end when:
+- All letters are found: <code>correctGuesses.length() == secretWord.length()</code>, <strong>or</strong>
+- The player reaches the 6-guess limit</p>
+<p><strong>Input validation:</strong> If the player enters more than one character or a non-letter, reprompt them.</p>
+<hr />
+<h2 id="coding-tips-level-2">Coding Tips: Level 2</h2>
+<p>If the player completes Level 1, move to the full-word guess. Show them their discovered letters and give up to 3 attempts.</p>
+<p>Each attempt:
+- Prompt for a full-word guess
+- Compare it to the secret word using <code>.equals()</code>
+- If correct: win message
+- If incorrect: reduce remaining attempts and give feedback</p>
+<hr />
+<h2 id="required-import">Required Import</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+</code></pre></div>
+<hr />
+<h2 id="level-up-optional">Level-Up (Optional)</h2>
+<p><strong>Small:</strong> Display incorrect guesses so the user doesn't repeat them; auto-win Level 2 if letters were guessed in order.</p>
+<p><strong>Medium:</strong> Add a Level 3 with a harder word; support words with repeated letters.</p>
+<p><strong>Advanced:</strong> Use an API to get a random word; implement full Wordle rules (correct position, wrong position, not in word).</p>
+<hr />
+<h2 id="grading-rubric">Grading Rubric</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Program compiles and runs without errors</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Level 1: correct letter-guessing logic, tracks guesses, ends appropriately</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Level 2: correct full-word guessing with up to 3 attempts</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Input handling &amp; user experience (clear prompts, handles invalid/repeated guesses)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Code quality &amp; style (readable, meaningful variable names, proper formatting)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Working style / process / productivity (consistent progress, ability to explain code)</td>
+<td>20</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>100</strong></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../project1/" class="btn btn-neutral float-left" title="Project 1: Scratch Remix"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../project1/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
