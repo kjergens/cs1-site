@@ -63,23 +63,23 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">3.1 Conditional Code Blocks</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#what-is-a-conditional-block">What Is a Conditional Block?</a>
+    <li class="toctree-l2"><a class="reference internal" href="#311-what-is-a-conditional-block">3.1.1 What Is a Conditional Block?</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#comparison-operators">Comparison Operators</a>
+    <li class="toctree-l2"><a class="reference internal" href="#312-comparison-operators">3.1.2 Comparison Operators</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#the-boolean-type">The boolean Type</a>
+    <li class="toctree-l2"><a class="reference internal" href="#313-the-boolean-type">3.1.3 The boolean Type</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#the-if-statement">The if Statement</a>
+    <li class="toctree-l2"><a class="reference internal" href="#314-the-if-statement">3.1.4 The if Statement</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#the-if-else-statement">The if / else Statement</a>
+    <li class="toctree-l2"><a class="reference internal" href="#315-the-if-else-statement">3.1.5 The if / else Statement</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#the-else-if-statement">The else if Statement</a>
+    <li class="toctree-l2"><a class="reference internal" href="#316-the-else-if-statement">3.1.6 The else if Statement</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#key-takeaways">Key Takeaways</a>
+    <li class="toctree-l2"><a class="reference internal" href="#317-key-takeaways">3.1.7 Key Takeaways</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#check-your-understanding">Check Your Understanding</a>
+    <li class="toctree-l2"><a class="reference internal" href="#318-check-your-understanding">3.1.8 Check Your Understanding</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#answer-key">Answer Key</a>
+    <li class="toctree-l2"><a class="reference internal" href="#319-answer-key">3.1.9 Answer Key</a>
     </li>
     </ul>
                   </li>
@@ -131,14 +131,14 @@
               
                 <h1 id="conditional-code-blocks">Conditional Code Blocks</h1>
 <hr />
-<h2 id="what-is-a-conditional-block">What Is a Conditional Block?</h2>
+<h2 id="311-what-is-a-conditional-block">3.1.1 What Is a Conditional Block?</h2>
 <p>A <strong>conditional block</strong> lets your program decide whether to run certain code based on whether a condition is <code>true</code> or <code>false</code>. Think of it like a fork in the road — the program chooses one path depending on the situation.</p>
 <p>You've already worked with two types of code blocks:
 1. <strong>class block</strong> — the outermost block defining a class
 2. <strong>main method block</strong> — where our program runs</p>
 <p>A conditional block is a third type, nested inside the main method.</p>
 <hr />
-<h2 id="comparison-operators">Comparison Operators</h2>
+<h2 id="312-comparison-operators">3.1.2 Comparison Operators</h2>
 <p>To create conditions, we use <strong>comparison operators</strong>. These compare two values and return either <code>true</code> or <code>false</code>.</p>
 <table>
 <thead>
@@ -190,13 +190,13 @@
 </table>
 <p>These operators don't return numbers — they return <code>true</code> or <code>false</code>.</p>
 <hr />
-<h2 id="the-boolean-type">The boolean Type</h2>
+<h2 id="313-the-boolean-type">3.1.3 The boolean Type</h2>
 <p><strong><code>boolean</code></strong> variables store either <code>true</code> or <code>false</code>. You can save the result of a comparison:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span><span class="w">   </span><span class="c1">// flag is true because 2 is less than 6</span>
 </code></pre></div>
 <p>Using a boolean can make your code read like a sentence.</p>
 <hr />
-<h2 id="the-if-statement">The <code>if</code> Statement</h2>
+<h2 id="314-the-if-statement">3.1.4 The <code>if</code> Statement</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="c1">// runs only if condition is true</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
@@ -214,7 +214,7 @@
 </code></pre></div></p>
 <p><code>17 &gt;= 18</code> is <code>false</code>, so the message is skipped. <code>"Done."</code> prints regardless because it's outside the <code>if</code> block.</p>
 <hr />
-<h2 id="the-if-else-statement">The <code>if</code> / <code>else</code> Statement</h2>
+<h2 id="315-the-if-else-statement">3.1.5 The <code>if</code> / <code>else</code> Statement</h2>
 <p><code>else</code> runs only if the <code>if</code> condition is <code>false</code>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You are old enough to vote!&quot;</span><span class="p">);</span>
@@ -229,7 +229,7 @@
 </code></pre></div></p>
 <p>Only <strong>one</strong> of the <code>if</code> or <code>else</code> blocks runs — never both.</p>
 <hr />
-<h2 id="the-else-if-statement">The <code>else if</code> Statement</h2>
+<h2 id="316-the-else-if-statement">3.1.6 The <code>else if</code> Statement</h2>
 <p>Use <code>else if</code> to check multiple conditions in sequence:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
@@ -243,7 +243,7 @@
 </code></pre></div>
 <p>Java stops at the <strong>first</strong> condition that is <code>true</code> and skips the rest. If none are true, the <code>else</code> block runs as a catch-all.</p>
 <hr />
-<h2 id="key-takeaways">Key Takeaways</h2>
+<h2 id="317-key-takeaways">3.1.7 Key Takeaways</h2>
 <ul>
 <li>Conditional blocks let your program make decisions</li>
 <li>Conditions use comparison operators to evaluate to <code>true</code> or <code>false</code></li>
@@ -252,7 +252,7 @@
 <li><code>else if</code> lets you chain multiple conditions</li>
 </ul>
 <hr />
-<h2 id="check-your-understanding">Check Your Understanding</h2>
+<h2 id="318-check-your-understanding">3.1.8 Check Your Understanding</h2>
 <ol>
 <li>
 <p>What is the output of this code?
@@ -274,7 +274,7 @@
 </li>
 </ol>
 <hr />
-<h2 id="answer-key">Answer Key</h2>
+<h2 id="319-answer-key">3.1.9 Answer Key</h2>
 <ol>
 <li>
 <p><code>medium</code> — <code>5 &gt; 10</code> is false, <code>5 &gt; 3</code> is true, so the second block runs.</p>

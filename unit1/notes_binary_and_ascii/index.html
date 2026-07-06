@@ -49,9 +49,9 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">1.2 Binary and ASCII</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#1-ascii-letters-are-numbers">1. ASCII — Letters Are Numbers</a>
+    <li class="toctree-l2"><a class="reference internal" href="#121-ascii-letters-are-numbers">1.2.1 ASCII — Letters Are Numbers</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-binary-everything-is-a-binary-number">2. Binary — Everything Is a Binary Number</a>
+    <li class="toctree-l2"><a class="reference internal" href="#122-binary-everything-is-a-binary-number">1.2.2 Binary — Everything Is a Binary Number</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#review-base-10-decimal">Review: Base 10 (Decimal)</a>
     </li>
@@ -59,15 +59,15 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#3-converting-binary-decimal">3. Converting Binary → Decimal</a>
+    <li class="toctree-l2"><a class="reference internal" href="#123-converting-binary-decimal">1.2.3 Converting Binary → Decimal</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#4-converting-decimal-binary">4. Converting Decimal → Binary</a>
+    <li class="toctree-l2"><a class="reference internal" href="#124-converting-decimal-binary">1.2.4 Converting Decimal → Binary</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#5-binary-addition">5. Binary Addition</a>
+    <li class="toctree-l2"><a class="reference internal" href="#125-binary-addition">1.2.5 Binary Addition</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#check-your-understanding">Check Your Understanding</a>
+    <li class="toctree-l2"><a class="reference internal" href="#126-check-your-understanding">1.2.6 Check Your Understanding</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#answer-key">Answer Key</a>
+    <li class="toctree-l2"><a class="reference internal" href="#127-answer-key">1.2.7 Answer Key</a>
     </li>
     </ul>
                   </li>
@@ -133,7 +133,7 @@
               
                 <h1 id="binary-and-ascii">Binary and ASCII</h1>
 <hr />
-<h2 id="1-ascii-letters-are-numbers">1. ASCII — Letters Are Numbers</h2>
+<h2 id="121-ascii-letters-are-numbers">1.2.1 ASCII — Letters Are Numbers</h2>
 <p>Computers only understand numbers. So how do they store text?</p>
 <p><strong>ASCII</strong> (American Standard Code for Information Interchange) is a system that assigns a number to every character: letters, digits, punctuation, and special characters.</p>
 <table>
@@ -180,7 +180,7 @@
 </table>
 <p>When your program stores the String <code>"Hello"</code>, the computer stores the numbers <code>72 101 108 108 111</code>. Text is always numbers underneath.</p>
 <hr />
-<h2 id="2-binary-everything-is-a-binary-number">2. Binary — Everything Is a Binary Number</h2>
+<h2 id="122-binary-everything-is-a-binary-number">1.2.2 Binary — Everything Is a Binary Number</h2>
 <p>Numbers themselves are stored in <strong>binary</strong> (base 2) — using only the digits <code>0</code> and <code>1</code>.</p>
 <h3 id="review-base-10-decimal">Review: Base 10 (Decimal)</h3>
 <p>In the number system you use every day, each position represents a power of 10:</p>
@@ -202,7 +202,7 @@
 </code></pre></div>
 <p>Each <code>0</code> or <code>1</code> is called a <strong>bit</strong>. 8 bits = 1 <strong>byte</strong>.</p>
 <hr />
-<h2 id="3-converting-binary-decimal">3. Converting Binary → Decimal</h2>
+<h2 id="123-converting-binary-decimal">1.2.3 Converting Binary → Decimal</h2>
 <p>Write out the positional values (powers of 2), multiply each bit, then add.</p>
 <p><strong>Example: <code>1101</code></strong></p>
 <table>
@@ -265,7 +265,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="4-converting-decimal-binary">4. Converting Decimal → Binary</h2>
+<h2 id="124-converting-decimal-binary">1.2.4 Converting Decimal → Binary</h2>
 <p>Repeatedly divide by 2 and record the remainders. Read remainders bottom to top.</p>
 <p><strong>Example: 13 → binary</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>13 ÷ 2 = 6  remainder 1  ← last bit
@@ -277,7 +277,7 @@
 </code></pre></div>
 <p>Check: <code>1101</code> = 8 + 4 + 0 + 1 = 13 ✓</p>
 <hr />
-<h2 id="5-binary-addition">5. Binary Addition</h2>
+<h2 id="125-binary-addition">1.2.5 Binary Addition</h2>
 <p>Binary addition uses the same rules as decimal, just with 2 digits:</p>
 <table>
 <thead>
@@ -310,14 +310,14 @@
 <p>Check: 10 + 7 = 17 ✓</p>
 <p>Key rule: <code>1 + 1 = 10</code> in binary (write 0, carry 1). <code>1 + 1 + 1 = 11</code> (write 1, carry 1).</p>
 <hr />
-<h2 id="check-your-understanding">Check Your Understanding</h2>
+<h2 id="126-check-your-understanding">1.2.6 Check Your Understanding</h2>
 <p><strong>1.</strong> What is the decimal value of binary <code>10110</code>?</p>
 <p><strong>2.</strong> Convert 25 to binary.</p>
 <p><strong>3.</strong> Add in binary: <code>0110 + 0101</code></p>
 <p><strong>4.</strong> What ASCII value represents the letter <code>'A'</code>? What about <code>'a'</code>?</p>
 <p><strong>5.</strong> Why does <code>'a'</code> have a higher ASCII value than <code>'A'</code>?</p>
 <hr />
-<h2 id="answer-key">Answer Key</h2>
+<h2 id="127-answer-key">1.2.7 Answer Key</h2>
 <p><strong>1.</strong> <code>10110</code>: 16 + 0 + 4 + 2 + 0 = <strong>22</strong></p>
 <p><strong>2.</strong> 25 → binary:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>25 ÷ 2 = 12  r 1
