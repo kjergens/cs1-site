@@ -2,7 +2,7 @@
 
 ---
 
-## Overview
+## 5.1.1 Overview
 
 In Java, a `String` is used to store text. It is **not** a simple primitive like `int` or `double` — it is a special type called an **object**, which means it comes with built-in methods you can call on it.
 
@@ -10,7 +10,7 @@ In Java, a `String` is used to store text. It is **not** a simple primitive like
 
 ---
 
-## Declaring Strings
+## 5.1.2 Declaring Strings
 
 ```java
 String greeting = "Hello World!";
@@ -22,7 +22,7 @@ String nothing;          // declared but not initialized
 
 ---
 
-## Adding to a String
+## 5.1.3 Adding to a String
 
 Use `+=` to append text:
 
@@ -45,7 +45,7 @@ t += "toy";   // won't compile
 
 ---
 
-## Common String Methods
+## 5.1.4 Common String Methods
 
 ### `length()`
 Returns the number of characters in the String. Spaces count.
@@ -89,7 +89,7 @@ H  e  l  l  o
 
 ---
 
-## Immutability — Methods Don't Change the Original
+## 5.1.5 Immutability — Methods Don't Change the Original
 
 ```java
 String s = "JAVA";
@@ -107,7 +107,7 @@ System.out.println(s);      // prints "java"
 
 ---
 
-## Check Your Understanding
+## 5.1.6 Check Your Understanding
 
 1. What is one difference between a primitive (like `int`) and a `String`?
 2. What does `+=` do when used with a `String`?
@@ -117,7 +117,7 @@ System.out.println(s);      // prints "java"
 
 ---
 
-## Answer Key
+## 5.1.7 Answer Key
 
 1. Primitives store simple values directly. `String` is an object — it comes with built-in methods and is immutable.
 2. It appends the new text to the end of the existing String (and saves the result back to the variable).

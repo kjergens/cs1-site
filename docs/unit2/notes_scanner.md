@@ -2,7 +2,7 @@
 
 ---
 
-## 1. Why Scanner?
+## 2.2.1 Why Scanner?
 
 - Lets your program talk to the user
 - Reads what the user types on the keyboard
@@ -10,7 +10,7 @@
 
 ---
 
-## 2. Import (do this once at the top)
+## 2.2.2 Import (do this once at the top)
 
 ```java
 import java.util.Scanner;
@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 ---
 
-## 3. Create the Scanner Object
+## 2.2.3 Create the Scanner Object
 
 ```java
 Scanner scan = new Scanner(System.in);   // "System.in" = keyboard
@@ -28,7 +28,7 @@ Scanner scan = new Scanner(System.in);   // "System.in" = keyboard
 
 ---
 
-## 4. Reading Different Kinds of Input
+## 2.2.4 Reading Different Kinds of Input
 
 ### Read one word — `next()`
 ```java
@@ -56,7 +56,7 @@ Reads a decimal number. If the user types `3.14`, `price` stores the `double` `3
 
 ---
 
-## 5. Mini Examples
+## 2.2.5 Mini Examples
 
 ### Example 1 — Reading a full line as a String
 ```java
@@ -97,7 +97,7 @@ public class NumbersExample {
 
 ---
 
-## 6. Important: The nextLine() Trap
+## 2.2.6 Important: The nextLine() Trap
 
 When `nextLine()` comes **after** `next()`, `nextInt()`, or `nextDouble()`, it often **skips** a line.
 
@@ -124,7 +124,7 @@ String name = scan.nextLine();   // now this works
 
 ---
 
-## 7. Converting Strings to int or double
+## 2.2.7 Converting Strings to int or double
 
 `nextLine()` always returns a `String`. If you need a number, convert after:
 
@@ -142,7 +142,7 @@ double number = Double.parseDouble(text);
 
 ---
 
-## Check Your Understanding
+## 2.2.8 Check Your Understanding
 
 1. What import statement is required to use Scanner?
 2. Write the line that creates a Scanner named `input` that reads from the keyboard.
@@ -154,7 +154,7 @@ double number = Double.parseDouble(text);
 
 ---
 
-## Answer Key
+## 2.2.9 Answer Key
 
 1. `import java.util.Scanner;`
 2. `Scanner input = new Scanner(System.in);`

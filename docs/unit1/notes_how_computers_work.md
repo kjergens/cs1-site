@@ -2,7 +2,7 @@
 
 ---
 
-## Hardware vs. Software
+## 1.1.1 Hardware vs. Software
 
 A computer has two sides: **hardware** (the physical parts) and **software** (the instructions that tell hardware what to do).
 
@@ -10,7 +10,7 @@ This course is about software — specifically, writing programs in Java. But it
 
 ---
 
-## Key Hardware Components
+## 1.1.2 Key Hardware Components
 
 | Component | What it does |
 |---|---|
@@ -22,7 +22,7 @@ This course is about software — specifically, writing programs in Java. But it
 
 ---
 
-## How They Work Together
+## 1.1.3 How They Work Together
 
 When you run a program:
 
@@ -35,6 +35,6 @@ RAM is fast but temporary — everything in it disappears when you shut down. St
 
 ---
 
-## Everything Is Data
+## 1.1.4 Everything Is Data
 
 The most important idea in this unit: **computers only understand numbers.** Everything — text, images, sound, video, programs — is stored as numbers. The rest of the unit explores how.

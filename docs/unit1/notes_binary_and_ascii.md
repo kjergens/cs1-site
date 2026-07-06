@@ -2,7 +2,7 @@
 
 ---
 
-## 1. ASCII — Letters Are Numbers
+## 1.2.1 ASCII — Letters Are Numbers
 
 Computers only understand numbers. So how do they store text?
 
@@ -23,7 +23,7 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 
 ---
 
-## 2. Binary — Everything Is a Binary Number
+## 1.2.2 Binary — Everything Is a Binary Number
 
 Numbers themselves are stored in **binary** (base 2) — using only the digits `0` and `1`.
 
@@ -57,7 +57,7 @@ Each `0` or `1` is called a **bit**. 8 bits = 1 **byte**.
 
 ---
 
-## 3. Converting Binary → Decimal
+## 1.2.3 Converting Binary → Decimal
 
 Write out the positional values (powers of 2), multiply each bit, then add.
 
@@ -80,7 +80,7 @@ Write out the positional values (powers of 2), multiply each bit, then add.
 
 ---
 
-## 4. Converting Decimal → Binary
+## 1.2.4 Converting Decimal → Binary
 
 Repeatedly divide by 2 and record the remainders. Read remainders bottom to top.
 
@@ -99,7 +99,7 @@ Check: `1101` = 8 + 4 + 0 + 1 = 13 ✓
 
 ---
 
-## 5. Binary Addition
+## 1.2.5 Binary Addition
 
 Binary addition uses the same rules as decimal, just with 2 digits:
 
@@ -124,7 +124,7 @@ Key rule: `1 + 1 = 10` in binary (write 0, carry 1). `1 + 1 + 1 = 11` (write 1, 
 
 ---
 
-## Check Your Understanding
+## 1.2.6 Check Your Understanding
 
 **1.** What is the decimal value of binary `10110`?
 
@@ -138,7 +138,7 @@ Key rule: `1 + 1 = 10` in binary (write 0, carry 1). `1 + 1 + 1 = 11` (write 1, 
 
 ---
 
-## Answer Key
+## 1.2.7 Answer Key
 
 **1.** `10110`: 16 + 0 + 4 + 2 + 0 = **22**
 

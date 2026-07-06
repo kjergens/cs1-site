@@ -2,7 +2,7 @@
 
 ---
 
-## Program Structure
+## 2.1.1 Program Structure
 
 Every Java program requires a class definition. The `main` method is the entry point — where your program starts running.
 
@@ -23,7 +23,7 @@ public class HelloWorld {
 
 ---
 
-## Printing
+## 2.1.2 Printing
 
 **`System.out.println()`** — prints text or values with a new line at the end.
 
@@ -41,7 +41,7 @@ System.out.println("Age: " + age);        // Concatenates string and variable
 
 ---
 
-## Arithmetic Operations
+## 2.1.3 Arithmetic Operations
 
 | Operator | Meaning | Example | Result |
 |---|---|---|---|
@@ -59,7 +59,7 @@ System.out.println("Age: " + age);        // Concatenates string and variable
 
 ---
 
-## Variables and Data Types
+## 2.1.4 Variables and Data Types
 
 A variable is a named container for storing data. It must be declared with a type before use.
 
@@ -110,7 +110,7 @@ String name = "Alice";
 
 ---
 
-## Check Your Understanding
+## 2.1.5 Check Your Understanding
 
 1. Write a Java program that declares two `int` variables, adds them, and prints the result.
 2. Modify the program to use `double` instead and perform division.
