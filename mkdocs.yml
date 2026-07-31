@@ -24,9 +24,9 @@ nav:
     - "Check Your Understanding": unit1/unit1_check_understanding.md
   - Unit 2  Java Basics:
     - "2.1 Structure, Printing & Operators": unit2/notes_01_java_structure.md
-    - "2.1 Variables and Data Types": unit2/notes_02_variables.md
-    - "2.1 Re-assignment & Compound Assignment": unit2/notes_03_operators_reassignment.md
-    - "2.2 Scanner and User Input": unit2/notes_04_scanner.md
+    - "2.2 Variables and Data Types": unit2/notes_02_variables.md
+    - "2.3 Re-assignment & Compound Assignment": unit2/notes_03_operators_reassignment.md
+    - "2.4 Scanner and User Input": unit2/notes_04_scanner.md
     - "Check Your Understanding": unit2/unit2_check_understanding.md
   - Unit 3  Conditionals and While Loops:
     - "3.1 Conditional Code Blocks": unit3/notes_01_conditionals.md
