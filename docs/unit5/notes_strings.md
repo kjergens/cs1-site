@@ -105,22 +105,7 @@ s = s.toLowerCase();        // reassign
 System.out.println(s);      // prints "java"
 ```
 
----
-
-## 5.1.6 Check Your Understanding
-
-1. What is one difference between a primitive (like `int`) and a `String`?
-2. What does `+=` do when used with a `String`?
-3. If you call `toUpperCase()` on a `String` but don't reassign, does the original change?
-4. Which method checks if two Strings are equal while ignoring case?
-5. What does `"elephant".substring(2, 5)` return?
 
 ---
 
-## 5.1.7 Answer Key
 
-1. Primitives store simple values directly. `String` is an object — it comes with built-in methods and is immutable.
-2. It appends the new text to the end of the existing String (and saves the result back to the variable).
-3. No. Strings are immutable; the method returns a new String but doesn't modify the original.
-4. `equalsIgnoreCase()`
-5. `"eph"` — positions 2, 3, 4 of `"elephant"` (e=0, l=1, e=2, p=3, h=4)

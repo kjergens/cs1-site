@@ -1,8 +1,4 @@
-# For Loops
-
----
-
-## 4.2 Check Your Understanding
+# Unit 4: Check Your Understanding
 
 1. What is the output of this loop?
 ```java
@@ -29,7 +25,7 @@ for (int i = 0; i < 7; i++) {
 
 ---
 
-### 4.2.1 Answer Key
+### Answer Key
 
 1. `1 2 3 4 5` (all on one line with spaces)
 

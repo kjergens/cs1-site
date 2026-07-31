@@ -1,8 +1,4 @@
-# Binary Addition and Multiplication
-
----
-
-## 1.4 Check Your Understanding
+# Unit 1 : Check Your Understanding
 
 **1.** What is the decimal value of binary `10110`?
 
@@ -18,7 +14,7 @@
 
 ---
 
-### 1.4.1 Answer Key
+### Answer Key
 
 **1.** `10110`: 16 + 0 + 4 + 2 + 0 = **22**
 

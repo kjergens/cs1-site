@@ -1,9 +1,4 @@
-# Java Program Structure, Printing, and Operators
-
----
-
-
-## 2.3 Check Your Understanding
+# Unit 2: Check Your Understanding
 
 1. What is the result of `25 % 4`?
 2. What is the result of `7 / 2` if both are declared as `int`?
@@ -12,13 +7,13 @@
 
 ---
 
-### 2.3.1 Answer Key
+### Answer Key
 
-**1.** `5`: 25 / 4 = 5 **Remainder 5**
+**1.** `5` Explanation: 25 / 4 = 5 **Remainder 5**
 
-**2.** `3`: 7 / 2 = 3.5, dropping the decimal value = **3**
+**2.** `3` Explanation: 7 / 2 = 3.5, dropping the decimal value = **3**
 
 **3.** `false`
 
-**4.** `15 >= (20 - 3)`: **false**
+**4.** `15 >= (20 - 3)` **false**
 

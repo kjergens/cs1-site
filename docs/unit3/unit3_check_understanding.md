@@ -1,8 +1,4 @@
-# Conditional Code Blocks
-
----
-
-## 3.3 Check Your Understanding
+# Unit 3: Check Your Understanding
 
 1. What is the output of this code?
 ```java
@@ -25,7 +21,7 @@ while (n < 100) {
 
 ---
 
-### 3.3.1 Answer Key
+### Answer Key
 
 1.
 ```
