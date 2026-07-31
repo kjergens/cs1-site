@@ -73,7 +73,7 @@ points *= 2;    // points is now 240
 
 ---
 
-## Homework: HW 7 — Operators and Re-assignment
+## Homework 7 — Operators and Re-assignment
 
 *Assigned Class 9 · Due Class 10*
 

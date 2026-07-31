@@ -94,7 +94,11 @@ System.out.println(7 <= 6);  // false
 
 ---
 
-## Homework: HW 5 — Java Structure and Operators
+## Homework 4 — Java to Scratch (teacher will give you worksheet)
+
+---
+
+## Homework 5 — Java Structure and Operators
 
 There are five parts, plus an ungraded bonus for optional enrichment. Each part has a short background, then exercises — read the background, then answer the exercises that follow.
 

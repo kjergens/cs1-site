@@ -166,7 +166,7 @@ double number = Double.parseDouble(text);
 
 ---
 
-## Homework: HW 8 — Scanner and User Input
+## Homework 8 — Scanner and User Input
 
 *Assigned Class 10 · Due Class 11*
 

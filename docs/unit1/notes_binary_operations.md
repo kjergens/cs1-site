@@ -109,7 +109,7 @@ Check: 6 × 5 = 30 ✓
 
 ---
 
-## Homework: HW 2 — Binary Addition & Multiplication
+## Homework 2 — Binary Addition & Multiplication
 
 *Assigned Class 2 · Due Class 3*
 

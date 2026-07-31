@@ -78,7 +78,7 @@ Check: `1101` = 8 + 4 + 0 + 1 = 13 ✓
 
 ---
 
-## Homework: HW 1 — Binary Practice
+## Homework 1 — Binary Practice
 
 *Assigned Class 1 · Due Class 2*
 
