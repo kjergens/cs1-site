@@ -91,9 +91,9 @@
               </ul>
               <p class="caption"><span class="caption-text">Unit 5  Strings and Math</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="" href="../../unit5/notes_01_strings.md">5.1 Strings</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_01_strings/">5.1 Strings</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../../unit5/notes_02_math.md">5.2 The Math Class</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_02_math/">5.2 The Math Class</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../unit5/unit5_check_understanding/">Check Your Understanding</a>
                   </li>
@@ -135,6 +135,20 @@
 <li>What is the result of <code>7 / 2</code> if both are declared as <code>int</code>?</li>
 <li>What does <code>8 != 8</code> evaluate to?</li>
 <li>Write a comparison that checks whether <code>15</code> is greater than or equal to <code>20 - 3</code>. What does it evaluate to?</li>
+<li>Write a Java program that declares two <code>int</code> variables, adds them, and prints the result.</li>
+<li>Modify the program to use <code>double</code> instead and perform division.</li>
+<li>Write a program that prints your name and age on separate lines.</li>
+<li>What is the value of <code>n</code> after: <code>int n = 8; n = n / 3; n = n + 1;</code>?</li>
+<li>Rewrite <code>x = x - 5;</code> using a compound assignment operator.</li>
+<li>What will this print? <code>int count = 0; count++; count++; System.out.println(count);</code></li>
+<li>If <code>int a = 5; int b = a; a = 99;</code> — does <code>b</code> change? Why or why not?</li>
+<li>What import statement is required to use Scanner?</li>
+<li>Write the line that creates a Scanner named <code>input</code> that reads from the keyboard.</li>
+<li>True or False: <code>scan.nextLine()</code> can read a sentence with spaces.</li>
+<li>If the user types <code>42</code> and you read it with <code>scan.nextLine()</code>, what type is stored?</li>
+<li>Why does <code>nextLine()</code> sometimes return an empty string when it follows <code>nextInt()</code>?</li>
+<li>How do you fix the <code>nextLine()</code> trap?</li>
+<li>What method converts the <code>String</code> <code>"999"</code> to the <code>int</code> <code>999</code>?</li>
 </ol>
 <hr />
 <h3 id="answer-key">Answer Key</h3>
@@ -142,6 +156,15 @@
 <p><strong>2.</strong> <code>3</code> Explanation: 7 / 2 = 3.5, dropping the decimal value = <strong>3</strong></p>
 <p><strong>3.</strong> <code>false</code></p>
 <p><strong>4.</strong> <code>15 &gt;= (20 - 3)</code> <strong>false</strong></p>
+<ol>
+<li><code>import java.util.Scanner;</code></li>
+<li><code>Scanner input = new Scanner(System.in);</code></li>
+<li>True</li>
+<li>The <code>String</code> <code>"42"</code> — not the number</li>
+<li><code>nextInt()</code> leaves a newline in the buffer; <code>nextLine()</code> reads it immediately and returns <code>""</code></li>
+<li>Add <code>scan.nextLine();</code> after <code>nextInt()</code> (or <code>nextDouble()</code>) to consume the leftover newline</li>
+<li><code>Integer.parseInt("999")</code></li>
+</ol>
               
             </div>
           </div><footer>
