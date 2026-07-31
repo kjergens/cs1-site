@@ -2,7 +2,7 @@
 
 ---
 
-## 2.2.1 Variables and Data Types
+## 2.2 Variables and Data Types
 
 A variable is a named container for storing data. It must be declared with a type before use.
 
