@@ -1,4 +1,4 @@
-# Java Program Structure, Variables, and Operations
+# Java Program Structure, Printing, and Operators
 
 ---
 
@@ -59,61 +59,111 @@ System.out.println("Age: " + age);        // Concatenates string and variable
 
 ---
 
-## 2.1.4 Variables and Data Types
+## 2.1.4 Comparison Operators
 
-A variable is a named container for storing data. It must be declared with a type before use.
+Java can compare values and produce a `boolean` result (`true` or `false`).
 
-### Numeric Types
-
-**`int`** — whole numbers (e.g., `5`, `-10`)
-
-**`double`** — decimal numbers (e.g., `3.14`, `-0.001`)
-
-```java
-int age = 25;
-double price = 19.99;
-```
+| Operator | Meaning | Example | Result |
+|---|---|---|---|
+| `==` | Equal to | `5 == 5` | `true` |
+| `!=` | Not equal to | `5 != 3` | `true` |
+| `>` | Greater than | `10 > 5` | `true` |
+| `<` | Less than | `2 < 4` | `true` |
+| `>=` | Greater or equal | `5 >= 5` | `true` |
+| `<=` | Less or equal | `3 <= 4` | `true` |
 
 ```java
-int a = 10;
-int b = 3;
-int sum  = a + b;   // 13
-int diff = a - b;   // 7
-int prod = a * b;   // 30
-int quot = a / b;   // 3  (integer division — truncates)
-int rem  = a % b;   // 1
-
-double c = 10.0;
-double d = 3.0;
-double div = c / d; // 3.3333...
-```
-
-### Non-Numeric Types
-
-**`boolean`** — stores `true` or `false`
-
-**`char`** — stores a single character, enclosed in single quotes
-
-**`String`** — stores a sequence of characters, enclosed in double quotes
-
-```java
-boolean isActive = true;
-char grade = 'A';
-String name = "Alice";
+System.out.println(10 > 5);  // true
+System.out.println(3 == 3);  // true
+System.out.println(7 <= 6);  // false
 ```
 
 **Key points:**
-- `boolean` is used for true/false logic (e.g., in conditions)
-- `char` uses single quotes; `String` uses double quotes
-- `String` is a class, not a primitive type, and supports text manipulation
-- Use `+` to concatenate `String` with other types (e.g., `"Age: " + 25`)
+- A comparison always produces a `boolean` — never a number
+- Don't confuse `==` (comparison) with `=` (assignment) — mixing these up is one of the most common beginner bugs
+- Java converts `boolean`s to text automatically, so you can combine comparisons with strings using `+`: `"Is 10 > 5? " + (10 > 5)` prints `Is 10 > 5? true`
 
 ---
 
 ## 2.1.5 Check Your Understanding
 
-1. Write a Java program that declares two `int` variables, adds them, and prints the result.
-2. Modify the program to use `double` instead and perform division.
-3. Write a program that prints your name and age on separate lines.
-4. What is the result of `25 % 4`?
-5. What is the result of `7 / 2` if both are declared as `int`?
+1. What is the result of `25 % 4`?
+2. What is the result of `7 / 2` if both are declared as `int`?
+3. What does `8 != 8` evaluate to?
+4. Write a comparison that checks whether `15` is greater than or equal to `20 - 3`. What does it evaluate to?
+
+---
+
+## Homework: HW 5 — Java Structure and Operators
+
+There are five parts, plus an ungraded bonus for optional enrichment. Each part has a short background, then exercises — read the background, then answer the exercises that follow.
+
+### Part 1: Java Program Structure
+
+```java
+public class MyFirstProgram {
+    public static void main(String[] args) {
+        // This is a comment.
+    }
+}
+```
+
+1.1. What do you think happens if you run the program above?
+1.2. If you rename the class to `HelloJava`, what should the file name be?
+
+### Part 2: Printing in Java
+
+```java
+public class Greet {
+    public static void main(String[] args) {
+        System.out.println("My name is");
+        System.out.println("Java Beginner!");
+    }
+}
+```
+
+2.1. Predict the output of the code above.
+2.2. Write a simple program that prints your name.
+
+### Part 3: Arithmetic Operations
+
+3.1. Predict the output for each line:
+```java
+a. System.out.println(8 * 6 % 3 + 9);
+b. System.out.println((12 / 3) + (4 - 2) * 5);
+```
+3.2. Write a print statement that calculates `(10 + 5) * 2 % 7`, then predict the result.
+
+### Part 4: Comparison Operators
+
+4.1. Predict the output (true or false) for each line:
+```java
+a. System.out.println(8 != 8);
+b. System.out.println(15 >= 10 + 5);
+c. System.out.println((20 / 4) < 6);
+```
+4.2. Write a print statement comparing whether `9 * 2` is greater than or equal to `20 - 3`. Predict what it prints.
+
+### Part 5: Combining Printing, Strings, and Operations
+
+You can join strings, math, and comparisons using `+`. Java automatically converts numbers and booleans to text.
+
+```java
+System.out.println("The sum is: " + (5 + 3));
+System.out.println("Is 10 > 5? " + (10 > 5));
+System.out.println("Result: " + (8 * 6 % 3 + 9));
+```
+
+5.1. Predict the output of:
+```java
+System.out.println("Answer: " + (10 - 2 * 3) + ". Is it positive? " + (10 - 2 * 3 > 0));
+```
+5.2. Write a full program that prints: `The result of 7 + 5 % 2 is: [result]. Is it even? [true/false]` (hint: use `result % 2 == 0` to check if even).
+
+### Bonus Challenge (optional, ungraded)
+
+Write a program that prints:
+```
+What is 4 * 5? Answer: [result]
+Is the answer greater than 10? [true/false]
+```

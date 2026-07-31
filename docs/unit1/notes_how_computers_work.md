@@ -38,3 +38,24 @@ RAM is fast but temporary — everything in it disappears when you shut down. St
 ## 1.1.4 Everything Is Data
 
 The most important idea in this unit: **computers only understand numbers.** Everything — text, images, sound, video, programs — is stored as numbers. The rest of the unit explores how.
+
+---
+
+## 1.1.5 ASCII — Letters Are Numbers
+
+Computers only understand numbers. So how do they store text?
+
+**ASCII** (American Standard Code for Information Interchange) is a system that assigns a number to every character: letters, digits, punctuation, and special characters.
+
+| Character | ASCII Value |
+|---|---|
+| `A` | 65 |
+| `B` | 66 |
+| `Z` | 90 |
+| `a` | 97 |
+| `z` | 122 |
+| `0` | 48 |
+| `9` | 57 |
+| space | 32 |
+
+When your program stores the String `"Hello"`, the computer stores the numbers `72 101 108 108 111`. Text is always numbers underneath.

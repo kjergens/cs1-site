@@ -163,3 +163,149 @@ double number = Double.parseDouble(text);
 5. `nextInt()` leaves a newline in the buffer; `nextLine()` reads it immediately and returns `""`
 6. Add `scan.nextLine();` after `nextInt()` (or `nextDouble()`) to consume the leftover newline
 7. `Integer.parseInt("999")`
+
+---
+
+## Homework: HW 8 — Scanner and User Input
+
+*Assigned Class 10 · Due Class 11*
+
+### Part 1: Scanner Methods
+
+Match each thing you want to read to the correct Scanner method (word bank: `nextInt()`, `nextDouble()`, `next()`, `nextLine()`):
+
+- A whole number → ?
+- A decimal number → ?
+- One word (stops at a space) → ?
+- A full line of text (including spaces) → ?
+
+### Part 2: Complete the Code
+
+2. Fill in the blanks so this program reads an integer and prints it doubled:
+```java
+_____________ java.util.Scanner;
+
+public class Double {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(_____________);
+
+        System.out.print("Enter a number: ");
+        int n = sc._____________;
+
+        System.out.println("Doubled: " + _____________);
+    }
+}
+```
+
+3. Fill in the blanks so this program greets the user by name:
+```java
+import java.util.Scanner;
+
+public class Greeter {
+    public static void main(String[] args) {
+        Scanner _____________ = new Scanner(System.in);
+
+        System.out.print("What is your name? ");
+        String name = _____________.next();
+
+        System.out.println("Hello, " + _____________ + "!");
+    }
+}
+```
+
+### Part 3: Predict the Output
+
+For each program, the user's input is given — write what the program prints.
+
+4. User types `8`:
+```java
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter a number: ");
+int x = sc.nextInt();
+System.out.println("You entered: " + x);
+System.out.println("One more: " + (x + 1));
+```
+
+5. User types `Maya`:
+```java
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter your name: ");
+String name = sc.next();
+System.out.println(name + name);
+System.out.println(name.length());
+```
+
+6. User types `4` then `7`:
+```java
+Scanner sc = new Scanner(System.in);
+System.out.print("First number: ");
+int a = sc.nextInt();
+System.out.print("Second number: ");
+int b = sc.nextInt();
+System.out.println(a + " + " + b + " = " + (a + b));
+```
+
+7. User types `5`:
+```java
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter a number: ");
+int n = sc.nextInt();
+System.out.println(n + 2);
+System.out.println("n + 2");
+```
+What is the difference between `n + 2` and `"n + 2"`?
+
+### Part 4: Write the Program
+
+8. Write a complete Java program (including import and `main`) that:
+   - Asks the user: `"Enter your age: "`
+   - Reads the age as an integer
+   - Prints: `"In 10 years you will be "` followed by their age plus 10
+
+9. Write a complete Java program that:
+   - Asks the user for two decimal numbers (prompt each separately)
+   - Prints their average
+
+### Part 5: Find the Bug
+
+Each snippet has exactly one error. Identify the line and describe the problem.
+
+10.
+```java
+public class Hello {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Name: ");
+        String name = sc.next();
+        System.out.println("Hi " + name);
+    }
+}
+```
+
+11.
+```java
+import java.util.Scanner;
+
+public class Age {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        int age = sc.nextDouble();
+        System.out.println("Age: " + age);
+    }
+}
+```
+
+12.
+```java
+import java.util.Scanner;
+
+public class Square {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        sc.nextInt();
+        System.out.println("Squared: " + n * n);
+    }
+}
+```
