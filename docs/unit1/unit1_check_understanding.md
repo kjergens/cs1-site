@@ -1,15 +1,10 @@
 # Unit 1 : Check Your Understanding
 
 **1.** What is the decimal value of binary `10110`?
-
 **2.** Convert 25 to binary.
-
 **3.** Add in binary: `0110 + 0101`
-
 **4.** What ASCII value represents the letter `'A'`? What about `'a'`?
-
 **5.** Why does `'a'` have a higher ASCII value than `'A'`?
-
 **6.** Multiply in binary: `110 × 101`
 
 ---
