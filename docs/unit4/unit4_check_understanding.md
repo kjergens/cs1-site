@@ -31,7 +31,8 @@ while (x >= 0) {
 
 2. 7 times (`i` goes from 0 to 6 inclusive).
 
-3. ```java
+3. 
+```java
 for (int x = 10; x >= 0; x -= 2) {
     System.out.println(x);
 }
