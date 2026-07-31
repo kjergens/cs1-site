@@ -61,7 +61,7 @@ String name = "Alice";
 
 ---
 
-## Homework: HW 6 — Variables and Data Types
+## Homework 6 — Variables and Data Types
 
 *Assigned Class 8 · Due Class 9*
 
