@@ -2,7 +2,7 @@
 
 ---
 
-## 2.1.6 Variables and Data Types
+## 2.2.1 Variables and Data Types
 
 A variable is a named container for storing data. It must be declared with a type before use.
 
@@ -50,14 +50,6 @@ String name = "Alice";
 - `char` uses single quotes; `String` uses double quotes
 - `String` is a class, not a primitive type, and supports text manipulation
 - Use `+` to concatenate `String` with other types (e.g., `"Age: " + 25`)
-
----
-
-## 2.1.7 Check Your Understanding
-
-1. Write a Java program that declares two `int` variables, adds them, and prints the result.
-2. Modify the program to use `double` instead and perform division.
-3. Write a program that prints your name and age on separate lines.
 
 ---
 

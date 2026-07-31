@@ -2,7 +2,7 @@
 
 ---
 
-## 2.1.8 Re-assignment
+## 2.3.1 Re-assignment
 
 A variable's value isn't fixed — once declared, you can give it a new value at any time. This is called **re-assignment**.
 
@@ -19,7 +19,7 @@ score = score * 2;    // score is now 120
 
 ---
 
-## 2.1.9 Increment and Decrement
+## 2.3.2 Increment and Decrement
 
 **`++`** increases a variable by 1. **`--`** decreases a variable by 1. They're shorthand for the most common kind of re-assignment.
 
@@ -39,7 +39,7 @@ lives--;   // same as: lives = lives - 1;   → lives is 2
 
 ---
 
-## 2.1.10 Compound Assignment
+## 2.3.3 Compound Assignment
 
 Compound assignment operators combine an operation with re-assignment in one step.
 
@@ -61,15 +61,6 @@ points *= 2;    // points is now 240
 - `x += 7;` means "take `x`, add 7, store the result back in `x`" — read it right to left, not as "x equals plus 7"
 - Watch out for `=+` vs `+=` — same two characters, different order, and they mean very different things in Java
 - Compound assignment works with `+`, `-`, `*`, `/`, and more
-
----
-
-## 2.1.11 Check Your Understanding
-
-1. What is the value of `n` after: `int n = 8; n = n / 3; n = n + 1;`?
-2. Rewrite `x = x - 5;` using a compound assignment operator.
-3. What will this print? `int count = 0; count++; count++; System.out.println(count);`
-4. If `int a = 5; int b = a; a = 99;` — does `b` change? Why or why not?
 
 ---
 
