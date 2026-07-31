@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katie Jergens" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>2.1 Java Structure, Variables, and Operations - CS1 — Columbia Grammar</title>
+    <title>2.1 Structure, Printing & Operators (HW 5) - CS1 — Columbia Grammar</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "2.1 Java Structure, Variables, and Operations";
+        var mkdocs_page_name = "2.1 Structure, Printing \u0026 Operators (HW 5)";
         var mkdocs_page_input_path = "unit2/notes_java_structure.md";
         var mkdocs_page_url = null;
       </script>
@@ -45,16 +45,18 @@
               </ul>
               <p class="caption"><span class="caption-text">Unit 1 — Binary, ASCII, and Scratch</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_how_computers_work/">1.1 How Computers Work</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_how_computers_work/">1.1 How Computers Work + ASCII</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_binary_and_ascii/">1.2 Binary and ASCII</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_binary_numbers/">1.2 Binary Numbers (HW 1)</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_scratch/">1.3 Scratch</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_binary_operations/">1.2 Binary Addition & Multiplication (HW 2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_scratch/">1.3 Scratch (HW 3)</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Unit 2 — Java Basics</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">2.1 Java Structure, Variables, and Operations</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">2.1 Structure, Printing & Operators (HW 5)</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#211-program-structure">2.1.1 Program Structure</a>
     </li>
@@ -62,19 +64,33 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#213-arithmetic-operations">2.1.3 Arithmetic Operations</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#214-variables-and-data-types">2.1.4 Variables and Data Types</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#numeric-types">Numeric Types</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#non-numeric-types">Non-Numeric Types</a>
-    </li>
-        </ul>
+    <li class="toctree-l2"><a class="reference internal" href="#214-comparison-operators">2.1.4 Comparison Operators</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#215-check-your-understanding">2.1.5 Check Your Understanding</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#homework-hw-5-java-structure-and-operators">Homework: HW 5 — Java Structure and Operators</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#part-1-java-program-structure">Part 1: Java Program Structure</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#part-2-printing-in-java">Part 2: Printing in Java</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#part-3-arithmetic-operations">Part 3: Arithmetic Operations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#part-4-comparison-operators">Part 4: Comparison Operators</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#part-5-combining-printing-strings-and-operations">Part 5: Combining Printing, Strings, and Operations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bonus-challenge-optional-ungraded">Bonus Challenge (optional, ungraded)</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../notes_scanner/">2.2 Scanner and User Input</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_variables/">2.1 Variables and Data Types (HW 6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_operators_reassignment/">2.1 Re-assignment & Compound Assignment (HW 7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_scanner/">2.2 Scanner and User Input (HW 8)</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Unit 3 — Conditionals and While Loops</span></p>
@@ -118,7 +134,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Unit 2 — Java Basics</li>
-      <li class="breadcrumb-item active">2.1 Java Structure, Variables, and Operations</li>
+      <li class="breadcrumb-item active">2.1 Structure, Printing & Operators (HW 5)</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -127,7 +143,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="java-program-structure-variables-and-operations">Java Program Structure, Variables, and Operations</h1>
+                <h1 id="java-program-structure-printing-and-operators">Java Program Structure, Printing, and Operators</h1>
 <hr />
 <h2 id="211-program-structure">2.1.1 Program Structure</h2>
 <p>Every Java program requires a class definition. The <code>main</code> method is the entry point — where your program starts running.</p>
@@ -204,54 +220,128 @@
 - Modulus (<code>%</code>) returns the remainder after division
 - Operator precedence: <code>*</code>, <code>/</code>, <code>%</code> before <code>+</code>, <code>-</code>. Use <code>()</code> to override.</p>
 <hr />
-<h2 id="214-variables-and-data-types">2.1.4 Variables and Data Types</h2>
-<p>A variable is a named container for storing data. It must be declared with a type before use.</p>
-<h3 id="numeric-types">Numeric Types</h3>
-<p><strong><code>int</code></strong> — whole numbers (e.g., <code>5</code>, <code>-10</code>)</p>
-<p><strong><code>double</code></strong> — decimal numbers (e.g., <code>3.14</code>, <code>-0.001</code>)</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">price</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">19.99</span><span class="p">;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w">   </span><span class="c1">// 13</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kt">int</span><span class="w"> </span><span class="n">diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w">   </span><span class="c1">// 7</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="kt">int</span><span class="w"> </span><span class="n">prod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w">   </span><span class="c1">// 30</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kt">int</span><span class="w"> </span><span class="n">quot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w">   </span><span class="c1">// 3  (integer division — truncates)</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="kt">int</span><span class="w"> </span><span class="n">rem</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w">   </span><span class="c1">// 1</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="kt">double</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10.0</span><span class="p">;</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.0</span><span class="p">;</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="kt">double</span><span class="w"> </span><span class="n">div</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w"> </span><span class="c1">// 3.3333...</span>
-</code></pre></div>
-<h3 id="non-numeric-types">Non-Numeric Types</h3>
-<p><strong><code>boolean</code></strong> — stores <code>true</code> or <code>false</code></p>
-<p><strong><code>char</code></strong> — stores a single character, enclosed in single quotes</p>
-<p><strong><code>String</code></strong> — stores a sequence of characters, enclosed in double quotes</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">isActive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kt">char</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;A&#39;</span><span class="p">;</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">;</span>
+<h2 id="214-comparison-operators">2.1.4 Comparison Operators</h2>
+<p>Java can compare values and produce a <code>boolean</code> result (<code>true</code> or <code>false</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td>Equal to</td>
+<td><code>5 == 5</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>Not equal to</td>
+<td><code>5 != 3</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>Greater than</td>
+<td><code>10 &gt; 5</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>Less than</td>
+<td><code>2 &lt; 4</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>Greater or equal</td>
+<td><code>5 &gt;= 5</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>Less or equal</td>
+<td><code>3 &lt;= 4</code></td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w">  </span><span class="c1">// true</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w">  </span><span class="c1">// true</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">7</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">6</span><span class="p">);</span><span class="w">  </span><span class="c1">// false</span>
 </code></pre></div>
 <p><strong>Key points:</strong>
-- <code>boolean</code> is used for true/false logic (e.g., in conditions)
-- <code>char</code> uses single quotes; <code>String</code> uses double quotes
-- <code>String</code> is a class, not a primitive type, and supports text manipulation
-- Use <code>+</code> to concatenate <code>String</code> with other types (e.g., <code>"Age: " + 25</code>)</p>
+- A comparison always produces a <code>boolean</code> — never a number
+- Don't confuse <code>==</code> (comparison) with <code>=</code> (assignment) — mixing these up is one of the most common beginner bugs
+- Java converts <code>boolean</code>s to text automatically, so you can combine comparisons with strings using <code>+</code>: <code>"Is 10 &gt; 5? " + (10 &gt; 5)</code> prints <code>Is 10 &gt; 5? true</code></p>
 <hr />
 <h2 id="215-check-your-understanding">2.1.5 Check Your Understanding</h2>
 <ol>
-<li>Write a Java program that declares two <code>int</code> variables, adds them, and prints the result.</li>
-<li>Modify the program to use <code>double</code> instead and perform division.</li>
-<li>Write a program that prints your name and age on separate lines.</li>
 <li>What is the result of <code>25 % 4</code>?</li>
 <li>What is the result of <code>7 / 2</code> if both are declared as <code>int</code>?</li>
+<li>What does <code>8 != 8</code> evaluate to?</li>
+<li>Write a comparison that checks whether <code>15</code> is greater than or equal to <code>20 - 3</code>. What does it evaluate to?</li>
 </ol>
+<hr />
+<h2 id="homework-hw-5-java-structure-and-operators">Homework: HW 5 — Java Structure and Operators</h2>
+<p>There are five parts, plus an ungraded bonus for optional enrichment. Each part has a short background, then exercises — read the background, then answer the exercises that follow.</p>
+<h3 id="part-1-java-program-structure">Part 1: Java Program Structure</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyFirstProgram</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">        </span><span class="c1">// This is a comment.</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">}</span>
+</code></pre></div>
+<p>1.1. What do you think happens if you run the program above?
+1.2. If you rename the class to <code>HelloJava</code>, what should the file name be?</p>
+<h3 id="part-2-printing-in-java">Part 2: Printing in Java</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Greet</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;My name is&quot;</span><span class="p">);</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Java Beginner!&quot;</span><span class="p">);</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
+</code></pre></div>
+<p>2.1. Predict the output of the code above.
+2.2. Write a simple program that prints your name.</p>
+<h3 id="part-3-arithmetic-operations">Part 3: Arithmetic Operations</h3>
+<p>3.1. Predict the output for each line:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">a</span><span class="p">.</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">9</span><span class="p">);</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">b</span><span class="p">.</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">((</span><span class="mi">12</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span>
+</code></pre></div>
+3.2. Write a print statement that calculates <code>(10 + 5) * 2 % 7</code>, then predict the result.</p>
+<h3 id="part-4-comparison-operators">Part 4: Comparison Operators</h3>
+<p>4.1. Predict the output (true or false) for each line:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">a</span><span class="p">.</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">8</span><span class="p">);</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">b</span><span class="p">.</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">15</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">c</span><span class="p">.</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">((</span><span class="mi">20</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">6</span><span class="p">);</span>
+</code></pre></div>
+4.2. Write a print statement comparing whether <code>9 * 2</code> is greater than or equal to <code>20 - 3</code>. Predict what it prints.</p>
+<h3 id="part-5-combining-printing-strings-and-operations">Part 5: Combining Printing, Strings, and Operations</h3>
+<p>You can join strings, math, and comparisons using <code>+</code>. Java automatically converts numbers and booleans to text.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The sum is: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mi">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">));</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Is 10 &gt; 5? &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">));</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Result: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">9</span><span class="p">));</span>
+</code></pre></div>
+<p>5.1. Predict the output of:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Answer: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;. Is it positive? &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span>
+</code></pre></div>
+5.2. Write a full program that prints: <code>The result of 7 + 5 % 2 is: [result]. Is it even? [true/false]</code> (hint: use <code>result % 2 == 0</code> to check if even).</p>
+<h3 id="bonus-challenge-optional-ungraded">Bonus Challenge (optional, ungraded)</h3>
+<p>Write a program that prints:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>What is 4 * 5? Answer: [result]
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>Is the answer greater than 10? [true/false]
+</code></pre></div></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../unit1/notes_scratch/" class="btn btn-neutral float-left" title="1.3 Scratch"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../notes_scanner/" class="btn btn-neutral float-right" title="2.2 Scanner and User Input">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../unit1/notes_scratch/" class="btn btn-neutral float-left" title="1.3 Scratch (HW 3)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../notes_variables/" class="btn btn-neutral float-right" title="2.1 Variables and Data Types (HW 6)">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -277,7 +367,7 @@
       <span><a href="../../unit1/notes_scratch/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../notes_scanner/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../notes_variables/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

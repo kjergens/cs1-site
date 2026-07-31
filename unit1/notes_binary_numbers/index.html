@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katie Jergens" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>1.2 Binary and ASCII - CS1 — Columbia Grammar</title>
+    <title>1.2 Binary Numbers (HW 1) - CS1 — Columbia Grammar</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "1.2 Binary and ASCII";
-        var mkdocs_page_input_path = "unit1/notes_binary_and_ascii.md";
+        var mkdocs_page_name = "1.2 Binary Numbers (HW 1)";
+        var mkdocs_page_input_path = "unit1/notes_binary_numbers.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -45,13 +45,11 @@
               </ul>
               <p class="caption"><span class="caption-text">Unit 1 — Binary, ASCII, and Scratch</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../notes_how_computers_work/">1.1 How Computers Work</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_how_computers_work/">1.1 How Computers Work + ASCII</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">1.2 Binary and ASCII</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">1.2 Binary Numbers (HW 1)</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#121-ascii-letters-are-numbers">1.2.1 ASCII — Letters Are Numbers</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#122-binary-everything-is-a-binary-number">1.2.2 Binary — Everything Is a Binary Number</a>
+    <li class="toctree-l2"><a class="reference internal" href="#121-binary-everything-is-a-binary-number">1.2.1 Binary — Everything Is a Binary Number</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#review-base-10-decimal">Review: Base 10 (Decimal)</a>
     </li>
@@ -59,26 +57,36 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#123-converting-binary-decimal">1.2.3 Converting Binary → Decimal</a>
+    <li class="toctree-l2"><a class="reference internal" href="#122-converting-binary-decimal">1.2.2 Converting Binary → Decimal</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#124-converting-decimal-binary">1.2.4 Converting Decimal → Binary</a>
+    <li class="toctree-l2"><a class="reference internal" href="#123-converting-decimal-binary">1.2.3 Converting Decimal → Binary</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#125-binary-addition">1.2.5 Binary Addition</a>
+    <li class="toctree-l2"><a class="reference internal" href="#homework-hw-1-binary-practice">Homework: HW 1 — Binary Practice</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#part-1-converting-binary-to-decimal">Part 1: Converting Binary to Decimal</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#126-check-your-understanding">1.2.6 Check Your Understanding</a>
+    <li class="toctree-l3"><a class="reference internal" href="#part-2-converting-decimal-to-binary">Part 2: Converting Decimal to Binary</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#127-answer-key">1.2.7 Answer Key</a>
+    <li class="toctree-l3"><a class="reference internal" href="#part-3-binary-addition">Part 3: Binary Addition</a>
+    </li>
+        </ul>
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../notes_scratch/">1.3 Scratch</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_binary_operations/">1.2 Binary Addition & Multiplication (HW 2)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_scratch/">1.3 Scratch (HW 3)</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Unit 2 — Java Basics</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_java_structure/">2.1 Java Structure, Variables, and Operations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_java_structure/">2.1 Structure, Printing & Operators (HW 5)</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_scanner/">2.2 Scanner and User Input</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_variables/">2.1 Variables and Data Types (HW 6)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_operators_reassignment/">2.1 Re-assignment & Compound Assignment (HW 7)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_scanner/">2.2 Scanner and User Input (HW 8)</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Unit 3 — Conditionals and While Loops</span></p>
@@ -122,7 +130,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Unit 1 — Binary, ASCII, and Scratch</li>
-      <li class="breadcrumb-item active">1.2 Binary and ASCII</li>
+      <li class="breadcrumb-item active">1.2 Binary Numbers (HW 1)</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -131,56 +139,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="binary-and-ascii">Binary and ASCII</h1>
+                <h1 id="binary-numbers">Binary Numbers</h1>
 <hr />
-<h2 id="121-ascii-letters-are-numbers">1.2.1 ASCII — Letters Are Numbers</h2>
-<p>Computers only understand numbers. So how do they store text?</p>
-<p><strong>ASCII</strong> (American Standard Code for Information Interchange) is a system that assigns a number to every character: letters, digits, punctuation, and special characters.</p>
-<table>
-<thead>
-<tr>
-<th>Character</th>
-<th>ASCII Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>A</code></td>
-<td>65</td>
-</tr>
-<tr>
-<td><code>B</code></td>
-<td>66</td>
-</tr>
-<tr>
-<td><code>Z</code></td>
-<td>90</td>
-</tr>
-<tr>
-<td><code>a</code></td>
-<td>97</td>
-</tr>
-<tr>
-<td><code>z</code></td>
-<td>122</td>
-</tr>
-<tr>
-<td><code>0</code></td>
-<td>48</td>
-</tr>
-<tr>
-<td><code>9</code></td>
-<td>57</td>
-</tr>
-<tr>
-<td>space</td>
-<td>32</td>
-</tr>
-</tbody>
-</table>
-<p>When your program stores the String <code>"Hello"</code>, the computer stores the numbers <code>72 101 108 108 111</code>. Text is always numbers underneath.</p>
-<hr />
-<h2 id="122-binary-everything-is-a-binary-number">1.2.2 Binary — Everything Is a Binary Number</h2>
+<h2 id="121-binary-everything-is-a-binary-number">1.2.1 Binary — Everything Is a Binary Number</h2>
 <p>Numbers themselves are stored in <strong>binary</strong> (base 2) — using only the digits <code>0</code> and <code>1</code>.</p>
 <h3 id="review-base-10-decimal">Review: Base 10 (Decimal)</h3>
 <p>In the number system you use every day, each position represents a power of 10:</p>
@@ -202,7 +163,7 @@
 </code></pre></div>
 <p>Each <code>0</code> or <code>1</code> is called a <strong>bit</strong>. 8 bits = 1 <strong>byte</strong>.</p>
 <hr />
-<h2 id="123-converting-binary-decimal">1.2.3 Converting Binary → Decimal</h2>
+<h2 id="122-converting-binary-decimal">1.2.2 Converting Binary → Decimal</h2>
 <p>Write out the positional values (powers of 2), multiply each bit, then add.</p>
 <p><strong>Example: <code>1101</code></strong></p>
 <table>
@@ -265,7 +226,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="124-converting-decimal-binary">1.2.4 Converting Decimal → Binary</h2>
+<h2 id="123-converting-decimal-binary">1.2.3 Converting Decimal → Binary</h2>
 <p>Repeatedly divide by 2 and record the remainders. Read remainders bottom to top.</p>
 <p><strong>Example: 13 → binary</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>13 ÷ 2 = 6  remainder 1  ← last bit
@@ -277,71 +238,46 @@
 </code></pre></div>
 <p>Check: <code>1101</code> = 8 + 4 + 0 + 1 = 13 ✓</p>
 <hr />
-<h2 id="125-binary-addition">1.2.5 Binary Addition</h2>
-<p>Binary addition uses the same rules as decimal, just with 2 digits:</p>
-<table>
-<thead>
-<tr>
-<th>+</th>
-<th>0</th>
-<th>1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>0</strong></td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><strong>1</strong></td>
-<td>1</td>
-<td>10 (write 0, carry 1)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Example: <code>1010 + 0111</code></strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>  1 0 1 0
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>+ 0 1 1 1
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>---------
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  carry: 1 1 1
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  result: 1 0 0 0 1 → 17
+<h2 id="homework-hw-1-binary-practice">Homework: HW 1 — Binary Practice</h2>
+<p><em>Assigned Class 1 · Due Class 2</em></p>
+<p><strong>Instructions:</strong> Show all work. For conversion problems, write out the place values (powers of 2). For addition problems, show the carry row above each column.</p>
+<h3 id="part-1-converting-binary-to-decimal">Part 1: Converting Binary to Decimal</h3>
+<ol>
+<li>Convert the binary number <code>110101</code> to decimal. Show each bit's place value.</li>
+<li>What is the highest decimal value that can be represented with a 6-bit binary number? Explain why in one sentence.</li>
+<li>In the binary number <code>10110</code>, list the decimal value represented by each bit position, from right (least significant) to left (most significant).</li>
+</ol>
+<h3 id="part-2-converting-decimal-to-binary">Part 2: Converting Decimal to Binary</h3>
+<ol>
+<li>Convert the decimal number <code>47</code> to binary. Show your work (repeated division or place-value method).</li>
+<li>Convert the decimal number <code>29</code> to binary. Then count how many 1s appear in your answer.</li>
+</ol>
+<h3 id="part-3-binary-addition">Part 3: Binary Addition</h3>
+<ol>
+<li>Add the binary numbers <code>1011</code> and <code>1101</code>. Show the carry row.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>  carry:
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>   1011
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>+  1101
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>------
 </code></pre></div>
-<p>Check: 10 + 7 = 17 ✓</p>
-<p>Key rule: <code>1 + 1 = 10</code> in binary (write 0, carry 1). <code>1 + 1 + 1 = 11</code> (write 1, carry 1).</p>
-<hr />
-<h2 id="126-check-your-understanding">1.2.6 Check Your Understanding</h2>
-<p><strong>1.</strong> What is the decimal value of binary <code>10110</code>?</p>
-<p><strong>2.</strong> Convert 25 to binary.</p>
-<p><strong>3.</strong> Add in binary: <code>0110 + 0101</code></p>
-<p><strong>4.</strong> What ASCII value represents the letter <code>'A'</code>? What about <code>'a'</code>?</p>
-<p><strong>5.</strong> Why does <code>'a'</code> have a higher ASCII value than <code>'A'</code>?</p>
-<hr />
-<h2 id="127-answer-key">1.2.7 Answer Key</h2>
-<p><strong>1.</strong> <code>10110</code>: 16 + 0 + 4 + 2 + 0 = <strong>22</strong></p>
-<p><strong>2.</strong> 25 → binary:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>25 ÷ 2 = 12  r 1
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>12 ÷ 2 =  6  r 0
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a> 6 ÷ 2 =  3  r 0
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a> 3 ÷ 2 =  1  r 1
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a> 1 ÷ 2 =  0  r 1
+<ol>
+<li>Add the binary numbers <code>11101</code> and <code>11011</code>. Show the carry row.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>  carry:
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  11101
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>+ 11011
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>-------
 </code></pre></div>
-Read bottom to top: <strong>11001</strong> (check: 16+8+0+0+1 = 25 ✓)</p>
-<p><strong>3.</strong> <code>0110 + 0101</code>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>  0 1 1 0
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>+ 0 1 0 1
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>---------
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  1 0 1 1  → 8+2+1 = 11
-</code></pre></div>
-Check: 6 + 5 = 11 ✓</p>
-<p><strong>4.</strong> <code>'A'</code> = 65, <code>'a'</code> = 97</p>
-<p><strong>5.</strong> Lowercase letters come after uppercase in the ASCII table — they were assigned higher numbers when the standard was designed.</p>
+<ol>
+<li><strong>Challenge:</strong> Convert <code>10011</code> and <code>10101</code> from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.</li>
+</ol>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../notes_how_computers_work/" class="btn btn-neutral float-left" title="1.1 How Computers Work"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../notes_scratch/" class="btn btn-neutral float-right" title="1.3 Scratch">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../notes_how_computers_work/" class="btn btn-neutral float-left" title="1.1 How Computers Work + ASCII"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../notes_binary_operations/" class="btn btn-neutral float-right" title="1.2 Binary Addition & Multiplication (HW 2)">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -367,7 +303,7 @@ Check: 6 + 5 = 11 ✓</p>
       <span><a href="../notes_how_computers_work/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../notes_scratch/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../notes_binary_operations/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
