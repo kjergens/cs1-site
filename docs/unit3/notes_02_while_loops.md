@@ -2,7 +2,7 @@
 
 ---
 
-## 3.2.1 Key Concept: Repetition
+## Section 1: Key Concept: Repetition
 
 An `if` statement runs code once — if the condition is true, the block runs and the program moves on.
 
@@ -10,7 +10,7 @@ A `while` loop is different: after the block runs, the program goes **back to ch
 
 ---
 
-## 3.2.2 Syntax
+## Section 2: Syntax
 
 ```java
 while (condition) {
@@ -20,7 +20,7 @@ while (condition) {
 
 ---
 
-## 3.2.3 Example: Counting with a While Loop
+## Section 3: Example: Counting with a While Loop
 
 ```java
 int x = 0;
@@ -49,7 +49,7 @@ Number: 4
 
 ---
 
-## 3.2.4 The Infinite Loop Problem
+## Section 4: The Infinite Loop Problem
 
 If the condition never becomes false, the loop runs forever — an **infinite loop**. This usually means the loop variable is never updated.
 
@@ -73,7 +73,7 @@ while (x <= 4) {
 
 ---
 
-## 3.2.5 Key Points
+## Section 5: Key Points
 
 - The loop checks its condition **before** every iteration
 - If the condition is `true`, the loop body executes
@@ -83,7 +83,7 @@ while (x <= 4) {
 
 ---
 
-## 3.2.6 When to Use While vs. For
+## Section 6: When to Use While vs. For
 
 Use a `while` loop when you **don't know in advance** how many times the loop will run — for example, reading input until the user types `"quit"`.
 

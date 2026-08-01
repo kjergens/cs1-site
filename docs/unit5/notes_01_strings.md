@@ -2,7 +2,7 @@
 
 ---
 
-## 5.1.1 Overview
+## Section 1: Overview
 
 In Java, a `String` is used to store text. It is **not** a simple primitive like `int` or `double` — it is a special type called an **object**, which means it comes with built-in methods you can call on it.
 
@@ -10,7 +10,7 @@ In Java, a `String` is used to store text. It is **not** a simple primitive like
 
 ---
 
-## 5.1.2 Declaring Strings
+## Section 2: Declaring Strings
 
 ```java
 String greeting = "Hello World!";
@@ -22,7 +22,7 @@ String nothing;          // declared but not initialized
 
 ---
 
-## 5.1.3 Adding to a String
+## Section 3: Adding to a String
 
 Use `+=` to append text:
 
@@ -45,7 +45,7 @@ t += "toy";   // won't compile
 
 ---
 
-## 5.1.4 Common String Methods
+## Section 4: Common String Methods
 
 ### `length()`
 Returns the number of characters in the String. Spaces count.
@@ -89,7 +89,7 @@ H  e  l  l  o
 
 ---
 
-## 5.1.5 Immutability — Methods Don't Change the Original
+## Section 5: Immutability — Methods Don't Change the Original
 
 ```java
 String s = "JAVA";

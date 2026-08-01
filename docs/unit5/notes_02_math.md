@@ -2,7 +2,7 @@
 
 ---
 
-## 5.2.1 Overview
+## Section 1: Overview
 
 Java's built-in `Math` class provides useful mathematical methods. You don't need to import anything — `Math` is always available.
 
@@ -10,7 +10,7 @@ In this unit you'll learn nine of them: `Math.max`, `Math.min`, `Math.sqrt`, `Ma
 
 ---
 
-## 5.2.2 Math.max(x, y) and Math.min(x, y)
+## Section 2: Math.max(x, y) and Math.min(x, y)
 
 `Math.max` returns the larger value. `Math.min` returns the smaller.
 
@@ -24,7 +24,7 @@ double s = Math.min(5.3, 10.8);   // 5.3
 
 ---
 
-## 5.2.3 Math.sqrt(x)
+## Section 3: Math.sqrt(x)
 
 Returns the square root of `x`. Always returns a `double`.
 
@@ -35,7 +35,7 @@ double b = Math.sqrt(2);     // 1.4142135...
 
 ---
 
-## 5.2.4 Math.abs(x)
+## Section 4: Math.abs(x)
 
 Returns the absolute (positive) value of `x`.
 
@@ -46,7 +46,7 @@ double a = Math.abs(-4.7);   // 4.7
 
 ---
 
-## 5.2.5 Math.pow(x, y)
+## Section 5: Math.pow(x, y)
 
 Returns `x` raised to the power of `y`. Always returns a `double`.
 
@@ -59,7 +59,7 @@ Note: even if the result is a whole number, `Math.pow` returns a `double` (e.g.,
 
 ---
 
-## 5.2.6 Rounding Methods
+## Section 6: Rounding Methods
 
 | Method | Behavior | Example | Result |
 |---|---|---|---|
@@ -77,7 +77,7 @@ double c = Math.floor(4.9);   // 4.0  (any decimal rounds down)
 
 ---
 
-## 5.2.7 Math.random()
+## Section 7: Math.random()
 
 Returns a random `double` between `0.0` (inclusive) and `1.0` (exclusive).
 

@@ -85,11 +85,11 @@ System.out.println(7 <= 6);  // false
 
 ---
 
-## Homework 4 — Java to Scratch (teacher will give you worksheet)
+## Unit 2 Homework 0 — Java to Scratch (teacher will give you worksheet)
 
 ---
 
-## Homework 5 — Java Structure and Operators
+## Unit 2 Homework 1 — Java Structure and Operators
 
 There are five parts, plus an ungraded bonus for optional enrichment. Each part has a short background, then exercises — read the background, then answer the exercises that follow.
 

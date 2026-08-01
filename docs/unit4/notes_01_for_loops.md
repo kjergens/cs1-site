@@ -2,7 +2,7 @@
 
 ---
 
-## 4.1.1 For Loop vs. While Loop
+## Section 1: For Loop vs. While Loop
 
 A `for` loop is another way to repeat code while a condition is true — just like a `while` loop. The difference is that a `for` loop keeps the **initialization**, **condition**, and **update** all in one line. In a `while` loop, those pieces are spread across separate lines.
 
@@ -26,7 +26,7 @@ for (int i = 0; i < 5; i++) {
 
 ---
 
-## 4.1.2 Parts of a For Loop
+## Section 2: Parts of a For Loop
 
 ```java
 for (initialization; condition; update) {
@@ -43,7 +43,7 @@ for (initialization; condition; update) {
 
 ---
 
-## 4.1.3 Code Examples
+## Section 3: Code Examples
 
 ### Count from 0 to 4
 ```java
@@ -71,7 +71,7 @@ Output: `3 2 1`
 
 ---
 
-## 4.1.4 Why Curly Braces Matter
+## Section 4: Why Curly Braces Matter
 
 **With curly braces** — both statements are inside the loop:
 ```java
@@ -108,7 +108,7 @@ Always use curly braces. Omitting them is a common source of bugs.
 
 ---
 
-## 4.1.5 Key Vocabulary
+## Section 5: Key Vocabulary
 
 | Term | Definition |
 |---|---|
