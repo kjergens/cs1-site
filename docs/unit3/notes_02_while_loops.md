@@ -1,4 +1,4 @@
-# While Loops
+# Chapter 2: While Loops
 
 ---
 

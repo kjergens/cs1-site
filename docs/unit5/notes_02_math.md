@@ -1,4 +1,4 @@
-# The Math Class
+# Chapter 2: The Math Class
 
 ---
 

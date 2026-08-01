@@ -1,4 +1,4 @@
-# How Computers Work
+# Chapter 1: How Computers Work
 
 ---
 

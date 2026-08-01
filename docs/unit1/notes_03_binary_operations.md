@@ -1,4 +1,4 @@
-# Binary Arithmetic
+# Chapter 3: Binary Arithmetic
 
 ---
 

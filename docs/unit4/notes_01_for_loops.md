@@ -1,4 +1,4 @@
-# For Loops
+# Chapter 1: For Loops
 
 ---
 

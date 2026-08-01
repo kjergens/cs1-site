@@ -1,8 +1,8 @@
-# Scanner and User Input
+# Chapter 4: Scanner and User Input
 
 ---
 
-## 2.4.1 Why Scanner?
+## Section 1: Why Scanner?
 
 - Lets your program talk to the user
 - Reads what the user types on the keyboard
@@ -10,7 +10,7 @@
 
 ---
 
-## 2.4.2 Import (do this once at the top)
+## Section 2: Import (do this once at the top)
 
 ```java
 import java.util.Scanner;
@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 ---
 
-## 2.4.3 Create the Scanner Object
+## Section 3: Create the Scanner Object
 
 ```java
 Scanner scan = new Scanner(System.in);   // "System.in" = keyboard
@@ -28,7 +28,7 @@ Scanner scan = new Scanner(System.in);   // "System.in" = keyboard
 
 ---
 
-## 2.4.4 Reading Different Kinds of Input
+## Section 4: Reading Different Kinds of Input
 
 ### Read one word — `next()`
 ```java
@@ -56,7 +56,7 @@ Reads a decimal number. If the user types `3.14`, `price` stores the `double` `3
 
 ---
 
-## 2.4.5 Mini Examples
+## Section 5: Mini Examples
 
 ### Example 1 — Reading a full line as a String
 ```java
@@ -97,7 +97,7 @@ public class NumbersExample {
 
 ---
 
-## 2.4.6 Important: The nextLine() Trap
+## Section 6: Important: The nextLine() Trap
 
 When `nextLine()` comes **after** `next()`, `nextInt()`, or `nextDouble()`, it often **skips** a line.
 
@@ -124,7 +124,7 @@ String name = scan.nextLine();   // now this works
 
 ---
 
-## 2.4.7 Converting Strings to int or double
+## Section 7: Converting Strings to int or double
 
 `nextLine()` always returns a `String`. If you need a number, convert after:
 
@@ -143,7 +143,7 @@ double number = Double.parseDouble(text);
 
 ---
 
-## Homework 8 — Scanner and User Input
+## Unit 2 Chapter 4 Homework
 
 *Assigned Class 10 · Due Class 11*
 

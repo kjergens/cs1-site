@@ -1,4 +1,4 @@
-# Strings
+# Chapter 1: Strings
 
 ---
 

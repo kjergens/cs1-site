@@ -1,8 +1,8 @@
-# Variables and Data Types
+# Chapter 2: Variables and Data Types
 
 ---
 
-## 2.2.1 Variables and Data Types
+## Section 1: Variables and Data Types
 
 A variable is a named container for storing data. It must be declared with a type before use.
 
@@ -53,7 +53,7 @@ String name = "Alice";
 
 ---
 
-## Homework 6 — Variables and Data Types
+## Unit 2 Chapter 2 Homework
 
 *Assigned Class 8 · Due Class 9*
 

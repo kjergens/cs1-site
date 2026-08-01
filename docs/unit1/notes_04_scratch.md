@@ -1,4 +1,4 @@
-# Introduction to Programming with Scratch
+# Chapter 4: Introduction to Programming with Scratch
 
 ---
 

@@ -1,8 +1,8 @@
-# Java Program Structure, Printing, and Operators
+# Chapter 1: Java Program Structure, Printing, and Operators
 
 ---
 
-## 2.1.1 Program Structure
+## Section 1: Program Structure
 
 Every Java program requires a class definition. The `main` method is the entry point — where your program starts running.
 
@@ -23,7 +23,7 @@ public class HelloWorld {
 
 ---
 
-## 2.1.2 Printing
+## Section 2: Printing
 
 **`System.out.println()`** — prints text or values with a new line at the end.
 
@@ -41,7 +41,7 @@ System.out.println("Age: " + age);        // Concatenates string and variable
 
 ---
 
-## 2.1.3 Arithmetic Operations
+## Section 3: Arithmetic Operations
 
 | Operator | Meaning | Example | Result |
 |---|---|---|---|
@@ -59,7 +59,7 @@ System.out.println("Age: " + age);        // Concatenates string and variable
 
 ---
 
-## 2.1.4 Comparison Operators
+## Section 4: Comparison Operators
 
 Java can compare values and produce a `boolean` result (`true` or `false`).
 
@@ -85,11 +85,11 @@ System.out.println(7 <= 6);  // false
 
 ---
 
-## Unit 2 Homework 0 — Java to Scratch (teacher will give you worksheet)
+## Unit 2 Chapter 1 worksheet — Java to Scratch 
 
 ---
 
-## Unit 2 Homework 1 — Java Structure and Operators
+## Unit 2 Chapter 1 Homework
 
 There are five parts, plus an ungraded bonus for optional enrichment. Each part has a short background, then exercises — read the background, then answer the exercises that follow.
 

@@ -1,8 +1,8 @@
-# Operators and Re-assignment
+# Chapter 3: Operators and Re-assignment
 
 ---
 
-## 2.3.1 Re-assignment
+## Section 1: Re-assignment
 
 A variable's value isn't fixed — once declared, you can give it a new value at any time. This is called **re-assignment**.
 
@@ -19,7 +19,7 @@ score = score * 2;    // score is now 120
 
 ---
 
-## 2.3.2 Increment and Decrement
+## Section 2: Increment and Decrement
 
 **`++`** increases a variable by 1. **`--`** decreases a variable by 1. They're shorthand for the most common kind of re-assignment.
 
@@ -39,7 +39,7 @@ lives--;   // same as: lives = lives - 1;   → lives is 2
 
 ---
 
-## 2.3.3 Compound Assignment
+## Section 3: Compound Assignment
 
 Compound assignment operators combine an operation with re-assignment in one step.
 
@@ -64,7 +64,7 @@ points *= 2;    // points is now 240
 
 ---
 
-## Homework 7 — Operators and Re-assignment
+## Unit 2 Chapter 3 Homework
 
 *Assigned Class 9 · Due Class 10*
 

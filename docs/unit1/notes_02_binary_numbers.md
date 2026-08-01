@@ -1,4 +1,4 @@
-# Binary Numbers
+# Chapter 2: Binary Numbers
 
 ---
 

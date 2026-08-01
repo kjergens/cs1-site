@@ -61,7 +61,7 @@ if (number % 2 == 0) {
 ```
 `count` starts at 10, decrements each iteration. When `count = 7`, `7 > 7` is false and the loop exits.
 
-5. `n` is never incremented — infinite loop. Fix: add `n *= 2;` (or `n++`, etc.) inside the loop body.
+5. Variable `n` is never incremented leading to an infinite loop. Fix: add `n *= 2;` (or `n++`, etc.) inside the loop body.
 
 6.
 ```java
