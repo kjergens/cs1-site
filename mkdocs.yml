@@ -7,7 +7,7 @@ theme:
 
 markdown_extensions:
   - pymdownx.highlight:
-      anchor_linenums: true
+      anchor_linenums: false
       linenums: false
   - pymdownx.superfences
   - tables
@@ -17,28 +17,28 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Unit 1  Binary, ASCII, and Scratch:
-    - "1.1 How Computers Work + ASCII": unit1/notes_01_how_computers_work.md
-    - "1.2 Binary Numbers": unit1/notes_02_binary_numbers.md
-    - "1.3 Binary Addition & Multiplication": unit1/notes_03_binary_operations.md
-    - "1.4 Scratch": unit1/notes_04_scratch.md
-    - "Check Your Understanding": unit1/unit1_check_understanding.md
+    - "Chapter 1 How Computers Work + ASCII": unit1/notes_01_how_computers_work.md
+    - "Chapter 2 Binary Numbers": unit1/notes_02_binary_numbers.md
+    - "Chapter 3 Binary Addition & Multiplication": unit1/notes_03_binary_operations.md
+    - "Chapter 4 Scratch": unit1/notes_04_scratch.md
+    - "Unit 1 Check Your Understanding": unit1/unit1_check_understanding.md
   - Unit 2  Java Basics:
-    - "2.1 Structure, Printing & Operators": unit2/notes_01_java_structure.md
-    - "2.2 Variables and Data Types": unit2/notes_02_variables.md
-    - "2.3 Re-assignment & Compound Assignment": unit2/notes_03_operators_reassignment.md
-    - "2.4 Scanner and User Input": unit2/notes_04_scanner.md
-    - "Check Your Understanding": unit2/unit2_check_understanding.md
+    - "Chapter 1 Structure, Printing & Operators": unit2/notes_01_java_structure.md
+    - "Chapter 2 Variables and Data Types": unit2/notes_02_variables.md
+    - "Chapter 3 Re-assignment & Compound Assignment": unit2/notes_03_operators_reassignment.md
+    - "Chapter 4 Scanner and User Input": unit2/notes_04_scanner.md
+    - "Unit 2 Check Your Understanding": unit2/unit2_check_understanding.md
   - Unit 3  Conditionals and While Loops:
-    - "3.1 Conditional Code Blocks": unit3/notes_01_conditionals.md
-    - "3.2 While Loops": unit3/notes_02_while_loops.md
-    - "Check Your Understanding": unit3/unit3_check_understanding.md
+    - "Chapter 1 Conditional Code Blocks": unit3/notes_01_conditionals.md
+    - "Chapter 2 While Loops": unit3/notes_02_while_loops.md
+    - "Unit 3 Check Your Understanding": unit3/unit3_check_understanding.md
   - Unit 4  For Loops:
-    - "4.1 For Loops": unit4/notes_01_for_loops.md
-    - "Check Your Understanding": unit4/unit4_check_understanding.md
+    - "Chapter 1 For Loops": unit4/notes_01_for_loops.md
+    - "Unit 4 Check Your Understanding": unit4/unit4_check_understanding.md
   - Unit 5  Strings and Math:
-    - "5.1 Strings": unit5/notes_01_strings.md
-    - "5.2 The Math Class": unit5/notes_02_math.md
-    - "Check Your Understanding": unit5/unit5_check_understanding.md
+    - "Chapter 1 Strings": unit5/notes_01_strings.md
+    - "Chapter 2 The Math Class": unit5/notes_02_math.md
+    - "Unit 5 Check Your Understanding": unit5/unit5_check_understanding.md
   - Projects:
     - "Project 1: Scratch Remix": projects/project1.md
     - "Project 2: Word Guessing Adventure": projects/project2.md
