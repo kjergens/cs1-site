@@ -34,6 +34,7 @@ nav:
     - "Unit 3 Check Your Understanding": unit3/unit3_check_understanding.md
   - Unit 4 - For Loops:
     - "Chapter 1: For Loops": unit4/notes_01_for_loops.md
+    - "Chapter 2: Advanced For Loops": unit4/notes_02_advanced_for_loops.md
     - "Unit 4 Check Your Understanding": unit4/unit4_check_understanding.md
   - Unit 5 - Strings and Math:
     - "Chapter 1: Strings": unit5/notes_01_strings.md

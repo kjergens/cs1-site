@@ -12,6 +12,9 @@
 10. What does `Math.pow(3, 4)` return?
 11. What does `Math.ceil(2.001)` return?
 12. What is the range of values returned by `Math.random()`?
+13. What does `"hello".charAt(1)` return?
+14. What does `"hello world".indexOf("world")` return? What about `"hello world".indexOf("xyz")`?
+15. What does `"cat".replace('c', 'b')` return?
 
 ---
 
@@ -29,3 +32,6 @@
 10. `81.0`
 11. `3.0`
 12. `0.0` up to but not including `1.0`
+13. `'e'` — index 1 is the second character
+14. `6` for `"world"` (it starts at index 6); `-1` for `"xyz"` (not found)
+15. `"bat"`
