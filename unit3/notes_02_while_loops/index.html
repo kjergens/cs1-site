@@ -43,7 +43,7 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">Unit 1":"  Binary, ASCII, and Scratch</span></p>
+              <p class="caption"><span class="caption-text">Unit 1 - Binary, ASCII, and Scratch</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_01_how_computers_work/">Chapter 1: How Computers Work</a>
                   </li>
@@ -56,7 +56,7 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../unit1/unit1_check_understanding/">Unit 1 Check Your Understanding</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Unit 2":"  Java Basics</span></p>
+              <p class="caption"><span class="caption-text">Unit 2 - Java Basics</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_01_java_structure/">Chapter 1: Structure, Printing & Operators</a>
                   </li>
@@ -69,37 +69,37 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../unit2/unit2_check_understanding/">Unit 2 Check Your Understanding</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Unit 3":"  Conditionals and While Loops</span></p>
+              <p class="caption"><span class="caption-text">Unit 3 - Conditionals and While Loops</span></p>
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../notes_01_conditionals/">Chapter 1: Conditional Code Blocks</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Chapter 2: While Loops</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#321-key-concept-repetition">3.2.1 Key Concept: Repetition</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-1-key-concept-repetition">Section 1: Key Concept: Repetition</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#322-syntax">3.2.2 Syntax</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-2-syntax">Section 2: Syntax</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#323-example-counting-with-a-while-loop">3.2.3 Example: Counting with a While Loop</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-3-example-counting-with-a-while-loop">Section 3: Example: Counting with a While Loop</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#324-the-infinite-loop-problem">3.2.4 The Infinite Loop Problem</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-4-the-infinite-loop-problem">Section 4: The Infinite Loop Problem</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#325-key-points">3.2.5 Key Points</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-5-key-points">Section 5: Key Points</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#326-when-to-use-while-vs-for">3.2.6 When to Use While vs. For</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-6-when-to-use-while-vs-for">Section 6: When to Use While vs. For</a>
     </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../unit3_check_understanding/">Unit 3 Check Your Understanding</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Unit 4":"  For Loops</span></p>
+              <p class="caption"><span class="caption-text">Unit 4 - For Loops</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_01_for_loops/">Chapter 1: For Loops</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../unit4/unit4_check_understanding/">Unit 4 Check Your Understanding</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Unit 5":"  Strings and Math</span></p>
+              <p class="caption"><span class="caption-text">Unit 5 - Strings and Math</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_01_strings/">Chapter 1: Strings</a>
                   </li>
@@ -129,7 +129,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Unit 3":"  Conditionals and While Loops</li>
+          <li class="breadcrumb-item">Unit 3 - Conditionals and While Loops</li>
       <li class="breadcrumb-item active">Chapter 2: While Loops</li>
     <li class="wy-breadcrumbs-aside">
     </li>
@@ -141,17 +141,17 @@
               
                 <h1 id="while-loops">While Loops</h1>
 <hr />
-<h2 id="321-key-concept-repetition">3.2.1 Key Concept: Repetition</h2>
+<h2 id="section-1-key-concept-repetition">Section 1: Key Concept: Repetition</h2>
 <p>An <code>if</code> statement runs code once — if the condition is true, the block runs and the program moves on.</p>
 <p>A <code>while</code> loop is different: after the block runs, the program goes <strong>back to check the condition again</strong>. If it's still true, the block runs again. This continues until the condition becomes false.</p>
 <hr />
-<h2 id="322-syntax">3.2.2 Syntax</h2>
+<h2 id="section-2-syntax">Section 2: Syntax</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="c1">// code to repeat</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
 </code></pre></div>
 <hr />
-<h2 id="323-example-counting-with-a-while-loop">3.2.3 Example: Counting with a While Loop</h2>
+<h2 id="section-3-example-counting-with-a-while-loop">Section 3: Example: Counting with a While Loop</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Number: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
@@ -173,7 +173,7 @@
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>Number: 4
 </code></pre></div></p>
 <hr />
-<h2 id="324-the-infinite-loop-problem">3.2.4 The Infinite Loop Problem</h2>
+<h2 id="section-4-the-infinite-loop-problem">Section 4: The Infinite Loop Problem</h2>
 <p>If the condition never becomes false, the loop runs forever — an <strong>infinite loop</strong>. This usually means the loop variable is never updated.</p>
 <p><strong>Broken — infinite loop:</strong>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
@@ -190,7 +190,7 @@
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">}</span>
 </code></pre></div></p>
 <hr />
-<h2 id="325-key-points">3.2.5 Key Points</h2>
+<h2 id="section-5-key-points">Section 5: Key Points</h2>
 <ul>
 <li>The loop checks its condition <strong>before</strong> every iteration</li>
 <li>If the condition is <code>true</code>, the loop body executes</li>
@@ -199,7 +199,7 @@
 <li>A well-designed while loop ensures the condition eventually becomes false</li>
 </ul>
 <hr />
-<h2 id="326-when-to-use-while-vs-for">3.2.6 When to Use While vs. For</h2>
+<h2 id="section-6-when-to-use-while-vs-for">Section 6: When to Use While vs. For</h2>
 <p>Use a <code>while</code> loop when you <strong>don't know in advance</strong> how many times the loop will run — for example, reading input until the user types <code>"quit"</code>.</p>
 <p>Use a <code>for</code> loop when you <strong>do know</strong> how many times it will run. (Covered in Unit 4.)</p>
 <hr />
