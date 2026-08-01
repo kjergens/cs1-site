@@ -59,3 +59,9 @@ Computers only understand numbers. So how do they store text?
 | space | 32 |
 
 When your program stores the String `"Hello"`, the computer stores the numbers `72 101 108 108 111`. Text is always numbers underneath.
+
+---
+
+## Unit 1 Homework 1
+
+*Assigned Class 1 · Due Class 1 in class*

@@ -1,4 +1,4 @@
-# Binary Addition and Multiplication
+# Binary Arithmetic
 
 ---
 
@@ -51,7 +51,7 @@ Key rule: multiplying by `0` gives a row of all zeros; multiplying by `1` copies
 
 ---
 
-## Homework 2 — Binary Addition & Multiplication
+## Unit 1 Chapter 3 Homework
 
 *Assigned Class 2 · Due Class 3*
 

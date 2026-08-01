@@ -100,7 +100,7 @@ Every program you write this year — in Scratch or Java — uses these same bui
 
 ---
 
-## Homework 3 — Getting to Know Block Coding (Scratch)
+## Unit 1 Chapter 4 Homework
 
 *Assigned Class 2 · Due Class 3 · Submission: upload your `.sb3` file to the Schoology assignment*
 
