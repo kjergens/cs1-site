@@ -2,7 +2,7 @@
 
 ---
 
-## 1.2.1 Binary — Everything Is a Binary Number
+## Section 1: Binary — Everything Is a Binary Number
 
 Numbers themselves are stored in **binary** (base 2) — using only the digits `0` and `1`.
 
@@ -36,7 +36,7 @@ Each `0` or `1` is called a **bit**. 8 bits = 1 **byte**.
 
 ---
 
-## 1.2.2 Converting Binary → Decimal
+## Section 2: Converting Binary → Decimal
 
 Write out the positional values (powers of 2), multiply each bit, then add.
 
@@ -59,7 +59,7 @@ Write out the positional values (powers of 2), multiply each bit, then add.
 
 ---
 
-## 1.2.3 Converting Decimal → Binary
+## Section 3: Converting Decimal → Binary
 
 Repeatedly divide by 2 and record the remainders. Read remainders bottom to top.
 
@@ -78,7 +78,7 @@ Check: `1101` = 8 + 4 + 0 + 1 = 13 ✓
 
 ---
 
-## Unit 1 Homework 2
+## Unit 1 Chapter 2 Homework
 
 *Assigned Class 1 · Due Class 2*
 

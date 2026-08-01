@@ -2,7 +2,7 @@
 
 ---
 
-## 1.4.1 What Is Scratch?
+## Section 1: What Is Scratch?
 
 Scratch is a **block-based visual programming language**. Instead of typing code, you drag and snap together colored blocks that represent instructions. The result is a program — the same fundamental thing you'll build in Java.
 
@@ -10,7 +10,7 @@ You've used Scratch in middle school. In this unit, we're using it deliberately:
 
 ---
 
-## 1.4.2 Core Programming Concepts in Scratch (and in Java)
+## Section 2: Core Programming Concepts in Scratch (and in Java)
 
 ### 1. Sequence
 
@@ -84,7 +84,7 @@ public static void main(String[] args) {
 
 ---
 
-## 1.4.3 The Bridge
+## Section 3: From Scratch to Java
 
 | Scratch concept | Java equivalent |
 |---|---|

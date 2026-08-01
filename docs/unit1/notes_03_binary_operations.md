@@ -2,7 +2,7 @@
 
 ---
 
-## 1.3.1 Binary Addition
+## Section 1: Binary Addition
 
 Binary addition uses the same rules as decimal, just with 2 digits:
 
@@ -27,7 +27,7 @@ Key rule: `1 + 1 = 10` in binary (write 0, carry 1). `1 + 1 + 1 = 11` (write 1, 
 
 ---
 
-## 1.3.2 Binary Multiplication
+## Section 2: Binary Multiplication
 
 Binary multiplication works like decimal long multiplication — multiply by each digit and shift, then add the partial products. Since binary digits are only `0` or `1`, each partial product is either all zeros (if that digit is 0) or a copy of the original number shifted left (if that digit is 1).
 
