@@ -66,13 +66,13 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Chapter 4: Scanner and User Input</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#241-why-scanner">2.4.1 Why Scanner?</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-1-why-scanner">Section 1: Why Scanner?</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#242-import-do-this-once-at-the-top">2.4.2 Import (do this once at the top)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-2-import-do-this-once-at-the-top">Section 2: Import (do this once at the top)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#243-create-the-scanner-object">2.4.3 Create the Scanner Object</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-3-create-the-scanner-object">Section 3: Create the Scanner Object</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#244-reading-different-kinds-of-input">2.4.4 Reading Different Kinds of Input</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-4-reading-different-kinds-of-input">Section 4: Reading Different Kinds of Input</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#read-one-word-next">Read one word — next()</a>
     </li>
@@ -84,7 +84,7 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#245-mini-examples">2.4.5 Mini Examples</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-5-mini-examples">Section 5: Mini Examples</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#example-1-reading-a-full-line-as-a-string">Example 1 — Reading a full line as a String</a>
     </li>
@@ -92,9 +92,9 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#246-important-the-nextline-trap">2.4.6 Important: The nextLine() Trap</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-6-important-the-nextline-trap">Section 6: Important: The nextLine() Trap</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#247-converting-strings-to-int-or-double">2.4.7 Converting Strings to int or double</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-7-converting-strings-to-int-or-double">Section 7: Converting Strings to int or double</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#string-int">String → int</a>
     </li>
@@ -102,7 +102,7 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#homework-8-scanner-and-user-input">Homework 8 — Scanner and User Input</a>
+    <li class="toctree-l2"><a class="reference internal" href="#unit-2-chapter-4-homework">Unit 2 Chapter 4 Homework</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#part-1-scanner-methods">Part 1: Scanner Methods</a>
     </li>
@@ -177,25 +177,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="scanner-and-user-input">Scanner and User Input</h1>
+                <h1 id="chapter-4-scanner-and-user-input">Chapter 4: Scanner and User Input</h1>
 <hr />
-<h2 id="241-why-scanner">2.4.1 Why Scanner?</h2>
+<h2 id="section-1-why-scanner">Section 1: Why Scanner?</h2>
 <ul>
 <li>Lets your program talk to the user</li>
 <li>Reads what the user types on the keyboard</li>
 <li>Can read different types: <code>String</code>, <code>int</code>, <code>double</code>, etc.</li>
 </ul>
 <hr />
-<h2 id="242-import-do-this-once-at-the-top">2.4.2 Import (do this once at the top)</h2>
+<h2 id="section-2-import-do-this-once-at-the-top">Section 2: Import (do this once at the top)</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
 </code></pre></div>
 <hr />
-<h2 id="243-create-the-scanner-object">2.4.3 Create the Scanner Object</h2>
+<h2 id="section-3-create-the-scanner-object">Section 3: Create the Scanner Object</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">Scanner</span><span class="w"> </span><span class="n">scan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span><span class="w">   </span><span class="c1">// &quot;System.in&quot; = keyboard</span>
 </code></pre></div>
 <p><code>scan</code> is now your input object. You can name it anything (<code>scan</code>, <code>input</code>, <code>keyboard</code>), but be consistent.</p>
 <hr />
-<h2 id="244-reading-different-kinds-of-input">2.4.4 Reading Different Kinds of Input</h2>
+<h2 id="section-4-reading-different-kinds-of-input">Section 4: Reading Different Kinds of Input</h2>
 <h3 id="read-one-word-next">Read one word — <code>next()</code></h3>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">String</span><span class="w"> </span><span class="n">word</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scan</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
 </code></pre></div>
@@ -213,7 +213,7 @@ Reads an integer. If the user types <code>42</code>, <code>age</code> stores the
 </code></pre></div>
 Reads a decimal number. If the user types <code>3.14</code>, <code>price</code> stores the <code>double</code> <code>3.14</code>.</p>
 <hr />
-<h2 id="245-mini-examples">2.4.5 Mini Examples</h2>
+<h2 id="section-5-mini-examples">Section 5: Mini Examples</h2>
 <h3 id="example-1-reading-a-full-line-as-a-string">Example 1 — Reading a full line as a String</h3>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
@@ -247,7 +247,7 @@ Sample run:
 <a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="p">}</span>
 </code></pre></div>
 <hr />
-<h2 id="246-important-the-nextline-trap">2.4.6 Important: The nextLine() Trap</h2>
+<h2 id="section-6-important-the-nextline-trap">Section 6: Important: The nextLine() Trap</h2>
 <p>When <code>nextLine()</code> comes <strong>after</strong> <code>next()</code>, <code>nextInt()</code>, or <code>nextDouble()</code>, it often <strong>skips</strong> a line.</p>
 <p><strong>Broken code:</strong>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter your age: &quot;</span><span class="p">);</span>
@@ -265,7 +265,7 @@ Sample run:
 </code></pre></div></p>
 <p><strong>Rule of thumb:</strong> If you go from <code>nextInt()</code> or <code>nextDouble()</code> → <code>nextLine()</code>, add one extra <code>nextLine()</code> in between.</p>
 <hr />
-<h2 id="247-converting-strings-to-int-or-double">2.4.7 Converting Strings to int or double</h2>
+<h2 id="section-7-converting-strings-to-int-or-double">Section 7: Converting Strings to int or double</h2>
 <p><code>nextLine()</code> always returns a <code>String</code>. If you need a number, convert after:</p>
 <h3 id="string-int">String → int</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">String</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scan</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
@@ -276,7 +276,7 @@ Sample run:
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Double</span><span class="p">.</span><span class="na">parseDouble</span><span class="p">(</span><span class="n">text</span><span class="p">);</span>
 </code></pre></div>
 <hr />
-<h2 id="homework-8-scanner-and-user-input">Homework 8 — Scanner and User Input</h2>
+<h2 id="unit-2-chapter-4-homework">Unit 2 Chapter 4 Homework</h2>
 <p><em>Assigned Class 10 · Due Class 11</em></p>
 <h3 id="part-1-scanner-methods">Part 1: Scanner Methods</h3>
 <p>Match each thing you want to read to the correct Scanner method (word bank: <code>nextInt()</code>, <code>nextDouble()</code>, <code>next()</code>, <code>nextLine()</code>):</p>

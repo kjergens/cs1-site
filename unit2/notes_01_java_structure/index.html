@@ -60,17 +60,17 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Chapter 1: Structure, Printing & Operators</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#211-program-structure">2.1.1 Program Structure</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-1-program-structure">Section 1: Program Structure</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#212-printing">2.1.2 Printing</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-2-printing">Section 2: Printing</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#213-arithmetic-operations">2.1.3 Arithmetic Operations</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-3-arithmetic-operations">Section 3: Arithmetic Operations</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#214-comparison-operators">2.1.4 Comparison Operators</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-4-comparison-operators">Section 4: Comparison Operators</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#unit-2-homework-0-java-to-scratch-teacher-will-give-you-worksheet">Unit 2 Homework 0 — Java to Scratch (teacher will give you worksheet)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#unit-2-chapter-1-worksheet-java-to-scratch">Unit 2 Chapter 1 worksheet — Java to Scratch</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#unit-2-homework-1-java-structure-and-operators">Unit 2 Homework 1 — Java Structure and Operators</a>
+    <li class="toctree-l2"><a class="reference internal" href="#unit-2-chapter-1-homework">Unit 2 Chapter 1 Homework</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#part-1-java-program-structure">Part 1: Java Program Structure</a>
     </li>
@@ -153,9 +153,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="java-program-structure-printing-and-operators">Java Program Structure, Printing, and Operators</h1>
+                <h1 id="chapter-1-java-program-structure-printing-and-operators">Chapter 1: Java Program Structure, Printing, and Operators</h1>
 <hr />
-<h2 id="211-program-structure">2.1.1 Program Structure</h2>
+<h2 id="section-1-program-structure">Section 1: Program Structure</h2>
 <p>Every Java program requires a class definition. The <code>main</code> method is the entry point — where your program starts running.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -170,7 +170,7 @@
 - Java is case-sensitive
 - Comments: <code>//</code> for single-line, <code>/* */</code> for multi-line</p>
 <hr />
-<h2 id="212-printing">2.1.2 Printing</h2>
+<h2 id="section-2-printing">Section 2: Printing</h2>
 <p><strong><code>System.out.println()</code></strong> — prints text or values with a new line at the end.</p>
 <p><strong><code>System.out.print()</code></strong> — prints without a new line.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span><span class="w">       </span><span class="c1">// Prints: Hello, World!</span>
@@ -181,7 +181,7 @@
 - Use <code>+</code> to concatenate strings with variables or other strings
 - <code>println</code> adds a new line; <code>print</code> does not</p>
 <hr />
-<h2 id="213-arithmetic-operations">2.1.3 Arithmetic Operations</h2>
+<h2 id="section-3-arithmetic-operations">Section 3: Arithmetic Operations</h2>
 <table>
 <thead>
 <tr>
@@ -230,7 +230,7 @@
 - Modulus (<code>%</code>) returns the remainder after division
 - Operator precedence: <code>*</code>, <code>/</code>, <code>%</code> before <code>+</code>, <code>-</code>. Use <code>()</code> to override.</p>
 <hr />
-<h2 id="214-comparison-operators">2.1.4 Comparison Operators</h2>
+<h2 id="section-4-comparison-operators">Section 4: Comparison Operators</h2>
 <p>Java can compare values and produce a <code>boolean</code> result (<code>true</code> or <code>false</code>).</p>
 <table>
 <thead>
@@ -289,9 +289,9 @@
 - Don't confuse <code>==</code> (comparison) with <code>=</code> (assignment) — mixing these up is one of the most common beginner bugs
 - Java converts <code>boolean</code>s to text automatically, so you can combine comparisons with strings using <code>+</code>: <code>"Is 10 &gt; 5? " + (10 &gt; 5)</code> prints <code>Is 10 &gt; 5? true</code></p>
 <hr />
-<h2 id="unit-2-homework-0-java-to-scratch-teacher-will-give-you-worksheet">Unit 2 Homework 0 — Java to Scratch (teacher will give you worksheet)</h2>
+<h2 id="unit-2-chapter-1-worksheet-java-to-scratch">Unit 2 Chapter 1 worksheet — Java to Scratch</h2>
 <hr />
-<h2 id="unit-2-homework-1-java-structure-and-operators">Unit 2 Homework 1 — Java Structure and Operators</h2>
+<h2 id="unit-2-chapter-1-homework">Unit 2 Chapter 1 Homework</h2>
 <p>There are five parts, plus an ungraded bonus for optional enrichment. Each part has a short background, then exercises — read the background, then answer the exercises that follow.</p>
 <h3 id="part-1-java-program-structure">Part 1: Java Program Structure</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyFirstProgram</span><span class="w"> </span><span class="p">{</span>
