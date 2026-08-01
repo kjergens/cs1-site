@@ -31,11 +31,39 @@
 
 **4.** `15 >= (20 - 3)` **false**
 
-12. `import java.util.Scanner;`
-13. `Scanner input = new Scanner(System.in);`
-14. True
-15. The `String` `"42"` — not the number
-16. `nextInt()` leaves a newline in the buffer; `nextLine()` reads it immediately and returns `""`
-17. Add `scan.nextLine();` after `nextInt()` (or `nextDouble()`) to consume the leftover newline
-18. `Integer.parseInt("999")`
+**5.**
+```java
+int a = 4;
+int b = 6;
+System.out.println(a + b);
+```
+
+**6.**
+```java
+double a = 4.0;
+double b = 6.0;
+System.out.println(a / b);
+```
+
+**7.**
+```java
+System.out.println("Your Name");
+System.out.println(17);
+```
+
+**8.** `n = 3` — `8 / 3` is integer division (`2`, remainder dropped), then `2 + 1 = 3`
+
+**9.** `x -= 5;`
+
+**10.** `3`
+
+**11.** No, `b` does not change — `int b = a;` copies `a`'s value (`5`) into `b` at that moment. Changing `a` afterward doesn't affect `b`, since they're separate variables.
+
+**12.**  `import java.util.Scanner;`
+**13.** `Scanner input = new Scanner(System.in);`
+**14.** True
+**15.** The `String` `"42"` — not the number
+**16.** `nextInt()` leaves a newline in the buffer; `nextLine()` reads it immediately and returns `""`
+**17.** Add `scan.nextLine();` after `nextInt()` (or `nextDouble()`) to consume the leftover newline
+**18.** `Integer.parseInt("999")`
 
