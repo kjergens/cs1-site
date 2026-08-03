@@ -66,7 +66,7 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 
     *Assigned Class 1 · Due Class 1 in class · Graded as Community Building/Class Engagement — try your best, no points off for incorrect answers*
 
-    #### Part 1: Terminology
+    #### Part A: Terminology
 
     Match each description to its component: `CPU`, `RAM`, `Hard Drive/SSD`, `Motherboard`, `Monitor`.
 
@@ -76,7 +76,7 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	4. Long-term storage for files, programs, and the operating system
 	5. Connects all components, allowing them to communicate
 
-	#### Part 2: True/False (+ short answer)
+	#### Part B: True/False (+ short answer)
 
 	Transistors are tiny electronic switches that control the flow of electricity in a computer. They're the foundation of modern computing.
 
@@ -86,7 +86,7 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	4. True or False: Transistors work by using materials like silicon to control electrical flow.
 	5. **Short answer:** If transistors are like light switches, how do you think combining millions of them allows a computer to perform complex tasks like playing a video game?
 
-	#### Part 3: Fill in the blanks (+ short answer)
+	#### Part C: Fill in the blanks (+ short answer)
 
 	1. **Timeline:** fill in the blanks using each term once — `1943`, `ENIAC`, `1971`, `Microprocessor`, `1984`, `Apple Macintosh`, `1822`, `Difference Engine`.
 	    - ______: Charles Babbage designs the ______, a mechanical calculator considered an early precursor to modern computers.
@@ -95,13 +95,13 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	    - ______: The ______ is released, making personal computers user-friendly with a graphical interface.
 	2. **Short answer:** The ENIAC weighed over 30 tons and took up an entire room! What allowed computers to become small enough to fit in your pocket?
 
-	#### Part 4: Binary
+	#### Part D: Binary
 
 	Computers don't think like humans, but they process information using binary code (0s and 1s). Transistors help create these 0s and 1s by controlling electrical signals.
 
 	Convert the following decimal numbers to binary (hint: divide by 2 repeatedly and note the remainders):
 
-	- `5` = ______ (binary)
-	- `12` = ______ (binary)
-	- Your age = ______ (binary)
+	1. `5` = ______ (binary)
+	2. `12` = ______ (binary)
+	3. Your age = ______ (binary)
 
