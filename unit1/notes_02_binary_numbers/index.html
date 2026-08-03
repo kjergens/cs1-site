@@ -201,62 +201,68 @@
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Value: 1×8 + 0×4 + 1×2 + 1×1 = 11
 </code></pre></div>
 <p><strong>Common powers of 2 to memorize:</strong></p>
-<p>128   64   32   16    8    4    2    1
-  2⁷   2⁶   2⁵   2⁴   2³   2²   2¹   2⁰</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a> 128   64   32   16    8    4    2    1
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  2⁷   2⁶   2⁵   2⁴   2³   2²   2¹   2⁰
+</code></pre></div>
 <hr />
 <h3 id="convert-to-binary">Convert to binary</h3>
 <h4 id="division-method">Division method</h4>
 <p>Repeatedly divide by 2 and record the remainders. Read remainders bottom to top.</p>
 <p><strong>Example: 13 → binary</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>13 ÷ 2 = 6  remainder 1  ← last bit
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a> 6 ÷ 2 = 3  remainder 0
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a> 3 ÷ 2 = 1  remainder 1
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a> 1 ÷ 2 = 0  remainder 1  ← first bit
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>Read bottom to top: 1101
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>13 ÷ 2 = 6  remainder 1  ← last bit
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a> 6 ÷ 2 = 3  remainder 0
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a> 3 ÷ 2 = 1  remainder 1
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a> 1 ÷ 2 = 0  remainder 1  ← first bit
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>Read bottom to top: 1101
 </code></pre></div>
 <p>Check: <code>1101</code> = 8 + 4 + 0 + 1 = 13 ✓</p>
 <h4 id="places-method">Places method</h4>
 <p>Set up your powers of two like this:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>  _    _    _    _    _
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a> 16    8    4    2    1
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  2⁴   2³   2²   2¹   2⁰
-</code></pre></div>
-<p>Start with the left (most significant) digit, and fill in a 1 or 0. For example for the number <code>13</code></p>
-<ol>
-<li>The left-most digit is 16. 16 is bigger than 13 so put 0:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>  0    _    _    _    _
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>  _    _    _    _    _
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a> 16    8    4    2    1
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  2⁴   2³   2²   2¹   2⁰
 </code></pre></div>
+<p>Start with the left (most significant) digit, and fill in a 1 or 0. For example for the number <code>13</code></p>
 <ol>
 <li>
+<p>The left-most digit is 16. 16 is bigger than 13 so put 0:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>  0 
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  _    _    _    _    _
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a> 16    8    4    2    1
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  2⁴   2³   2²   2¹   2⁰
+</code></pre></div></p>
+</li>
+<li>
 <p>The next digit is 8. 8 fits into to 13 so put a 1:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>  0    1    _    _    _
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a> 16    8    4    2    1
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  2⁴   2³   2²   2¹   2⁰
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>  0    1    
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  _    _    _    _    _
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a> 16    8    4    2    1
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  2⁴   2³   2²   2¹   2⁰
 </code></pre></div></p>
 </li>
 <li>
 <p>The 8 is accounted for so (13 - 8) = 5 remains. The next spot is 4. 4 fits into 5 so put 1 there:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>  0    1    1    _    _
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a> 16    8    4    2    1
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  2⁴   2³   2²   2¹   2⁰
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>  0    1    1   
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  _    _    _    _    _
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a> 16    8    4    2    1
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  2⁴   2³   2²   2¹   2⁰
 </code></pre></div></p>
 </li>
 <li>
 <p>4 is accounted for so (5 - 4) = 1 remains. The next spot is 2. 2 is bigger than 1 so put a 0 there:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>  0    1    1    0    _
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a> 16    8    4    2    1
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  2⁴   2³   2²   2¹   2⁰
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>  0    1    1    0 
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  _    _    _    _    _
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a> 16    8    4    2    1
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  2⁴   2³   2²   2¹   2⁰
 </code></pre></div></p>
 </li>
 <li>
 <p>1 still remains. The next spot is 1. 1 fits into 1 so put a 1 there:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>  0    1    1    0    1
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a> 16    8    4    2    1
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  2⁴   2³   2²   2¹   2⁰
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>  0    1    1    0    1
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>  _    _    _    _    _
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a> 16    8    4    2    1
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  2⁴   2³   2²   2¹   2⁰
 </code></pre></div></p>
 </li>
 </ol>
@@ -283,18 +289,18 @@
 <ol>
 <li>Add the binary numbers <code>1011</code> and <code>1101</code>. Show the carry row.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>  carry:
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>   1011
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>+  1101
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>------
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>  carry:
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>   1011
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>+  1101
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>------
 </code></pre></div>
 <ol>
 <li>Add the binary numbers <code>11101</code> and <code>11011</code>. Show the carry row.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>  carry:
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>  11101
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>+ 11011
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>-------
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>  carry:
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>  11101
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>+ 11011
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>-------
 </code></pre></div>
 <ol>
 <li><strong>Extra Challenge: (ungraded)</strong> Convert <code>10011</code> and <code>10101</code> from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.</li>
