@@ -78,41 +78,44 @@ Check: `1101` = 8 + 4 + 0 + 1 = 13 ✓
 
 ---
 
-## Unit 1 Chapter 2 Homework
+## Homework
 
-*Assigned Class 1 · Due Class 2*
+!!! attention
+    ### Unit 1 Chapter 2 Homework
 
-**Instructions:** Show all work. For conversion problems, write out the place values (powers of 2). For addition problems, show the carry row above each column.
+    *Assigned Class 1 · Due Class 2*
 
-### Part 1: Converting Binary to Decimal
+    **Instructions:** Show all work. For conversion problems, write out the place values (powers of 2). For addition problems, show the carry row above each column.
 
-1. Convert the binary number `110101` to decimal. Show each bit's place value.
-2. What is the highest decimal value that can be represented with a 6-bit binary number? Explain why in one sentence.
-3. In the binary number `10110`, list the decimal value represented by each bit position, from right (least significant) to left (most significant).
+    #### Part A: Converting Binary to Decimal
 
-### Part 2: Converting Decimal to Binary
+    1. Convert the binary number `110101` to decimal. Show each bit's place value.
+    2. What is the highest decimal value that can be represented with a 6-bit binary number? Explain why in one sentence.
+    3. In the binary number `10110`, list the decimal value represented by each bit position, from right (least significant) to left (most significant).
 
-4. Convert the decimal number `47` to binary. Show your work (repeated division or place-value method).
-5. Convert the decimal number `29` to binary. Then count how many 1s appear in your answer.
+    #### Part B: Converting Decimal to Binary
 
-### Part 3: Binary Addition
+    4. Convert the decimal number `47` to binary. Show your work (repeated division or place-value method).
+    5. Convert the decimal number `29` to binary. Then count how many 1s appear in your answer.
 
-6. Add the binary numbers `1011` and `1101`. Show the carry row.
+    #### Part C: Binary Addition
 
-```
-  carry:
-   1011
-+  1101
-------
-```
+    6. Add the binary numbers `1011` and `1101`. Show the carry row.
 
-7. Add the binary numbers `11101` and `11011`. Show the carry row.
+    ```
+      carry:
+       1011
+    +  1101
+    ------
+    ```
 
-```
-  carry:
-  11101
-+ 11011
--------
-```
+    7. Add the binary numbers `11101` and `11011`. Show the carry row.
 
-8. **Challenge:** Convert `10011` and `10101` from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.
+    ```
+      carry:
+      11101
+    + 11011
+    -------
+    ```
+
+    8. **Challenge:** Convert `10011` and `10101` from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.

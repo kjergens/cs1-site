@@ -120,110 +120,113 @@ Always use curly braces. Omitting them is a common source of bugs.
 
 ---
 
-## Unit 4 Chapter 1 Homework
+## Homework
 
-### Section 1: Vocabulary
+!!! attention
+    ### Unit 4 Chapter 1 Homework
 
-Match each term to its definition:
+    #### Section 1: Vocabulary
 
-- Iteration
-- Loop Variable (or Counter)
-- Initialization
-- Condition
-- Update (or Increment/Decrement)
-- Loop Body
+    Match each term to its definition:
 
-**Definitions:**
+    - Iteration
+    - Loop Variable (or Counter)
+    - Initialization
+    - Condition
+    - Update (or Increment/Decrement)
+    - Loop Body
 
-- A. The part of the loop that sets the starting value, like `int i = 0;`.
-- B. The Boolean expression checked before each iteration, like `i < 10`.
-- C. The code inside the curly braces `{}` that executes repeatedly.
-- D. A single execution of the loop body.
-- E. The statement that changes the loop variable after each iteration, like `i++`.
-- F. The variable that controls the loop, often starting at 0 and increasing.
+    **Definitions:**
 
-### Section 2: Fill in the Blank
+    - A. The part of the loop that sets the starting value, like `int i = 0;`.
+    - B. The Boolean expression checked before each iteration, like `i < 10`.
+    - C. The code inside the curly braces `{}` that executes repeatedly.
+    - D. A single execution of the loop body.
+    - E. The statement that changes the loop variable after each iteration, like `i++`.
+    - F. The variable that controls the loop, often starting at 0 and increasing.
 
-1. Fill in the missing parts of this for loop, which is intended to run 10 times:
-```java
-for (__________ = 0; __________ < 10; __________) {
-    // code (not shown)
-}
-```
-2. The __________ section runs only once at the beginning of the loop.
-3. If the __________ is false at the start, the loop body won't execute even once.
-4. The __________ happens at the end of each iteration to modify the loop variable.
-5. For loops are ideal when you know the exact __________ of times you want to repeat code.
-6. Omitting the curly braces `{}` in a for loop will only repeat the __________ statement immediately after it.
+    #### Section 2: Fill in the Blank
 
-### Section 3: Free Response Questions
+    1. Fill in the missing parts of this for loop, which is intended to run 10 times:
+    ```java
+    for (__________ = 0; __________ < 10; __________) {
+        // code (not shown)
+    }
+    ```
+    2. The `__________` section runs only once at the beginning of the loop.
+    3. If the `__________` is false at the start, the loop body won't execute even once.
+    4. The `__________` happens at the end of each iteration to modify the loop variable.
+    5. For loops are ideal when you know the exact `__________` of times you want to repeat code.
+    6. Omitting the curly braces `{}` in a for loop will only repeat the `__________` statement immediately after it.
 
-1. Explain the three main parts of a for loop and what each does.
-2. What is the output of the following code?
-```java
-for (int i = 1; i <= 5; i++) {
-    System.out.print(i + " ");
-}
-```
-3. What happens if you forget the update statement in a for loop?
+    #### Section 3: Free Response Questions
 
-### Section 4: Converting While Loops to For Loops
+    1. Explain the three main parts of a for loop and what each does.
+    2. What is the output of the following code?
+    ```java
+    for (int i = 1; i <= 5; i++) {
+        System.out.print(i + " ");
+    }
+    ```
+    3. What happens if you forget the update statement in a for loop?
 
-Rewrite each while loop below as an equivalent for loop. Keep the behavior identical.
+    #### Section 4: Converting While Loops to For Loops
 
-1.
-```java
-int count = 0;
+    Rewrite each while loop below as an equivalent for loop. Keep the behavior identical.
 
-while (count < 10) {
-    System.out.println("Hello!");
-    count++;
-}
-```
+    1.
+    ```java
+    int count = 0;
 
-2.
-```java
-int num = 10;
+    while (count < 10) {
+        System.out.println("Hello!");
+        count++;
+    }
+    ```
 
-while (num > 0) {
-    System.out.print(num + " ");
-    num--;
-}
-```
+    2.
+    ```java
+    int num = 10;
 
-### Section 5: Optional Extra Challenges
+    while (num > 0) {
+        System.out.print(num + " ");
+        num--;
+    }
+    ```
 
-These are more challenging and may involve nested loops or creative problem-solving. Attempt them if you've mastered the basics above.
+    #### Section 5: Optional Extra Challenges
 
-1. Write a for loop that prints the even numbers from 2 to 20 (inclusive).
-2. Re-write this while loop as a for loop:
-```java
-int sum = 0;
-int i = 1;
+    These are more challenging and may involve nested loops or creative problem-solving. Attempt them if you've mastered the basics above.
 
-while (i <= 100) {
-    sum += i;
-    i++;
-}
+    1. Write a for loop that prints the even numbers from 2 to 20 (inclusive).
+    2. Re-write this while loop as a for loop:
+    ```java
+    int sum = 0;
+    int i = 1;
 
-System.out.println("Sum: " + sum);
-```
-3. **(Advanced) Nested Loops for Patterns:** Write a program using nested for loops to print a 5x5 grid of asterisks (`*`):
-```
-*****
-*****
-*****
-*****
-*****
-```
-Then modify it to print a right-angled triangle:
-```
-*
-**
-***
-****
-*****
-```
-4. **Prime Number Checker:** Write a for loop that iterates from 2 to 50 and checks if each number is prime (hint: use a nested loop to test divisibility). Print only the prime numbers.
-5. **Fibonacci Sequence:** Use a for loop to generate and print the first 10 numbers in the Fibonacci sequence (`0, 1, 1, 2, 3, 5, 8, ...`). Start with two variables for the first two numbers.
-6. **Infinite Loop Puzzle:** Intentionally create an infinite for loop (e.g. `for (;;)`), but add a `break` statement inside to exit after 5 iterations. Explain how `break` and `continue` work in for loops, with examples.
+    while (i <= 100) {
+        sum += i;
+        i++;
+    }
+
+    System.out.println("Sum: " + sum);
+    ```
+    3. **(Advanced) Nested Loops for Patterns:** Write a program using nested for loops to print a 5x5 grid of asterisks (`*`):
+    ```
+    *****
+    *****
+    *****
+    *****
+    *****
+    ```
+    Then modify it to print a right-angled triangle:
+    ```
+    *
+    **
+    ***
+    ****
+    *****
+    ```
+    4. **Prime Number Checker:** Write a for loop that iterates from 2 to 50 and checks if each number is prime (hint: use a nested loop to test divisibility). Print only the prime numbers.
+    5. **Fibonacci Sequence:** Use a for loop to generate and print the first 10 numbers in the Fibonacci sequence (`0, 1, 1, 2, 3, 5, 8, ...`). Start with two variables for the first two numbers.
+    6. **Infinite Loop Puzzle:** Intentionally create an infinite for loop (e.g. `for (;;)`), but add a `break` statement inside to exit after 5 iterations. Explain how `break` and `continue` work in for loops, with examples.

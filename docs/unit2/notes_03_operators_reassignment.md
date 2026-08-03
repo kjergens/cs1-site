@@ -64,123 +64,126 @@ points *= 2;    // points is now 240
 
 ---
 
-## Unit 2 Chapter 3 Homework
+## Homework
 
-*Assigned Class 9 · Due Class 10*
+!!! attention
+    ### Unit 2 Chapter 3 Homework
 
-### Part 1: Evaluate the Expression
+    *Assigned Class 9 · Due Class 10*
 
-Assume the following variables are declared:
-```java
-int a = 10;
-int b = 3;
-double x = 10.0;
-```
+    #### Part A: Evaluate the Expression
 
-Write the result of each expression. If the result is a decimal, include the `.0`.
+    Assume the following variables are declared:
+    ```java
+    int a = 10;
+    int b = 3;
+    double x = 10.0;
+    ```
 
-1. `a + b`
-2. `a - b`
-3. `a * b`
-4. `a / b`
-5. `x / b`
-6. `a % b`
-7. `a % 2`
-8. `b % a`
+    Write the result of each expression. If the result is a decimal, include the `.0`.
 
-**Think about it:** Problems 4 and 5 look similar. Why are the answers different?
+    1. `a + b`
+    2. `a - b`
+    3. `a * b`
+    4. `a / b`
+    5. `x / b`
+    6. `a % b`
+    7. `a % 2`
+    8. `b % a`
 
-### Part 2: Trace the Re-assignments
+    **Think about it:** Problems 4 and 5 look similar. Why are the answers different?
 
-Show the value of the variable after each line executes.
+    #### Part B: Trace the Re-assignments
 
-9.
-```java
-int score = 50;          // score = ____
-score = score + 10;      // score = ____
-score = score * 2;       // score = ____
-score = score - 5;       // score = ____
-```
+    Show the value of the variable after each line executes.
 
-10.
-```java
-int n = 8;               // n = ____
-n = n / 3;               // n = ____
-n = n + 1;               // n = ____
-```
+    9.
+    ```java
+    int score = 50;          // score = ____
+    score = score + 10;      // score = ____
+    score = score * 2;       // score = ____
+    score = score - 5;       // score = ____
+    ```
 
-11.
-```java
-int a = 5;               // a = ____
-int b = a;                // b = ____
-a = 99;                   // a = ____
-                           // b = ____ (did b change?)
-```
+    10.
+    ```java
+    int n = 8;               // n = ____
+    n = n / 3;               // n = ____
+    n = n + 1;               // n = ____
+    ```
 
-### Part 3: Increment and Decrement
+    11.
+    ```java
+    int a = 5;               // a = ____
+    int b = a;                // b = ____
+    a = 99;                   // a = ____
+                               // b = ____ (did b change?)
+    ```
 
-12. What does `count++` do? Write an equivalent statement using `=` and `+`.
-13. What will the following code print?
-```java
-int count = 0;
-count++;
-count++;
-count++;
-System.out.println(count);
-```
-14. What will the following code print?
-```java
-int lives = 3;
-System.out.println(lives);
-lives--;
-System.out.println(lives);
-lives--;
-System.out.println(lives);
-```
+    #### Part C: Increment and Decrement
 
-### Part 4: Compound Assignment
+    12. What does `count++` do? Write an equivalent statement using `=` and `+`.
+    13. What will the following code print?
+    ```java
+    int count = 0;
+    count++;
+    count++;
+    count++;
+    System.out.println(count);
+    ```
+    14. What will the following code print?
+    ```java
+    int lives = 3;
+    System.out.println(lives);
+    lives--;
+    System.out.println(lives);
+    lives--;
+    System.out.println(lives);
+    ```
 
-15. Rewrite each statement using a compound assignment operator (`+=`, `-=`, `*=`, `/=`):
+    #### Part D: Compound Assignment
 
-| Original | Rewrite with compound operator |
-|---|---|
-| `x = x + 7;` | |
-| `x = x - 3;` | |
-| `x = x * 2;` | |
-| `x = x / 4;` | |
+    15. Rewrite each statement using a compound assignment operator (`+=`, `-=`, `*=`, `/=`):
 
-16. What will the following code print?
-```java
-int points = 100;
-points += 50;
-points -= 30;
-points *= 2;
-System.out.println(points);
-```
-17. What will the following code print?
-```java
-int n = 20;
-n /= 4;
-n += 3;
-n++;
-System.out.println(n);
-```
+    | Original | Rewrite with compound operator |
+    |---|---|
+    | `x = x + 7;` | |
+    | `x = x - 3;` | |
+    | `x = x * 2;` | |
+    | `x = x / 4;` | |
 
-### Part 5: Find the Bug
+    16. What will the following code print?
+    ```java
+    int points = 100;
+    points += 50;
+    points -= 30;
+    points *= 2;
+    System.out.println(points);
+    ```
+    17. What will the following code print?
+    ```java
+    int n = 20;
+    n /= 4;
+    n += 3;
+    n++;
+    System.out.println(n);
+    ```
 
-Each snippet below has exactly one error. Identify the line and describe the problem.
+    #### Part E: Find the Bug
 
-18.
-```java
-int total = 0;
-total =+ 10;
-System.out.println(total);
-```
-(This code compiles and runs — but does not do what the programmer intended. What does `=+` actually do?)
+    Each snippet below has exactly one error. Identify the line and describe the problem.
 
-19.
-```java
-int x = 7;
-int y = 0;
-System.out.println(x / y);
-```
+    18.
+    ```java
+    int total = 0;
+    total =+ 10;
+    System.out.println(total);
+    ```
+    (This code compiles and runs — but does not do what the programmer intended. What does `=+` actually do?)
+
+    19.
+    ```java
+    int x = 7;
+    int y = 0;
+    System.out.println(x / y);
+    ```

@@ -83,112 +83,115 @@ Trace: the outer loop runs 3 times (`row = 1, 2, 3`). Each time, the inner loop 
 
 ---
 
-## Unit 4 Chapter 2 Homework
+## Homework
 
-### Part 1: Predict the Output — Loop Patterns
+!!! attention
+    ### Unit 4 Chapter 2 Homework
 
-Write exactly what each loop prints, one value per line.
+    #### Part A: Predict the Output — Loop Patterns
 
-1.
-```java
-for (int i = 5; i >= 1; i--) {
-    System.out.println(i);
-}
-```
-2.
-```java
-for (int i = 0; i <= 10; i += 2) {
-    System.out.println(i);
-}
-```
-3.
-```java
-for (int i = 1; i <= 9; i += 2) {
-    System.out.println(i);
-}
-```
-4.
-```java
-for (int i = 20; i >= 5; i -= 5) {
-    System.out.println(i);
-}
-```
-5. How many times does this loop body execute?
-```java
-for (int i = 100; i >= 1; i--) {
-    System.out.println(i);
-}
-```
+    Write exactly what each loop prints, one value per line.
 
-### Part 2: Write the Loop Header
-
-Fill in the for loop header so the loop produces the described output. The loop body is `System.out.println(i);`.
-
-6. Prints: `10 9 8 7 6 5 4 3 2 1`
-```java
-for (_____________ ; _____________ ; _____________) {
-    System.out.println(i);
-}
-```
-7. Prints: `0 3 6 9 12 15`
-```java
-for (_____________ ; _____________ ; _____________) {
-    System.out.println(i);
-}
-```
-8. Prints: `50 45 40 35 30 25`
-```java
-for (_____________ ; _____________ ; _____________) {
-    System.out.println(i);
-}
-```
-
-### Part 3: Aggregation
-
-9. Trace through this code. What is the final value of `sum`?
-```java
-int sum = 0;
-for (int i = 1; i <= 5; i++) {
-    sum += i;
-}
-System.out.println(sum);
-```
-10. What does this code print?
-```java
-int product = 1;
-for (int i = 1; i <= 4; i++) {
-    product *= i;
-}
-System.out.println(product);
-```
-11. Write a for loop that adds up all even numbers from 2 to 20 (inclusive) and prints the total. (Hint: you can either step by 2, or check inside the loop with `%`.)
-12. Write a for loop that counts how many numbers from 1 to 50 are divisible by 3, and prints that count.
-
-### Part 4: Nested Loops
-
-13. What does this code print? Draw it out carefully — the inner loop finishes completely before the outer loop advances.
-```java
-for (int row = 1; row <= 3; row++) {
-    for (int col = 1; col <= 4; col++) {
-        System.out.print("* ");
+    1.
+    ```java
+    for (int i = 5; i >= 1; i--) {
+        System.out.println(i);
     }
-    System.out.println();
-}
-```
-14. What does this code print?
-```java
-for (int i = 1; i <= 4; i++) {
-    for (int j = 1; j <= i; j++) {
-        System.out.print("# ");
+    ```
+    2.
+    ```java
+    for (int i = 0; i <= 10; i += 2) {
+        System.out.println(i);
     }
-    System.out.println();
-}
-```
-15. Write nested loops that print this pattern exactly:
-```
-1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
-```
+    ```
+    3.
+    ```java
+    for (int i = 1; i <= 9; i += 2) {
+        System.out.println(i);
+    }
+    ```
+    4.
+    ```java
+    for (int i = 20; i >= 5; i -= 5) {
+        System.out.println(i);
+    }
+    ```
+    5. How many times does this loop body execute?
+    ```java
+    for (int i = 100; i >= 1; i--) {
+        System.out.println(i);
+    }
+    ```
+
+    #### Part B: Write the Loop Header
+
+    Fill in the for loop header so the loop produces the described output. The loop body is `System.out.println(i);`.
+
+    6. Prints: `10 9 8 7 6 5 4 3 2 1`
+    ```java
+    for (_____________ ; _____________ ; _____________) {
+        System.out.println(i);
+    }
+    ```
+    7. Prints: `0 3 6 9 12 15`
+    ```java
+    for (_____________ ; _____________ ; _____________) {
+        System.out.println(i);
+    }
+    ```
+    8. Prints: `50 45 40 35 30 25`
+    ```java
+    for (_____________ ; _____________ ; _____________) {
+        System.out.println(i);
+    }
+    ```
+
+    #### Part C: Aggregation
+
+    9. Trace through this code. What is the final value of `sum`?
+    ```java
+    int sum = 0;
+    for (int i = 1; i <= 5; i++) {
+        sum += i;
+    }
+    System.out.println(sum);
+    ```
+    10. What does this code print?
+    ```java
+    int product = 1;
+    for (int i = 1; i <= 4; i++) {
+        product *= i;
+    }
+    System.out.println(product);
+    ```
+    11. Write a for loop that adds up all even numbers from 2 to 20 (inclusive) and prints the total. (Hint: you can either step by 2, or check inside the loop with `%`.)
+    12. Write a for loop that counts how many numbers from 1 to 50 are divisible by 3, and prints that count.
+
+    #### Part D: Nested Loops
+
+    13. What does this code print? Draw it out carefully — the inner loop finishes completely before the outer loop advances.
+    ```java
+    for (int row = 1; row <= 3; row++) {
+        for (int col = 1; col <= 4; col++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+    ```
+    14. What does this code print?
+    ```java
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 1; j <= i; j++) {
+            System.out.print("# ");
+        }
+        System.out.println();
+    }
+    ```
+    15. Write nested loops that print this pattern exactly:
+    ```
+    1
+    1 2
+    1 2 3
+    1 2 3 4
+    1 2 3 4 5
+    ```

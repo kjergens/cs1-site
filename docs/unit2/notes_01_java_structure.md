@@ -85,80 +85,81 @@ System.out.println(7 <= 6);  // false
 
 ---
 
-## Unit 2 Chapter 1 worksheet — Java to Scratch 
+## Homework
 
----
+!!! attention
+    ### Unit 2 Chapter 1 Homework
 
-## Unit 2 Chapter 1 Homework
+    *Note: Homework 4 (Java to Scratch) is a worksheet your teacher will hand out in class — not posted here.*
 
-There are five parts, plus an ungraded bonus for optional enrichment. Each part has a short background, then exercises — read the background, then answer the exercises that follow.
+    There are five parts, plus an ungraded bonus for optional enrichment. Each part has a short background, then exercises — read the background, then answer the exercises that follow.
 
-### Part 1: Java Program Structure
+    #### Part A: Java Program Structure
 
-```java
-public class MyFirstProgram {
-    public static void main(String[] args) {
-        // This is a comment.
+    ```java
+    public class MyFirstProgram {
+        public static void main(String[] args) {
+            // This is a comment.
+        }
     }
-}
-```
+    ```
 
-1.1. What do you think happens if you run the program above?
-1.2. If you rename the class to `HelloJava`, what should the file name be?
+    1.1. What do you think happens if you run the program above?
+    1.2. If you rename the class to `HelloJava`, what should the file name be?
 
-### Part 2: Printing in Java
+    #### Part B: Printing in Java
 
-```java
-public class Greet {
-    public static void main(String[] args) {
-        System.out.println("My name is");
-        System.out.println("Java Beginner!");
+    ```java
+    public class Greet {
+        public static void main(String[] args) {
+            System.out.println("My name is");
+            System.out.println("Java Beginner!");
+        }
     }
-}
-```
+    ```
 
-2.1. Predict the output of the code above.
-2.2. Write a simple program that prints your name.
+    2.1. Predict the output of the code above.
+    2.2. Write a simple program that prints your name.
 
-### Part 3: Arithmetic Operations
+    #### Part C: Arithmetic Operations
 
-3.1. Predict the output for each line:
-```java
-a. System.out.println(8 * 6 % 3 + 9);
-b. System.out.println((12 / 3) + (4 - 2) * 5);
-```
-3.2. Write a print statement that calculates `(10 + 5) * 2 % 7`, then predict the result.
+    3.1. Predict the output for each line:
+    ```java
+    a. System.out.println(8 * 6 % 3 + 9);
+    b. System.out.println((12 / 3) + (4 - 2) * 5);
+    ```
+    3.2. Write a print statement that calculates `(10 + 5) * 2 % 7`, then predict the result.
 
-### Part 4: Comparison Operators
+    #### Part D: Comparison Operators
 
-4.1. Predict the output (true or false) for each line:
-```java
-a. System.out.println(8 != 8);
-b. System.out.println(15 >= 10 + 5);
-c. System.out.println((20 / 4) < 6);
-```
-4.2. Write a print statement comparing whether `9 * 2` is greater than or equal to `20 - 3`. Predict what it prints.
+    4.1. Predict the output (true or false) for each line:
+    ```java
+    a. System.out.println(8 != 8);
+    b. System.out.println(15 >= 10 + 5);
+    c. System.out.println((20 / 4) < 6);
+    ```
+    4.2. Write a print statement comparing whether `9 * 2` is greater than or equal to `20 - 3`. Predict what it prints.
 
-### Part 5: Combining Printing, Strings, and Operations
+    #### Part E: Combining Printing, Strings, and Operations
 
-You can join strings, math, and comparisons using `+`. Java automatically converts numbers and booleans to text.
+    You can join strings, math, and comparisons using `+`. Java automatically converts numbers and booleans to text.
 
-```java
-System.out.println("The sum is: " + (5 + 3));
-System.out.println("Is 10 > 5? " + (10 > 5));
-System.out.println("Result: " + (8 * 6 % 3 + 9));
-```
+    ```java
+    System.out.println("The sum is: " + (5 + 3));
+    System.out.println("Is 10 > 5? " + (10 > 5));
+    System.out.println("Result: " + (8 * 6 % 3 + 9));
+    ```
 
-5.1. Predict the output of:
-```java
-System.out.println("Answer: " + (10 - 2 * 3) + ". Is it positive? " + (10 - 2 * 3 > 0));
-```
-5.2. Write a full program that prints: `The result of 7 + 5 % 2 is: [result]. Is it even? [true/false]` (hint: use `result % 2 == 0` to check if even).
+    5.1. Predict the output of:
+    ```java
+    System.out.println("Answer: " + (10 - 2 * 3) + ". Is it positive? " + (10 - 2 * 3 > 0));
+    ```
+    5.2. Write a full program that prints: `The result of 7 + 5 % 2 is: [result]. Is it even? [true/false]` (hint: use `result % 2 == 0` to check if even).
 
-### Bonus Challenge (optional, ungraded)
+    #### Bonus Challenge (optional, ungraded)
 
-Write a program that prints:
-```
-What is 4 * 5? Answer: [result]
-Is the answer greater than 10? [true/false]
-```
+    Write a program that prints:
+    ```
+    What is 4 * 5? Answer: [result]
+    Is the answer greater than 10? [true/false]
+    ```

@@ -88,10 +88,10 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 
 	#### Part C: Fill in the blanks (+ short answer)
 	1. **Timeline:** fill in the blanks using each term once — `1943`, `ENIAC`, `1971`, `Microprocessor`, `1984`, `Apple Macintosh`, `1822`, `Difference Engine`.
-	    - ______: Charles Babbage designs the ______, a mechanical calculator considered an early precursor to modern computers.
-	    - ______: The ______, one of the first general-purpose electronic computers, is built using vacuum tubes.
-	    - ______: Intel introduces the first ______, putting the power of a computer's CPU on a single chip.
-	    - ______: The ______ is released, making personal computers user-friendly with a graphical interface.
+	    - `______`: Charles Babbage designs the `______`, a mechanical calculator considered an early precursor to modern computers.
+	    - `______`: The `______`, one of the first general-purpose electronic computers, is built using vacuum tubes.
+	    - `______`: Intel introduces the first `______`, putting the power of a computer's CPU on a single chip.
+	    - `______`: The `______` is released, making personal computers user-friendly with a graphical interface.
 	2. **Short answer:** The ENIAC weighed over 30 tons and took up an entire room! What allowed computers to become small enough to fit in your pocket?
 
 	#### Part D: Binary
@@ -99,7 +99,7 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 
 	Convert the following decimal numbers to binary (hint: divide by 2 repeatedly and note the remainders):
 
-	1. `5` = ______ (binary)
-	2. `12` = ______ (binary)
-	3. Your age = ______ (binary)
+	1. `5` = `______` (binary)
+	2. `12` = `______` (binary)
+	3. Your age = `______` (binary)
 

@@ -99,19 +99,22 @@ int roll = (int)(Math.random() * 6);   // 0, 1, 2, 3, 4, or 5
 
 ---
 
-## Unit 5 Chapter 2 Homework
+## Homework
 
-Use the Java `Math` methods from the notes above to answer each question.
+!!! attention
+    ### Unit 5 Chapter 2 Homework
 
-1. What does `Math.max(14, 9)` return?
-2. What does `Math.min(6.2, 3.8)` return?
-3. What does `Math.sqrt(81)` return?
-4. What does `Math.abs(-27)` return?
-5. What does `Math.pow(4, 3)` return?
-6. What does `Math.round(7.3)` return?
-7. What does `Math.ceil(5.1)` return?
-8. What does `Math.floor(9.9)` return?
-9. What `Math` expression generates a random number between `0.0` and `0.9999...`?
-10. Write a line of Java code that declares a `double` variable called `r` and assigns it a random number between `0.0` and `10.0`.
+    Use the Java `Math` methods from the notes above to answer each question.
 
----
+    1. What does `Math.max(14, 9)` return?
+    2. What does `Math.min(6.2, 3.8)` return?
+    3. What does `Math.sqrt(81)` return?
+    4. What does `Math.abs(-27)` return?
+    5. What does `Math.pow(4, 3)` return?
+    6. What does `Math.round(7.3)` return?
+    7. What does `Math.ceil(5.1)` return?
+    8. What does `Math.floor(9.9)` return?
+    9. What `Math` expression generates a random number between `0.0` and `0.9999...`?
+    10. Write a line of Java code that declares a `double` variable called `r` and assigns it a random number between `0.0` and `10.0`.
+
+    ---

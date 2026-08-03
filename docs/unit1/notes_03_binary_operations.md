@@ -51,28 +51,31 @@ Key rule: multiplying by `0` gives a row of all zeros; multiplying by `1` copies
 
 ---
 
-## Unit 1 Chapter 3 Homework
+## Homework
 
-*Assigned Class 2 · Due Class 3*
+!!! attention
+    ### Unit 1 Chapter 3 Homework
 
-### Part 1 — Binary Addition
+    *Assigned Class 2 · Due Class 3*
 
-Add the following binary numbers:
+    #### Part A: Binary Addition
 
-1. `1011 + 0110`
-2. `11001 + 10110`
-3. `1111 + 111`
-4. `101010 + 11011`
-5. `1001110 + 0110011`
+    Add the following binary numbers:
 
-### Part 2 — Binary Multiplication
+    1. `1011 + 0110`
+    2. `11001 + 10110`
+    3. `1111 + 111`
+    4. `101010 + 11011`
+    5. `1001110 + 0110011`
 
-Multiply the following binary numbers:
+    #### Part B: Binary Multiplication
 
-6. `101 × 11`
-7. `1101 × 101`
-8. `111 × 10`
-9. `1010 × 110`
-10. `10011 × 101`
+    Multiply the following binary numbers:
 
-**Bonus (challenge):** `11101 × 1011`
+    6. `101 × 11`
+    7. `1101 × 101`
+    8. `111 × 10`
+    9. `1010 × 110`
+    10. `10011 × 101`
+
+    **Bonus (challenge):** `11101 × 1011`

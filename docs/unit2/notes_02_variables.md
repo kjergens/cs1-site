@@ -53,92 +53,95 @@ String name = "Alice";
 
 ---
 
-## Unit 2 Chapter 2 Homework
+## Homework
 
-*Assigned Class 8 · Due Class 9*
+!!! attention
+    ### Unit 2 Chapter 2 Homework
 
-### Part 1: Identify the Data Type
+    *Assigned Class 8 · Due Class 9*
 
-For each value below, name the Java data type that best represents it (`int`, `double`, `boolean`, `String`, or `char`):
+    #### Part A: Identify the Data Type
 
-1. `42`
-2. `"Hello, world!"`
-3. `3.14`
-4. `'A'`
-5. `true`
-6. `"false"`
-7. `0`
-8. `'7'`
+    For each value below, name the Java data type that best represents it (`int`, `double`, `boolean`, `String`, or `char`):
 
-### Part 2: Declare and Initialize Variables
+    1. `42`
+    2. `"Hello, world!"`
+    3. `3.14`
+    4. `'A'`
+    5. `true`
+    6. `"false"`
+    7. `0`
+    8. `'7'`
 
-Write a single Java statement to declare and initialize each variable described. Use the correct data type.
+    #### Part B: Declare and Initialize Variables
 
-9. An integer named `score` with value `100`
-10. A decimal number named `gpa` with value `3.75`
-11. A boolean named `isLoggedIn` set to `false`
-12. A String named `greeting` with value `"Good morning"`
-13. A char named `grade` with value `'B'`
+    Write a single Java statement to declare and initialize each variable described. Use the correct data type.
 
-### Part 3: Predict the Output
+    9. An integer named `score` with value `100`
+    10. A decimal number named `gpa` with value `3.75`
+    11. A boolean named `isLoggedIn` set to `false`
+    12. A String named `greeting` with value `"Good morning"`
+    13. A char named `grade` with value `'B'`
 
-What will each snippet print? Write your answer exactly as it would appear on screen.
+    #### Part C: Predict the Output
 
-14.
-```java
-int x = 10;
-int y = 3;
-System.out.println(x);
-System.out.println(y);
-System.out.println(x + y);
-```
+    What will each snippet print? Write your answer exactly as it would appear on screen.
 
-15.
-```java
-String first = "Ada";
-String last = "Lovelace";
-System.out.println(first + last);
-System.out.println(first + " " + last);
-```
+    14.
+    ```java
+    int x = 10;
+    int y = 3;
+    System.out.println(x);
+    System.out.println(y);
+    System.out.println(x + y);
+    ```
 
-16.
-```java
-int age = 17;
-String name = "Jordan";
-System.out.println(name + " is " + age + " years old.");
-```
+    15.
+    ```java
+    String first = "Ada";
+    String last = "Lovelace";
+    System.out.println(first + last);
+    System.out.println(first + " " + last);
+    ```
 
-17.
-```java
-double price = 2.5;
-int quantity = 4;
-System.out.println("Total: " + price * quantity);
-```
+    16.
+    ```java
+    int age = 17;
+    String name = "Jordan";
+    System.out.println(name + " is " + age + " years old.");
+    ```
 
-### Part 4: Find the Bug
+    17.
+    ```java
+    double price = 2.5;
+    int quantity = 4;
+    System.out.println("Total: " + price * quantity);
+    ```
 
-Each snippet below has exactly one error. Identify the line with the error and explain what's wrong. You don't need to fix it — just describe the problem.
+    #### Part D: Find the Bug
 
-18.
-```java
-int count = "five";
-System.out.println(count);
-```
+    Each snippet below has exactly one error. Identify the line with the error and explain what's wrong. You don't need to fix it — just describe the problem.
 
-19.
-```java
-char initial = "K";
-System.out.println(initial);
-```
+    18.
+    ```java
+    int count = "five";
+    System.out.println(count);
+    ```
 
-20.
-```java
-String message = 'hello';
-System.out.println(message);
-```
+    19.
+    ```java
+    char initial = "K";
+    System.out.println(initial);
+    ```
 
-21.
-```java
-double temperature = 98.6
-System.out.println(temperature);
-```
+    20.
+    ```java
+    String message = 'hello';
+    System.out.println(message);
+    ```
+
+    21.
+    ```java
+    double temperature = 98.6
+    System.out.println(temperature);
+    ```

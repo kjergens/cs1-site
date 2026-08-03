@@ -153,98 +153,101 @@ if (num == 50) {
 
 ---
 
-## Unit 3 Chapter 1 Homework
+## Homework
 
-*Complete up to 100 points worth of the exercises below — choose any combination that adds up to no more than 100 points (extra credit beyond 100 is capped). For example: Exercises 1+2+3, or Exercises 1+4.*
+!!! attention
+    ### Unit 3 Chapter 1 Homework
 
-- Exercise 1: Match Flowcharts to Code (30 points)
-- Exercise 2: Create a Flowchart from Code (30 points)
-- Exercise 3: Write Code from a Flowchart (40 points)
-- Exercise 4: Create Both Flowchart and Code (70 points)
+    *Complete up to 100 points worth of the exercises below — choose any combination that adds up to no more than 100 points (extra credit beyond 100 is capped). For example: Exercises 1+2+3, or Exercises 1+4.*
 
-### Exercise 1: Match Flowcharts to Code (30 points)
+    - Exercise 1: Match Flowcharts to Code (30 points)
+    - Exercise 2: Create a Flowchart from Code (30 points)
+    - Exercise 3: Write Code from a Flowchart (40 points)
+    - Exercise 4: Create Both Flowchart and Code (70 points)
 
-Match each flowchart below to the correct code snippet (A, B, or C).
+    #### Exercise 1: Match Flowcharts to Code (30 points)
 
-![Flowchart 1](images/hw9_flowchart1.png)
+    Match each flowchart below to the correct code snippet (A, B, or C).
 
-![Flowchart 2](images/hw9_flowchart2.png)
+    ![Flowchart 1](images/hw9_flowchart1.png)
 
-![Flowchart 3](images/hw9_flowchart3.png)
+    ![Flowchart 2](images/hw9_flowchart2.png)
 
-**Code A:**
-```java
-int x = 10;
-if (x > 0) {
-    System.out.println("Positive");
-}
-System.out.println("Done");
-```
+    ![Flowchart 3](images/hw9_flowchart3.png)
 
-**Code B:**
-```java
-double temp = 25.5;
-if (temp > 30) {
-    System.out.println("Hot");
-} else if (temp > 20) {
-    System.out.println("Warm");
-} else {
-    System.out.println("Cool");
-}
-```
+    **Code A:**
+    ```java
+    int x = 10;
+    if (x > 0) {
+        System.out.println("Positive");
+    }
+    System.out.println("Done");
+    ```
 
-**Code C:**
-```java
-String color = "red";
-if (color.equals("red")) {
-    System.out.println("Stop");
-} else {
-    System.out.println("Go");
-}
-```
-*(Note: Strings are compared with `.equals()`, not `==` — you'll learn more about this later. For now, just read it as "if color is red.")*
+    **Code B:**
+    ```java
+    double temp = 25.5;
+    if (temp > 30) {
+        System.out.println("Hot");
+    } else if (temp > 20) {
+        System.out.println("Warm");
+    } else {
+        System.out.println("Cool");
+    }
+    ```
 
-Flowchart 1 goes with code snippet: ____
-Flowchart 2 goes with code snippet: ____
-Flowchart 3 goes with code snippet: ____
+    **Code C:**
+    ```java
+    String color = "red";
+    if (color.equals("red")) {
+        System.out.println("Stop");
+    } else {
+        System.out.println("Go");
+    }
+    ```
+    *(Note: Strings are compared with `.equals()`, not `==` — you'll learn more about this later. For now, just read it as "if color is red.")*
 
-### Exercise 2: Create a Flowchart from Code (30 points)
+    Flowchart 1 goes with code snippet: ____
+    Flowchart 2 goes with code snippet: ____
+    Flowchart 3 goes with code snippet: ____
 
-Given the following Java code, draw a corresponding flowchart. Label all shapes clearly and include the exact conditions and actions. Use diamonds for `if` conditions, rectangles for statements (variable declarations, print).
+    #### Exercise 2: Create a Flowchart from Code (30 points)
 
-```java
-public class AgeChecker {
-    public static void main(String[] args) {
-        int age = 15;
+    Given the following Java code, draw a corresponding flowchart. Label all shapes clearly and include the exact conditions and actions. Use diamonds for `if` conditions, rectangles for statements (variable declarations, print).
 
-        if (age >= 18) {
-            System.out.println("Adult");
-        } else if (age >= 13) {
-            System.out.println("Teen");
-        } else {
-            System.out.println("Child");
+    ```java
+    public class AgeChecker {
+        public static void main(String[] args) {
+            int age = 15;
+
+            if (age >= 18) {
+                System.out.println("Adult");
+            } else if (age >= 13) {
+                System.out.println("Teen");
+            } else {
+                System.out.println("Child");
+            }
         }
     }
-}
-```
+    ```
 
-Draw your flowchart on paper and upload a photo, or use drawing software of your choice.
+    Draw your flowchart on paper and upload a photo, or use drawing software of your choice.
 
-### Exercise 3: Write Code from a Flowchart (40 points)
+    #### Exercise 3: Write Code from a Flowchart (40 points)
 
-Read the flowchart below, then write the corresponding Java program. Name the class `ScoreGrader`. Remember to include `public static void main(String[] args)` inside the class. Use appropriate variable types and make sure the code matches the logic exactly.
+    Read the flowchart below, then write the corresponding Java program. Name the class `ScoreGrader`. Remember to include `public static void main(String[] args)` inside the class. Use appropriate variable types and make sure the code matches the logic exactly.
 
-![ScoreGrader flowchart](images/hw9_scoregrader_flowchart.png)
+    ![ScoreGrader flowchart](images/hw9_scoregrader_flowchart.png)
 
-### Exercise 4: Create Both Flowchart and Code (70 points)
+    #### Exercise 4: Create Both Flowchart and Code (70 points)
 
-Draw a detailed flowchart for the algorithm below (draw on paper and upload a photo, or use a graphics program), and write the corresponding Java program. Name the class `DiscountCalculator`.
+    Draw a detailed flowchart for the algorithm below (draw on paper and upload a photo, or use a graphics program), and write the corresponding Java program. Name the class `DiscountCalculator`.
 
-**Algorithm:**
+    **Algorithm:**
 
-- Declare a `double` variable `purchaseAmount` and set it to `150.0`
-- If `purchaseAmount >= 200`, apply a 20% discount and print `"Discounted price: [insert calculated value]"`
-- Else if `purchaseAmount >= 100`, apply a 10% discount and print `"Discounted price: [insert calculated value]"`
-- Else, print `"No discount. Price: [insert original value]"`
-- Additionally, include an initial check: if `purchaseAmount <= 0`, print `"Invalid amount"` and end without calculating
-- Add a final print statement that always runs, like `"Thank you for shopping!"`, and reflect it in your flowchart
+    - Declare a `double` variable `purchaseAmount` and set it to `150.0`
+    - If `purchaseAmount >= 200`, apply a 20% discount and print `"Discounted price: [insert calculated value]"`
+    - Else if `purchaseAmount >= 100`, apply a 10% discount and print `"Discounted price: [insert calculated value]"`
+    - Else, print `"No discount. Price: [insert original value]"`
+    - Additionally, include an initial check: if `purchaseAmount <= 0`, print `"Invalid amount"` and end without calculating
+    - Add a final print statement that always runs, like `"Thank you for shopping!"`, and reflect it in your flowchart
