@@ -75,6 +75,8 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#unit-1-chapter-4-homework">Unit 1 Chapter 4 Homework</a>
         <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#background">Background</a>
+    </li>
     <li class="toctree-l4"><a class="reference internal" href="#activity-1-say-hello">Activity 1: Say Hello</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#activity-2-ask-and-answer">Activity 2: Ask and Answer</a>
@@ -288,6 +290,7 @@
 <p class="admonition-title">Attention</p>
 <h3 id="unit-1-chapter-4-homework">Unit 1 Chapter 4 Homework</h3>
 <p><em>Assigned Class 2 · Due Class 3 · Submission: upload your <code>.sb3</code> file to the Schoology assignment</em></p>
+<h4 id="background">Background</h4>
 <p>Scratch is a visual programming language developed by MIT. It lets you build programs by snapping together blocks — no curly braces, semicolons, or typos to worry about. It's a great way to see programming logic in action before we move to Java.</p>
 <p>The Scratch interface has three main areas:</p>
 <ul>
@@ -298,17 +301,19 @@
 <p>The stage uses a coordinate system where <code>(0, 0)</code> is the center. The cat starts there.</p>
 <p>Work through the activities below <strong>in order</strong> — each one builds on or modifies the previous. Don't start a new activity in a separate area; change your existing code as instructed.</p>
 <h4 id="activity-1-say-hello">Activity 1: Say Hello</h4>
+<p>Do the exercise and answer the question.</p>
 <p>Drag a "when green flag clicked" block to the scripts area. Attach a "say [ ] for [ ] seconds" block to it. Make the cat say <code>Hello, world!</code> for 2 seconds.</p>
 <p>Click the green flag to test it.</p>
-<p><strong>Checkpoint:</strong> What is the "input" to the say block? What is the "side effect" of calling it?</p>
+<p><strong>1:</strong> What is the "input" to the say block? What is the "side effect" of calling it?</p>
 <h4 id="activity-2-ask-and-answer">Activity 2: Ask and Answer</h4>
+<p>Do the exercise and answer the question.</p>
 <p>Modify your Activity 1 code:</p>
 <ul>
 <li>Replace the say block with an "ask [ ] and wait" block. Use the prompt: <code>What's your name?</code></li>
 <li>After the ask block, add a "say [ ] for [ ] seconds" block that uses the "join" operator to say <code>Hello,</code> joined with the answer variable.</li>
 </ul>
 <p>Click the green flag, type your name, and verify the cat greets you by name.</p>
-<p><strong>Checkpoint:</strong> Where does the answer variable come from? What category is it in?</p>
+<p><strong>2:</strong> Where does the answer variable come from? What category is it in?</p>
 <h4 id="activity-3-text-to-speech">Activity 3: Text to Speech</h4>
 <ul>
 <li>Click "Add Extension" (bottom-left of the block palette). Find and add the Text to Speech extension.</li>
@@ -316,22 +321,25 @@
 </ul>
 <p>Now when you run the program, the cat should both display and speak the greeting.</p>
 <h4 id="activity-4-sound-loop">Activity 4: Sound Loop</h4>
+<p>Do the exercise and answer the question.</p>
 <p>Detach the blocks from "when green flag clicked" and move them off to the side (keep them — you may want them later).</p>
 <p>Build a new script: when green flag clicked → "play sound [Meow] until done".</p>
 <p>Click the green flag. The cat should meow once.</p>
 <h4 id="activity-5-repeat">Activity 5: Repeat</h4>
 <p>Modify your Activity 4 code: wrap the play sound block inside a "repeat [3]" loop.</p>
 <p>Click the green flag. The cat should meow 3 times.</p>
-<p><strong>Checkpoint:</strong> What would happen if you changed the repeat number to 0? To 10?</p>
+<p><strong>3:</strong> What would happen if you changed the repeat number to 0? To 10?</p>
 <h4 id="activity-6-define-a-block-custom-function">Activity 6: Define a Block (Custom Function)</h4>
+<p>Do the exercise and answer the question.</p>
 <ul>
 <li>In the block palette, click "My Blocks" → "Make a Block". Name it <code>meow</code>.</li>
 <li>Inside the define <code>meow</code> block definition, place a "play sound [Meow] until done" block.</li>
 <li>Back in your main script, replace the play sound block inside the repeat loop with your new <code>meow</code> block.</li>
 </ul>
 <p>Test it — behavior should be identical to Activity 5, but now using a custom block.</p>
-<p><strong>Checkpoint:</strong> Why is it useful to define a named block even if it only contains one line?</p>
+<p><strong>4:</strong> Why is it useful to define a named block even if it only contains one line?</p>
 <h4 id="activity-7-add-a-parameter">Activity 7: Add a Parameter</h4>
+<p>Do the exercise and answer the question.</p>
 <p>Edit your <code>meow</code> block:</p>
 <ul>
 <li>Click "My Blocks" → right-click <code>meow</code> → "Edit"</li>
@@ -341,13 +349,14 @@
 </ul>
 <p>Update your main script to call <code>meow n times</code> with a number of your choice. Remove the separate repeat wrapper — the loop is now inside the block.</p>
 <p>Test with different values of <code>n</code>.</p>
-<p><strong>Checkpoint:</strong> What is <code>n</code> called in programming? (Hint: we saw this word in Activity 1.)</p>
+<p><strong>5:</strong> What is <code>n</code> called in programming? (Hint: we saw this word in Activity 1.)</p>
 <h4 id="activity-8-sensing-touching">Activity 8: Sensing — Touching</h4>
+<p>Do the exercise and answer the question.</p>
 <p>Detach your current script from "when green flag clicked" and set it aside.</p>
 <p>Build a new script: a <code>forever</code> loop containing "if touching the edge → play sound [Meow] until done".</p>
 <p>Run it and slowly drag the sprite toward the edge of the stage. The cat should meow when it touches the boundary.</p>
 <p><strong>Experiment:</strong> what happens if you add a "move [10] steps" block inside the forever loop?</p>
-<p><strong>Checkpoint:</strong> What category is the "touching" block in? What other sensing blocks exist?</p>
+<p><strong>6:</strong> What category is the "touching" block in? What other sensing blocks exist?</p>
 <h4 id="activity-9-video-motion">Activity 9: Video Motion</h4>
 <ul>
 <li>Click "Add Extension" → add the Video Sensing extension.</li>
