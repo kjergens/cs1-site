@@ -43,7 +43,7 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">Unit 1 - Binary, ASCII, and Scratch</span></p>
+              <p class="caption"><span class="caption-text">Unit 1 - Getting Started</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_01_how_computers_work/">Chapter 1: How Computers Work</a>
                   </li>
@@ -93,19 +93,21 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Chapter 2: The Math Class</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#section-1-overview">Section 1: Overview</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-1-math-overview">Section 1: Math Overview</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mathmaxx-y-and-mathminx-y">Math.max(x, y) and Math.min(x, y)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-2-mathmaxx-y-and-mathminx-y">Section 2: Math.max(x, y) and Math.min(x, y)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#mathsqrtx">Math.sqrt(x)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-3-mathsqrtx">Section 3: Math.sqrt(x)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#mathabsx">Math.abs(x)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-4-mathabsx">Section 4: Math.abs(x)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#mathpowx-y">Math.pow(x, y)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-5-mathpowx-y">Section 5: Math.pow(x, y)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#rounding-methods">Rounding Methods</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-6-rounding-methods">Section 6: Rounding Methods</a>
+    <li class="toctree-l3"><a class="reference internal" href="#mathrandom">Math.random()</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-7-mathrandom">Section 7: Math.random()</a>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
         <ul>
@@ -151,11 +153,11 @@
               
                 <h1 id="chapter-2-the-math-class">Chapter 2: The Math Class</h1>
 <hr />
-<h2 id="section-1-overview">Section 1: Overview</h2>
+<h2 id="section-1-math-overview">Section 1: Math Overview</h2>
 <p>Java's built-in <code>Math</code> class provides useful mathematical methods. You don't need to import anything — <code>Math</code> is always available.</p>
 <p>In this unit you'll learn nine of them: <code>Math.max</code>, <code>Math.min</code>, <code>Math.sqrt</code>, <code>Math.abs</code>, <code>Math.pow</code>, <code>Math.round</code>, <code>Math.ceil</code>, <code>Math.floor</code>, and <code>Math.random</code>.</p>
 <hr />
-<h2 id="section-2-mathmaxx-y-and-mathminx-y">Section 2: Math.max(x, y) and Math.min(x, y)</h2>
+<h3 id="mathmaxx-y-and-mathminx-y">Math.max(x, y) and Math.min(x, y)</h3>
 <p><code>Math.max</code> returns the larger value. <code>Math.min</code> returns the smaller.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">max</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span><span class="w">     </span><span class="c1">// 10</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">min</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span><span class="w">     </span><span class="c1">// 5</span>
@@ -164,26 +166,26 @@
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kt">double</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">min</span><span class="p">(</span><span class="mf">5.3</span><span class="p">,</span><span class="w"> </span><span class="mf">10.8</span><span class="p">);</span><span class="w">   </span><span class="c1">// 5.3</span>
 </code></pre></div>
 <hr />
-<h2 id="section-3-mathsqrtx">Section 3: Math.sqrt(x)</h2>
+<h3 id="mathsqrtx">Math.sqrt(x)</h3>
 <p>Returns the square root of <code>x</code>. Always returns a <code>double</code>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="mi">64</span><span class="p">);</span><span class="w">    </span><span class="c1">// 8.0</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span><span class="w">     </span><span class="c1">// 1.4142135...</span>
 </code></pre></div>
 <hr />
-<h2 id="section-4-mathabsx">Section 4: Math.abs(x)</h2>
+<h3 id="mathabsx">Math.abs(x)</h3>
 <p>Returns the absolute (positive) value of <code>x</code>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">);</span><span class="w">     </span><span class="c1">// 4</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">(</span><span class="o">-</span><span class="mf">4.7</span><span class="p">);</span><span class="w">   </span><span class="c1">// 4.7</span>
 </code></pre></div>
 <hr />
-<h2 id="section-5-mathpowx-y">Section 5: Math.pow(x, y)</h2>
+<h3 id="mathpowx-y">Math.pow(x, y)</h3>
 <p>Returns <code>x</code> raised to the power of <code>y</code>. Always returns a <code>double</code>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">);</span><span class="w">   </span><span class="c1">// 256.0  (2⁸ = 256)</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w">   </span><span class="c1">// 27.0</span>
 </code></pre></div>
 <p>Note: even if the result is a whole number, <code>Math.pow</code> returns a <code>double</code> (e.g., <code>256.0</code>, not <code>256</code>).</p>
 <hr />
-<h2 id="section-6-rounding-methods">Section 6: Rounding Methods</h2>
+<h3 id="rounding-methods">Rounding Methods</h3>
 <table>
 <thead>
 <tr>
@@ -220,7 +222,7 @@
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kt">double</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="mf">4.9</span><span class="p">);</span><span class="w">   </span><span class="c1">// 4.0  (any decimal rounds down)</span>
 </code></pre></div>
 <hr />
-<h2 id="section-7-mathrandom">Section 7: Math.random()</h2>
+<h3 id="mathrandom">Math.random()</h3>
 <p>Returns a random <code>double</code> between <code>0.0</code> (inclusive) and <code>1.0</code> (exclusive).</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">rand</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">();</span><span class="w">        </span><span class="c1">// e.g., 0.7342...</span>
 </code></pre></div>

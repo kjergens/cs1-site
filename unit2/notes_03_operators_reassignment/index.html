@@ -43,7 +43,7 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">Unit 1 - Binary, ASCII, and Scratch</span></p>
+              <p class="caption"><span class="caption-text">Unit 1 - Getting Started</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_01_how_computers_work/">Chapter 1: How Computers Work</a>
                   </li>
@@ -65,10 +65,14 @@
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Chapter 3: Re-assignment & Compound Assignment</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#section-1-re-assignment">Section 1: Re-assignment</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#using-assignment-operator">Using assignment operator (=)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-2-increment-and-decrement">Section 2: Increment and Decrement</a>
+    <li class="toctree-l3"><a class="reference internal" href="#increment-and-decrement">Increment and Decrement</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-3-compound-assignment">Section 3: Compound Assignment</a>
+    <li class="toctree-l3"><a class="reference internal" href="#using-compound-assignments">Using Compound Assignments</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
         <ul>
@@ -156,6 +160,7 @@
                 <h1 id="chapter-3-operators-and-re-assignment">Chapter 3: Operators and Re-assignment</h1>
 <hr />
 <h2 id="section-1-re-assignment">Section 1: Re-assignment</h2>
+<h3 id="using-assignment-operator">Using assignment operator (=)</h3>
 <p>A variable's value isn't fixed — once declared, you can give it a new value at any time. This is called <strong>re-assignment</strong>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">   </span><span class="c1">// score is now 60</span>
@@ -166,7 +171,7 @@
 - The right side of <code>=</code> is evaluated first, using the variable's <em>current</em> value — then the result is stored back into the variable
 - Assigning one variable to another (<code>int b = a;</code>) copies the current value at that moment. Later changing <code>a</code> does <strong>not</strong> change <code>b</code>.</p>
 <hr />
-<h2 id="section-2-increment-and-decrement">Section 2: Increment and Decrement</h2>
+<h3 id="increment-and-decrement">Increment and Decrement</h3>
 <p><strong><code>++</code></strong> increases a variable by 1. <strong><code>--</code></strong> decreases a variable by 1. They're shorthand for the most common kind of re-assignment.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">count</span><span class="o">++</span><span class="p">;</span><span class="w">   </span><span class="c1">// same as: count = count + 1;   → count is 1</span>
@@ -180,7 +185,7 @@
 - <code>lives--;</code> is exactly equivalent to <code>lives = lives - 1;</code>
 - These stand alone as statements — they don't print or return a value by themselves</p>
 <hr />
-<h2 id="section-3-compound-assignment">Section 3: Compound Assignment</h2>
+<h3 id="using-compound-assignments">Using Compound Assignments</h3>
 <p>Compound assignment operators combine an operation with re-assignment in one step.</p>
 <table>
 <thead>

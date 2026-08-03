@@ -43,7 +43,7 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">Unit 1 - Binary, ASCII, and Scratch</span></p>
+              <p class="caption"><span class="caption-text">Unit 1 - Getting Started</span></p>
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../notes_01_how_computers_work/">Chapter 1: How Computers Work</a>
                   </li>
@@ -57,9 +57,19 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-2-converting-binary-decimal">Section 2: Converting Binary → Decimal</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-2-converting-to-and-from-binary">Section 2: Converting to and from Binary</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#convert-from-binary">Convert from binary</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-3-converting-decimal-binary">Section 3: Converting Decimal → Binary</a>
+    <li class="toctree-l3"><a class="reference internal" href="#convert-to-binary">Convert to binary</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#division-method">Division method</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#places-method">Places method</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
         <ul>
@@ -145,7 +155,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Unit 1 - Binary, ASCII, and Scratch</li>
+          <li class="breadcrumb-item">Unit 1 - Getting Started</li>
       <li class="breadcrumb-item active">Chapter 2: Binary Numbers</li>
     <li class="wy-breadcrumbs-aside">
     </li>
@@ -179,7 +189,8 @@
 </code></pre></div>
 <p>Each <code>0</code> or <code>1</code> is called a <strong>bit</strong>. 8 bits = 1 <strong>byte</strong>.</p>
 <hr />
-<h2 id="section-2-converting-binary-decimal">Section 2: Converting Binary → Decimal</h2>
+<h2 id="section-2-converting-to-and-from-binary">Section 2: Converting to and from Binary</h2>
+<h3 id="convert-from-binary">Convert from binary</h3>
 <p>Write out the positional values (powers of 2), multiply each bit, then add.</p>
 <p><strong>Example: <code>1101</code></strong></p>
 <table>
@@ -242,7 +253,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="section-3-converting-decimal-binary">Section 3: Converting Decimal → Binary</h2>
+<h3 id="convert-to-binary">Convert to binary</h3>
+<h4 id="division-method">Division method</h4>
 <p>Repeatedly divide by 2 and record the remainders. Read remainders bottom to top.</p>
 <p><strong>Example: 13 → binary</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>13 ÷ 2 = 6  remainder 1  ← last bit
@@ -253,6 +265,55 @@
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Read bottom to top: 1101
 </code></pre></div>
 <p>Check: <code>1101</code> = 8 + 4 + 0 + 1 = 13 ✓</p>
+<h4 id="places-method">Places method</h4>
+<p>Set up your powers of two like this:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>  _    _    _    _    _
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  ↑    ↑    ↑    ↑    ↑
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  2⁴   2³   2²   2¹   2⁰
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>(16)  (8)  (4)  (2)  (1)
+</code></pre></div>
+<p>Start with the left (most significant) digit, and fill in a 1 or 0. For example for the number <code>13</code>:
+1. The left-most digit is 16. 16 is bigger than 13 so put 0:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>  0    _    _    _    _
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  ↑    ↑    ↑    ↑    ↑
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  2³   2³   2²   2¹   2⁰
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>(16)  (8)  (4)  (2)  (1)
+</code></pre></div>
+<ol>
+<li>
+<p>The next digit is 8. 8 fits into to 13 so put a 1:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>  0    1    _    _    _
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  ↑    ↑    ↑    ↑    ↑
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  2³   2³   2²   2¹   2⁰
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>(16)  (8)  (4)  (2)  (1)
+</code></pre></div></p>
+</li>
+<li>
+<p>The 8 is accounted for so (13 - 8) = 5 remains. The next spot is 4. 4 fits into 5 so put 1 there:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>  0    1    1    _    _
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  ↑    ↑    ↑    ↑    ↑
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  2³   2³   2²   2¹   2⁰
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>(16)  (8)  (4)  (2)  (1)
+</code></pre></div></p>
+</li>
+<li>
+<p>4 is accounted for so (5 - 4) = 1 remains. The next spot is 2. 2 is bigger than 1 so put a 0 there:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>  0    1    1    0    _
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  ↑    ↑    ↑    ↑    ↑
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  2³   2³   2²   2¹   2⁰
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>(16)  (8)  (4)  (2)  (1)
+</code></pre></div></p>
+</li>
+<li>
+<p>1 still remains. The next spot is 1. 1 fits into 1 so put a 1 there:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>  0    1    1    0    1
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  ↑    ↑    ↑    ↑    ↑
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  2³   2³   2²   2¹   2⁰
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>(16)  (8)  (4)  (2)  (1)
+</code></pre></div></p>
+</li>
+</ol>
+<p>1 is accounteed for so 1 - 1 = 0, 0 remains so we're done! <code>13</code> converted to binary is <code>01101</code>.</p>
 <hr />
 <h2 id="homework">Homework</h2>
 <div class="admonition attention">
@@ -275,21 +336,21 @@
 <ol>
 <li>Add the binary numbers <code>1011</code> and <code>1101</code>. Show the carry row.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>  carry:
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>   1011
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>+  1101
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>------
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>  carry:
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>   1011
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>+  1101
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>------
 </code></pre></div>
 <ol>
 <li>Add the binary numbers <code>11101</code> and <code>11011</code>. Show the carry row.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>  carry:
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  11101
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>+ 11011
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>-------
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>  carry:
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>  11101
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>+ 11011
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>-------
 </code></pre></div>
 <ol>
-<li><strong>Challenge:</strong> Convert <code>10011</code> and <code>10101</code> from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.</li>
+<li><strong>Extra Challenge: (ungraded)</strong> Convert <code>10011</code> and <code>10101</code> from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.</li>
 </ol>
 </div>
               

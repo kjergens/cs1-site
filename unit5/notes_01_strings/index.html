@@ -43,7 +43,7 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">Unit 1 - Binary, ASCII, and Scratch</span></p>
+              <p class="caption"><span class="caption-text">Unit 1 - Getting Started</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_01_how_computers_work/">Chapter 1: How Computers Work</a>
                   </li>
@@ -93,11 +93,9 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#section-1-overview">Section 1: Overview</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-2-declaring-strings">Section 2: Declaring Strings</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-2-adding-to-a-string">Section 2: "Adding" to a String</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-3-adding-to-a-string">Section 3: Adding to a String</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-4-common-string-methods">Section 4: Common String Methods</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-3-common-string-methods">Section 3: Common String Methods</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#length">length()</a>
     </li>
@@ -117,7 +115,7 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-5-immutability-methods-dont-change-the-original">Section 5: Immutability — Methods Don't Change the Original</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-4-immutability-methods-dont-change-the-original">Section 4: Immutability — Methods Don't Change the Original</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
         <ul>
@@ -178,8 +176,6 @@
 <h2 id="section-1-overview">Section 1: Overview</h2>
 <p>In Java, a <code>String</code> is used to store text. It is <strong>not</strong> a simple primitive like <code>int</code> or <code>double</code> — it is a special type called an <strong>object</strong>, which means it comes with built-in methods you can call on it.</p>
 <p><strong>Key idea: Strings are immutable.</strong> Once a <code>String</code> is created, it cannot be changed. Any method that seems to change it actually creates a brand-new <code>String</code>. To save the result, you must reassign it.</p>
-<hr />
-<h2 id="section-2-declaring-strings">Section 2: Declaring Strings</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">String</span><span class="w"> </span><span class="n">greeting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello World!&quot;</span><span class="p">;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">String</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Welcome to Java&quot;</span><span class="p">;</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
@@ -187,7 +183,8 @@
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">String</span><span class="w"> </span><span class="n">nothing</span><span class="p">;</span><span class="w">          </span><span class="c1">// declared but not initialized</span>
 </code></pre></div>
 <hr />
-<h2 id="section-3-adding-to-a-string">Section 3: Adding to a String</h2>
+<h2 id="section-2-adding-to-a-string">Section 2: "Adding" to a String</h2>
+<p>You can't really add to a String, but you can create a new one using the existing String value plus a suffix.</p>
 <p>Use <code>+=</code> to append text:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;cat&quot;</span><span class="p">;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">s</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">&quot;s&quot;</span><span class="p">;</span><span class="w">   </span><span class="c1">// s is now &quot;cats&quot;</span>
@@ -202,7 +199,8 @@
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">t</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">&quot;toy&quot;</span><span class="p">;</span><span class="w">   </span><span class="c1">// won&#39;t compile</span>
 </code></pre></div>
 <hr />
-<h2 id="section-4-common-string-methods">Section 4: Common String Methods</h2>
+<h2 id="section-3-common-string-methods">Section 3: Common String Methods</h2>
+<p>String is different from other data types because each instance of a String comes with a set of methods which returns information about the String, or a new value based on the String. See these commonly used methods:</p>
 <h3 id="length"><code>length()</code></h3>
 <p>Returns the number of characters in the String. Spaces count.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">String</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Java&quot;</span><span class="p">;</span>
@@ -283,7 +281,7 @@
 </code></pre></div>
 <p>For simple single-character swaps, <code>replace()</code> and <code>replaceAll()</code> produce the same result — the real difference is that <code>replaceAll</code>/<code>replaceFirst</code> treat their first argument as a <em>regular expression</em> pattern, not just literal text, so they can match more complex patterns.</p>
 <hr />
-<h2 id="section-5-immutability-methods-dont-change-the-original">Section 5: Immutability — Methods Don't Change the Original</h2>
+<h2 id="section-4-immutability-methods-dont-change-the-original">Section 4: Immutability — Methods Don't Change the Original</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;JAVA&quot;</span><span class="p">;</span>
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">s</span><span class="p">.</span><span class="na">toLowerCase</span><span class="p">();</span><span class="w">            </span><span class="c1">// does NOT change s</span>
 <a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s</span><span class="p">);</span><span class="w">      </span><span class="c1">// still prints &quot;JAVA&quot;</span>
