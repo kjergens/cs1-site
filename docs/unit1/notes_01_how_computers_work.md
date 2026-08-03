@@ -2,7 +2,7 @@
 
 ---
 
-## Hardware vs. Software
+## A. Hardware vs. Software
 
 A computer has two sides: **hardware** (the physical parts) and **software** (the instructions that tell hardware what to do).
 
@@ -35,7 +35,7 @@ RAM is fast but temporary — everything in it disappears when you shut down. St
 
 ---
 
-## Everything Is Data
+## B. Everything Is Data
 
 The most important idea in this unit: **computers only understand numbers.** Everything — text, images, sound, video, programs — is stored as numbers. The rest of the unit explores how.
 
@@ -61,6 +61,8 @@ Computers only understand numbers. So how do they store text?
 When your program stores the String `"Hello"`, the computer stores the numbers `72 101 108 108 111`. Text is always numbers underneath.
 
 ---
+## Homework
+
 !!! attention 
 	###Unit 1 Chapter 1 Homework
 
