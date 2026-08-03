@@ -1,4 +1,4 @@
-# Table of Contents
+# Computer Science 1 Table of Contents
 
 | Chapter | Homework |
 |---|---|
