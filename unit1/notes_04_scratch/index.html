@@ -302,74 +302,83 @@
 <p>Work through the activities below <strong>in order</strong> — each one builds on or modifies the previous. Don't start a new activity in a separate area; change your existing code as instructed.</p>
 <h4 id="activity-1-say-hello">Activity 1: Say Hello</h4>
 <p>Do the exercise and answer the question.</p>
-<p>Drag a "when green flag clicked" block to the scripts area. Attach a "say [ ] for [ ] seconds" block to it. Make the cat say <code>Hello, world!</code> for 2 seconds.</p>
-<p>Click the green flag to test it.</p>
-<p><strong>1:</strong> What is the "input" to the say block? What is the "side effect" of calling it?</p>
+<p><strong>Exercise:</strong> 
+1. Drag a "when green flag clicked" block to the scripts area. 
+2. Attach a "say [ ] for [ ] seconds" block to it. 
+3. Make the cat say <code>Hello, world!</code> for 2 seconds.
+4. Click the green flag to test it.</p>
+<p><strong>Q1:</strong> What is the "input" to the say block? What is the "side effect" of calling it?</p>
 <h4 id="activity-2-ask-and-answer">Activity 2: Ask and Answer</h4>
 <p>Do the exercise and answer the question.</p>
-<p>Modify your Activity 1 code:</p>
-<ul>
-<li>Replace the say block with an "ask [ ] and wait" block. Use the prompt: <code>What's your name?</code></li>
+<p><strong>Exercise:</strong> 
+Modify your Activity 1 code:</p>
+<ol>
+<li>Replace the say block with an "ask [ ] and wait" block. </li>
+<li>Use the prompt: <code>What's your name?</code></li>
 <li>After the ask block, add a "say [ ] for [ ] seconds" block that uses the "join" operator to say <code>Hello,</code> joined with the answer variable.</li>
-</ul>
-<p>Click the green flag, type your name, and verify the cat greets you by name.</p>
-<p><strong>2:</strong> Where does the answer variable come from? What category is it in?</p>
+<li>Click the green flag, type your name, and verify the cat greets you by name.</li>
+</ol>
+<p><strong>Q2:</strong> Where does the answer variable come from? What category is it in?</p>
 <h4 id="activity-3-text-to-speech">Activity 3: Text to Speech</h4>
-<ul>
+<ol>
 <li>Click "Add Extension" (bottom-left of the block palette). Find and add the Text to Speech extension.</li>
 <li>Add a "speak [ ]" block after your say block. Pass it the same joined greeting (<code>Hello,</code> + answer).</li>
-</ul>
+</ol>
 <p>Now when you run the program, the cat should both display and speak the greeting.</p>
 <h4 id="activity-4-sound-loop">Activity 4: Sound Loop</h4>
-<p>Do the exercise and answer the question.</p>
-<p>Detach the blocks from "when green flag clicked" and move them off to the side (keep them — you may want them later).</p>
-<p>Build a new script: when green flag clicked → "play sound [Meow] until done".</p>
-<p>Click the green flag. The cat should meow once.</p>
+<ol>
+<li>Detach the blocks from "when green flag clicked" and move them off to the side (keep them — you may want them later).</li>
+<li>Build a new script: when green flag clicked → "play sound [Meow] until done".</li>
+<li>Click the green flag. The cat should meow once.</li>
+</ol>
 <h4 id="activity-5-repeat">Activity 5: Repeat</h4>
-<p>Modify your Activity 4 code: wrap the play sound block inside a "repeat [3]" loop.</p>
-<p>Click the green flag. The cat should meow 3 times.</p>
-<p><strong>3:</strong> What would happen if you changed the repeat number to 0? To 10?</p>
+<p>Do the exercise and answer the question.</p>
+<p><strong>Exercise:</strong> </p>
+<p>Modify your Activity 4 code: 
+1. Wrap the play sound block inside a "repeat [3]" loop.
+2. Click the green flag. The cat should meow 3 times.</p>
+<p><strong>Q3:</strong> What would happen if you changed the repeat number to 0? To 10?</p>
 <h4 id="activity-6-define-a-block-custom-function">Activity 6: Define a Block (Custom Function)</h4>
 <p>Do the exercise and answer the question.</p>
-<ul>
+<p><strong>Exercise:</strong> </p>
+<ol>
 <li>In the block palette, click "My Blocks" → "Make a Block". Name it <code>meow</code>.</li>
 <li>Inside the define <code>meow</code> block definition, place a "play sound [Meow] until done" block.</li>
 <li>Back in your main script, replace the play sound block inside the repeat loop with your new <code>meow</code> block.</li>
-</ul>
-<p>Test it — behavior should be identical to Activity 5, but now using a custom block.</p>
-<p><strong>4:</strong> Why is it useful to define a named block even if it only contains one line?</p>
+<li>Test it — behavior should be identical to Activity 5, but now using a custom block.</li>
+</ol>
+<p><strong>Q4:</strong> Why is it useful to define a named block even if it only contains one line?</p>
 <h4 id="activity-7-add-a-parameter">Activity 7: Add a Parameter</h4>
 <p>Do the exercise and answer the question.</p>
-<p>Edit your <code>meow</code> block:</p>
-<ul>
-<li>Click "My Blocks" → right-click <code>meow</code> → "Edit"</li>
-<li>Add a number input called <code>n</code></li>
-<li>Rename the block to <code>meow n times</code></li>
-<li>Inside the definition, wrap the play sound block in a "repeat [n]" loop</li>
-</ul>
-<p>Update your main script to call <code>meow n times</code> with a number of your choice. Remove the separate repeat wrapper — the loop is now inside the block.</p>
-<p>Test with different values of <code>n</code>.</p>
-<p><strong>5:</strong> What is <code>n</code> called in programming? (Hint: we saw this word in Activity 1.)</p>
+<p><strong>Exercise:</strong> Edit your <code>meow</code> block:
+1. Click "My Blocks" → right-click <code>meow</code> → "Edit"
+2. Add a number input called <code>n</code>
+3. Rename the block to <code>meow n times</code>
+4. Inside the definition, wrap the play sound block in a "repeat [n]" loop
+5. Update your main script to call <code>meow n times</code> with a number of your choice.
+6. Remove the separate repeat wrapper — the loop is now inside the block.
+7. Test with different values of <code>n</code>.</p>
+<p><strong>Q5:</strong> What is <code>n</code> called in programming? (Hint: we saw this word in Activity 1.)</p>
 <h4 id="activity-8-sensing-touching">Activity 8: Sensing — Touching</h4>
 <p>Do the exercise and answer the question.</p>
-<p>Detach your current script from "when green flag clicked" and set it aside.</p>
-<p>Build a new script: a <code>forever</code> loop containing "if touching the edge → play sound [Meow] until done".</p>
-<p>Run it and slowly drag the sprite toward the edge of the stage. The cat should meow when it touches the boundary.</p>
-<p><strong>Experiment:</strong> what happens if you add a "move [10] steps" block inside the forever loop?</p>
-<p><strong>6:</strong> What category is the "touching" block in? What other sensing blocks exist?</p>
+<p><strong>Exercise:</strong> 
+1. Detach your current script from "when green flag clicked" and set it aside.
+2. Build a new script: a <code>forever</code> loop containing "if touching the edge → play sound [Meow] until done".
+3. Run it and slowly drag the sprite toward the edge of the stage. The cat should meow when it touches the boundary.</p>
+<p><strong>Q6:</strong> What category is the "touching" block in? What other sensing blocks exist?</p>
 <h4 id="activity-9-video-motion">Activity 9: Video Motion</h4>
-<ul>
+<ol>
 <li>Click "Add Extension" → add the Video Sensing extension.</li>
 <li>Build a script: when video motion &gt; <code>30</code> → play sound [Meow] until done.</li>
-</ul>
-<p>Test it by moving in front of your camera. The cat should react to motion.</p>
+<li>Test it by moving in front of your camera. The cat should react to motion.</li>
+</ol>
 <h4 id="activity-10-bring-it-together-extension">Activity 10: Bring It Together (Extension)</h4>
 <p>Now that you know events, variables, loops, custom blocks, sensing, and sound — combine them. Build a program that does all of the following:</p>
-<ul>
+<ol>
 <li>When the green flag is clicked, ask the user their name and greet them by name (from Activity 2)</li>
 <li>Then use your <code>meow n times</code> block to meow a number of times equal to the number of letters in the user's name (hint: look in the Operators category for a block that finds the length of a string)</li>
 <li>Add a costume change each time the cat meows so it looks like the cat is "talking"</li>
-</ul>
+</ol>
 <p>This is a challenge — it may take trial and error. That's normal.</p>
 <p><strong>Reflection</strong> (write 2–3 sentences in a comment block in Scratch or in the Schoology text box): What was the hardest part of Activity 10? What concept from today's homework do you think will show up again when we start Java?</p>
 <p><strong>How to submit:</strong> In Scratch, go to File → Save to your computer — this downloads a <code>.sb3</code> file. Upload the <code>.sb3</code> to the Schoology assignment. (Backup option: if you can't download the file, Share your project in Scratch via File → Share, and paste the project link as a Schoology comment.)</p>
