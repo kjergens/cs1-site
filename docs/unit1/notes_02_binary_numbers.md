@@ -14,7 +14,7 @@ In the number system you use every day, each position represents a power of 10:
   4    2    7
   ↑    ↑    ↑
  10²  10¹  10⁰
-(100) (10)  (1)
+(100) (10) (1)
 
 Value: 4×100 + 2×10 + 7×1 = 427
 ```
@@ -42,22 +42,23 @@ Each `0` or `1` is called a **bit**. 8 bits = 1 **byte**.
 
 Write out the positional values (powers of 2), multiply each bit, then add.
 
-**Example: `1101`**
+**Example: `1011`**
 
-| Bit | Position value | Contribution |
-|---|---|---|
-| 1 | 8 | 8 |
-| 1 | 4 | 4 |
-| 0 | 2 | 0 |
-| 1 | 1 | 1 |
+```
+  1    0    1    1
+  ↑    ↑    ↑    ↑
+  2³   2²   2¹   2⁰
+ (8)  (4)  (2)  (1)
 
-**Total: 8 + 4 + 0 + 1 = 13**
+Value: 1×8 + 0×4 + 1×2 + 1×1 = 11
+```
+
 
 **Common powers of 2 to memorize:**
 
-| 2⁰ | 2¹ | 2² | 2³ | 2⁴ | 2⁵ | 2⁶ | 2⁷ |
-|---|---|---|---|---|---|---|---|
-| 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 |
+ 128   64   32   16    8    4    2    1
+  2⁷   2⁶   2⁵   2⁴   2³   2²   2¹   2⁰
+
 
 ---
 
@@ -87,53 +88,48 @@ Set up your powers of two like this:
 
 ```
   _    _    _    _    _
-  ↑    ↑    ↑    ↑    ↑
+ 16    8    4    2    1
   2⁴   2³   2²   2¹   2⁰
-(16)  (8)  (4)  (2)  (1)
 
 ```
 
-Start with the left (most significant) digit, and fill in a 1 or 0. For example for the number `13`:
+Start with the left (most significant) digit, and fill in a 1 or 0. For example for the number `13`
+
 1. The left-most digit is 16. 16 is bigger than 13 so put 0:
 
 ```
   0    _    _    _    _
-  ↑    ↑    ↑    ↑    ↑
-  2³   2³   2²   2¹   2⁰
-(16)  (8)  (4)  (2)  (1)
+ 16    8    4    2    1
+  2⁴   2³   2²   2¹   2⁰
 
 ```
 
 2. The next digit is 8. 8 fits into to 13 so put a 1:
 ```
   0    1    _    _    _
-  ↑    ↑    ↑    ↑    ↑
-  2³   2³   2²   2¹   2⁰
-(16)  (8)  (4)  (2)  (1)
+ 16    8    4    2    1
+  2⁴   2³   2²   2¹   2⁰
 ```
 
 3. The 8 is accounted for so (13 - 8) = 5 remains. The next spot is 4. 4 fits into 5 so put 1 there:
 ```
   0    1    1    _    _
-  ↑    ↑    ↑    ↑    ↑
-  2³   2³   2²   2¹   2⁰
-(16)  (8)  (4)  (2)  (1)
+ 16    8    4    2    1
+  2⁴   2³   2²   2¹   2⁰
 ```
 
 4. 4 is accounted for so (5 - 4) = 1 remains. The next spot is 2. 2 is bigger than 1 so put a 0 there:
 ```
   0    1    1    0    _
-  ↑    ↑    ↑    ↑    ↑
-  2³   2³   2²   2¹   2⁰
-(16)  (8)  (4)  (2)  (1)
+ 16    8    4    2    1
+  2⁴   2³   2²   2¹   2⁰
 ```
 
 5. 1 still remains. The next spot is 1. 1 fits into 1 so put a 1 there:
 ```
   0    1    1    0    1
-  ↑    ↑    ↑    ↑    ↑
-  2³   2³   2²   2¹   2⁰
-(16)  (8)  (4)  (2)  (1)
+ 16    8    4    2    1
+  2⁴   2³   2²   2¹   2⁰
 ```
 
 1 is accounteed for so 1 - 1 = 0, 0 remains so we're done! `13` converted to binary is `01101`.
