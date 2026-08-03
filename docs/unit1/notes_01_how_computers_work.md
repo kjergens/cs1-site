@@ -67,7 +67,6 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
     *Assigned Class 1 · Due Class 1 in class · Graded as Community Building/Class Engagement — try your best, no points off for incorrect answers*
 
     #### Part A: Terminology
-
     Match each description to its component: `CPU`, `RAM`, `Hard Drive/SSD`, `Motherboard`, `Monitor`.
 
     1. Stores data and programs for quick access during operation
@@ -77,7 +76,6 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	5. Connects all components, allowing them to communicate
 
 	#### Part B: True/False (+ short answer)
-
 	Transistors are tiny electronic switches that control the flow of electricity in a computer. They're the foundation of modern computing.
 
 	1. True or False: Transistors can act as switches, turning electrical signals on or off.
@@ -87,7 +85,6 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	5. **Short answer:** If transistors are like light switches, how do you think combining millions of them allows a computer to perform complex tasks like playing a video game?
 
 	#### Part C: Fill in the blanks (+ short answer)
-
 	1. **Timeline:** fill in the blanks using each term once — `1943`, `ENIAC`, `1971`, `Microprocessor`, `1984`, `Apple Macintosh`, `1822`, `Difference Engine`.
 	    - ______: Charles Babbage designs the ______, a mechanical calculator considered an early precursor to modern computers.
 	    - ______: The ______, one of the first general-purpose electronic computers, is built using vacuum tubes.
@@ -96,7 +93,6 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	2. **Short answer:** The ENIAC weighed over 30 tons and took up an entire room! What allowed computers to become small enough to fit in your pocket?
 
 	#### Part D: Binary
-
 	Computers don't think like humans, but they process information using binary code (0s and 1s). Transistors help create these 0s and 1s by controlling electrical signals.
 
 	Convert the following decimal numbers to binary (hint: divide by 2 repeatedly and note the remainders):
