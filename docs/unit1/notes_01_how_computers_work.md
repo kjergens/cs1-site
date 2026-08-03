@@ -68,15 +68,15 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 
     #### Part 1: Terminology
 
-    Match each component to its description: `CPU`, `RAM`, `Hard Drive/SSD`, `Motherboard`, `Monitor`.
+    Match each description to its component: `CPU`, `RAM`, `Hard Drive/SSD`, `Motherboard`, `Monitor`.
 
-    - Stores data and programs for quick access during operation
-	- The "brain" of the computer that performs calculations and executes instructions
-	- Displays the output of the computer's processing, like text or images
-	- Long-term storage for files, programs, and the operating system
-	- Connects all components, allowing them to communicate
+    1. Stores data and programs for quick access during operation
+	2. The "brain" of the computer that performs calculations and executes instructions
+	3. Displays the output of the computer's processing, like text or images
+	4. Long-term storage for files, programs, and the operating system
+	5. Connects all components, allowing them to communicate
 
-	#### Part 2: True/False 
+	#### Part 2: True/False (+ short answer)
 
 	Transistors are tiny electronic switches that control the flow of electricity in a computer. They're the foundation of modern computing.
 
@@ -86,7 +86,7 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	4. True or False: Transistors work by using materials like silicon to control electrical flow.
 	5. **Short answer:** If transistors are like light switches, how do you think combining millions of them allows a computer to perform complex tasks like playing a video game?
 
-	#### Part 3: Fill in the blanks
+	#### Part 3: Fill in the blanks (+ short answer)
 
 	1. **Timeline:** fill in the blanks using each term once — `1943`, `ENIAC`, `1971`, `Microprocessor`, `1984`, `Apple Macintosh`, `1822`, `Difference Engine`.
 	    - ______: Charles Babbage designs the ______, a mechanical calculator considered an early precursor to modern computers.
