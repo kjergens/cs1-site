@@ -107,6 +107,8 @@ Every program you write this year — in Scratch or Java — uses these same bui
 
     *Assigned Class 2 · Due Class 3 · Submission: upload your `.sb3` file to the Schoology assignment*
 
+    #### Background
+
     Scratch is a visual programming language developed by MIT. It lets you build programs by snapping together blocks — no curly braces, semicolons, or typos to worry about. It's a great way to see programming logic in action before we move to Java.
 
     The Scratch interface has three main areas:
@@ -120,14 +122,16 @@ Every program you write this year — in Scratch or Java — uses these same bui
     Work through the activities below **in order** — each one builds on or modifies the previous. Don't start a new activity in a separate area; change your existing code as instructed.
 
     #### Activity 1: Say Hello
+    Do the exercise and answer the question.
 
     Drag a "when green flag clicked" block to the scripts area. Attach a "say [ ] for [ ] seconds" block to it. Make the cat say `Hello, world!` for 2 seconds.
 
     Click the green flag to test it.
 
-    **Checkpoint:** What is the "input" to the say block? What is the "side effect" of calling it?
+    **1:** What is the "input" to the say block? What is the "side effect" of calling it?
 
     #### Activity 2: Ask and Answer
+    Do the exercise and answer the question.
 
     Modify your Activity 1 code:
 
@@ -136,7 +140,7 @@ Every program you write this year — in Scratch or Java — uses these same bui
 
     Click the green flag, type your name, and verify the cat greets you by name.
 
-    **Checkpoint:** Where does the answer variable come from? What category is it in?
+    **2:** Where does the answer variable come from? What category is it in?
 
     #### Activity 3: Text to Speech
 
@@ -146,6 +150,7 @@ Every program you write this year — in Scratch or Java — uses these same bui
     Now when you run the program, the cat should both display and speak the greeting.
 
     #### Activity 4: Sound Loop
+    Do the exercise and answer the question.
 
     Detach the blocks from "when green flag clicked" and move them off to the side (keep them — you may want them later).
 
@@ -159,9 +164,10 @@ Every program you write this year — in Scratch or Java — uses these same bui
 
     Click the green flag. The cat should meow 3 times.
 
-    **Checkpoint:** What would happen if you changed the repeat number to 0? To 10?
+    **3:** What would happen if you changed the repeat number to 0? To 10?
 
     #### Activity 6: Define a Block (Custom Function)
+    Do the exercise and answer the question.
 
     - In the block palette, click "My Blocks" → "Make a Block". Name it `meow`.
     - Inside the define `meow` block definition, place a "play sound [Meow] until done" block.
@@ -169,9 +175,10 @@ Every program you write this year — in Scratch or Java — uses these same bui
 
     Test it — behavior should be identical to Activity 5, but now using a custom block.
 
-    **Checkpoint:** Why is it useful to define a named block even if it only contains one line?
+    **4:** Why is it useful to define a named block even if it only contains one line?
 
     #### Activity 7: Add a Parameter
+    Do the exercise and answer the question.
 
     Edit your `meow` block:
 
@@ -184,9 +191,10 @@ Every program you write this year — in Scratch or Java — uses these same bui
 
     Test with different values of `n`.
 
-    **Checkpoint:** What is `n` called in programming? (Hint: we saw this word in Activity 1.)
+    **5:** What is `n` called in programming? (Hint: we saw this word in Activity 1.)
 
     #### Activity 8: Sensing — Touching
+    Do the exercise and answer the question.
 
     Detach your current script from "when green flag clicked" and set it aside.
 
@@ -196,7 +204,7 @@ Every program you write this year — in Scratch or Java — uses these same bui
 
     **Experiment:** what happens if you add a "move [10] steps" block inside the forever loop?
 
-    **Checkpoint:** What category is the "touching" block in? What other sensing blocks exist?
+    **6:** What category is the "touching" block in? What other sensing blocks exist?
 
     #### Activity 9: Video Motion
 
