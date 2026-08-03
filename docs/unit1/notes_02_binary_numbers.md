@@ -36,7 +36,9 @@ Each `0` or `1` is called a **bit**. 8 bits = 1 **byte**.
 
 ---
 
-## Section 2: Converting Binary → Decimal
+## Section 2: Converting to and from Binary
+
+### Convert from binary
 
 Write out the positional values (powers of 2), multiply each bit, then add.
 
@@ -59,7 +61,9 @@ Write out the positional values (powers of 2), multiply each bit, then add.
 
 ---
 
-## Section 3: Converting Decimal → Binary
+### Convert to binary
+
+#### Division method
 
 Repeatedly divide by 2 and record the remainders. Read remainders bottom to top.
 
@@ -75,6 +79,64 @@ Read bottom to top: 1101
 ```
 
 Check: `1101` = 8 + 4 + 0 + 1 = 13 ✓
+
+#### Places method
+
+Set up your powers of two like this:
+
+
+```
+  _    _    _    _    _
+  ↑    ↑    ↑    ↑    ↑
+  2⁴   2³   2²   2¹   2⁰
+(16)  (8)  (4)  (2)  (1)
+
+```
+
+Start with the left (most significant) digit, and fill in a 1 or 0. For example for the number `13`:
+1. The left-most digit is 16. 16 is bigger than 13 so put 0:
+
+```
+  0    _    _    _    _
+  ↑    ↑    ↑    ↑    ↑
+  2³   2³   2²   2¹   2⁰
+(16)  (8)  (4)  (2)  (1)
+
+```
+
+2. The next digit is 8. 8 fits into to 13 so put a 1:
+```
+  0    1    _    _    _
+  ↑    ↑    ↑    ↑    ↑
+  2³   2³   2²   2¹   2⁰
+(16)  (8)  (4)  (2)  (1)
+```
+
+3. The 8 is accounted for so (13 - 8) = 5 remains. The next spot is 4. 4 fits into 5 so put 1 there:
+```
+  0    1    1    _    _
+  ↑    ↑    ↑    ↑    ↑
+  2³   2³   2²   2¹   2⁰
+(16)  (8)  (4)  (2)  (1)
+```
+
+4. 4 is accounted for so (5 - 4) = 1 remains. The next spot is 2. 2 is bigger than 1 so put a 0 there:
+```
+  0    1    1    0    _
+  ↑    ↑    ↑    ↑    ↑
+  2³   2³   2²   2¹   2⁰
+(16)  (8)  (4)  (2)  (1)
+```
+
+5. 1 still remains. The next spot is 1. 1 fits into 1 so put a 1 there:
+```
+  0    1    1    0    1
+  ↑    ↑    ↑    ↑    ↑
+  2³   2³   2²   2¹   2⁰
+(16)  (8)  (4)  (2)  (1)
+```
+
+1 is accounteed for so 1 - 1 = 0, 0 remains so we're done! `13` converted to binary is `01101`.
 
 ---
 
@@ -118,4 +180,4 @@ Check: `1101` = 8 + 4 + 0 + 1 = 13 ✓
     -------
     ```
 
-    8. **Challenge:** Convert `10011` and `10101` from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.
+    8. **Extra Challenge: (ungraded)** Convert `10011` and `10101` from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.

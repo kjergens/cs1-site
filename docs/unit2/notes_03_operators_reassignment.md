@@ -4,6 +4,8 @@
 
 ## Section 1: Re-assignment
 
+### Using assignment operator (=)
+
 A variable's value isn't fixed — once declared, you can give it a new value at any time. This is called **re-assignment**.
 
 ```java
@@ -19,7 +21,7 @@ score = score * 2;    // score is now 120
 
 ---
 
-## Section 2: Increment and Decrement
+### Increment and Decrement
 
 **`++`** increases a variable by 1. **`--`** decreases a variable by 1. They're shorthand for the most common kind of re-assignment.
 
@@ -39,7 +41,7 @@ lives--;   // same as: lives = lives - 1;   → lives is 2
 
 ---
 
-## Section 3: Compound Assignment
+### Using Compound Assignments
 
 Compound assignment operators combine an operation with re-assignment in one step.
 

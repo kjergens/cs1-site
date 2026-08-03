@@ -43,7 +43,7 @@ Using a boolean can make your code read like a sentence.
 
 ---
 
-## Section 4 The `if` Statement
+## Section 4: The `if` Statement
 
 ```java
 if (condition) {

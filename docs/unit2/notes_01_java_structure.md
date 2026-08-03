@@ -41,7 +41,11 @@ System.out.println("Age: " + age);        // Concatenates string and variable
 
 ---
 
-## Section 3: Arithmetic Operations
+## Section 3: Operations
+
+An operation is an action performed on a set of values, or operands, that resolves to an answer.
+
+### Arithmetic Operations
 
 | Operator | Meaning | Example | Result |
 |---|---|---|---|
@@ -59,7 +63,7 @@ System.out.println("Age: " + age);        // Concatenates string and variable
 
 ---
 
-## Section 4: Comparison Operators
+### Comparison Operators
 
 Java can compare values and produce a `boolean` result (`true` or `false`).
 

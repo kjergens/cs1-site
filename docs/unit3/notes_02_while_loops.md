@@ -8,9 +8,8 @@ An `if` statement runs code once — if the condition is true, the block runs an
 
 A `while` loop is different: after the block runs, the program goes **back to check the condition again**. If it's still true, the block runs again. This continues until the condition becomes false.
 
----
+The structure of a while loop is this:
 
-## Section 2: Syntax
 
 ```java
 while (condition) {
@@ -20,7 +19,7 @@ while (condition) {
 
 ---
 
-## Section 3: Example: Counting with a While Loop
+## Section 2: Example: Counting with a While Loop
 
 ```java
 int x = 0;
@@ -49,7 +48,7 @@ Number: 4
 
 ---
 
-## Section 4: The Infinite Loop Problem
+## Section 3: The Infinite Loop Problem
 
 If the condition never becomes false, the loop runs forever — an **infinite loop**. This usually means the loop variable is never updated.
 
@@ -73,7 +72,7 @@ while (x <= 4) {
 
 ---
 
-## Section 5: Key Points
+## Section 4: Key Points
 
 - The loop checks its condition **before** every iteration
 - If the condition is `true`, the loop body executes

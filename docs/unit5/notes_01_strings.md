@@ -8,9 +8,6 @@ In Java, a `String` is used to store text. It is **not** a simple primitive like
 
 **Key idea: Strings are immutable.** Once a `String` is created, it cannot be changed. Any method that seems to change it actually creates a brand-new `String`. To save the result, you must reassign it.
 
----
-
-## Section 2: Declaring Strings
 
 ```java
 String greeting = "Hello World!";
@@ -22,7 +19,9 @@ String nothing;          // declared but not initialized
 
 ---
 
-## Section 3: Adding to a String
+## Section 2: "Adding" to a String
+
+You can't really add to a String, but you can create a new one using the existing String value plus a suffix.
 
 Use `+=` to append text:
 
@@ -45,7 +44,9 @@ t += "toy";   // won't compile
 
 ---
 
-## Section 4: Common String Methods
+## Section 3: Common String Methods
+
+String is different from other data types because each instance of a String comes with a set of methods which returns information about the String, or a new value based on the String. See these commonly used methods:
 
 ### `length()`
 Returns the number of characters in the String. Spaces count.
@@ -140,7 +141,7 @@ For simple single-character swaps, `replace()` and `replaceAll()` produce the sa
 
 ---
 
-## Section 5: Immutability — Methods Don't Change the Original
+## Section 4: Immutability — Methods Don't Change the Original
 
 ```java
 String s = "JAVA";

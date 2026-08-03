@@ -10,15 +10,17 @@
 
 ---
 
-## Section 2: Import (do this once at the top)
+## Section 2: Creating a Scanner.
+
+Before you can declare a Scanner variable, you need to import (do this once at the top):
 
 ```java
 import java.util.Scanner;
 ```
 
----
 
-## Section 3: Create the Scanner Object
+Now that it's imported you can create the Scanner object.
+
 
 ```java
 Scanner scan = new Scanner(System.in);   // "System.in" = keyboard
@@ -28,7 +30,7 @@ Scanner scan = new Scanner(System.in);   // "System.in" = keyboard
 
 ---
 
-## Section 4: Reading Different Kinds of Input
+## Section 3: Reading Different Kinds of Input
 
 ### Read one word — `next()`
 ```java
@@ -56,7 +58,7 @@ Reads a decimal number. If the user types `3.14`, `price` stores the `double` `3
 
 ---
 
-## Section 5: Mini Examples
+## Section 4: Code Examples
 
 ### Example 1 — Reading a full line as a String
 ```java
@@ -97,7 +99,7 @@ public class NumbersExample {
 
 ---
 
-## Section 6: Important: The nextLine() Trap
+## Section 5: Important: The nextLine() Trap
 
 When `nextLine()` comes **after** `next()`, `nextInt()`, or `nextDouble()`, it often **skips** a line.
 
@@ -124,7 +126,7 @@ String name = scan.nextLine();   // now this works
 
 ---
 
-## Section 7: Converting Strings to int or double
+## Section 6: Converting Strings to int or double
 
 `nextLine()` always returns a `String`. If you need a number, convert after:
 
