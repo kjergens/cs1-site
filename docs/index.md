@@ -1,5 +1,6 @@
 # Table of Contents
 
+| Chapter | Homework |
 |---|---|
 | **Unit 1 — Getting Started**| How computers work, number systems, intro to programming |
 |     [    Chapter 1: How Computers Work](unit1/notes_01_how_computers_work.md)| [Homework](nit1/notes_01_how_computers_work.md#homework)
