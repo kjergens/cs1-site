@@ -1,9 +1,9 @@
 # CS1 — Computer Science 1
 
-| Unit | Topics |
+| Unit | Details/Homework |
 |---|---|
 | **Unit 1 — Getting Started**| How computers work, number systems, intro to programming |
-|     [    -Chapter 1: How Computers Work](unit1/notes_01_how_computers_work.md)| 
+|     [    -Chapter 1: How Computers Work](unit1/notes_01_how_computers_work.md)| [Homework](nit1/notes_01_how_computers_work.md#homework)
 |     [    -Chapter 2: Binary Numbers](unit1/notes_02_binary_numbers.md)|[Homework](unit1/notes_02_binary_numbers.md#homework)
 |     [    -Chapter 3: Binary Arithmetic](unit1/notes_03_binary_operations.md)|[homework ](unit1/notes_03_binary_operations.md#homework)
 |     [    -Chapter 4: Scratch](unit1/notes_04_scratch.md)|[Homework](unit1/notes_04_scratch.md#homework )
