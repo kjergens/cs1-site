@@ -28,11 +28,11 @@ nav:
   - Unit 2 - Java Basics:
     - "Chapter 1: Structure, Printing & Operators": unit2/notes_01_java_structure.md
     - "Chapter 2: Variables and Data Types": unit2/notes_02_variables.md
-    - "Chapter 3: Re-assignment & Compound Assignment": unit2/notes_03_operators_reassignment.md
+    - "Chapter 3: Reassignment Operators": unit2/notes_03_operators_reassignment.md
     - "Chapter 4: Scanner and User Input": unit2/notes_04_scanner.md
     - "Unit 2 Check Your Understanding": unit2/unit2_check_understanding.md
   - Unit 3 - Conditionals and While Loops:
-    - "Chapter 1: Conditional Code Blocks": unit3/notes_01_conditionals.md
+    - "Chapter 1: Conditionals": unit3/notes_01_conditionals.md
     - "Chapter 2: While Loops": unit3/notes_02_while_loops.md
     - "Unit 3 Check Your Understanding": unit3/unit3_check_understanding.md
   - Unit 4 - For Loops:
@@ -40,7 +40,7 @@ nav:
     - "Chapter 2: Advanced For Loops": unit4/notes_02_advanced_for_loops.md
     - "Unit 4 Check Your Understanding": unit4/unit4_check_understanding.md
   - Unit 5 - Strings and Math:
-    - "Chapter 1: Strings": unit5/notes_01_strings.md
+    - "Chapter 1: String Methods": unit5/notes_01_strings.md
     - "Chapter 2: The Math Class": unit5/notes_02_math.md
     - "Unit 5 Check Your Understanding": unit5/unit5_check_understanding.md
   - Projects:
