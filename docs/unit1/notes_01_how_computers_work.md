@@ -61,11 +61,12 @@ Computers only understand numbers. So how do they store text?
 When your program stores the String `"Hello"`, the computer stores the numbers `72 101 108 108 111`. Text is always numbers underneath.
 
 ---
-!!! note Unit 1 Chapter 1 Homework
+!!! attention 
+	###Unit 1 Chapter 1 Homework
 
     *Assigned Class 1 · Due Class 1 in class · Graded as Community Building/Class Engagement — try your best, no points off for incorrect answers*
 
-    ### Part 1: What's Inside a Computer?
+    #### Part 1: Terminology
 
     Match each component to its description: `CPU`, `RAM`, `Hard Drive/SSD`, `Motherboard`, `Monitor`.
 
@@ -75,7 +76,7 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	- Long-term storage for files, programs, and the operating system
 	- Connects all components, allowing them to communicate
 
-	### Part 2: Transistors — The Building Blocks of Computers
+	#### Part 2: True/False 
 
 	Transistors are tiny electronic switches that control the flow of electricity in a computer. They're the foundation of modern computing.
 
@@ -85,7 +86,7 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	4. True or False: Transistors work by using materials like silicon to control electrical flow.
 	5. **Short answer:** If transistors are like light switches, how do you think combining millions of them allows a computer to perform complex tasks like playing a video game?
 
-	### Part 3: A Brief History of Computing
+	#### Part 3: Fill in the blanks
 
 	1. **Timeline:** fill in the blanks using each term once — `1943`, `ENIAC`, `1971`, `Microprocessor`, `1984`, `Apple Macintosh`, `1822`, `Difference Engine`.
 	    - ______: Charles Babbage designs the ______, a mechanical calculator considered an early precursor to modern computers.
@@ -94,7 +95,7 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	    - ______: The ______ is released, making personal computers user-friendly with a graphical interface.
 	2. **Short answer:** The ENIAC weighed over 30 tons and took up an entire room! What allowed computers to become small enough to fit in your pocket?
 
-	### Part 4: How Do Computers "Think"?
+	#### Part 4: Binary
 
 	Computers don't think like humans, but they process information using binary code (0s and 1s). Transistors help create these 0s and 1s by controlling electrical signals.
 
