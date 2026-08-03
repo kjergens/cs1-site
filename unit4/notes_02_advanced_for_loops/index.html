@@ -90,15 +90,19 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#section-3-nested-loops">Section 3: Nested Loops</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#unit-4-chapter-2-homework">Unit 4 Chapter 2 Homework</a>
+    <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#part-1-predict-the-output-loop-patterns">Part 1: Predict the Output — Loop Patterns</a>
+    <li class="toctree-l3"><a class="reference internal" href="#unit-4-chapter-2-homework">Unit 4 Chapter 2 Homework</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#part-a-predict-the-output-loop-patterns">Part A: Predict the Output — Loop Patterns</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#part-2-write-the-loop-header">Part 2: Write the Loop Header</a>
+    <li class="toctree-l4"><a class="reference internal" href="#part-b-write-the-loop-header">Part B: Write the Loop Header</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#part-3-aggregation">Part 3: Aggregation</a>
+    <li class="toctree-l4"><a class="reference internal" href="#part-c-aggregation">Part C: Aggregation</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#part-4-nested-loops">Part 4: Nested Loops</a>
+    <li class="toctree-l4"><a class="reference internal" href="#part-d-nested-loops">Part D: Nested Loops</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -206,8 +210,11 @@ Output:
 - An empty <code>System.out.println();</code> just moves to a new line — useful for finishing one row before starting the next
 - Making the inner loop's limit depend on the outer loop's variable (e.g. <code>j &lt;= row</code>) creates growing or shrinking patterns, like a triangle</p>
 <hr />
-<h2 id="unit-4-chapter-2-homework">Unit 4 Chapter 2 Homework</h2>
-<h3 id="part-1-predict-the-output-loop-patterns">Part 1: Predict the Output — Loop Patterns</h3>
+<h2 id="homework">Homework</h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<h3 id="unit-4-chapter-2-homework">Unit 4 Chapter 2 Homework</h3>
+<h4 id="part-a-predict-the-output-loop-patterns">Part A: Predict the Output — Loop Patterns</h4>
 <p>Write exactly what each loop prints, one value per line.</p>
 <p>1.
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -234,7 +241,7 @@ Output:
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
 <a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="p">}</span>
 </code></pre></div></p>
-<h3 id="part-2-write-the-loop-header">Part 2: Write the Loop Header</h3>
+<h4 id="part-b-write-the-loop-header">Part B: Write the Loop Header</h4>
 <p>Fill in the for loop header so the loop produces the described output. The loop body is <code>System.out.println(i);</code>.</p>
 <ol>
 <li>Prints: <code>10 9 8 7 6 5 4 3 2 1</code>
@@ -253,7 +260,7 @@ Output:
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="p">}</span>
 </code></pre></div></li>
 </ol>
-<h3 id="part-3-aggregation">Part 3: Aggregation</h3>
+<h4 id="part-c-aggregation">Part C: Aggregation</h4>
 <ol>
 <li>Trace through this code. What is the final value of <code>sum</code>?
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
@@ -272,7 +279,7 @@ Output:
 <li>Write a for loop that adds up all even numbers from 2 to 20 (inclusive) and prints the total. (Hint: you can either step by 2, or check inside the loop with <code>%</code>.)</li>
 <li>Write a for loop that counts how many numbers from 1 to 50 are divisible by 3, and prints that count.</li>
 </ol>
-<h3 id="part-4-nested-loops">Part 4: Nested Loops</h3>
+<h4 id="part-d-nested-loops">Part D: Nested Loops</h4>
 <ol>
 <li>What does this code print? Draw it out carefully — the inner loop finishes completely before the outer loop advances.
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">row</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -298,6 +305,7 @@ Output:
 <a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>1 2 3 4 5
 </code></pre></div></li>
 </ol>
+</div>
               
             </div>
           </div><footer>

@@ -71,27 +71,31 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#section-3-from-scratch-to-java">Section 3: From Scratch to Java</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#unit-1-chapter-4-homework">Unit 1 Chapter 4 Homework</a>
+    <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#activity-1-say-hello">Activity 1: Say Hello</a>
+    <li class="toctree-l3"><a class="reference internal" href="#unit-1-chapter-4-homework">Unit 1 Chapter 4 Homework</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#activity-1-say-hello">Activity 1: Say Hello</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activity-2-ask-and-answer">Activity 2: Ask and Answer</a>
+    <li class="toctree-l4"><a class="reference internal" href="#activity-2-ask-and-answer">Activity 2: Ask and Answer</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activity-3-text-to-speech">Activity 3: Text to Speech</a>
+    <li class="toctree-l4"><a class="reference internal" href="#activity-3-text-to-speech">Activity 3: Text to Speech</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activity-4-sound-loop">Activity 4: Sound Loop</a>
+    <li class="toctree-l4"><a class="reference internal" href="#activity-4-sound-loop">Activity 4: Sound Loop</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activity-5-repeat">Activity 5: Repeat</a>
+    <li class="toctree-l4"><a class="reference internal" href="#activity-5-repeat">Activity 5: Repeat</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activity-6-define-a-block-custom-function">Activity 6: Define a Block (Custom Function)</a>
+    <li class="toctree-l4"><a class="reference internal" href="#activity-6-define-a-block-custom-function">Activity 6: Define a Block (Custom Function)</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activity-7-add-a-parameter">Activity 7: Add a Parameter</a>
+    <li class="toctree-l4"><a class="reference internal" href="#activity-7-add-a-parameter">Activity 7: Add a Parameter</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activity-8-sensing-touching">Activity 8: Sensing — Touching</a>
+    <li class="toctree-l4"><a class="reference internal" href="#activity-8-sensing-touching">Activity 8: Sensing — Touching</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activity-9-video-motion">Activity 9: Video Motion</a>
+    <li class="toctree-l4"><a class="reference internal" href="#activity-9-video-motion">Activity 9: Video Motion</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activity-10-bring-it-together-extension">Activity 10: Bring It Together (Extension)</a>
+    <li class="toctree-l4"><a class="reference internal" href="#activity-10-bring-it-together-extension">Activity 10: Bring It Together (Extension)</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -279,7 +283,10 @@
 </table>
 <p>Every program you write this year — in Scratch or Java — uses these same building blocks. The language changes; the structure doesn't.</p>
 <hr />
-<h2 id="unit-1-chapter-4-homework">Unit 1 Chapter 4 Homework</h2>
+<h2 id="homework">Homework</h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<h3 id="unit-1-chapter-4-homework">Unit 1 Chapter 4 Homework</h3>
 <p><em>Assigned Class 2 · Due Class 3 · Submission: upload your <code>.sb3</code> file to the Schoology assignment</em></p>
 <p>Scratch is a visual programming language developed by MIT. It lets you build programs by snapping together blocks — no curly braces, semicolons, or typos to worry about. It's a great way to see programming logic in action before we move to Java.</p>
 <p>The Scratch interface has three main areas:</p>
@@ -290,11 +297,11 @@
 </ul>
 <p>The stage uses a coordinate system where <code>(0, 0)</code> is the center. The cat starts there.</p>
 <p>Work through the activities below <strong>in order</strong> — each one builds on or modifies the previous. Don't start a new activity in a separate area; change your existing code as instructed.</p>
-<h3 id="activity-1-say-hello">Activity 1: Say Hello</h3>
+<h4 id="activity-1-say-hello">Activity 1: Say Hello</h4>
 <p>Drag a "when green flag clicked" block to the scripts area. Attach a "say [ ] for [ ] seconds" block to it. Make the cat say <code>Hello, world!</code> for 2 seconds.</p>
 <p>Click the green flag to test it.</p>
 <p><strong>Checkpoint:</strong> What is the "input" to the say block? What is the "side effect" of calling it?</p>
-<h3 id="activity-2-ask-and-answer">Activity 2: Ask and Answer</h3>
+<h4 id="activity-2-ask-and-answer">Activity 2: Ask and Answer</h4>
 <p>Modify your Activity 1 code:</p>
 <ul>
 <li>Replace the say block with an "ask [ ] and wait" block. Use the prompt: <code>What's your name?</code></li>
@@ -302,21 +309,21 @@
 </ul>
 <p>Click the green flag, type your name, and verify the cat greets you by name.</p>
 <p><strong>Checkpoint:</strong> Where does the answer variable come from? What category is it in?</p>
-<h3 id="activity-3-text-to-speech">Activity 3: Text to Speech</h3>
+<h4 id="activity-3-text-to-speech">Activity 3: Text to Speech</h4>
 <ul>
 <li>Click "Add Extension" (bottom-left of the block palette). Find and add the Text to Speech extension.</li>
 <li>Add a "speak [ ]" block after your say block. Pass it the same joined greeting (<code>Hello,</code> + answer).</li>
 </ul>
 <p>Now when you run the program, the cat should both display and speak the greeting.</p>
-<h3 id="activity-4-sound-loop">Activity 4: Sound Loop</h3>
+<h4 id="activity-4-sound-loop">Activity 4: Sound Loop</h4>
 <p>Detach the blocks from "when green flag clicked" and move them off to the side (keep them — you may want them later).</p>
 <p>Build a new script: when green flag clicked → "play sound [Meow] until done".</p>
 <p>Click the green flag. The cat should meow once.</p>
-<h3 id="activity-5-repeat">Activity 5: Repeat</h3>
+<h4 id="activity-5-repeat">Activity 5: Repeat</h4>
 <p>Modify your Activity 4 code: wrap the play sound block inside a "repeat [3]" loop.</p>
 <p>Click the green flag. The cat should meow 3 times.</p>
 <p><strong>Checkpoint:</strong> What would happen if you changed the repeat number to 0? To 10?</p>
-<h3 id="activity-6-define-a-block-custom-function">Activity 6: Define a Block (Custom Function)</h3>
+<h4 id="activity-6-define-a-block-custom-function">Activity 6: Define a Block (Custom Function)</h4>
 <ul>
 <li>In the block palette, click "My Blocks" → "Make a Block". Name it <code>meow</code>.</li>
 <li>Inside the define <code>meow</code> block definition, place a "play sound [Meow] until done" block.</li>
@@ -324,7 +331,7 @@
 </ul>
 <p>Test it — behavior should be identical to Activity 5, but now using a custom block.</p>
 <p><strong>Checkpoint:</strong> Why is it useful to define a named block even if it only contains one line?</p>
-<h3 id="activity-7-add-a-parameter">Activity 7: Add a Parameter</h3>
+<h4 id="activity-7-add-a-parameter">Activity 7: Add a Parameter</h4>
 <p>Edit your <code>meow</code> block:</p>
 <ul>
 <li>Click "My Blocks" → right-click <code>meow</code> → "Edit"</li>
@@ -335,19 +342,19 @@
 <p>Update your main script to call <code>meow n times</code> with a number of your choice. Remove the separate repeat wrapper — the loop is now inside the block.</p>
 <p>Test with different values of <code>n</code>.</p>
 <p><strong>Checkpoint:</strong> What is <code>n</code> called in programming? (Hint: we saw this word in Activity 1.)</p>
-<h3 id="activity-8-sensing-touching">Activity 8: Sensing — Touching</h3>
+<h4 id="activity-8-sensing-touching">Activity 8: Sensing — Touching</h4>
 <p>Detach your current script from "when green flag clicked" and set it aside.</p>
 <p>Build a new script: a <code>forever</code> loop containing "if touching the edge → play sound [Meow] until done".</p>
 <p>Run it and slowly drag the sprite toward the edge of the stage. The cat should meow when it touches the boundary.</p>
 <p><strong>Experiment:</strong> what happens if you add a "move [10] steps" block inside the forever loop?</p>
 <p><strong>Checkpoint:</strong> What category is the "touching" block in? What other sensing blocks exist?</p>
-<h3 id="activity-9-video-motion">Activity 9: Video Motion</h3>
+<h4 id="activity-9-video-motion">Activity 9: Video Motion</h4>
 <ul>
 <li>Click "Add Extension" → add the Video Sensing extension.</li>
 <li>Build a script: when video motion &gt; <code>30</code> → play sound [Meow] until done.</li>
 </ul>
 <p>Test it by moving in front of your camera. The cat should react to motion.</p>
-<h3 id="activity-10-bring-it-together-extension">Activity 10: Bring It Together (Extension)</h3>
+<h4 id="activity-10-bring-it-together-extension">Activity 10: Bring It Together (Extension)</h4>
 <p>Now that you know events, variables, loops, custom blocks, sensing, and sound — combine them. Build a program that does all of the following:</p>
 <ul>
 <li>When the green flag is clicked, ask the user their name and greet them by name (from Activity 2)</li>
@@ -357,6 +364,7 @@
 <p>This is a challenge — it may take trial and error. That's normal.</p>
 <p><strong>Reflection</strong> (write 2–3 sentences in a comment block in Scratch or in the Schoology text box): What was the hardest part of Activity 10? What concept from today's homework do you think will show up again when we start Java?</p>
 <p><strong>How to submit:</strong> In Scratch, go to File → Save to your computer — this downloads a <code>.sb3</code> file. Upload the <code>.sb3</code> to the Schoology assignment. (Backup option: if you can't download the file, Share your project in Scratch via File → Share, and paste the project link as a Schoology comment.)</p>
+</div>
               
             </div>
           </div><footer>
