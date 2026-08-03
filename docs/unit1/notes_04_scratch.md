@@ -124,102 +124,99 @@ Every program you write this year — in Scratch or Java — uses these same bui
     #### Activity 1: Say Hello
     Do the exercise and answer the question.
 
-    Drag a "when green flag clicked" block to the scripts area. Attach a "say [ ] for [ ] seconds" block to it. Make the cat say `Hello, world!` for 2 seconds.
+    **Exercise:** 
+    1. Drag a "when green flag clicked" block to the scripts area. 
+    2. Attach a "say [ ] for [ ] seconds" block to it. 
+    3. Make the cat say `Hello, world!` for 2 seconds.
+    4. Click the green flag to test it.
 
-    Click the green flag to test it.
-
-    **1:** What is the "input" to the say block? What is the "side effect" of calling it?
+    **Q1:** What is the "input" to the say block? What is the "side effect" of calling it?
 
     #### Activity 2: Ask and Answer
     Do the exercise and answer the question.
 
+    **Exercise:** 
     Modify your Activity 1 code:
 
-    - Replace the say block with an "ask [ ] and wait" block. Use the prompt: `What's your name?`
-    - After the ask block, add a "say [ ] for [ ] seconds" block that uses the "join" operator to say `Hello, ` joined with the answer variable.
+    1. Replace the say block with an "ask [ ] and wait" block. 
+    2. Use the prompt: `What's your name?`
+    3. After the ask block, add a "say [ ] for [ ] seconds" block that uses the "join" operator to say `Hello, ` joined with the answer variable.
+    4. Click the green flag, type your name, and verify the cat greets you by name.
 
-    Click the green flag, type your name, and verify the cat greets you by name.
-
-    **2:** Where does the answer variable come from? What category is it in?
+    **Q2:** Where does the answer variable come from? What category is it in?
 
     #### Activity 3: Text to Speech
 
-    - Click "Add Extension" (bottom-left of the block palette). Find and add the Text to Speech extension.
-    - Add a "speak [ ]" block after your say block. Pass it the same joined greeting (`Hello, ` + answer).
+    1. Click "Add Extension" (bottom-left of the block palette). Find and add the Text to Speech extension.
+    2. Add a "speak [ ]" block after your say block. Pass it the same joined greeting (`Hello, ` + answer).
 
     Now when you run the program, the cat should both display and speak the greeting.
 
     #### Activity 4: Sound Loop
-    Do the exercise and answer the question.
-
-    Detach the blocks from "when green flag clicked" and move them off to the side (keep them — you may want them later).
-
-    Build a new script: when green flag clicked → "play sound [Meow] until done".
-
-    Click the green flag. The cat should meow once.
+    1. Detach the blocks from "when green flag clicked" and move them off to the side (keep them — you may want them later).
+    2. Build a new script: when green flag clicked → "play sound [Meow] until done".
+    3. Click the green flag. The cat should meow once.
 
     #### Activity 5: Repeat
+    Do the exercise and answer the question.
 
-    Modify your Activity 4 code: wrap the play sound block inside a "repeat [3]" loop.
+    **Exercise:** 
 
-    Click the green flag. The cat should meow 3 times.
+    Modify your Activity 4 code: 
+    1. Wrap the play sound block inside a "repeat [3]" loop.
+    2. Click the green flag. The cat should meow 3 times.
 
-    **3:** What would happen if you changed the repeat number to 0? To 10?
+    **Q3:** What would happen if you changed the repeat number to 0? To 10?
 
     #### Activity 6: Define a Block (Custom Function)
     Do the exercise and answer the question.
 
-    - In the block palette, click "My Blocks" → "Make a Block". Name it `meow`.
-    - Inside the define `meow` block definition, place a "play sound [Meow] until done" block.
-    - Back in your main script, replace the play sound block inside the repeat loop with your new `meow` block.
+    **Exercise:** 
 
-    Test it — behavior should be identical to Activity 5, but now using a custom block.
+    1. In the block palette, click "My Blocks" → "Make a Block". Name it `meow`.
+    2. Inside the define `meow` block definition, place a "play sound [Meow] until done" block.
+    3. Back in your main script, replace the play sound block inside the repeat loop with your new `meow` block.
+    4. Test it — behavior should be identical to Activity 5, but now using a custom block.
 
-    **4:** Why is it useful to define a named block even if it only contains one line?
+    **Q4:** Why is it useful to define a named block even if it only contains one line?
 
     #### Activity 7: Add a Parameter
     Do the exercise and answer the question.
 
-    Edit your `meow` block:
+    **Exercise:** Edit your `meow` block:
+    1. Click "My Blocks" → right-click `meow` → "Edit"
+    2. Add a number input called `n`
+    3. Rename the block to `meow n times`
+    4. Inside the definition, wrap the play sound block in a "repeat [n]" loop
+    5. Update your main script to call `meow n times` with a number of your choice.
+    6. Remove the separate repeat wrapper — the loop is now inside the block.
+    7. Test with different values of `n`.
 
-    - Click "My Blocks" → right-click `meow` → "Edit"
-    - Add a number input called `n`
-    - Rename the block to `meow n times`
-    - Inside the definition, wrap the play sound block in a "repeat [n]" loop
-
-    Update your main script to call `meow n times` with a number of your choice. Remove the separate repeat wrapper — the loop is now inside the block.
-
-    Test with different values of `n`.
-
-    **5:** What is `n` called in programming? (Hint: we saw this word in Activity 1.)
+    **Q5:** What is `n` called in programming? (Hint: we saw this word in Activity 1.)
 
     #### Activity 8: Sensing — Touching
     Do the exercise and answer the question.
 
-    Detach your current script from "when green flag clicked" and set it aside.
+    **Exercise:** 
+    1. Detach your current script from "when green flag clicked" and set it aside.
+    2. Build a new script: a `forever` loop containing "if touching the edge → play sound [Meow] until done".
+    3. Run it and slowly drag the sprite toward the edge of the stage. The cat should meow when it touches the boundary.
 
-    Build a new script: a `forever` loop containing "if touching the edge → play sound [Meow] until done".
-
-    Run it and slowly drag the sprite toward the edge of the stage. The cat should meow when it touches the boundary.
-
-    **Experiment:** what happens if you add a "move [10] steps" block inside the forever loop?
-
-    **6:** What category is the "touching" block in? What other sensing blocks exist?
+    **Q6:** What category is the "touching" block in? What other sensing blocks exist?
 
     #### Activity 9: Video Motion
 
-    - Click "Add Extension" → add the Video Sensing extension.
-    - Build a script: when video motion > `30` → play sound [Meow] until done.
-
-    Test it by moving in front of your camera. The cat should react to motion.
+    1. Click "Add Extension" → add the Video Sensing extension.
+    2. Build a script: when video motion > `30` → play sound [Meow] until done.
+    3. Test it by moving in front of your camera. The cat should react to motion.
 
     #### Activity 10: Bring It Together (Extension)
 
     Now that you know events, variables, loops, custom blocks, sensing, and sound — combine them. Build a program that does all of the following:
 
-    - When the green flag is clicked, ask the user their name and greet them by name (from Activity 2)
-    - Then use your `meow n times` block to meow a number of times equal to the number of letters in the user's name (hint: look in the Operators category for a block that finds the length of a string)
-    - Add a costume change each time the cat meows so it looks like the cat is "talking"
+    1. When the green flag is clicked, ask the user their name and greet them by name (from Activity 2)
+    2. Then use your `meow n times` block to meow a number of times equal to the number of letters in the user's name (hint: look in the Operators category for a block that finds the length of a string)
+    3. Add a costume change each time the cat meows so it looks like the cat is "talking"
 
     This is a challenge — it may take trial and error. That's normal.
 
