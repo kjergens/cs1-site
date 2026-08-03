@@ -56,8 +56,10 @@ Value: 1×8 + 0×4 + 1×2 + 1×1 = 11
 
 **Common powers of 2 to memorize:**
 
+```
  128   64   32   16    8    4    2    1
   2⁷   2⁶   2⁵   2⁴   2³   2²   2¹   2⁰
+```
 
 
 ---
@@ -96,9 +98,9 @@ Set up your powers of two like this:
 Start with the left (most significant) digit, and fill in a 1 or 0. For example for the number `13`
 
 1. The left-most digit is 16. 16 is bigger than 13 so put 0:
-
 ```
-  0    _    _    _    _
+  0 
+  _    _    _    _    _
  16    8    4    2    1
   2⁴   2³   2²   2¹   2⁰
 
@@ -106,21 +108,24 @@ Start with the left (most significant) digit, and fill in a 1 or 0. For example 
 
 2. The next digit is 8. 8 fits into to 13 so put a 1:
 ```
-  0    1    _    _    _
+  0    1    
+  _    _    _    _    _
  16    8    4    2    1
   2⁴   2³   2²   2¹   2⁰
 ```
 
 3. The 8 is accounted for so (13 - 8) = 5 remains. The next spot is 4. 4 fits into 5 so put 1 there:
 ```
-  0    1    1    _    _
+  0    1    1   
+  _    _    _    _    _
  16    8    4    2    1
   2⁴   2³   2²   2¹   2⁰
 ```
 
 4. 4 is accounted for so (5 - 4) = 1 remains. The next spot is 2. 2 is bigger than 1 so put a 0 there:
 ```
-  0    1    1    0    _
+  0    1    1    0 
+  _    _    _    _    _
  16    8    4    2    1
   2⁴   2³   2²   2¹   2⁰
 ```
@@ -128,6 +133,7 @@ Start with the left (most significant) digit, and fill in a 1 or 0. For example 
 5. 1 still remains. The next spot is 1. 1 fits into 1 so put a 1 there:
 ```
   0    1    1    0    1
+  _    _    _    _    _
  16    8    4    2    1
   2⁴   2³   2²   2¹   2⁰
 ```
