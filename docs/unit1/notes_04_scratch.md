@@ -125,6 +125,7 @@ Every program you write this year — in Scratch or Java — uses these same bui
     Do the exercise and answer the question.
 
     **Exercise:** 
+
     1. Drag a "when green flag clicked" block to the scripts area. 
     2. Attach a "say [ ] for [ ] seconds" block to it. 
     3. Make the cat say `Hello, world!` for 2 seconds.
@@ -160,9 +161,8 @@ Every program you write this year — in Scratch or Java — uses these same bui
     #### Activity 5: Repeat
     Do the exercise and answer the question.
 
-    **Exercise:** 
+    **Exercise:** Modify your Activity 4 code: 
 
-    Modify your Activity 4 code: 
     1. Wrap the play sound block inside a "repeat [3]" loop.
     2. Click the green flag. The cat should meow 3 times.
 
@@ -184,6 +184,7 @@ Every program you write this year — in Scratch or Java — uses these same bui
     Do the exercise and answer the question.
 
     **Exercise:** Edit your `meow` block:
+
     1. Click "My Blocks" → right-click `meow` → "Edit"
     2. Add a number input called `n`
     3. Rename the block to `meow n times`
@@ -198,6 +199,7 @@ Every program you write this year — in Scratch or Java — uses these same bui
     Do the exercise and answer the question.
 
     **Exercise:** 
+    
     1. Detach your current script from "when green flag clicked" and set it aside.
     2. Build a new script: a `forever` loop containing "if touching the edge → play sound [Meow] until done".
     3. Run it and slowly drag the sprite toward the edge of the stage. The cat should meow when it touches the boundary.
