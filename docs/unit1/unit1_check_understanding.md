@@ -8,6 +8,10 @@
     4. What ASCII value represents the letter `'A'`? What about `'a'`?
     5. Why does `'a'` have a higher ASCII value than `'A'`?
     6. Multiply in binary: `110 × 101`
+    7. In Scratch, which block is most similar to a Java `for` loop — `repeat (10)` or `repeat until < >`? Explain why.
+    8. What is the Java equivalent of Scratch's `if < > then / else` block?
+    9. A Scratch script starts with "when green flag clicked." What is the equivalent starting point in a Java program?
+    10. Why does this course start with Scratch before moving to Java?
 
     ---
 
@@ -50,3 +54,11 @@
     1 1 1 1 0     → 30
     ```
     Check: 6 × 5 = 30 ✓
+
+    **7.** `repeat (10)` — it runs a block a fixed number of times, just like a Java `for` loop. `repeat until < >` is closer to a `while` loop, since it keeps going until a condition becomes true.
+
+    **8.** Java's `if / else` statement.
+
+    **9.** The `main` method — `public static void main(String[] args)` — is where a Java program begins running, the same way "when green flag clicked" is where a Scratch script begins running.
+
+    **10.** Scratch lets you see programming concepts (sequence, variables, conditionals, loops, events) happen visually with blocks before learning Java's stricter text-based syntax. It builds the same logical thinking without the added difficulty of syntax errors, semicolons, and typing exact keywords.
