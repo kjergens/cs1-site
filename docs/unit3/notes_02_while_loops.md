@@ -90,14 +90,12 @@ Use a `for` loop when you **do know** how many times it will run. (Covered in Un
 
 ---
 
-## Homework
+## In-Class Activity: FortuneTeller (Partner Activity)
 
 !!! attention
-    ### Unit 3 Chapter 2 Homework
+    ### FortuneTeller — In-Class Partner Activity
 
-    *Complete both programs in JuiceMind.com — go to Teams/Classes, select our CS section, then Code Sandbox.*
-
-    #### Program 1: FortuneTeller
+    *Complete with a partner in class, in JuiceMind.com — go to Teams/Classes, select our CS section, then Code Sandbox.*
 
     Create a new Code Sandbox named `FortuneTeller` (language: Java). Start from this template:
 
@@ -156,7 +154,49 @@ Use a `for` loop when you **do know** how many times it will run. (Covered in Un
     Thanks for using Fortune Teller!
     ```
 
-    #### Program 2: FizzBuzz
+---
+
+## Homework
+
+!!! attention
+    ### Unit 3 Chapter 2 Homework
+
+    #### Part A: While Loop Practice
+
+    1. What does this loop print?
+    ```java
+    int x = 1;
+    while (x <= 5) {
+        System.out.println(x);
+        x++;
+    }
+    ```
+
+    2. Trace through this loop. What is the final value of `total`?
+    ```java
+    int total = 0;
+    int i = 1;
+    while (i <= 4) {
+        total += i;
+        i++;
+    }
+    ```
+
+    3. Write a while loop that prints the numbers 10 down to 1 (one per line).
+
+    4. This loop is supposed to print `"Hi"` 3 times, but it runs forever. What's wrong, and how would you fix it?
+    ```java
+    int count = 0;
+    while (count < 3) {
+        System.out.println("Hi");
+    }
+    ```
+
+    5. Write a while loop that starts at `100` and keeps dividing by `2`, printing each result, stopping once the value is less than `1`.
+
+    #### Part B: FizzBuzz
+
+    *Complete in JuiceMind.com — go to Teams/Classes, select our CS section, then Code Sandbox.*
 
     Create a new Code Sandbox named `FizzBuzz` (language: Java). Write a program that prints the numbers from 1 to 500, with these rules:
 
