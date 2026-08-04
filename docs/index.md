@@ -1,5 +1,9 @@
 # Computer Science 1 Table of Contents
 
+📋 **[Syllabus, Policies & Contract](syllabus.md)** — course overview, grading breakdown, academic integrity, and make-up work policy
+
+---
+
 | Chapter | Homework |
 |---|---|
 | **Unit 1 — Getting Started**| How computers work, number systems, intro to programming |
