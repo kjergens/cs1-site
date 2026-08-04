@@ -99,7 +99,7 @@ points *= 2;    // points is now 240
 
     Show the value of the variable after each line executes.
 
-    9.
+    9. What will score be after each line of code executes?
     ```java
     int score = 50;          // score = ____
     score = score + 10;      // score = ____
@@ -107,7 +107,7 @@ points *= 2;    // points is now 240
     score = score - 5;       // score = ____
     ```
 
-    10.
+    10. What will n be after each line of code executes?
     ```java
     int n = 8;               // n = ____
     n = n / 3;               // n = ____
@@ -124,8 +124,7 @@ points *= 2;    // points is now 240
 
     #### Part C: Increment and Decrement
 
-    12. What does `count++` do? Write an equivalent statement using `=` and `+`.
-    13. What will the following code print?
+    12. What will the following code print?
     ```java
     int count = 0;
     count++;
@@ -133,7 +132,7 @@ points *= 2;    // points is now 240
     count++;
     System.out.println(count);
     ```
-    14. What will the following code print?
+    13. What will the following code print?
     ```java
     int lives = 3;
     System.out.println(lives);
@@ -145,7 +144,7 @@ points *= 2;    // points is now 240
 
     #### Part D: Compound Assignment
 
-    15. Rewrite each statement using a compound assignment operator (`+=`, `-=`, `*=`, `/=`):
+    14. Rewrite each statement using a compound assignment operator (`+=`, `-=`, `*=`, `/=`):
 
     | Original | Rewrite with compound operator |
     |---|---|
@@ -154,7 +153,7 @@ points *= 2;    // points is now 240
     | `x = x * 2;` | |
     | `x = x / 4;` | |
 
-    16. What will the following code print?
+    15. What will the following code print?
     ```java
     int points = 100;
     points += 50;
@@ -162,30 +161,15 @@ points *= 2;    // points is now 240
     points *= 2;
     System.out.println(points);
     ```
-    17. What will the following code print?
-    ```java
-    int n = 20;
-    n /= 4;
-    n += 3;
-    n++;
-    System.out.println(n);
-    ```
 
     #### Part E: Find the Bug
 
-    Each snippet below has exactly one error. Identify the line and describe the problem.
+    16. This snippet below has exactly one error. Identify the line and describe the problem.
 
-    18.
     ```java
-    int total = 0;
+    int total = 5;
     total =+ 10;
     System.out.println(total);
     ```
     (This code compiles and runs — but does not do what the programmer intended. What does `=+` actually do?)
 
-    19.
-    ```java
-    int x = 7;
-    int y = 0;
-    System.out.println(x / y);
-    ```
