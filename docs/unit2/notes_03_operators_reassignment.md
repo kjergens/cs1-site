@@ -114,7 +114,7 @@ points *= 2;    // points is now 240
     n = n + 1;               // n = ____
     ```
 
-    11.
+    11. What will a and b be after each line of code executes?
     ```java
     int a = 5;               // a = ____
     int b = a;                // b = ____
