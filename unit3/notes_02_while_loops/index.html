@@ -89,13 +89,19 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#section-6-when-to-use-while-vs-for">Section 6: When to Use While vs. For</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#in-class-activity-fortuneteller-partner-activity">In-Class Activity: FortuneTeller (Partner Activity)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fortuneteller-in-class-partner-activity">FortuneTeller — In-Class Partner Activity</a>
+    </li>
+        </ul>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#unit-3-chapter-2-homework">Unit 3 Chapter 2 Homework</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#program-1-fortuneteller">Program 1: FortuneTeller</a>
+    <li class="toctree-l4"><a class="reference internal" href="#part-a-while-loop-practice">Part A: While Loop Practice</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#program-2-fizzbuzz">Program 2: FizzBuzz</a>
+    <li class="toctree-l4"><a class="reference internal" href="#part-b-fizzbuzz">Part B: FizzBuzz</a>
     </li>
         </ul>
     </li>
@@ -218,12 +224,11 @@
 <p>Use a <code>while</code> loop when you <strong>don't know in advance</strong> how many times the loop will run — for example, reading input until the user types <code>"quit"</code>.</p>
 <p>Use a <code>for</code> loop when you <strong>do know</strong> how many times it will run. (Covered in Unit 4.)</p>
 <hr />
-<h2 id="homework">Homework</h2>
+<h2 id="in-class-activity-fortuneteller-partner-activity">In-Class Activity: FortuneTeller (Partner Activity)</h2>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<h3 id="unit-3-chapter-2-homework">Unit 3 Chapter 2 Homework</h3>
-<p><em>Complete both programs in JuiceMind.com — go to Teams/Classes, select our CS section, then Code Sandbox.</em></p>
-<h4 id="program-1-fortuneteller">Program 1: FortuneTeller</h4>
+<h3 id="fortuneteller-in-class-partner-activity">FortuneTeller — In-Class Partner Activity</h3>
+<p><em>Complete with a partner in class, in JuiceMind.com — go to Teams/Classes, select our CS section, then Code Sandbox.</em></p>
 <p>Create a new Code Sandbox named <code>FortuneTeller</code> (language: Java). Start from this template:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Random</span><span class="p">;</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
@@ -294,7 +299,50 @@
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>Yikes! Total disaster ahead - stay in bed!
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>Thanks for using Fortune Teller!
 </code></pre></div></p>
-<h4 id="program-2-fizzbuzz">Program 2: FizzBuzz</h4>
+</div>
+<hr />
+<h2 id="homework">Homework</h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<h3 id="unit-3-chapter-2-homework">Unit 3 Chapter 2 Homework</h3>
+<h4 id="part-a-while-loop-practice">Part A: While Loop Practice</h4>
+<ol>
+<li>
+<p>What does this loop print?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="n">x</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">}</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Trace through this loop. What is the final value of <code>total</code>?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="n">total</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">}</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Write a while loop that prints the numbers 10 down to 1 (one per line).</p>
+</li>
+<li>
+<p>This loop is supposed to print <code>"Hi"</code> 3 times, but it runs forever. What's wrong, and how would you fix it?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hi&quot;</span><span class="p">);</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="p">}</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Write a while loop that starts at <code>100</code> and keeps dividing by <code>2</code>, printing each result, stopping once the value is less than <code>1</code>.</p>
+</li>
+</ol>
+<h4 id="part-b-fizzbuzz">Part B: FizzBuzz</h4>
+<p><em>Complete in JuiceMind.com — go to Teams/Classes, select our CS section, then Code Sandbox.</em></p>
 <p>Create a new Code Sandbox named <code>FizzBuzz</code> (language: Java). Write a program that prints the numbers from 1 to 500, with these rules:</p>
 <ul>
 <li>For numbers divisible by both 3 and 5, print <code>"FizzBuzz"</code> instead of the number (hint: use the modulus operator <code>%</code>)</li>
@@ -303,21 +351,21 @@
 <li>For all other numbers, print the number itself</li>
 </ul>
 <p><strong>Example output (numbers 1–15):</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>1
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>2
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>Fizz
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>4
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>Buzz
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>Fizz
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>7
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>8
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>Fizz
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>Buzz
-<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>11
-<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>Fizz
-<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>13
-<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>14
-<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>FizzBuzz
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>1
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>2
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>Fizz
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>4
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>Buzz
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>Fizz
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>7
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>8
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>Fizz
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>Buzz
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>11
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>Fizz
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>13
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>14
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>FizzBuzz
 </code></pre></div></p>
 </div>
               
