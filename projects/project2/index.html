@@ -154,7 +154,7 @@
 <hr />
 <h2 id="summary">Summary</h2>
 <p><strong>Learning Goal:</strong> Build a text-based word-guessing game inspired by Wordle. You'll practice variables, <code>if</code> statements, <code>while</code> loops, <code>Scanner</code> for input, and String methods to create a complete interactive program.</p>
-<p><strong>Game Objective:</strong> The player gets up to 6 guesses to find all the letters in a secret 4-letter word. If they succeed, they advance to Level 2: up to 3 tries to guess the full word.</p>
+<p><strong>Game Objective:</strong> The player gets 6 guesses to find all the letters in a secret 4-letter word. If they find all the letters, they advance to Level 2: up to 3 tries to guess the full word.</p>
 <hr />
 <h2 id="string-methods-youll-need">String Methods You'll Need</h2>
 <table>
@@ -205,19 +205,22 @@
 <a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>Guess a letter: v
 <a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>Correct! Letters: acev
 <a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>Congratulations! You guessed all the letters.
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>============== LEVEL 2: Guess the word ==============
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>Guess the secret word. You have 3 guesses.
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>Letters: acev
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>Guess the word: evca
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>Incorrect! Letters: acev
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>Guess a letter: z
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>Incorrect! Letters: acev
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>Congratulations! You guessed all the letters.
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>============== LEVEL 2: Guess the word ==============
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>Guess the secret word. You have 3 guesses.
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>Letters: acev
 <a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>Guess the word: cave
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>Correct!
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>Guess the word: evca
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>Incorrect! Letters: acev
 <a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>Congratulations! You guessed the secret word.
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>Guess the word: cave
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>Correct!
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>Congratulations! You guessed the secret word.
 </code></pre></div>
 <hr />
 <h2 id="coding-tips-level-1">Coding Tips: Level 1</h2>
@@ -234,9 +237,7 @@
 <li>If new and correct: add it to your correct-guesses String</li>
 <li>If not: inform the user (incorrect guesses still count toward the limit)</li>
 </ol>
-<p>The loop should end when:
-- All letters are found: <code>correctGuesses.length() == secretWord.length()</code>, <strong>or</strong>
-- The player reaches the 6-guess limit</p>
+<p><strong>The loop should run for exactly 6 guesses</strong> — keep a counter and stop once it reaches the limit. After the loop finishes, check whether all the letters were found (<code>correctGuesses.length() == secretWord.length()</code>) to decide if the player advances to Level 2.</p>
 <p><strong>Input validation:</strong> If the player enters more than one character or a non-letter, reprompt them.</p>
 <hr />
 <h2 id="coding-tips-level-2">Coding Tips: Level 2</h2>
@@ -252,7 +253,7 @@
 </code></pre></div>
 <hr />
 <h2 id="level-up-optional">Level-Up (Optional)</h2>
-<p><strong>Small:</strong> Display incorrect guesses so the user doesn't repeat them; auto-win Level 2 if letters were guessed in order.</p>
+<p><strong>Small:</strong> End Level 1 early if the player finds all the letters before using all 6 guesses (instead of always running the full 6); display incorrect guesses so the user doesn't repeat them; auto-win Level 2 if letters were guessed in order.</p>
 <p><strong>Medium:</strong> Add a Level 3 with a harder word; support words with repeated letters.</p>
 <p><strong>Advanced:</strong> Use an API to get a random word; implement full Wordle rules (correct position, wrong position, not in word).</p>
 <hr />
