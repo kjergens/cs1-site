@@ -8,7 +8,7 @@
 
 **Learning Goal:** Build a text-based word-guessing game inspired by Wordle. You'll practice variables, `if` statements, `while` loops, `Scanner` for input, and String methods to create a complete interactive program.
 
-**Game Objective:** The player gets up to 6 guesses to find all the letters in a secret 4-letter word. If they succeed, they advance to Level 2: up to 3 tries to guess the full word.
+**Game Objective:** The player gets 6 guesses to find all the letters in a secret 4-letter word. If they find all the letters, they advance to Level 2: up to 3 tries to guess the full word.
 
 ---
 
@@ -45,6 +45,9 @@ Correct! Letters: ace
 Guess a letter: v
 Correct! Letters: acev
 
+Guess a letter: z
+Incorrect! Letters: acev
+
 Congratulations! You guessed all the letters.
 
 ============== LEVEL 2: Guess the word ==============
@@ -78,9 +81,7 @@ Use a `Scanner` and a loop where each iteration:
 4. If new and correct: add it to your correct-guesses String
 5. If not: inform the user (incorrect guesses still count toward the limit)
 
-The loop should end when:
-- All letters are found: `correctGuesses.length() == secretWord.length()`, **or**
-- The player reaches the 6-guess limit
+**The loop should run for exactly 6 guesses** — keep a counter and stop once it reaches the limit. After the loop finishes, check whether all the letters were found (`correctGuesses.length() == secretWord.length()`) to decide if the player advances to Level 2.
 
 **Input validation:** If the player enters more than one character or a non-letter, reprompt them.
 
@@ -108,7 +109,7 @@ import java.util.Scanner;
 
 ## Level-Up (Optional)
 
-**Small:** Display incorrect guesses so the user doesn't repeat them; auto-win Level 2 if letters were guessed in order.
+**Small:** End Level 1 early if the player finds all the letters before using all 6 guesses (instead of always running the full 6); display incorrect guesses so the user doesn't repeat them; auto-win Level 2 if letters were guessed in order.
 
 **Medium:** Add a Level 3 with a harder word; support words with repeated letters.
 
