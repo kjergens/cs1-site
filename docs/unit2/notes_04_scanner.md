@@ -199,25 +199,7 @@ double number = Double.parseDouble(text);
 
     For each program, the user's input is given — write what the program prints.
 
-    4. User types `8`:
-    ```java
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter a number: ");
-    int x = sc.nextInt();
-    System.out.println("You entered: " + x);
-    System.out.println("One more: " + (x + 1));
-    ```
-
-    5. User types `Maya`:
-    ```java
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter your name: ");
-    String name = sc.next();
-    System.out.println(name + name);
-    System.out.println(name.length());
-    ```
-
-    6. User types `4` then `7`:
+    4. User types `4` then `7`:
     ```java
     Scanner sc = new Scanner(System.in);
     System.out.print("First number: ");
@@ -227,7 +209,7 @@ double number = Double.parseDouble(text);
     System.out.println(a + " + " + b + " = " + (a + b));
     ```
 
-    7. User types `5`:
+    5. User types `5`:
     ```java
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter a number: ");
@@ -239,32 +221,33 @@ double number = Double.parseDouble(text);
 
     #### Part D: Write the Program
 
-    8. Write a complete Java program (including import and `main`) that:
-       - Asks the user: `"Enter your age: "`
-       - Reads the age as an integer
-       - Prints: `"In 10 years you will be "` followed by their age plus 10
+    6. Ask the user to enter their age with the prompt `"Enter your age: "`, read it as an integer, then print `"In 10 years you will be "` followed by their age plus 10.
+    ```java
+    import java.util.Scanner;
 
-    9. Write a complete Java program that:
-       - Asks the user for two decimal numbers (prompt each separately)
-       - Prints their average
+    public class AgeCalculator {
+        public static void main(String[] args) {
+            // Your code here
+        }
+    }
+    ```
+
+    7. Ask the user for two decimal numbers, prompting for each one separately, then print their average.
+    ```java
+    import java.util.Scanner;
+
+    public class AverageCalculator {
+        public static void main(String[] args) {
+            // Your code here
+        }
+    }
+    ```
 
     #### Part E: Find the Bug
 
     Each snippet has exactly one error. Identify the line and describe the problem.
 
-    10.
-    ```java
-    public class Hello {
-        public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            System.out.print("Name: ");
-            String name = sc.next();
-            System.out.println("Hi " + name);
-        }
-    }
-    ```
-
-    11.
+    8.
     ```java
     import java.util.Scanner;
 
@@ -278,7 +261,7 @@ double number = Double.parseDouble(text);
     }
     ```
 
-    12.
+    9.
     ```java
     import java.util.Scanner;
 

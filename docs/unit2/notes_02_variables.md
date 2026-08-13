@@ -98,20 +98,12 @@ String name = "Alice";
 
     15.
     ```java
-    String first = "Ada";
-    String last = "Lovelace";
-    System.out.println(first + last);
-    System.out.println(first + " " + last);
-    ```
-
-    16.
-    ```java
     int age = 17;
     String name = "Jordan";
     System.out.println(name + " is " + age + " years old.");
     ```
 
-    17.
+    16.
     ```java
     double price = 2.5;
     int quantity = 4;
@@ -122,25 +114,19 @@ String name = "Alice";
 
     Each snippet below has exactly one error. Identify the line with the error and explain what's wrong. You don't need to fix it — just describe the problem.
 
-    18.
+    17.
     ```java
     int count = "five";
     System.out.println(count);
     ```
 
-    19.
+    18.
     ```java
     char initial = "K";
     System.out.println(initial);
     ```
 
-    20.
-    ```java
-    String message = 'hello';
-    System.out.println(message);
-    ```
-
-    21.
+    19.
     ```java
     double temperature = 98.6
     System.out.println(temperature);
