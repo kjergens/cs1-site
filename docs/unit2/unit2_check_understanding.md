@@ -9,23 +9,29 @@
 	5. Write a Java program that declares two `int` variables, adds them, and prints the result.
 	6. Modify the program to use `double` instead and perform division.
 	7. Write a program that prints your name and age on separate lines.
-	8. What is the value of `n` after: `int n = 8; n = n / 3; n = n + 1;`?
-	9. Rewrite `x = x - 5;` using a compound assignment operator.
-	10. What will this print? `int count = 0; count++; count++; System.out.println(count);`
-	11. If `int a = 5; int b = a; a = 99;` — does `b` change? Why or why not?
-	12. What import statement is required to use Scanner?
-	13. Write the line that creates a Scanner named `input` that reads from the keyboard.
-	14. True or False: `scan.nextLine()` can read a sentence with spaces.
-	15. If the user types `42` and you read it with `scan.nextLine()`, what type is stored?
-	16. Why does `nextLine()` sometimes return an empty string when it follows `nextInt()`?
-	17. How do you fix the `nextLine()` trap?
-	18. What method converts the `String` `"999"` to the `int` `999`?
+	8. What is wrong with the following code?
+	```java
+	int x = 5;
+	x + 3;
+	```
+	9. What is printed by the following code?
+	```java
+	System.out.println(2 + 3 + " days");
+	System.out.println("Total: " + 2 + 3);
+	```
+	10. What is the value of `n` after: `int n = 8; n = n / 3; n = n + 1;`?
+	11. Rewrite `x = x - 5;` using a compound assignment operator.
+	12. What will this print? `int count = 0; count++; count++; System.out.println(count);`
+	13. If `int a = 5; int b = a; a = 99;` — does `b` change? Why or why not?
+	14. What import statement is required to use Scanner?
+	15. Write the line that creates a Scanner named `input` that reads from the keyboard.
+	16. What method converts the `String` `"999"` to the `int` `999`?
 
 	---
 
 	### Answer Key
 
-	**1.** `5` Explanation: 25 / 4 = 5 **Remainder 5**
+	**1.** `1` Explanation: 25 ÷ 4 = 6 remainder **1** — `%` returns the remainder, not the quotient
 
 	**2.** `3` Explanation: 7 / 2 = 3.5, dropping the decimal value = **3**
 
@@ -53,19 +59,23 @@
 	System.out.println(17);
 	```
 
-	**8.** `n = 3` — `8 / 3` is integer division (`2`, remainder dropped), then `2 + 1 = 3`
+	**8.** Line 2, `x + 3;`, isn't a valid Java statement on its own — a bare expression like this doesn't compile. Only assignments, `++`/`--`, method calls, and object creation can stand alone as statements.
 
-	**9.** `x -= 5;`
+	**9.**
+	```
+	5 days
+	Total: 23
+	```
+	Line 1: `2 + 3` is evaluated as arithmetic first (both are numbers), giving `5`, then concatenated with `" days"`. Line 2: once the `String` `"Total: "` appears, everything after becomes concatenation, left to right — `"Total: " + 2` → `"Total: 2"`, then `+ 3` → `"Total: 23"`.
 
-	**10.** `3`
+	**10.** `n = 3` — `8 / 3` is integer division (`2`, remainder dropped), then `2 + 1 = 3`
 
-	**11.** No, `b` does not change — `int b = a;` copies `a`'s value (`5`) into `b` at that moment. Changing `a` afterward doesn't affect `b`, since they're separate variables.
+	**11.** `x -= 5;`
 
-	**12.**  `import java.util.Scanner;`
-	**13.** `Scanner input = new Scanner(System.in);`
-	**14.** True
-	**15.** The `String` `"42"` — not the number
-	**16.** `nextInt()` leaves a newline in the buffer; `nextLine()` reads it immediately and returns `""`
-	**17.** Add `scan.nextLine();` after `nextInt()` (or `nextDouble()`) to consume the leftover newline
-	**18.** `Integer.parseInt("999")`
+	**12.** `2` — `count` starts at 0, then two `count++;` statements bring it to 2
 
+	**13.** No, `b` does not change — `int b = a;` copies `a`'s value (`5`) into `b` at that moment. Changing `a` afterward doesn't affect `b`, since they're separate variables.
+
+	**14.**  `import java.util.Scanner;`
+	**15.** `Scanner input = new Scanner(System.in);`
+	**16.** `Integer.parseInt("999")`

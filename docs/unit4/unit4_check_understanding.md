@@ -33,15 +33,6 @@
 	}
 	```
 
-	5. What does this nested loop print?
-	```java
-	for (int i = 1; i <= 2; i++) {
-	    for (int j = 1; j <= 3; j++) {
-	        System.out.print(i + "" + j + " ");
-	    }
-	}
-	```
-
 	---
 
 	### Answer Key
@@ -58,6 +49,4 @@
 	```
 
 	4. `20` — `total` becomes `2, 6, 12, 20` as `i` goes from 1 to 4 (`i * 2` is `2, 4, 6, 8`).
-
-	5. `11 12 13 21 22 23 ` — the outer loop runs twice (`i = 1, 2`); for each, the inner loop runs 3 times (`j = 1, 2, 3`).
 

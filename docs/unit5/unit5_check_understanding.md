@@ -17,6 +17,8 @@
 	13. What does `"hello".charAt(1)` return?
 	14. What does `"hello world".indexOf("world")` return? What about `"hello world".indexOf("xyz")`?
 	15. What does `"cat".replace('c', 'b')` return?
+	16. Write a `for` loop that counts how many times the letter `'a'` appears in `String word = "banana";`, then prints the count. (Hint: use `.length()` and `.charAt()`.)
+	17. Write a `for` loop that prints each character of `String word = "code";` on its own line, using `.length()` and `.charAt()`.
 
 	---
 
@@ -37,3 +39,23 @@
 	13. `'e'` — index 1 is the second character
 	14. `6` for `"world"` (it starts at index 6); `-1` for `"xyz"` (not found)
 	15. `"bat"`
+	16.
+	```java
+	String word = "banana";
+	int count = 0;
+	for (int i = 0; i < word.length(); i++) {
+	    if (word.charAt(i) == 'a') {
+	        count++;
+	    }
+	}
+	System.out.println(count);
+	```
+	Prints `3` — `"banana"` has `'a'` at indices 1, 3, and 5.
+	17.
+	```java
+	String word = "code";
+	for (int i = 0; i < word.length(); i++) {
+	    System.out.println(word.charAt(i));
+	}
+	```
+	Prints `c`, `o`, `d`, `e`, one per line.
