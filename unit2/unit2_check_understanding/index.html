@@ -146,16 +146,20 @@
 <li>Write a Java program that declares two <code>int</code> variables, adds them, and prints the result.</li>
 <li>Modify the program to use <code>double</code> instead and perform division.</li>
 <li>Write a program that prints your name and age on separate lines.</li>
+<li>What is wrong with the following code?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</code></pre></div></li>
+<li>What is printed by the following code?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; days&quot;</span><span class="p">);</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Total: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
+</code></pre></div></li>
 <li>What is the value of <code>n</code> after: <code>int n = 8; n = n / 3; n = n + 1;</code>?</li>
 <li>Rewrite <code>x = x - 5;</code> using a compound assignment operator.</li>
 <li>What will this print? <code>int count = 0; count++; count++; System.out.println(count);</code></li>
 <li>If <code>int a = 5; int b = a; a = 99;</code> — does <code>b</code> change? Why or why not?</li>
 <li>What import statement is required to use Scanner?</li>
 <li>Write the line that creates a Scanner named <code>input</code> that reads from the keyboard.</li>
-<li>True or False: <code>scan.nextLine()</code> can read a sentence with spaces.</li>
-<li>If the user types <code>42</code> and you read it with <code>scan.nextLine()</code>, what type is stored?</li>
-<li>Why does <code>nextLine()</code> sometimes return an empty string when it follows <code>nextInt()</code>?</li>
-<li>How do you fix the <code>nextLine()</code> trap?</li>
 <li>What method converts the <code>String</code> <code>"999"</code> to the <code>int</code> <code>999</code>?</li>
 </ol>
 <hr />
@@ -165,30 +169,32 @@
 <p><strong>3.</strong> <code>false</code></p>
 <p><strong>4.</strong> <code>15 &gt;= (20 - 3)</code> <strong>false</strong></p>
 <p><strong>5.</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
 </code></pre></div></p>
 <p><strong>6.</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4.0</span><span class="p">;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">6.0</span><span class="p">;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4.0</span><span class="p">;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">6.0</span><span class="p">;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
 </code></pre></div></p>
 <p><strong>7.</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Your Name&quot;</span><span class="p">);</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">17</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Your Name&quot;</span><span class="p">);</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">17</span><span class="p">);</span>
 </code></pre></div></p>
-<p><strong>8.</strong> <code>n = 3</code> — <code>8 / 3</code> is integer division (<code>2</code>, remainder dropped), then <code>2 + 1 = 3</code></p>
-<p><strong>9.</strong> <code>x -= 5;</code></p>
-<p><strong>10.</strong> <code>2</code> — <code>count</code> starts at 0, then two <code>count++;</code> statements bring it to 2</p>
-<p><strong>11.</strong> No, <code>b</code> does not change — <code>int b = a;</code> copies <code>a</code>'s value (<code>5</code>) into <code>b</code> at that moment. Changing <code>a</code> afterward doesn't affect <code>b</code>, since they're separate variables.</p>
-<p><strong>12.</strong>  <code>import java.util.Scanner;</code>
-<strong>13.</strong> <code>Scanner input = new Scanner(System.in);</code>
-<strong>14.</strong> True
-<strong>15.</strong> The <code>String</code> <code>"42"</code> — not the number
-<strong>16.</strong> <code>nextInt()</code> leaves a newline in the buffer; <code>nextLine()</code> reads it immediately and returns <code>""</code>
-<strong>17.</strong> Add <code>scan.nextLine();</code> after <code>nextInt()</code> (or <code>nextDouble()</code>) to consume the leftover newline
-<strong>18.</strong> <code>Integer.parseInt("999")</code></p>
+<p><strong>8.</strong> Line 2, <code>x + 3;</code>, isn't a valid Java statement on its own — a bare expression like this doesn't compile. Only assignments, <code>++</code>/<code>--</code>, method calls, and object creation can stand alone as statements.</p>
+<p><strong>9.</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>5 days
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Total: 23
+</code></pre></div>
+Line 1: <code>2 + 3</code> is evaluated as arithmetic first (both are numbers), giving <code>5</code>, then concatenated with <code>" days"</code>. Line 2: once the <code>String</code> <code>"Total: "</code> appears, everything after becomes concatenation, left to right — <code>"Total: " + 2</code> → <code>"Total: 2"</code>, then <code>+ 3</code> → <code>"Total: 23"</code>.</p>
+<p><strong>10.</strong> <code>n = 3</code> — <code>8 / 3</code> is integer division (<code>2</code>, remainder dropped), then <code>2 + 1 = 3</code></p>
+<p><strong>11.</strong> <code>x -= 5;</code></p>
+<p><strong>12.</strong> <code>2</code> — <code>count</code> starts at 0, then two <code>count++;</code> statements bring it to 2</p>
+<p><strong>13.</strong> No, <code>b</code> does not change — <code>int b = a;</code> copies <code>a</code>'s value (<code>5</code>) into <code>b</code> at that moment. Changing <code>a</code> afterward doesn't affect <code>b</code>, since they're separate variables.</p>
+<p><strong>14.</strong>  <code>import java.util.Scanner;</code>
+<strong>15.</strong> <code>Scanner input = new Scanner(System.in);</code>
+<strong>16.</strong> <code>Integer.parseInt("999")</code></p>
 </div>
               
             </div>

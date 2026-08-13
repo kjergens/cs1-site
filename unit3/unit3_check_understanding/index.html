@@ -177,6 +177,9 @@
 <li>
 <p>Write a while loop that prints the even numbers from 2 to 10.</p>
 </li>
+<li>
+<p>Write a boolean expression that checks whether a number <code>n</code> is between 1 and 100, inclusive. Why wouldn't <code>n &gt;= 1 || n &lt;= 100</code> work as a range check?</p>
+</li>
 </ol>
 <hr />
 <h3 id="answer-key">Answer Key</h3>
@@ -212,6 +215,9 @@
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="n">n</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">}</span>
 </code></pre></div></p>
+<ol>
+<li><code>n &gt;= 1 &amp;&amp; n &lt;= 100</code> — both conditions must be true at once, which is what actually narrows the check to a range. <code>n &gt;= 1 || n &lt;= 100</code> doesn't work because it's true for <em>every</em> number: any <code>n</code> satisfies at least one side (either it's ≥ 1, or it's ≤ 100, or both), so the check never actually excludes anything.</li>
+</ol>
 </div>
               
             </div>
