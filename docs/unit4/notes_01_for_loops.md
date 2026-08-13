@@ -129,7 +129,7 @@ Always use curly braces. Omitting them is a common source of bugs.
 
     #### Section 1: Vocabulary
 
-    Match each term to its definition:
+    Using these terms, fill in the blanks below with the corresponding definition.:
 
     - Iteration
     - Loop Variable (or Counter)
@@ -140,12 +140,12 @@ Always use curly braces. Omitting them is a common source of bugs.
 
     **Definitions:**
 
-    - A. The part of the loop that sets the starting value, like `int i = 0;`.
-    - B. The Boolean expression checked before each iteration, like `i < 10`.
-    - C. The code inside the curly braces `{}` that executes repeatedly.
-    - D. A single execution of the loop body.
-    - E. The statement that changes the loop variable after each iteration, like `i++`.
-    - F. The variable that controls the loop, often starting at 0 and increasing.
+    - __________ A. The part of the loop that sets the starting value, like `int i = 0;`.
+    - __________ B. The Boolean expression checked before each iteration, like `i < 10`.
+    - __________ C. The code inside the curly braces `{}` that executes repeatedly.
+    - __________ D. A single execution of the loop body.
+    - __________ E. The statement that changes the loop variable after each iteration, like `i++`.
+    - __________ F. The variable that controls the loop, often starting at 0 and increasing.
 
     #### Section 2: Fill in the Blank
 
@@ -195,7 +195,7 @@ Always use curly braces. Omitting them is a common source of bugs.
     }
     ```
 
-    #### Advanced
+    #### Advanced Problems (Not Required, For Extra Practice)
 
     These are more challenging and may involve nested loops or creative problem-solving. Attempt them if you've mastered the basics above.
 
