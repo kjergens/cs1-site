@@ -159,18 +159,17 @@ Always use curly braces. Omitting them is a common source of bugs.
     3. If the `__________` is false at the start, the loop body won't execute even once.
     4. The `__________` happens at the end of each iteration to modify the loop variable.
     5. For loops are ideal when you know the exact `__________` of times you want to repeat code.
-    6. Omitting the curly braces `{}` in a for loop will only repeat the `__________` statement immediately after it.
+    6. Omitting the curly braces `{}` in a for loop causes only `__________` statement to repeat, instead of a whole block.
 
     #### Section 3: Free Response Questions
 
-    1. Explain the three main parts of a for loop and what each does.
-    2. What is the output of the following code?
+    1. What is the output of the following code?
     ```java
     for (int i = 1; i <= 5; i++) {
         System.out.print(i + " ");
     }
     ```
-    3. What happens if you forget the update statement in a for loop?
+    2. What happens if you forget the update statement in a for loop?
 
     #### Section 4: Converting While Loops to For Loops
 
@@ -196,7 +195,7 @@ Always use curly braces. Omitting them is a common source of bugs.
     }
     ```
 
-    #### Section 5: Optional Extra Challenges
+    #### Advanced
 
     These are more challenging and may involve nested loops or creative problem-solving. Attempt them if you've mastered the basics above.
 
