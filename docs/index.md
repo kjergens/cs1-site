@@ -4,7 +4,7 @@
 
 ---
 
-| Chapter | Exercises |
+| Lesson | Exercises |
 |---|---|
 | **Unit 1 — Getting Started**| |
 |     [    Chapter 1: How Computers Work](unit1/notes_01_how_computers_work.md)| [HW 0](unit1/notes_01_how_computers_work.md#homework)
@@ -18,7 +18,7 @@
 |     [    Chapter 3: Reassignment Operators](unit2/notes_03_operators_reassignment.md)|[HW 6](unit2/notes_03_operators_reassignment.md#homework )
 |     [    Chapter 4: Scanner and User Input](unit2/notes_04_scanner.md)|[HW 7](unit2/notes_04_scanner.md#homework)
 |   - |  [    Unit 2 Check Your Understanding](unit2/unit2_check_understanding.md) 
-| **Unit 3 — Conditionals and While Loops** | Boolean logic, if/else, while loops |
+| **Unit 3 — Conditionals and While Loops** |  |
 |     [    Chapter 1: Conditionals](unit3/notes_01_conditionals.md)|[HW 8](unit3/notes_01_conditionals.md#homework)
 |     [    Chapter 2: While Loops](unit3/notes_02_while_loops.md)|[HW 9](unit3/notes_02_while_loops.md#homework)
 |  - |   [    Unit 3 Check Your Understanding](unit3/unit3_check_understanding.md) | 
