@@ -64,7 +64,7 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 ## Homework
 
 !!! attention 
-	###Unit 1 Chapter 1 Homework
+	###HW0: Unit 1 Chapter 1: How Computers Work 
 
     *Assigned Class 1 · Due Class 1 in class · Graded as Community Building/Class Engagement — try your best, no points off for incorrect answers*
 
