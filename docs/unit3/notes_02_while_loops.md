@@ -159,7 +159,7 @@ Use a `for` loop when you **do know** how many times it will run. (Covered in Un
 ## Homework
 
 !!! attention
-    ### Unit 3 Chapter 2 Homework
+    ### HW 9 - Unit 3 Chapter 2: While Loops
 
     #### Part A: While Loop Practice
 

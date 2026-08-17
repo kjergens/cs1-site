@@ -92,9 +92,7 @@ System.out.println(7 <= 6);  // false
 ## Homework
 
 !!! attention
-    ### Unit 2 Chapter 1 Homework
-
-    *Note: Homework 4 (Java to Scratch) is a worksheet your teacher will hand out in class — not posted here.*
+    ### HW 4 - Unit 2 Chapter 1: Java Structure/Printing/Operators
 
     There are five parts, plus an ungraded bonus for optional enrichment. Each part has a short background, then exercises — read the background, then answer the exercises that follow.
 

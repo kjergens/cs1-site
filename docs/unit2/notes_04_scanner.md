@@ -148,7 +148,7 @@ double number = Double.parseDouble(text);
 ## Homework
 
 !!! attention
-    ### Unit 2 Chapter 4 Homework
+    ### HW 7 - Unit 2 Chapter 4: Scanner and User Input
 
     *Assigned Class 10 · Due Class 11*
 

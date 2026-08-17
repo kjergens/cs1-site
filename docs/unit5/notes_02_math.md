@@ -102,7 +102,7 @@ int roll = (int)(Math.random() * 6);   // 0, 1, 2, 3, 4, or 5
 ## Homework
 
 !!! attention
-    ### Unit 5 Chapter 2 Homework
+    ### HW 13 - Unit 5 Chapter 2: The Math class
 
     Use the Java `Math` methods from the notes above to answer each question.
 

@@ -145,7 +145,7 @@ Start with the left (most significant) digit, and fill in a 1 or 0. For example 
 ## Homework
 
 !!! attention
-    ### HW1: Unit 1 Chapter 2: Binary
+    ### HW 1: Unit 1 Chapter 2: Binary
 
     *Assigned Class 1 · Due Class 2*
 

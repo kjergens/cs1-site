@@ -162,7 +162,7 @@ System.out.println(s);      // prints "java"
 ## Homework
 
 !!! attention
-    ### Unit 5 Chapter 1 Homework
+    ### HW 12 - Unit 5 Chapter 1: String methods
 
     *Reference: [w3schools Java String methods](https://www.w3schools.com/java/java_ref_string.asp)*
 

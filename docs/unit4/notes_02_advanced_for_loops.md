@@ -86,7 +86,7 @@ Trace: the outer loop runs 3 times (`row = 1, 2, 3`). Each time, the inner loop 
 ## Homework
 
 !!! attention
-    ### Unit 4 Chapter 2 Homework
+    ### HW 11: Unit 4 Chapter 2: Advanced For Loops
 
     #### Part A: Predict the Output — Loop Patterns
 

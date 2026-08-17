@@ -156,7 +156,7 @@ if (num == 50) {
 ## Homework
 
 !!! attention
-    ### Unit 3 Chapter 1 Homework
+    ### HW 8 - Unit 3 Chapter 1: Conditionals
 
     *Complete up to 100 points worth of the exercises below — choose any combination that adds up to no more than 100 points (extra credit beyond 100 is capped). For example: Exercises 1+2+3, or Exercises 1+4.*
 

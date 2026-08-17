@@ -69,7 +69,7 @@ points *= 2;    // points is now 240
 ## Homework
 
 !!! attention
-    ### Unit 2 Chapter 3 Homework
+    ### HW 6: Unit 2 Chapter 3: Reassignment Operators
 
     *Assigned Class 9 · Due Class 10*
 

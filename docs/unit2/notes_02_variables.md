@@ -56,7 +56,7 @@ String name = "Alice";
 ## Homework
 
 !!! attention
-    ### Unit 2 Chapter 2 Homework
+    ### HW 5 - Unit 2 Chapter 2: Variables and Data Types
 
     *Assigned Class 8 · Due Class 9*
 
