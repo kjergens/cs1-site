@@ -35,7 +35,7 @@ RAM is fast but temporary — everything in it disappears when you shut down. St
 
 ---
 
-## Section . Everything Is Data
+## Section 2. Everything Is Data
 
 The most important idea in this unit: **computers only understand numbers.** Everything — text, images, sound, video, programs — is stored as numbers. The rest of the unit explores how.
 
