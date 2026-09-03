@@ -12,7 +12,7 @@
 |     [    Chapter 3: Binary Arithmetic](unit1/notes_03_binary_operations.md)|[HW 2](unit1/notes_03_binary_operations.md#homework)
 |     [    Chapter 4: Scratch](unit1/notes_04_scratch.md)|[HW 3](unit1/notes_04_scratch.md#homework)
 |     [    Unit 1 Check Your Understanding](unit1/unit1_check_understanding.md)  |   [    Practice Quiz #1 (Unit 1)](unit1/unit1_practice_quiz.md) 
-|     [    Project 1: Scratch Remix](projects/project1.md) |   
+|     - | [Project 1: Scratch Remix](projects/project1.md)    
 | **Unit 2 — Java Basics**| |
 |     [    Chapter 1: Structure, Printing & Operators](unit2/notes_01_java_structure.md)|[HW 4](unit2/notes_01_java_structure.md#homework )
 |     [    Chapter 2: Variables and Data Types](unit2/notes_02_variables.md)|[HW 5](unit2/notes_02_variables.md#homework)
