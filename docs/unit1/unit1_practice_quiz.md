@@ -24,10 +24,10 @@
 
     6. Both numbers below are in binary. Select the **decimal** representation of the answer.
     `110 × 101`
-    - [ ] A. 30
-    - [ ] B. 11110
-    - [ ] C. 15
-    - [ ] D. 25
+     [ ] A. 30
+     [ ] B. 11110
+     [ ] C. 15
+     [ ] D. 25
     
     7. A Scratch program contains the following blocks:
     ```
@@ -37,10 +37,10 @@
       turn (72) degrees
     ```
     What path does the sprite trace?
-    - [ ] A. A straight line
-    - [ ] B. A triangle
-    - [ ] C. A pentagon
-    - [ ] D. A circle
+    [ ] A. A straight line
+    [ ] B. A triangle
+    [ ] C. A pentagon
+    [ ] D. A circle
 
     ---
 
