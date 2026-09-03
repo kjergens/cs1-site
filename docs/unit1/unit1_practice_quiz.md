@@ -5,10 +5,10 @@
     *Ungraded self-check — use this to prepare for Quiz 1. Answer key is at the bottom; don't peek until you've tried every question. Covers the same skills as the real quiz: ASCII, binary conversion, binary addition, binary multiplication, and Scratch block tracing.*
 
     1. Using the ASCII chart, what is the decimal representation of `"cat"`?
-    - [ ] A. cat
-    - [ ] B. 99 97 116
-    - [ ] C. 97 99 116
-    - [ ] D. (it can't be represented as decimals)
+    [ ] A. cat
+    [ ] B. 99 97 116
+    [ ] C. 97 99 116
+    [ ] D. (it can't be represented as decimals)
 
     2. Convert binary `11010` to decimal: _______
 
