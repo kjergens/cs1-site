@@ -1,4 +1,4 @@
-# Unit 3: Practice Quiz
+# Practice Quiz #2 (Unit 3)
 
 !!! information
 
