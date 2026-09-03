@@ -207,9 +207,9 @@ if (num == 50) {
     ```
     *(Note: Strings are compared with `.equals()`, not `==` — you'll learn more about this later. For now, just read it as "if color is red.")*
 
-    Flowchart 1 goes with code snippet: ____
-    Flowchart 2 goes with code snippet: ____
-    Flowchart 3 goes with code snippet: ____
+    Flowchart 1 goes with code snippet: \_\_\_\_<br>
+    Flowchart 2 goes with code snippet: \_\_\_\_<br>
+    Flowchart 3 goes with code snippet: \_\_\_\_
 
     #### Exercise 2: Create a Flowchart from Code (30 points)
 

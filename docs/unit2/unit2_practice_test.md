@@ -10,7 +10,7 @@
     [ ] C. 13<br>
     [ ] D. 14
 
-    2. For the decimal number `20`, write the binary representation: _______
+    2. For the decimal number `20`, write the binary representation: \_\_\_\_\_\_\_
 
     3. Add the following two binary numbers, showing your work:
     ```

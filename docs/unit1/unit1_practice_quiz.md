@@ -10,11 +10,11 @@
     [ ] C. 97 99 116<br>
     [ ] D. (it can't be represented as decimals)
 
-    2. Convert binary `11010` to decimal: _______
+    2. Convert binary `11010` to decimal: \_\_\_\_\_\_\_
 
-    3. Convert decimal `19` to binary: _______
+    3. Convert decimal `19` to binary: \_\_\_\_\_\_\_
 
-    4. Convert binary `01100` to decimal: _______
+    4. Convert binary `01100` to decimal: \_\_\_\_\_\_\_
 
     5. Add the following binary numbers, showing your work:
     ```

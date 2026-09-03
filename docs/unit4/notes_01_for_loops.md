@@ -140,12 +140,12 @@ Always use curly braces. Omitting them is a common source of bugs.
 
     **Definitions:**
 
-    - __________ A. The part of the loop that sets the starting value, like `int i = 0;`.
-    - __________ B. The Boolean expression checked before each iteration, like `i < 10`.
-    - __________ C. The code inside the curly braces `{}` that executes repeatedly.
-    - __________ D. A single execution of the loop body.
-    - __________ E. The statement that changes the loop variable after each iteration, like `i++`.
-    - __________ F. The variable that controls the loop, often starting at 0 and increasing.
+    - \_\_\_\_\_\_\_\_\_\_ A. The part of the loop that sets the starting value, like `int i = 0;`.
+    - \_\_\_\_\_\_\_\_\_\_ B. The Boolean expression checked before each iteration, like `i < 10`.
+    - \_\_\_\_\_\_\_\_\_\_ C. The code inside the curly braces `{}` that executes repeatedly.
+    - \_\_\_\_\_\_\_\_\_\_ D. A single execution of the loop body.
+    - \_\_\_\_\_\_\_\_\_\_ E. The statement that changes the loop variable after each iteration, like `i++`.
+    - \_\_\_\_\_\_\_\_\_\_ F. The variable that controls the loop, often starting at 0 and increasing.
 
     #### Section 2: Fill in the Blank
 

@@ -134,6 +134,6 @@ By signing this contract, I state that I have read and understood all of the pol
 6. **Grow with Feedback:** I agree to welcome constructive feedback, knowing it's a chance to level up my skills and learn from mistakes.
 7. **Lift Others Up:** I agree that when offering critiques to peers, it will be with the intent to help, maintaining respect and avoiding condescending or derogatory comments.
 
-**Student Signature:** _________________________________
+**Student Signature:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-**Date:** _________________________________
+**Date:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

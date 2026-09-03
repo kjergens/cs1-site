@@ -113,8 +113,8 @@
     ### Math Class
 
     16. What are the exact return values?<br>
-    [ ] a) `Math.pow(3, 4)` → _______________<br>
-    [ ] b) `Math.max(7, Math.min(15, 9))` → _______________
+    [ ] a) `Math.pow(3, 4)` → \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>
+    [ ] b) `Math.max(7, Math.min(15, 9))` → \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
     17. What single expression using the Math class gives a random integer from 1 to 6 (inclusive), to simulate a die roll?
 
