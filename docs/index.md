@@ -4,7 +4,7 @@
 
 ---
 
-| Lesson | Exercises |
+| Lesson | Exercises & Assignments |
 |---|---|
 | **Unit 1 — Getting Started**| |
 |     [    Chapter 1: How Computers Work](unit1/notes_01_how_computers_work.md)| [HW 0](unit1/notes_01_how_computers_work.md#homework)
