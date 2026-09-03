@@ -11,11 +11,11 @@
     }
     ```
 
-    2. In the for loop `for (int i = 0; i < 10; i++)`, what is the purpose of `i < 10`?
-    - A. It sets the starting value of `i`
-    - B. It checks whether the loop should continue
-    - C. It updates `i` after each iteration
-    - D. It declares a new variable
+    2. In the for loop `for (int i = 0; i < 10; i++)`, what is the purpose of `i < 10`?<br>
+    [ ] A. It sets the starting value of `i`<br>
+    [ ] B. It checks whether the loop should continue<br>
+    [ ] C. It updates `i` after each iteration<br>
+    [ ] D. It declares a new variable
 
     3. How many times does the following loop execute?
     ```java

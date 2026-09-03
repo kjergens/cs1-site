@@ -16,11 +16,11 @@
     }
     ```
 
-    2. Which boolean expression is true when `x` is between 10 and 20, inclusive?
-    - A. x >= 10 && x <= 20
-    - B. x > 10 && x < 20
-    - C. x >= 10 || x <= 20
-    - D. x > 10 || x < 20
+    2. Which boolean expression is true when `x` is between 10 and 20, inclusive?<br>
+    [ ] A. x >= 10 && x <= 20<br>
+    [ ] B. x > 10 && x < 20<br>
+    [ ] C. x >= 10 || x <= 20<br>
+    [ ] D. x > 10 || x < 20
 
     3. What is the output of the following code?
     ```java

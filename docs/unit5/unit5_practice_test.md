@@ -112,19 +112,19 @@
 
     ### Math Class
 
-    16. What are the exact return values?
-    - a) `Math.pow(3, 4)` → _______________
-    - b) `Math.max(7, Math.min(15, 9))` → _______________
+    16. What are the exact return values?<br>
+    [ ] a) `Math.pow(3, 4)` → _______________<br>
+    [ ] b) `Math.max(7, Math.min(15, 9))` → _______________
 
     17. What single expression using the Math class gives a random integer from 1 to 6 (inclusive), to simulate a die roll?
 
     18. Write one line using `Math` that gives the larger of these two values: the square root of `100` and the absolute value of `-12`.
 
-    19. What does `Math.random()` return? Choose the most accurate description.
-    - A. always 0.0
-    - B. always 1.0
-    - C. a value ≥ 0.0 and < 1.0
-    - D. an integer between 1 and 10
+    19. What does `Math.random()` return? Choose the most accurate description.<br>
+    [ ] A. always 0.0<br>
+    [ ] B. always 1.0<br>
+    [ ] C. a value ≥ 0.0 and < 1.0<br>
+    [ ] D. an integer between 1 and 10
 
     ---
 

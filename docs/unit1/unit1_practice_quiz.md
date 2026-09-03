@@ -4,10 +4,10 @@
 
     *Ungraded self-check — use this to prepare for Quiz 1. Answer key is at the bottom; don't peek until you've tried every question. Covers the same skills as the real quiz: ASCII, binary conversion, binary addition, binary multiplication, and Scratch block tracing.*
 
-    1. Using the ASCII chart, what is the decimal representation of `"cat"`?
-    [ ] A. cat
-    [ ] B. 99 97 116
-    [ ] C. 97 99 116
+    1. Using the ASCII chart, what is the decimal representation of `"cat"`?<br>
+    [ ] A. cat<br>
+    [ ] B. 99 97 116<br>
+    [ ] C. 97 99 116<br>
     [ ] D. (it can't be represented as decimals)
 
     2. Convert binary `11010` to decimal: _______
@@ -22,13 +22,13 @@
     + 0111
     ```
 
-    6. Both numbers below are in binary. Select the **decimal** representation of the answer.
-    `110 × 101`
-     [ ] A. 30
-     [ ] B. 11110
-     [ ] C. 15
-     [ ] D. 25
-    
+    6. Both numbers below are in binary. Select the **decimal** representation of the answer.<br>
+    `110 × 101`<br>
+    [ ] A. 30<br>
+    [ ] B. 11110<br>
+    [ ] C. 15<br>
+    [ ] D. 25
+
     7. A Scratch program contains the following blocks:
     ```
     when [green flag] clicked
@@ -36,10 +36,10 @@
       move (50) steps
       turn (72) degrees
     ```
-    What path does the sprite trace?
-    [ ] A. A straight line
-    [ ] B. A triangle
-    [ ] C. A pentagon
+    What path does the sprite trace?<br>
+    [ ] A. A straight line<br>
+    [ ] B. A triangle<br>
+    [ ] C. A pentagon<br>
     [ ] D. A circle
 
     ---

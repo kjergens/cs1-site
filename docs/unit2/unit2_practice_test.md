@@ -4,11 +4,11 @@
 
     *Ungraded self-check — use this to prepare for Test 1. Answer key is at the bottom; don't peek until you've tried every question. Covers the same skills as the real test: binary conversion, binary addition, Scratch vocabulary, Java syntax basics, operators, string concatenation, and Scanner.*
 
-    1. For the binary number `01101`, what is the correct decimal representation?
-    - A. 11
-    - B. 12
-    - C. 13
-    - D. 14
+    1. For the binary number `01101`, what is the correct decimal representation?<br>
+    [ ] A. 11<br>
+    [ ] B. 12<br>
+    [ ] C. 13<br>
+    [ ] D. 14
 
     2. For the decimal number `20`, write the binary representation: _______
 
@@ -29,29 +29,29 @@
 
     Functions: *(a) Pauses the script for a set amount of time. (b) Runs one set of code if a condition is true, another if false. (c) Rotates the sprite by a set amount. (d) Starts a script when a broadcast is received.*
 
-    5. In MIT Scratch, what is the purpose of `Make a Block` (custom block)?
-    - A. It creates a new sprite
-    - B. It allows you to group and reuse code like a function
-    - C. It changes the background color
-    - D. It only stores variables
+    5. In MIT Scratch, what is the purpose of `Make a Block` (custom block)?<br>
+    [ ] A. It creates a new sprite<br>
+    [ ] B. It allows you to group and reuse code like a function<br>
+    [ ] C. It changes the background color<br>
+    [ ] D. It only stores variables
 
-    6. If your Java class is named `Robot`, what must the file name be?
-    - A. HelloWorld.java
-    - B. Class.java
-    - C. Public Main
-    - D. Robot.java
+    6. If your Java class is named `Robot`, what must the file name be?<br>
+    [ ] A. HelloWorld.java<br>
+    [ ] B. Class.java<br>
+    [ ] C. Public Main<br>
+    [ ] D. Robot.java
 
-    7. Which of the following correctly declares a `double` variable named `price` and initializes it to `9.99`?
-    - A. double price = 9.99;
-    - B. price double = 9.99;
-    - C. double price(9.99);
-    - D. 9.99 = double price;
+    7. Which of the following correctly declares a `double` variable named `price` and initializes it to `9.99`?<br>
+    [ ] A. double price = 9.99;<br>
+    [ ] B. price double = 9.99;<br>
+    [ ] C. double price(9.99);<br>
+    [ ] D. 9.99 = double price;
 
-    8. What is the result of `15 % 4`?
-    - A. 3.75
-    - B. 3
-    - C. 4
-    - D. 11
+    8. What is the result of `15 % 4`?<br>
+    [ ] A. 3.75<br>
+    [ ] B. 3<br>
+    [ ] C. 4<br>
+    [ ] D. 11
 
     9. What does `y` equal after this code runs?
     ```java
@@ -59,10 +59,10 @@
     y += 4;
     y + 1;
     ```
-    - A. 6
-    - B. 5
-    - C. 1
-    - D. Error
+    [ ] A. 6<br>
+    [ ] B. 5<br>
+    [ ] C. 1<br>
+    [ ] D. Error
 
     10. What is the output of the following print statements?
     ```java
