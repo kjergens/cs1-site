@@ -24,6 +24,7 @@
 |     [    Chapter 1: Conditionals](unit3/notes_01_conditionals.md)|[HW 8](unit3/notes_01_conditionals.md#homework)
 |     [    Chapter 2: While Loops](unit3/notes_02_while_loops.md)|[HW 9](unit3/notes_02_while_loops.md#homework)
 |     [    Check Your Understanding: Unit 3](unit3/unit3_check_understanding.md) |   [Practice Quiz #2 (Unit 3)](unit3/unit3_practice_quiz.md) | 
+|  -  | 
 | **Unit 4 — For Loops** |  |
 |     [    Chapter 1: For Loops](unit4/notes_01_for_loops.md)|[HW 10](unit4/notes_01_for_loops.md#homework)
 |     [    Chapter 2: Advanced For Loops](unit4/notes_02_advanced_for_loops.md)|[HW 11](unit4/notes_02_advanced_for_loops.md#homework) 
