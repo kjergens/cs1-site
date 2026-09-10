@@ -94,12 +94,3 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	    - `______`: The `______` is released, making personal computers user-friendly with a graphical interface.
 	2. **Short answer:** The ENIAC weighed over 30 tons and took up an entire room! What allowed computers to become small enough to fit in your pocket?
 
-	#### Part D: Binary
-	Computers don't think like humans, but they process information using binary code (0s and 1s). Transistors help create these 0s and 1s by controlling electrical signals.
-
-	Convert the following decimal numbers to binary (hint: divide by 2 repeatedly and note the remainders):
-
-	1. `5` = `______` (binary)
-	2. `12` = `______` (binary)
-	3. Your age = `______` (binary)
-
