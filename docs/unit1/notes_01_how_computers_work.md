@@ -77,14 +77,13 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 	4. Long-term storage for files, programs, and the operating system
 	5. Connects all components, allowing them to communicate
 
-	#### Part B: True/False (+ short answer)
+	#### Part B: True/False
 	Transistors are tiny electronic switches that control the flow of electricity in a computer. They're the foundation of modern computing.
 
 	1. True or False: Transistors can act as switches, turning electrical signals on or off.
 	2. True or False: A single modern computer chip can contain billions of transistors.
 	3. True or False: Transistors are only used in the CPU and not in other parts of a computer.
 	4. True or False: Transistors work by using materials like silicon to control electrical flow.
-	5. **Short answer:** If transistors are like light switches, how do you think combining millions of them allows a computer to perform complex tasks like playing a video game?
 
 	#### Part C: Fill in the blanks (+ short answer)
 	1. **Timeline:** fill in the blanks using each term once — `1943`, `ENIAC`, `1971`, `Microprocessor`, `1984`, `Apple Macintosh`, `1822`, `Difference Engine`.
