@@ -28,13 +28,6 @@ A **variable** is a named container for a value that can change.
 
 In Scratch: use **Make a Variable**, give it a name, and use **set [ ] to** and **change [ ] by** blocks.
 
-In Java:
-```java
-int score = 0;
-score = score + 1;
-```
-
-Same idea — a name, a value, the ability to update it.
 
 ---
 
@@ -44,30 +37,18 @@ A **conditional** runs code only if a condition is true.
 
 In Scratch: `if < > then` and `if < > then / else` blocks.
 
-In Java:
-```java
-if (score > 10) {
-    System.out.println("You win!");
-} else {
-    System.out.println("Keep going.");
-}
-```
-
-The diamond-shaped condition slots in Scratch correspond to the `( )` in Java's `if` statement.
-
 ---
 
 ### 4. Loops
 
 A **loop** repeats code multiple times without copy-pasting.
 
-| Scratch block | Java equivalent |
+| Scratch block  | description |
 |---|---|
-| `forever` | `while (true)` |
-| `repeat (10)` | `for (int i = 0; i < 10; i++)` |
-| `repeat until < >` | `while (!condition)` |
+| `forever` | code inside repeats endlessly |
+| `repeat (10)` | code inside repeats the specified number |
+| `repeat until < >` | code inside repeats until the specified condition|
 
-The idea is the same: a chunk of code that runs again and again, either a fixed number of times or until a condition is met.
 
 ---
 
@@ -75,30 +56,8 @@ The idea is the same: a chunk of code that runs again and again, either a fixed 
 
 In Scratch, scripts start when something happens — "when green flag clicked", "when key pressed".
 
-In Java, the equivalent is the **main method** — the entry point where your program begins:
-```java
-public static void main(String[] args) {
-    // your program starts here
-}
-```
-
 ---
 
-## Section 3: From Scratch to Java
-
-| Scratch concept | Java equivalent |
-|---|---|
-| Script (blocks top to bottom) | Statements in `main` |
-| Variable block | `int x = 0;` |
-| `if < > then` | `if (condition) { }` |
-| `repeat (n)` | `for` loop |
-| `forever` / `repeat until` | `while` loop |
-| When green flag clicked | `public static void main(...)` |
-| Say [ ] | `System.out.println(...)` |
-
-Every program you write this year — in Scratch or Java — uses these same building blocks. The language changes; the structure doesn't.
-
----
 
 ## Homework
 
