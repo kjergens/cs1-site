@@ -34,16 +34,15 @@ Binary multiplication works like decimal long multiplication — multiply by eac
 **Example: `110 × 11`**
 
 ```
-      1 1 0     (6)
-    ×     1 1   (3)
+      0 1 1 0   (6)
+    ×   0 1 1   (3)
     -----------
-      1 1 0     ← 110 × 1 (rightmost bit of 11)
-    1 1 0       ← 110 × 1, shifted one place left (next bit of 11)
+      0 1 1 0     ← 110 × 1 (rightmost bit of 11)
+    0 1 1 0       ← 110 × 1, shifted one place left (next bit of 11)
+  0 0 0 0
     -----------
-    1 0 0 1 0   → 18
+  0 0 1 0 0 1 0   → 18
 ```
-
-Add the partial products using binary addition (`110 + 1100 = 10010`).
 
 Check: 6 × 3 = 18 ✓
 
