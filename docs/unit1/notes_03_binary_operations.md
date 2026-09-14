@@ -36,11 +36,11 @@ Binary multiplication works like decimal long multiplication — multiply by eac
 ```
       0 1 1 0   (6)
     ×   0 1 1   (3)
-    -----------
-      0 1 1 0     ← 110 × 1 (rightmost bit of 11)
-    0 1 1 0       ← 110 × 1, shifted one place left (next bit of 11)
-  0 0 0 0
-    -----------
+   -----------
+      0 1 1 0     ← 1 x 0110 
+    0 1 1 0       ← 1 x 0110, shifted one place left 
+  0 0 0 0         ← 0 × 0110, shifted another place left 
+  -------------
   0 0 1 0 0 1 0   → 18
 ```
 
