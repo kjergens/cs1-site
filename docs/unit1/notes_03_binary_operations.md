@@ -48,6 +48,28 @@ Check: 6 × 3 = 18 ✓
 
 Key rule: multiplying by `0` gives a row of all zeros; multiplying by `1` copies the number, shifted left to line up under that bit. Then add all the partial product rows together.
 
+!!! information "Fun fact: multiplying by 2 is just a shift"
+    To multiply a binary number by 2, shift every digit one place to the left. Each digit's place value doubles when it moves one spot left, so if every digit is worth twice as much, the whole number is twice as much too — no actual multiplication required.
+
+---
+
+## Section 3: Binary Subtraction
+
+Binary subtraction works the same way decimal subtraction does: if a column doesn't have enough to subtract, **borrow a 1** from the next column over. That borrowed 1 is worth `10` (two) once it lands in the column that needed it, since each place value is double the one before it.
+
+**Example: `1010 − 0100`**
+
+```
+  1 0 1 0
+- 0 1 0 0
+---------
+  0 1 1 0
+```
+
+Check: 10 − 4 = 6 ✓
+
+Key rule: when the top digit in a column is smaller than the bottom digit (`0 − 1`), borrow a 1 from the next column to the left — it becomes a `10` in the column that needed it, same idea as borrowing in decimal subtraction.
+
 ---
 
 ## Homework
