@@ -105,7 +105,7 @@ Every program you write this year — in Scratch or Java — uses these same bui
 !!! attention
     ### HW 3 - Unit 1 Chapter 4: Scratch
 
-    *Assigned Class 2 · Due Class 3 · Submission: upload your `.sb3` file to the Schoology assignment*
+    *Assigned Class 4 · Due Class 5 · Submission: upload your `.sb3` file to the Schoology assignment*
 
     #### Background
 

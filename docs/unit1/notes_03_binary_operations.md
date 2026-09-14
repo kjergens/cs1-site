@@ -56,7 +56,7 @@ Key rule: multiplying by `0` gives a row of all zeros; multiplying by `1` copies
 !!! attention
     ### HW 2: Unit 1 Chapter 3: Binary Arithmetic
 
-    *Assigned Class 2 · Due Class 3*
+    *Assigned Class 3 · Due Class 4*
 
     #### Part A: Binary Addition
 

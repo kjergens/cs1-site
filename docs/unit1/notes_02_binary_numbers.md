@@ -147,7 +147,7 @@ Start with the left (most significant) digit, and fill in a 1 or 0. For example 
 !!! attention
     ### HW 1: Unit 1 Chapter 2: Binary
 
-    *Assigned Class 1 · Due Class 2*
+    *Assigned Class 2 · Due Class 3*
 
     **Instructions:** Show all work. For conversion problems, write out the place values (powers of 2). For addition problems, show the carry row above each column.
 
@@ -162,7 +162,7 @@ Start with the left (most significant) digit, and fill in a 1 or 0. For example 
     4. Convert the decimal number `47` to binary. Show your work (repeated division or place-value method).
     5. Convert the decimal number `29` to binary. Then count how many 1s appear in your answer.
 
-    #### **Optional/Not Required Extra Challenge: (ungraded)** Part C: Binary Addition
+    #### **Optional/Not Required Extra Challenge: (ungraded)** 
 
     6. Add the binary numbers `1011` and `1101`. Show the carry row.
 
