@@ -57,9 +57,9 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#section-1-binary-addition">Section 1: Binary Addition</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-3-binary-subtraction">Section 3: Binary Subtraction</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-2-binary-subtraction">Section 2: Binary Subtraction</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-2-binary-multiplication">Section 2: Binary Multiplication</a>
+    <li class="toctree-l2"><a class="reference internal" href="#section-3-binary-multiplication">Section 3: Binary Multiplication</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
         <ul>
@@ -67,7 +67,9 @@
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#part-a-binary-addition">Part A: Binary Addition</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#part-b-binary-multiplication">Part B: Binary Multiplication</a>
+    <li class="toctree-l4"><a class="reference internal" href="#part-b-binary-subtraction">Part B: Binary Subtraction</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#part-c-binary-multiplication">Part C: Binary Multiplication</a>
     </li>
         </ul>
     </li>
@@ -193,7 +195,7 @@
 <p>Check: 10 + 7 = 17 ✓</p>
 <p>Key rule: <code>1 + 1 = 10</code> in binary (write 0, carry 1). <code>1 + 1 + 1 = 11</code> (write 1, carry 1).</p>
 <hr />
-<h2 id="section-3-binary-subtraction">Section 3: Binary Subtraction</h2>
+<h2 id="section-2-binary-subtraction">Section 2: Binary Subtraction</h2>
 <p>Binary subtraction works the same way decimal subtraction does: if a column doesn't have enough to subtract, <strong>borrow a 1</strong> from the next column over. That borrowed 1 is worth <code>10</code> (two) once it lands in the column that needed it, since each place value is double the one before it.</p>
 <p><strong>Example: <code>1010 − 0100</code></strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>  1 0 1 0
@@ -204,7 +206,7 @@
 <p>Check: 10 − 4 = 6 ✓</p>
 <p>Key rule: when the top digit in a column is smaller than the bottom digit (<code>0 − 1</code>), borrow a 1 from the next column to the left — it becomes a <code>10</code> in the column that needed it, same idea as borrowing in decimal subtraction.</p>
 <hr />
-<h2 id="section-2-binary-multiplication">Section 2: Binary Multiplication</h2>
+<h2 id="section-3-binary-multiplication">Section 3: Binary Multiplication</h2>
 <p>Binary multiplication works like decimal long multiplication — multiply by each digit and shift, then add the partial products. Since binary digits are only <code>0</code> or <code>1</code>, each partial product is either all zeros (if that digit is 0) or a copy of the original number shifted left (if that digit is 1).</p>
 <p><strong>Example: <code>110 × 11</code></strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>      0 1 1 0   (6)
@@ -214,7 +216,7 @@
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    0 1 1 0       ← 1 x 0110, shifted one place left 
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  0 0 0 0         ← 0 × 0110, shifted another place left 
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  -------------
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>  0 0 1 0 0 1 0   → 18
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a> 0 0 1 0 0 1 0    → 18
 </code></pre></div>
 <p>Check: 6 × 3 = 18 ✓</p>
 <p>Key rule: multiplying by <code>0</code> gives a row of all zeros; multiplying by <code>1</code> copies the number, shifted left to line up under that bit. Then add all the partial product rows together.</p>
@@ -237,7 +239,13 @@
 <li><code>101010 + 11011</code></li>
 <li><code>1001110 + 0110011</code></li>
 </ol>
-<h4 id="part-b-binary-multiplication">Part B: Binary Multiplication</h4>
+<h4 id="part-b-binary-subtraction">Part B: Binary Subtraction</h4>
+<p>Subtract the following binary numbers:</p>
+<ol>
+<li><code>1101 − 0110</code></li>
+<li><code>1010000 − 0110111</code></li>
+</ol>
+<h4 id="part-c-binary-multiplication">Part C: Binary Multiplication</h4>
 <p>Multiply the following binary numbers:</p>
 <ol>
 <li><code>101 × 11</code></li>
@@ -246,7 +254,7 @@
 <li><code>1010 × 110</code></li>
 <li><code>10011 × 101</code></li>
 </ol>
-<p><strong>Bonus (challenge):</strong> <code>11101 × 1011</code></p>
+<p><strong>Bonus Challenge (ungraded):</strong> <code>11101 × 1011</code></p>
 </div>
               
             </div>
