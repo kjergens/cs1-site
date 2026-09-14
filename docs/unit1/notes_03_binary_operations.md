@@ -27,7 +27,7 @@ Key rule: `1 + 1 = 10` in binary (write 0, carry 1). `1 + 1 + 1 = 11` (write 1, 
 
 ---
 
-## Section 3: Binary Subtraction
+## Section 2: Binary Subtraction
 
 Binary subtraction works the same way decimal subtraction does: if a column doesn't have enough to subtract, **borrow a 1** from the next column over. That borrowed 1 is worth `10` (two) once it lands in the column that needed it, since each place value is double the one before it.
 
@@ -46,7 +46,7 @@ Key rule: when the top digit in a column is smaller than the bottom digit (`0 �
 
 ---
 
-## Section 2: Binary Multiplication
+## Section 3: Binary Multiplication
 
 Binary multiplication works like decimal long multiplication — multiply by each digit and shift, then add the partial products. Since binary digits are only `0` or `1`, each partial product is either all zeros (if that digit is 0) or a copy of the original number shifted left (if that digit is 1).
 
@@ -60,7 +60,7 @@ Binary multiplication works like decimal long multiplication — multiply by eac
     0 1 1 0       ← 1 x 0110, shifted one place left 
   0 0 0 0         ← 0 × 0110, shifted another place left 
   -------------
-  0 0 1 0 0 1 0   → 18
+ 0 0 1 0 0 1 0    → 18
 ```
 
 Check: 6 × 3 = 18 ✓
@@ -89,14 +89,21 @@ Key rule: multiplying by `0` gives a row of all zeros; multiplying by `1` copies
     4. `101010 + 11011`
     5. `1001110 + 0110011`
 
-    #### Part B: Binary Multiplication
+    #### Part B: Binary Subtraction
+
+    Subtract the following binary numbers:
+
+    6. `1101 − 0110`
+    7. `1010000 − 0110111`
+
+    #### Part C: Binary Multiplication
 
     Multiply the following binary numbers:
 
-    6. `101 × 11`
-    7. `1101 × 101`
-    8. `111 × 10`
-    9. `1010 × 110`
-    10. `10011 × 101`
+    8. `101 × 11`
+    9. `1101 × 101`
+    10. `111 × 10`
+    11. `1010 × 110`
+    12. `10011 × 101`
 
-    **Bonus (challenge):** `11101 × 1011`
+    **Bonus Challenge (ungraded):** `11101 × 1011`
