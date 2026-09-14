@@ -18,8 +18,6 @@ Programs run **top to bottom**, one instruction at a time, in order.
 
 In Scratch, blocks in a script execute from the top block down. If you want something to happen first, it goes on top.
 
-In Java, statements inside `main` execute in order, line by line.
-
 ---
 
 ### 2. Variables
