@@ -80,12 +80,12 @@ In Scratch, scripts start when something happens — "when green flag clicked", 
 
     #### Phase 2: Loops & Conditionals
 
-    Build a second script, also triggered by **when green flag clicked**:
+    Update **when green flag clicked** script to do the following:
 
-    1. Create a variable named `counter` and set it to `3`.
-    2. Use **ask [ ] and wait** (Sensing) to prompt: *"How many sides should the engine build up to?"*
-    3. As your first two instructions, add **erase all** (Pen) and **go to x: 0 y: 0** — this keeps every run starting from a clean stage.
-    4. Build a loop that repeats exactly `answer` times — drag the **answer** reporter (Sensing) directly into your `repeat ( )` block; you don't need a separate variable for it.
+    1. As your first two instructions, add **erase all** (Pen) and **go to x: 0 y: 0** — this keeps every run starting from a clean stage. 
+    2. Create a variable named `counter` and set it to `3`.
+    3. Use **ask [ ] and wait** (Sensing) to prompt: *"How many sides should the engine build up to?"*
+    4. Build a loop that repeats exactly `answer` times — drag the **answer** (Sensing) directly into your `repeat ( )` block; you don't need a separate variable for it.
     5. Inside the loop:
         - **If** `counter` is less than half of `answer` → set the pen color to blue.
         - **Else** → set the pen color to red.
