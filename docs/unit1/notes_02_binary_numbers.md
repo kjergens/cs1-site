@@ -161,21 +161,21 @@ Start with the left (most significant) digit, and fill in a 1 or 0. For example 
 
     4. Convert the decimal number `47` to binary. Show your work (repeated division or place-value method).
     5. Convert the decimal number `29` to binary. Then count how many 1s appear in your answer.
+    6. Convert `10011` and `10101` from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.
 
     #### **Optional/Not Required Extra Challenges (ungraded):** 
 
-    6. Add the binary numbers `1011` and `1101`. Show the carry row.
+    7. Add the binary numbers `1011` and `1101`. Show the carry row.
     ```
       carry:
        1011
     +  1101
     ------
     ```
-    7. Add the binary numbers `11101` and `11011`. Show the carry row.
+    8. Add the binary numbers `11101` and `11011`. Show the carry row.
     ```
       carry:
       11101
     + 11011
     -------
     ```
-    8. Convert `10011` and `10101` from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.
