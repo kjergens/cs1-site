@@ -60,125 +60,42 @@ In Scratch, scripts start when something happens — "when green flag clicked", 
 ## Homework
 
 !!! attention
-    ### HW 3 - Unit 1 Chapter 4: Scratch
+    ### HW 3 — Unit 1 Chapter 4: Interactive Pattern Engine
 
     *Assigned Class 4 · Due Class 5 · Submission: upload your `.sb3` file to the Schoology assignment*
 
-    #### Background
+    You'll build a Scratch program that draws a sequence of regular polygons using pure math — no hardcoded shapes — driven by a loop, a conditional, and a custom block with parameters.
 
-    Scratch is a visual programming language developed by MIT. It lets you build programs by snapping together blocks — no curly braces, semicolons, or typos to worry about. It's a great way to see programming logic in action before we move to Java.
+    #### Phase 1: Custom Block — `drawShape`
 
-    The Scratch interface has three main areas:
+    1. In the **My Blocks** category, click **Make a Block**. Name it `drawShape`.
+    2. Click **Add an input (number or text)** twice to create two parameters: `sides` and `size`.
+    3. Inside the `drawShape` definition:
+        - Change the sprite's costume to a ball (**Costumes** tab, top-left — pick your sprite from the list at the bottom first).
+        - Click **Add Extension** (bottom-left) and add the **Pen** extension — you'll need it to draw.
+        - Don't hardcode a shape. Calculate the turn angle yourself: make a `turnAngle` variable and use an **Operators** `/` block to compute `360 / sides`.
+        - Use a `repeat (sides)` loop: move `size` steps, then turn `turnAngle` degrees.
+        - Include a **pen down** block somewhere in here — without it, the sprite will move but nothing will actually draw.
+    4. Test it: attach a **when green flag clicked** block and call `drawShape` with test numbers (try 4 sides, size 50 — you should see a square).
 
-    - **Block palette** (left): all the blocks you can use, organized by category
-    - **Scripts area** (middle): where you drag and connect blocks to build programs
-    - **Stage** (right): where your program runs — the cat (your sprite) lives here
+    #### Phase 2: Loops & Conditionals
 
-    The stage uses a coordinate system where `(0, 0)` is the center. The cat starts there.
+    Build a second script, also triggered by **when green flag clicked**:
 
-    Work through the activities below **in order** — each one builds on or modifies the previous. Don't start a new activity in a separate area; change your existing code as instructed.
+    1. Create a variable named `counter` and set it to `3`.
+    2. Use **ask [ ] and wait** (Sensing) to prompt: *"How many sides should the engine build up to?"*
+    3. As your first two instructions, add **erase all** (Pen) and **go to x: 0 y: 0** — this keeps every run starting from a clean stage.
+    4. Build a loop that repeats exactly `answer` times — drag the **answer** reporter (Sensing) directly into your `repeat ( )` block; you don't need a separate variable for it.
+    5. Inside the loop:
+        - **If** `counter` is less than half of `answer` → set the pen color to blue.
+        - **Else** → set the pen color to red.
+        - Call `drawShape`, passing `counter` for `sides` and `counter + 20` for `size`.
+        - At the end of the loop, increase `counter` by 1.
 
-    #### Activity 1: Say Hello
-    Do the exercise and answer the question.
+    #### Phase 3: Test!
 
-    **Exercise:** 
+    Run your engine with a few different inputs. What happens as the number of sides grows? Do you ever get blue shapes — why or why not?
 
-    1. Drag a "when green flag clicked" block to the scripts area. 
-    2. Attach a "say [ ] for [ ] seconds" block to it. 
-    3. Make the cat say `Hello, world!` for 2 seconds.
-    4. Click the green flag to test it.
+    **Reflection** (2–3 sentences, in a comment block in Scratch or the Schoology text box): What was the hardest part of building this, and why?
 
-    **Q1:** What is the "input" to the say block? What is the "side effect" of calling it?
-
-    #### Activity 2: Ask and Answer
-    Do the exercise and answer the question.
-
-    **Exercise:** 
-    Modify your Activity 1 code:
-
-    1. Replace the say block with an "ask [ ] and wait" block. 
-    2. Use the prompt: `What's your name?`
-    3. After the ask block, add a "say [ ] for [ ] seconds" block that uses the "join" operator to say `Hello, ` joined with the answer variable.
-    4. Click the green flag, type your name, and verify the cat greets you by name.
-
-    **Q2:** Where does the answer variable come from? What category is it in?
-
-    #### Activity 3: Text to Speech
-
-    1. Click "Add Extension" (bottom-left of the block palette). Find and add the Text to Speech extension.
-    2. Add a "speak [ ]" block after your say block. Pass it the same joined greeting (`Hello, ` + answer).
-
-    Now when you run the program, the cat should both display and speak the greeting.
-
-    #### Activity 4: Sound Loop
-    1. Detach the blocks from "when green flag clicked" and move them off to the side (keep them — you may want them later).
-    2. Build a new script: when green flag clicked → "play sound [Meow] until done".
-    3. Click the green flag. The cat should meow once.
-
-    #### Activity 5: Repeat
-    Do the exercise and answer the question.
-
-    **Exercise:** Modify your Activity 4 code: 
-
-    1. Wrap the play sound block inside a "repeat [3]" loop.
-    2. Click the green flag. The cat should meow 3 times.
-
-    **Q3:** What would happen if you changed the repeat number to 0? To 10?
-
-    #### Activity 6: Define a Block (Custom Function)
-    Do the exercise and answer the question.
-
-    **Exercise:** 
-
-    1. In the block palette, click "My Blocks" → "Make a Block". Name it `meow`.
-    2. Inside the define `meow` block definition, place a "play sound [Meow] until done" block.
-    3. Back in your main script, replace the play sound block inside the repeat loop with your new `meow` block.
-    4. Test it — behavior should be identical to Activity 5, but now using a custom block.
-
-    **Q4:** Why is it useful to define a named block even if it only contains one line?
-
-    #### Activity 7: Add a Parameter
-    Do the exercise and answer the question.
-
-    **Exercise:** Edit your `meow` block:
-
-    1. Click "My Blocks" → right-click `meow` → "Edit"
-    2. Add a number input called `n`
-    3. Rename the block to `meow n times`
-    4. Inside the definition, wrap the play sound block in a "repeat [n]" loop
-    5. Update your main script to call `meow n times` with a number of your choice.
-    6. Remove the separate repeat wrapper — the loop is now inside the block.
-    7. Test with different values of `n`.
-
-    **Q5:** What is `n` called in programming? (Hint: we saw this word in Activity 1.)
-
-    #### Activity 8: Sensing — Touching
-    Do the exercise and answer the question.
-
-    **Exercise:** 
-    
-    1. Detach your current script from "when green flag clicked" and set it aside.
-    2. Build a new script: a `forever` loop containing "if touching the edge → play sound [Meow] until done".
-    3. Run it and slowly drag the sprite toward the edge of the stage. The cat should meow when it touches the boundary.
-
-    **Q6:** What category is the "touching" block in? What other sensing blocks exist?
-
-    #### Activity 9: Video Motion
-
-    1. Click "Add Extension" → add the Video Sensing extension.
-    2. Build a script: when video motion > `30` → play sound [Meow] until done.
-    3. Test it by moving in front of your camera. The cat should react to motion.
-
-    #### Activity 10: Bring It Together (Extension)
-
-    Now that you know events, variables, loops, custom blocks, sensing, and sound — combine them. Build a program that does all of the following:
-
-    1. When the green flag is clicked, ask the user their name and greet them by name (from Activity 2)
-    2. Then use your `meow n times` block to meow a number of times equal to the number of letters in the user's name (hint: look in the Operators category for a block that finds the length of a string)
-    3. Add a costume change each time the cat meows so it looks like the cat is "talking"
-
-    This is a challenge — it may take trial and error. That's normal.
-
-    **Reflection** (write 2–3 sentences in a comment block in Scratch or in the Schoology text box): What was the hardest part of Activity 10? What concept from today's homework do you think will show up again when we start Java?
-
-    **How to submit:** In Scratch, go to File → Save to your computer — this downloads a `.sb3` file. Upload the `.sb3` to the Schoology assignment. (Backup option: if you can't download the file, Share your project in Scratch via File → Share, and paste the project link as a Schoology comment.)
+    **How to submit:** In Scratch, go to File → Save to your computer — this downloads a `.sb3` file. Upload the `.sb3` to the Schoology assignment. (Backup: if you can't download the file, Share your project via File → Share, and paste the project link as a Schoology comment.)
