@@ -238,12 +238,12 @@
 <li>Test it: attach a <strong>when green flag clicked</strong> block and call <code>drawShape</code> with test numbers (try 4 sides, size 50 — you should see a square).</li>
 </ol>
 <h4 id="phase-2-loops-conditionals">Phase 2: Loops &amp; Conditionals</h4>
-<p>Build a second script, also triggered by <strong>when green flag clicked</strong>:</p>
+<p>Update <strong>when green flag clicked</strong> script to do the following:</p>
 <ol>
+<li>As your first two instructions, add <strong>erase all</strong> (Pen) and <strong>go to x: 0 y: 0</strong> — this keeps every run starting from a clean stage. </li>
 <li>Create a variable named <code>counter</code> and set it to <code>3</code>.</li>
 <li>Use <strong>ask [ ] and wait</strong> (Sensing) to prompt: <em>"How many sides should the engine build up to?"</em></li>
-<li>As your first two instructions, add <strong>erase all</strong> (Pen) and <strong>go to x: 0 y: 0</strong> — this keeps every run starting from a clean stage.</li>
-<li>Build a loop that repeats exactly <code>answer</code> times — drag the <strong>answer</strong> reporter (Sensing) directly into your <code>repeat ( )</code> block; you don't need a separate variable for it.</li>
+<li>Build a loop that repeats exactly <code>answer</code> times — drag the <strong>answer</strong> (Sensing) directly into your <code>repeat ( )</code> block; you don't need a separate variable for it.</li>
 <li>Inside the loop:<ul>
 <li><strong>If</strong> <code>counter</code> is less than half of <code>answer</code> → set the pen color to blue.</li>
 <li><strong>Else</strong> → set the pen color to red.</li>
