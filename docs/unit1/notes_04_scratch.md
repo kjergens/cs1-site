@@ -10,7 +10,7 @@ You've used Scratch in middle school. In this unit, we're using it deliberately:
 
 ---
 
-## Section 2: Core Programming Concepts in Scratch (and in Java)
+## Section 2: Core Programming Concepts in Scratch
 
 ### 1. Sequence
 
