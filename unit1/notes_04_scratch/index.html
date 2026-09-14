@@ -73,8 +73,6 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#section-3-from-scratch-to-java">Section 3: From Scratch to Java</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#hw-3-unit-1-chapter-4-scratch">HW 3 - Unit 1 Chapter 4: Scratch</a>
@@ -203,23 +201,10 @@
 <h3 id="2-variables">2. Variables</h3>
 <p>A <strong>variable</strong> is a named container for a value that can change.</p>
 <p>In Scratch: use <strong>Make a Variable</strong>, give it a name, and use <strong>set [ ] to</strong> and <strong>change [ ] by</strong> blocks.</p>
-<p>In Java:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-</code></pre></div></p>
-<p>Same idea — a name, a value, the ability to update it.</p>
 <hr />
 <h3 id="3-conditionals">3. Conditionals</h3>
 <p>A <strong>conditional</strong> runs code only if a condition is true.</p>
 <p>In Scratch: <code>if &lt; &gt; then</code> and <code>if &lt; &gt; then / else</code> blocks.</p>
-<p>In Java:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">score</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You win!&quot;</span><span class="p">);</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Keep going.&quot;</span><span class="p">);</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">}</span>
-</code></pre></div></p>
-<p>The diamond-shaped condition slots in Scratch correspond to the <code>( )</code> in Java's <code>if</code> statement.</p>
 <hr />
 <h3 id="4-loops">4. Loops</h3>
 <p>A <strong>loop</strong> repeats code multiple times without copy-pasting.</p>
@@ -227,74 +212,27 @@
 <thead>
 <tr>
 <th>Scratch block</th>
-<th>Java equivalent</th>
+<th>description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>forever</code></td>
-<td><code>while (true)</code></td>
+<td>code inside repeats endlessly</td>
 </tr>
 <tr>
 <td><code>repeat (10)</code></td>
-<td><code>for (int i = 0; i &lt; 10; i++)</code></td>
+<td>code inside repeats the specified number</td>
 </tr>
 <tr>
 <td><code>repeat until &lt; &gt;</code></td>
-<td><code>while (!condition)</code></td>
+<td>code inside repeats until the specified condition</td>
 </tr>
 </tbody>
 </table>
-<p>The idea is the same: a chunk of code that runs again and again, either a fixed number of times or until a condition is met.</p>
 <hr />
 <h3 id="5-events">5. Events</h3>
 <p>In Scratch, scripts start when something happens — "when green flag clicked", "when key pressed".</p>
-<p>In Java, the equivalent is the <strong>main method</strong> — the entry point where your program begins:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="c1">// your program starts here</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
-</code></pre></div></p>
-<hr />
-<h2 id="section-3-from-scratch-to-java">Section 3: From Scratch to Java</h2>
-<table>
-<thead>
-<tr>
-<th>Scratch concept</th>
-<th>Java equivalent</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Script (blocks top to bottom)</td>
-<td>Statements in <code>main</code></td>
-</tr>
-<tr>
-<td>Variable block</td>
-<td><code>int x = 0;</code></td>
-</tr>
-<tr>
-<td><code>if &lt; &gt; then</code></td>
-<td><code>if (condition) { }</code></td>
-</tr>
-<tr>
-<td><code>repeat (n)</code></td>
-<td><code>for</code> loop</td>
-</tr>
-<tr>
-<td><code>forever</code> / <code>repeat until</code></td>
-<td><code>while</code> loop</td>
-</tr>
-<tr>
-<td>When green flag clicked</td>
-<td><code>public static void main(...)</code></td>
-</tr>
-<tr>
-<td>Say [ ]</td>
-<td><code>System.out.println(...)</code></td>
-</tr>
-</tbody>
-</table>
-<p>Every program you write this year — in Scratch or Java — uses these same building blocks. The language changes; the structure doesn't.</p>
 <hr />
 <h2 id="homework">Homework</h2>
 <div class="admonition attention">
