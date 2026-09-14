@@ -162,7 +162,7 @@ Start with the left (most significant) digit, and fill in a 1 or 0. For example 
     4. Convert the decimal number `47` to binary. Show your work (repeated division or place-value method).
     5. Convert the decimal number `29` to binary. Then count how many 1s appear in your answer.
 
-    #### Part C: Binary Addition
+    #### **Optional/Not Required Extra Challenge: (ungraded)** Part C: Binary Addition
 
     6. Add the binary numbers `1011` and `1101`. Show the carry row.
 
@@ -182,4 +182,4 @@ Start with the left (most significant) digit, and fill in a 1 or 0. For example 
     -------
     ```
 
-    8. **Extra Challenge: (ungraded)** Convert `10011` and `10101` from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.
+    8. Convert `10011` and `10101` from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.
