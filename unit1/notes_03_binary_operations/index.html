@@ -59,6 +59,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#section-2-binary-multiplication">Section 2: Binary Multiplication</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-3-binary-subtraction">Section 3: Binary Subtraction</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#hw-2-unit-1-chapter-3-binary-arithmetic">HW 2: Unit 1 Chapter 3: Binary Arithmetic</a>
@@ -205,6 +207,21 @@
 </code></pre></div>
 <p>Check: 6 × 3 = 18 ✓</p>
 <p>Key rule: multiplying by <code>0</code> gives a row of all zeros; multiplying by <code>1</code> copies the number, shifted left to line up under that bit. Then add all the partial product rows together.</p>
+<div class="admonition information">
+<p class="admonition-title">Fun fact: multiplying by 2 is just a shift</p>
+<p>To multiply a binary number by 2, shift every digit one place to the left. Each digit's place value doubles when it moves one spot left, so if every digit is worth twice as much, the whole number is twice as much too — no actual multiplication required.</p>
+</div>
+<hr />
+<h2 id="section-3-binary-subtraction">Section 3: Binary Subtraction</h2>
+<p>Binary subtraction works the same way decimal subtraction does: if a column doesn't have enough to subtract, <strong>borrow a 1</strong> from the next column over. That borrowed 1 is worth <code>10</code> (two) once it lands in the column that needed it, since each place value is double the one before it.</p>
+<p><strong>Example: <code>1010 − 0100</code></strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>  1 0 1 0
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>- 0 1 0 0
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>---------
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  0 1 1 0
+</code></pre></div>
+<p>Check: 10 − 4 = 6 ✓</p>
+<p>Key rule: when the top digit in a column is smaller than the bottom digit (<code>0 − 1</code>), borrow a 1 from the next column to the left — it becomes a <code>10</code> in the column that needed it, same idea as borrowing in decimal subtraction.</p>
 <hr />
 <h2 id="homework">Homework</h2>
 <div class="admonition attention">
