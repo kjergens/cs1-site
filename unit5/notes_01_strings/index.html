@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katie Jergens" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Chapter 1: String Methods - CS1 - Columbia Grammar and Preparatory School</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Chapter 1: String Methods";
+        var mkdocs_page_input_path = "unit5/notes_01_strings.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CS1 - Columbia Grammar and Preparatory School
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Table of Contents</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../syllabus/">Syllabus, Policies & Contract</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 1 - Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_01_how_computers_work/">Chapter 1: How Computers Work</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_02_binary_numbers/">Chapter 2: Binary Numbers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_03_binary_operations/">Chapter 3: Binary Arithmetic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_04_scratch/">Chapter 4: Scratch</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/unit1_check_understanding/">Check Your Understanding: Unit 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/unit1_practice_quiz/">Practice Quiz #1 (Unit 1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project1/">Project 1: Scratch Remix</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 2 - Java Basics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_01_java_structure/">Chapter 1: Structure, Printing & Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_02_variables/">Chapter 2: Variables and Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_03_operators_reassignment/">Chapter 3: Reassignment Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_04_scanner/">Chapter 4: Scanner and User Input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/unit2_check_understanding/">Check Your Understanding: Unit 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/unit2_practice_test/">Practice Test #1 (Units 1 and 2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 3 - Conditionals and While Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_01_conditionals/">Chapter 1: Conditionals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_02_while_loops/">Chapter 2: While Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_check_understanding/">Check Your Understanding: Unit 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_practice_quiz/">Practice Quiz #2 (Unit 3)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 4 - For Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_01_for_loops/">Chapter 1: For Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_02_advanced_for_loops/">Chapter 2: Advanced For Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/unit4_check_understanding/">Check Your Understanding: Unit 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/unit4_practice_quiz/">Practice Quiz #3 (Unit 4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project2/">Project 2: Word Guessing Adventure</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 5 - Strings and Math</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Chapter 1: String Methods</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#section-1-overview">Section 1: Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-2-adding-to-a-string">Section 2: "Adding" to a String</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-3-common-string-methods">Section 3: Common String Methods</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#length">length()</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#touppercase-and-tolowercase">toUpperCase() and toLowerCase()</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equals-and-equalsignorecase">equals() and equalsIgnoreCase()</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#substringstart-end">substring(start, end)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#substringstart-single-argument">substring(start) — single argument</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#charatindex">charAt(index)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#indexofstr">indexOf(str)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#replace-replaceall-and-replacefirst">replace(), replaceAll(), and replaceFirst()</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-4-immutability-methods-dont-change-the-original">Section 4: Immutability — Methods Don't Change the Original</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#hw-12-unit-5-chapter-1-string-methods">HW 12 - Unit 5 Chapter 1: String methods</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#part-a-definitions-fill-in-the-blank">Part A: Definitions (Fill in the Blank)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#part-b-true-or-false">Part B: True or False</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#part-c-short-answer">Part C: Short Answer</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#part-d-code-output-prediction">Part D: Code Output Prediction</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_02_math/">Chapter 2: The Math Class</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit5_check_understanding/">Check Your Understanding: Unit 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit5_practice_test/">Practice Test #2 (Units 3 - 5)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CS1 - Columbia Grammar and Preparatory School</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Unit 5 - Strings and Math</li>
+      <li class="breadcrumb-item active">Chapter 1: String Methods</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="chapter-1-strings">Chapter 1: Strings</h1>
+<hr />
+<h2 id="section-1-overview">Section 1: Overview</h2>
+<p>In Java, a <code>String</code> is used to store text. It is <strong>not</strong> a simple primitive like <code>int</code> or <code>double</code> — it is a special type called an <strong>object</strong>, which means it comes with built-in methods you can call on it.</p>
+<p><strong>Key idea: Strings are immutable.</strong> Once a <code>String</code> is created, it cannot be changed. Any method that seems to change it actually creates a brand-new <code>String</code>. To save the result, you must reassign it.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">String</span><span class="w"> </span><span class="n">greeting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello World!"</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">String</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Welcome to Java"</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">String</span><span class="w"> </span><span class="n">empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span><span class="w">       </span><span class="c1">// empty string</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">String</span><span class="w"> </span><span class="n">nothing</span><span class="p">;</span><span class="w">          </span><span class="c1">// declared but not initialized</span>
+</code></pre></div>
+<hr />
+<h2 id="section-2-adding-to-a-string">Section 2: "Adding" to a String</h2>
+<p>You can't really add to a String, but you can create a new one using the existing String value plus a suffix.</p>
+<p>Use <code>+=</code> to append text:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"cat"</span><span class="p">;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">s</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">"s"</span><span class="p">;</span><span class="w">   </span><span class="c1">// s is now "cats"</span>
+</code></pre></div>
+<p><strong>Important:</strong> <code>+=</code> only works if the <code>String</code> already has a value, even if that value is <code>""</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// OK</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">s</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">"toy"</span><span class="p">;</span><span class="w">   </span><span class="c1">// s is now "toy"</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">// ERROR — no initial value</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">String</span><span class="w"> </span><span class="n">t</span><span class="p">;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">t</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">"toy"</span><span class="p">;</span><span class="w">   </span><span class="c1">// won't compile</span>
+</code></pre></div>
+<hr />
+<h2 id="section-3-common-string-methods">Section 3: Common String Methods</h2>
+<p>String is different from other data types because each instance of a String comes with a set of methods which returns information about the String, or a new value based on the String. See these commonly used methods:</p>
+<h3 id="length"><code>length()</code></h3>
+<p>Returns the number of characters in the String. Spaces count.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">String</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Java"</span><span class="p">;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">text</span><span class="p">.</span><span class="na">length</span><span class="p">();</span><span class="w">   </span><span class="c1">// 4</span>
+</code></pre></div>
+<h3 id="touppercase-and-tolowercase"><code>toUpperCase()</code> and <code>toLowerCase()</code></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">String</span><span class="w"> </span><span class="n">shout</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="s">"hello"</span><span class="p">.</span><span class="na">toUpperCase</span><span class="p">();</span><span class="w">   </span><span class="c1">// "HELLO"</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">String</span><span class="w"> </span><span class="n">whisper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"HELLO"</span><span class="p">.</span><span class="na">toLowerCase</span><span class="p">();</span><span class="w">   </span><span class="c1">// "hello"</span>
+</code></pre></div>
+<h3 id="equals-and-equalsignorecase"><code>equals()</code> and <code>equalsIgnoreCase()</code></h3>
+<p>Use these to compare Strings — <strong>never use <code>==</code></strong>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">String</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello"</span><span class="p">;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">String</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"hello"</span><span class="p">;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">a</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="w">             </span><span class="c1">// false — capital H differs</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">a</span><span class="p">.</span><span class="na">equalsIgnoreCase</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="w">   </span><span class="c1">// true — ignores case</span>
+</code></pre></div>
+<h3 id="substringstart-end"><code>substring(start, end)</code></h3>
+<p>Pulls out part of a String. Counting starts at <strong>0</strong>. The end index is <strong>not included</strong>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">String</span><span class="w"> </span><span class="n">word</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello"</span><span class="p">;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">String</span><span class="w"> </span><span class="n">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">word</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span><span class="w">   </span><span class="c1">// "ell"</span>
+</code></pre></div>
+<p>Index reference for <code>"Hello"</code>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>H  e  l  l  o
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>0  1  2  3  4
+</code></pre></div>
+<code>substring(1, 4)</code> takes characters at positions 1, 2, 3 → <code>"ell"</code></p>
+<h3 id="substringstart-single-argument"><code>substring(start)</code> — single argument</h3>
+<p>Leave out <code>end</code> and <code>substring</code> returns everything from <code>start</code> to the end of the string.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Java Programming"</span><span class="p">;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">String</span><span class="w"> </span><span class="n">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span><span class="w">   </span><span class="c1">// "Programming"</span>
+</code></pre></div>
+<h3 id="charatindex"><code>charAt(index)</code></h3>
+<p>Returns the single character at a given index (0-based).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">String</span><span class="w"> </span><span class="n">word</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello"</span><span class="p">;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">word</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w">   </span><span class="c1">// 'e'</span>
+</code></pre></div>
+<p>Valid indices run from <code>0</code> to <code>length() - 1</code>. Calling <code>charAt()</code> with an index that's too large (or negative) throws an error.</p>
+<h3 id="indexofstr"><code>indexOf(str)</code></h3>
+<p>Returns the index where a substring first appears, or <code>-1</code> if it isn't found.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello World"</span><span class="p">;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">"World"</span><span class="p">);</span><span class="w">   </span><span class="c1">// 6</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">"xyz"</span><span class="p">);</span><span class="w">     </span><span class="c1">// -1 (not found)</span>
+</code></pre></div>
+<p>There's also a <code>contains(str)</code> method that just returns <code>true</code>/<code>false</code> for whether a substring exists — use <code>indexOf()</code> instead when you also need to know <em>where</em> the match is, not just whether it exists.</p>
+<h3 id="replace-replaceall-and-replacefirst"><code>replace()</code>, <code>replaceAll()</code>, and <code>replaceFirst()</code></h3>
+<p>All three swap out characters or patterns for something else, but they differ:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Replaces</th>
+<th>Uses regex?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>replace(oldChar, newChar)</code></td>
+<td>every occurrence of a character</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>replaceAll(regex, replacement)</code></td>
+<td>every match of a pattern</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>replaceFirst(regex, replacement)</code></td>
+<td>only the first match of a pattern</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"banana"</span><span class="p">;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">s</span><span class="p">.</span><span class="na">replace</span><span class="p">(</span><span class="sc">'a'</span><span class="p">,</span><span class="w"> </span><span class="sc">'A'</span><span class="p">);</span><span class="w">        </span><span class="c1">// "bAnAnA" — every 'a' becomes 'A'</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">s</span><span class="p">.</span><span class="na">replaceAll</span><span class="p">(</span><span class="s">"a"</span><span class="p">,</span><span class="w"> </span><span class="s">"X"</span><span class="p">);</span><span class="w">     </span><span class="c1">// "bXnXnX" — same result here, but replaceAll can use pattern syntax</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">s</span><span class="p">.</span><span class="na">replaceFirst</span><span class="p">(</span><span class="s">"a"</span><span class="p">,</span><span class="w"> </span><span class="s">"*"</span><span class="p">);</span><span class="w">   </span><span class="c1">// "b*nana" — only the first 'a' changes</span>
+</code></pre></div>
+<p>For simple single-character swaps, <code>replace()</code> and <code>replaceAll()</code> produce the same result — the real difference is that <code>replaceAll</code>/<code>replaceFirst</code> treat their first argument as a <em>regular expression</em> pattern, not just literal text, so they can match more complex patterns.</p>
+<hr />
+<h2 id="section-4-immutability-methods-dont-change-the-original">Section 4: Immutability — Methods Don't Change the Original</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"JAVA"</span><span class="p">;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">s</span><span class="p">.</span><span class="na">toLowerCase</span><span class="p">();</span><span class="w">            </span><span class="c1">// does NOT change s</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s</span><span class="p">);</span><span class="w">      </span><span class="c1">// still prints "JAVA"</span>
+</code></pre></div>
+<p>To actually use the result, save it:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"JAVA"</span><span class="p">;</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="na">toLowerCase</span><span class="p">();</span><span class="w">        </span><span class="c1">// reassign</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s</span><span class="p">);</span><span class="w">      </span><span class="c1">// prints "java"</span>
+</code></pre></div>
+<hr />
+<h2 id="homework">Homework</h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<h3 id="hw-12-unit-5-chapter-1-string-methods">HW 12 - Unit 5 Chapter 1: String methods</h3>
+<p><em>Reference: <a href="https://www.w3schools.com/java/java_ref_string.asp">w3schools Java String methods</a></em></p>
+<h4 id="part-a-definitions-fill-in-the-blank">Part A: Definitions (Fill in the Blank)</h4>
+<ol>
+<li>The <code>length()</code> method returns the <code>__________</code> of characters in a String.</li>
+<li><code>substring(beginIndex, endIndex)</code> returns a <code>__________</code> of the original string from <code>beginIndex</code> up to (but not including) <code>endIndex</code>.</li>
+<li><code>charAt(index)</code> returns the <code>__________</code> at the specified index (0-based).</li>
+<li><code>indexOf(String str)</code> returns the <code>__________</code> index of the first occurrence of <code>str</code>, or <code>__________</code> if not found.</li>
+<li><code>replace(char oldChar, char newChar)</code> replaces <code>__________</code> occurrences of <code>oldChar</code> with <code>newChar</code>.</li>
+<li><code>replaceAll(String regex, String replacement)</code> uses <code>__________</code> to match and replace patterns.</li>
+<li><code>equals(Object obj)</code> checks if two strings have the <code>__________</code> content and are of the same <code>__________</code>.</li>
+<li><code>equalsIgnoreCase(String anotherString)</code> compares two strings for equality, ignoring <code>__________</code> differences.</li>
+</ol>
+<h4 id="part-b-true-or-false">Part B: True or False</h4>
+<ol>
+<li><code>s.length()</code> counts spaces and special characters.</li>
+<li><code>"hello".substring(1, 3)</code> returns <code>"he"</code>.</li>
+<li><code>charAt(0)</code> returns the last character of a string.</li>
+<li><code>indexOf("a")</code> returns <code>-1</code> if <code>"a"</code> is not in the string.</li>
+<li><code>replaceAll()</code> can use regular expressions.</li>
+<li><code>replace()</code> and <code>replaceAll()</code> behave the same for simple character replacement.</li>
+<li><code>equals()</code> and <code>==</code> always mean the same thing for Strings.</li>
+<li><code>equalsIgnoreCase()</code> returns <code>true</code> for <code>"Java"</code> and <code>"JAVA"</code>.</li>
+</ol>
+<h4 id="part-c-short-answer">Part C: Short Answer</h4>
+<ol>
+<li>What is the difference between <code>replace()</code> and <code>replaceAll()</code>?</li>
+<li>Why might <code>indexOf()</code> be preferred over <code>contains()</code> in some cases?</li>
+<li>Explain why <code>"hello".charAt(5)</code> causes an error.</li>
+<li>When would you use <code>substring(2)</code> instead of <code>substring(2, 5)</code>?</li>
+</ol>
+<h4 id="part-d-code-output-prediction">Part D: Code Output Prediction</h4>
+<p>Predict the output of each line, given:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Java Programming"</span><span class="p">;</span>
+</code></pre></div></p>
+<ol>
+<li><code>s.length()</code> → ?</li>
+<li><code>s.substring(5)</code> → ?</li>
+<li><code>s.substring(0, 4)</code> → ?</li>
+<li><code>s.charAt(7)</code> → ?</li>
+<li><code>s.indexOf("gram")</code> → ?</li>
+<li><code>s.indexOf("Python")</code> → ?</li>
+<li><code>s.replace('a', 'A')</code> → ?</li>
+<li><code>s.replaceAll("a", "X")</code> → ?</li>
+<li><code>s.replaceFirst("a", "*")</code> → ?</li>
+<li><code>s.equals("java programming")</code> → ?</li>
+<li><code>s.equalsIgnoreCase("JAVA programming")</code> → ?</li>
+</ol>
+<hr />
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../projects/project2/" class="btn btn-neutral float-left" title="Project 2: Word Guessing Adventure"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../notes_02_math/" class="btn btn-neutral float-right" title="Chapter 2: The Math Class">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../projects/project2/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../notes_02_math/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/nav_scroll_fix.js"></script>
+      <script src="../../js/copyright_footer.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        });
+    </script>
+
+</body>
+</html>
