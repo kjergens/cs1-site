@@ -53,9 +53,9 @@ When you must calculate 0 - 1, you cannot do it without help. You must borrow fr
 
 ### Borrowing Across Multiple Zeros
 If the immediate column to the left is a 0, you cannot borrow from it directly. You must keep moving left until you find a 1: 
-	•	The 1 you finally find turns into a 0.
-	•	Any intermediate 0s that you skipped turn into 1s.
-	•	The column that actually needed the borrow becomes 10 (which is 2 in decimal). 
+- The 1 you finally find turns into a 0.
+- Any intermediate 0s that you skipped turn into 1s.
+- The column that actually needed the borrow becomes 10 (which is 2 in decimal). 
 
 ---
 
