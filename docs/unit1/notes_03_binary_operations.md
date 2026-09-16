@@ -46,15 +46,21 @@ Key rule: when the top digit in a column is smaller than the bottom digit (`0 âˆ
 
 ### The Basic Rule of Binary Borrowing
 When you must calculate 0 - 1, you cannot do it without help. You must borrow from the next column to the left: 
-1. The column you borrow from drops its value by 1 (changing a 1 to a 0).
-2. The current column receives a value of 2 (written as 10 in binary).
-3. You subtract: 10 (binary) - 1 (binary) = 1 (binary). 
+
+- The column you borrow from drops its value by 1 (changing a 1 to a 0).
+   
+- The current column receives a value of 2 (written as 10 in binary).
+   
+- You subtract: 10 (binary) - 1 (binary) = 1 (binary). 
 
 
 ### Borrowing Across Multiple Zeros
 If the immediate column to the left is a 0, you cannot borrow from it directly. You must keep moving left until you find a 1: 
+
 - The 1 you finally find turns into a 0.
+  
 - Any intermediate 0s that you skipped turn into 1s.
+  
 - The column that actually needed the borrow becomes 10 (which is 2 in decimal). 
 
 ---
