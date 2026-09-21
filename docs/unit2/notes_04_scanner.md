@@ -147,11 +147,11 @@ double number = Double.parseDouble(text);
 !!! attention
     ### HW 7 - Unit 2 Chapter 4: Scanner and User Input
 
-    1. Match each input you want to read to the correct Scanner method (word bank: `nextInt()`, `nextDouble()`, `next()`, `nextLine()`):
-    - a. A whole number → ?
-    - b. A decimal number → ?
-    - c. One word (stops at a space) → ?
-    - d. A full line of text (including spaces) → ?
+    1. Given that the Scanner methods are: `nextInt()`, `nextDouble()`, `next()`, and `nextLine()`,  which should you use for each of these types of input:
+     `a) decimal number`,
+     `b) one word (stops at a space)`,
+     `c) a full line of text (including spaces)`,
+     `d) whole number`
     2. Fill in the blanks so this program reads an integer and prints it doubled:
     ```java
     _____________ java.util.Scanner;
