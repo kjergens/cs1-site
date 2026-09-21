@@ -150,23 +150,24 @@ Start with the left (most significant) digit, and fill in a 1 or 0. For example 
     *Assigned Class 2 · Due Class 3*
 
 
-    1. Convert the binary number `110101` to decimal. Show each bit's place value.
+    1. Convert the binary number `110101` to decimal (base-10). Show each bit's place value, e.g. 16+2+1 = 19.
     2. What is the highest decimal value that can be represented with a 6-bit binary number? Explain why in one sentence.
     3. In the binary number `10110`, what does the `1` in the left-most (most significant) position represent?
-    4. Convert the decimal number `47` to binary. Show your work (repeated division or place-value method).
-    5. Convert the decimal number `29` to binary. Then count how many 1s appear in your answer.
+    4. Convert the decimal number `47` to binary. 
+    5. Convert the decimal number `29` to binary. 
     6. Convert `10011` and `10101` from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.
+    7. To multiply a binary number by 2, simply insert a 0 at the end in the right-most (least significant) bit position. E.g. `111` is 7, and `1110` is 14. Explain in one sentence why this works.
 
     #### **Optional/Not Required Extra Challenges (ungraded):** 
 
-    7. Add the binary numbers `1011` and `1101`. Show the carry row.
+    8. Add the binary numbers `1011` and `1101`. Show the carry row.
     ```
       carry:
        1011
     +  1101
     ------
     ```
-    8. Add the binary numbers `11101` and `11011`. Show the carry row.
+    9. Add the binary numbers `11101` and `11011`. Show the carry row.
     ```
       carry:
       11101
