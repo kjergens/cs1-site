@@ -58,28 +58,21 @@ String name = "Alice";
 !!! attention
     ### HW 5 - Unit 2 Chapter 2: Variables and Data Types
 
-    **Part A: Identify the Data Type.** For each value below, name the Java data type that best represents it (`int`, `double`, `boolean`, `String`, or `char`):
-
-    1. `42`
-    2. `"Hello, world!"`
-    3. `3.14`
-    4. `'A'`
-    5. `true`
-    6. `"false"`
-    7. `0`
-    8. `'7'`
-
-    Write a single Java statement to declare and initialize each variable described. Use the correct data type.
-
-    9. **Part B: Declare and Initialize Variables.** An integer named `score` with value `100`
-    10. A decimal number named `gpa` with value `3.75`
-    11. A boolean named `isLoggedIn` set to `false`
-    12. A String named `greeting` with value `"Good morning"`
-    13. A char named `grade` with value `'B'`
-
-    What will each snippet print? Write your answer exactly as it would appear on screen.
-
-    14. **Part C: Predict the Output.**
+    1. For each value below, name the Java data type that best represents it (`int`, `double`, `boolean`, `String`, or `char`):
+        a. `42`
+        b. `"Hello, world!"`
+        c. `3.14`
+        d. `'A'`
+        e. `true`
+        f. `"false"`
+        g. `0`
+        h. `'7'`
+    2. Declare and initialize an integer named `score` with value `100`
+    3. Declare and initialize a decimal number named `gpa` with value `3.75`
+    4. Declare and initialize a boolean named `isLoggedIn` set to `false`
+    5. Declare and initialize a String named `greeting` with value `"Good morning"`
+    6. Declare and initialize a char named `grade` with value `'B'`
+    7. Predict the output. What will output if this code is run?
     ```java
     int x = 10;
     int y = 3;
@@ -87,36 +80,29 @@ String name = "Alice";
     System.out.println(y);
     System.out.println(x + y);
     ```
-
-    15.
+    8. Predict the output. What will output if this code is run?
     ```java
     int age = 17;
     String name = "Jordan";
     System.out.println(name + " is " + age + " years old.");
     ```
-
-    16.
+    9. Predict the output. What will output if this code is run?
     ```java
     double price = 2.5;
     int quantity = 4;
     System.out.println("Total: " + price * quantity);
     ```
-
-    Each snippet below has exactly one error. Identify the line with the error and explain what's wrong. You don't need to fix it — just describe the problem.
-
-    17. **Part D: Find the Bug.**
+    10. Identify the line with the error and explain what's wrong. 
     ```java
     int count = "five";
     System.out.println(count);
     ```
-
-    18.
+    11. Identify the line with the error and explain what's wrong. 
     ```java
     char initial = "K";
     System.out.println(initial);
     ```
-
-    19.
+    12. Identify the line with the error and explain what's wrong. 
     ```java
     double temperature = 98.6
     System.out.println(temperature);

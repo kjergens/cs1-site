@@ -96,7 +96,7 @@ System.out.println(7 <= 6);  // false
 
     There are five parts, plus an ungraded bonus for optional enrichment. Each part has a short background, then exercises — read the background, then answer the exercises that follow.
 
-    1. **Part A: Java Program Structure.**
+    1. What do you think happens if you run the program bel0w?
         ```java
         public class MyFirstProgram {
             public static void main(String[] args) {
@@ -104,9 +104,8 @@ System.out.println(7 <= 6);  // false
             }
         }
         ```
-        What do you think happens if you run the program above?
     2. If you rename the class to `HelloJava`, what should the file name be?
-    3. **Part B: Printing in Java.**
+    3. Predict the output of the code below.
         ```java
         public class Greet {
             public static void main(String[] args) {
@@ -115,22 +114,21 @@ System.out.println(7 <= 6);  // false
             }
         }
         ```
-        Predict the output of the code above.
     4. Write a simple program that prints your name.
-    5. **Part C: Arithmetic Operations.** Predict the output for each line:
+    5. Predict the output for each line:
         ```java
         a. System.out.println(8 * 6 % 3 + 9);
         b. System.out.println((12 / 3) + (4 - 2) * 5);
         ```
     6. Write a print statement that calculates `(10 + 5) * 2 % 7`, then predict the result.
-    7. **Part D: Comparison Operators.** Predict the output (true or false) for each line:
+    7. Predict the output (true or false) for each line:
         ```java
         a. System.out.println(8 != 8);
         b. System.out.println(15 >= 10 + 5);
         c. System.out.println((20 / 4) < 6);
         ```
     8. Write a print statement comparing whether `9 * 2` is greater than or equal to `20 - 3`. Predict what it prints.
-    9. **Part E: Combining Printing, Strings, and Operations.** You can join strings, math, and comparisons using `+`. Java automatically converts numbers and booleans to text.
+    9. You can join strings, math, and comparisons using `+`. Java automatically converts numbers and booleans to text.
         ```java
         System.out.println("The sum is: " + (5 + 3));
         System.out.println("Is 10 > 5? " + (10 > 5));
