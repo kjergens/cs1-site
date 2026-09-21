@@ -58,9 +58,7 @@ String name = "Alice";
 !!! attention
     ### HW 5 - Unit 2 Chapter 2: Variables and Data Types
 
-    #### Part A: Identify the Data Type
-
-    For each value below, name the Java data type that best represents it (`int`, `double`, `boolean`, `String`, or `char`):
+    **Part A: Identify the Data Type.** For each value below, name the Java data type that best represents it (`int`, `double`, `boolean`, `String`, or `char`):
 
     1. `42`
     2. `"Hello, world!"`
@@ -71,21 +69,17 @@ String name = "Alice";
     7. `0`
     8. `'7'`
 
-    #### Part B: Declare and Initialize Variables
-
     Write a single Java statement to declare and initialize each variable described. Use the correct data type.
 
-    9. An integer named `score` with value `100`
+    9. **Part B: Declare and Initialize Variables.** An integer named `score` with value `100`
     10. A decimal number named `gpa` with value `3.75`
     11. A boolean named `isLoggedIn` set to `false`
     12. A String named `greeting` with value `"Good morning"`
     13. A char named `grade` with value `'B'`
 
-    #### Part C: Predict the Output
-
     What will each snippet print? Write your answer exactly as it would appear on screen.
 
-    14.
+    14. **Part C: Predict the Output.**
     ```java
     int x = 10;
     int y = 3;
@@ -108,11 +102,9 @@ String name = "Alice";
     System.out.println("Total: " + price * quantity);
     ```
 
-    #### Part D: Find the Bug
-
     Each snippet below has exactly one error. Identify the line with the error and explain what's wrong. You don't need to fix it — just describe the problem.
 
-    17.
+    17. **Part D: Find the Bug.**
     ```java
     int count = "five";
     System.out.println(count);

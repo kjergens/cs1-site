@@ -147,18 +147,14 @@ double number = Double.parseDouble(text);
 !!! attention
     ### HW 7 - Unit 2 Chapter 4: Scanner and User Input
 
-    #### Part A: Scanner Methods
-
-    Match each thing you want to read to the correct Scanner method (word bank: `nextInt()`, `nextDouble()`, `next()`, `nextLine()`):
+    **Part A: Scanner Methods.** Match each thing you want to read to the correct Scanner method (word bank: `nextInt()`, `nextDouble()`, `next()`, `nextLine()`):
 
     - A whole number → ?
     - A decimal number → ?
     - One word (stops at a space) → ?
     - A full line of text (including spaces) → ?
 
-    #### Part B: Complete the Code
-
-    2. Fill in the blanks so this program reads an integer and prints it doubled:
+    2. **Part B: Complete the Code.** Fill in the blanks so this program reads an integer and prints it doubled:
     ```java
     _____________ java.util.Scanner;
 
@@ -190,9 +186,7 @@ double number = Double.parseDouble(text);
     }
     ```
 
-    #### Part C: Predict the Output
-
-    For each program, the user's input is given — write what the program prints.
+    **Part C: Predict the Output.** For each program, the user's input is given — write what the program prints.
 
     4. User types `4` then `7`:
     ```java
@@ -214,9 +208,7 @@ double number = Double.parseDouble(text);
     ```
     What is the difference between `n + 2` and `"n + 2"`?
 
-    #### Part D: Write the Program
-
-    6. Ask the user to enter their age with the prompt `"Enter your age: "`, read it as an integer, then print `"In 10 years you will be "` followed by their age plus 10.
+    6. **Part D: Write the Program.** Ask the user to enter their age with the prompt `"Enter your age: "`, read it as an integer, then print `"In 10 years you will be "` followed by their age plus 10.
     ```java
     import java.util.Scanner;
 
@@ -238,9 +230,7 @@ double number = Double.parseDouble(text);
     }
     ```
 
-    #### Part E: Find the Bug
-
-    Each snippet has exactly one error. Identify the line and describe the problem.
+    **Part E: Find the Bug.** Each snippet has exactly one error. Identify the line and describe the problem.
 
     8.
     ```java
