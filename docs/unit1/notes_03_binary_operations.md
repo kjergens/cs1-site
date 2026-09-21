@@ -95,8 +95,6 @@ Key rule: multiplying by `0` gives a row of all zeros; multiplying by `1` copies
 !!! attention
     ### HW 2: Unit 1 Chapter 3: Binary Arithmetic
 
-    #### Part A: Binary Addition
-
     Add the following binary numbers:
 
     1. `1011 + 0110`
@@ -104,19 +102,9 @@ Key rule: multiplying by `0` gives a row of all zeros; multiplying by `1` copies
     3. `1111 + 111`
     4. `101010 + 11011`
     5. `1001110 + 0110011`
-
-    #### Part B: Binary Subtraction
-
-    Subtract the following binary numbers:
-
-    6. `1101 − 0110`
+    6. Subtract the following binary numbers: `1101 − 0110`
     7. `1010000 − 0110111`
-
-    #### Part C: Binary Multiplication
-
-    Multiply the following binary numbers:
-
-    8. `101 × 11`
+    8. Multiply the following binary numbers: `101 × 11`
     9. `1101 × 101`
     10. `111 × 10`
     11. `1010 × 110`

@@ -63,33 +63,24 @@ When your program stores the String `"Hello"`, the computer stores the numbers `
 ---
 ## Homework
 
-!!! attention 
-	###HW 0: Unit 1 Chapter 1: How Computers Work 
+!!! attention
+    ### HW 0: Unit 1 Chapter 1: How Computers Work
 
     *Graded as Community Building/Class Engagement — try your best, no points off for incorrect answers*
 
-    #### Part A: Terminology
-    Match each description to its component: `CPU`, `RAM`, `Hard Drive/SSD`, `Motherboard`, `Monitor`.
-
-    1. Stores data and programs for quick access during operation
-	2. The "brain" of the computer that performs calculations and executes instructions
-	3. Displays the output of the computer's processing, like text or images
-	4. Long-term storage for files, programs, and the operating system
-	5. Connects all components, allowing them to communicate
-
-	#### Part B: True/False
-	Transistors are tiny electronic switches that control the flow of electricity in a computer. They're the foundation of modern computing.
-
-	1. True or False: Transistors can act as switches, turning electrical signals on or off.
-	2. True or False: A single modern computer chip can contain billions of transistors.
-	3. True or False: Transistors are only used in the CPU and not in other parts of a computer.
-	4. True or False: Transistors work by using materials like silicon to control electrical flow.
-
-	#### Part C: Fill in the blanks (+ short answer)
-	1. **Timeline:** fill in the blanks using each term once — `1943`, `ENIAC`, `1971`, `Microprocessor`, `1984`, `Apple Macintosh`, `1822`, `Difference Engine`.
-	    - `______`: Charles Babbage designs the `______`, a mechanical calculator considered an early precursor to modern computers.
-	    - `______`: The `______`, one of the first general-purpose electronic computers, is built using vacuum tubes.
-	    - `______`: Intel introduces the first `______`, putting the power of a computer's CPU on a single chip.
-	    - `______`: The `______` is released, making personal computers user-friendly with a graphical interface.
-	2. **Short answer:** The ENIAC weighed over 30 tons and took up an entire room! What allowed computers to become small enough to fit in your pocket?
+    1. Match each description to its component (`CPU`, `RAM`, `Hard Drive/SSD`, `Motherboard`, `Monitor`): Stores data and programs for quick access during operation
+    2. Match each description to its component (`CPU`, `RAM`, `Hard Drive/SSD`, `Motherboard`, `Monitor`): The "brain" of the computer that performs calculations and executes instructions
+    3. Match each description to its component (`CPU`, `RAM`, `Hard Drive/SSD`, `Motherboard`, `Monitor`): Displays the output of the computer's processing, like text or images
+    4. Match each description to its component (`CPU`, `RAM`, `Hard Drive/SSD`, `Motherboard`, `Monitor`): Long-term storage for files, programs, and the operating system
+    5. Match each description to its component (`CPU`, `RAM`, `Hard Drive/SSD`, `Motherboard`, `Monitor`): Connects all components, allowing them to communicate
+    6. Transistors are tiny electronic switches that control the flow of electricity in a computer, and are the foundation of modern computing. True or False: Transistors can act as switches, turning electrical signals on or off.
+    7. True or False: A single modern computer chip can contain billions of transistors.
+    8. True or False: Transistors are only used in the CPU and not in other parts of a computer.
+    9. True or False: Transistors work by using materials like silicon to control electrical flow.
+    10. **Timeline:** fill in the blanks using each term once — `1943`, `ENIAC`, `1971`, `Microprocessor`, `1984`, `Apple Macintosh`, `1822`, `Difference Engine`.
+        - `______`: Charles Babbage designs the `______`, a mechanical calculator considered an early precursor to modern computers.
+        - `______`: The `______`, one of the first general-purpose electronic computers, is built using vacuum tubes.
+        - `______`: Intel introduces the first `______`, putting the power of a computer's CPU on a single chip.
+        - `______`: The `______` is released, making personal computers user-friendly with a graphical interface.
+    11. **Short answer:** The ENIAC weighed over 30 tons and took up an entire room! What allowed computers to become small enough to fit in your pocket?
 

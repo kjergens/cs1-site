@@ -161,8 +161,6 @@ Use a `for` loop when you **do know** how many times it will run. (Covered in Un
 !!! attention
     ### HW 9 - Unit 3 Chapter 2: While Loops
 
-    #### Part A: While Loop Practice
-
     1. What does this loop print?
     ```java
     int x = 1;
@@ -194,7 +192,7 @@ Use a `for` loop when you **do know** how many times it will run. (Covered in Un
 
     5. Write a while loop that starts at `100` and keeps dividing by `2`, printing each result, stopping once the value is less than `1`.
 
-    #### Part B: FizzBuzz
+    #### FizzBuzz Challenge
 
     *Complete in JuiceMind.com — go to Teams/Classes, select our CS section, then Code Sandbox.*
 
