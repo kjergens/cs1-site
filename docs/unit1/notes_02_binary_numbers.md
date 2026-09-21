@@ -53,14 +53,12 @@ Write out the positional values (powers of 2), multiply each bit, then add.
 Value: 1×8 + 0×4 + 1×2 + 1×1 = 11
 ```
 
-
 **Common powers of 2 to memorize:**
 
 ```
  128   64   32   16   8    4    2    1
   2⁷   2⁶   2⁵   2⁴   2³   2²   2¹   2⁰
 ```
-
 
 ---
 
@@ -86,7 +84,6 @@ Check: `1101` = 8 + 4 + 0 + 1 = 13 ✓
 #### Places method
 
 Set up your powers of two like this:
-
 
 ```
   _    _    _    _    _
@@ -147,16 +144,13 @@ Start with the left (most significant) digit, and fill in a 1 or 0. For example 
 !!! attention
     ### HW 1: Unit 1 Chapter 2: Binary
 
-    *Assigned Class 2 · Due Class 3*
-
-
     1. Convert the binary number `110101` to decimal (base-10). Show each bit's place value, e.g. 16+2+1 = 19.
     2. What is the highest decimal value that can be represented with a 6-bit binary number? Explain why in one sentence.
     3. In the binary number `10110`, what does the `1` in the left-most (most significant) position represent?
     4. Convert the decimal number `47` to binary. 
     5. Convert the decimal number `29` to binary. 
     6. Convert `10011` and `10101` from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.
-    7. To multiply a binary number by 2, simply insert a 0 at the end in the right-most (least significant) bit position. E.g. `111` is 7, and `1110` is 14. Explain in one sentence why this works.
+    7. To multiply a binary number by 2, simply appemd a 0 at the end in the right-most (least significant) bit position. E.g. `111` is `7`, and `1110` is `14`. Explain in one sentence why this works.
 
     #### **Optional/Not Required Extra Challenges (ungraded):** 
 

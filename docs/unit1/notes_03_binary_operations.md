@@ -53,7 +53,6 @@ When you must calculate 0 - 1, you cannot do it without help. You must borrow fr
    
 - You subtract: 10 (binary) - 1 (binary) = 1 (binary). 
 
-
 ### Borrowing Across Multiple Zeros
 If the immediate column to the left is a 0, you cannot borrow from it directly. You must keep moving left until you find a 1: 
 
@@ -95,8 +94,6 @@ Key rule: multiplying by `0` gives a row of all zeros; multiplying by `1` copies
 
 !!! attention
     ### HW 2: Unit 1 Chapter 3: Binary Arithmetic
-
-    *Assigned Class 3 · Due Class 4*
 
     #### Part A: Binary Addition
 

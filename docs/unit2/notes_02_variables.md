@@ -58,8 +58,6 @@ String name = "Alice";
 !!! attention
     ### HW 5 - Unit 2 Chapter 2: Variables and Data Types
 
-    *Assigned Class 8 · Due Class 9*
-
     #### Part A: Identify the Data Type
 
     For each value below, name the Java data type that best represents it (`int`, `double`, `boolean`, `String`, or `char`):

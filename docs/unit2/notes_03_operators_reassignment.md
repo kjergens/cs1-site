@@ -71,8 +71,6 @@ points *= 2;    // points is now 240
 !!! attention
     ### HW 6: Unit 2 Chapter 3: Reassignment Operators
 
-    *Assigned Class 9 · Due Class 10*
-
     #### Part A: Evaluate the Expression
 
     Assume the following variables are declared:

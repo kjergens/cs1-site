@@ -18,9 +18,7 @@ Before you can declare a Scanner variable, you need to import (do this once at t
 import java.util.Scanner;
 ```
 
-
 Now that it's imported you can create the Scanner object.
-
 
 ```java
 Scanner scan = new Scanner(System.in);   // "System.in" = keyboard
@@ -142,15 +140,12 @@ String text = scan.nextLine();
 double number = Double.parseDouble(text);
 ```
 
-
 ---
 
 ## Homework
 
 !!! attention
     ### HW 7 - Unit 2 Chapter 4: Scanner and User Input
-
-    *Assigned Class 10 · Due Class 11*
 
     #### Part A: Scanner Methods
 

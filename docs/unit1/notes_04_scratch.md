@@ -26,7 +26,6 @@ A **variable** is a named container for a value that can change.
 
 In Scratch: use **Make a Variable**, give it a name, and use **set [ ] to** and **change [ ] by** blocks.
 
-
 ---
 
 ### 3. Conditionals
@@ -47,7 +46,6 @@ A **loop** repeats code multiple times without copy-pasting.
 | `repeat (10)` | code inside repeats the specified number |
 | `repeat until < >` | code inside repeats until the specified condition|
 
-
 ---
 
 ### 5. Events
@@ -56,13 +54,10 @@ In Scratch, scripts start when something happens — "when green flag clicked", 
 
 ---
 
-
 ## Homework
 
 !!! attention
     ### HW 3 — Unit 1 Chapter 4: Interactive Pattern Engine
-
-    *Assigned Class 4 · Due Class 5 · Submission: upload your `.sb3` file to the Schoology assignment*
 
     You'll build a Scratch program that draws a sequence of regular polygons using pure math — no hardcoded shapes — driven by a loop, a conditional, and a custom block with parameters.
 
