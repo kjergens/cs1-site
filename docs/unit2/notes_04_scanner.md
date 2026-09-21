@@ -147,11 +147,11 @@ double number = Double.parseDouble(text);
 !!! attention
     ### HW 7 - Unit 2 Chapter 4: Scanner and User Input
 
-    1. Match each thing you want to read to the correct Scanner method (word bank: `nextInt()`, `nextDouble()`, `next()`, `nextLine()`):
-     a. A whole number → ?
-     b. A decimal number → ?
-     c. One word (stops at a space) → ?
-     d. A full line of text (including spaces) → ?
+    1. Match each input you want to read to the correct Scanner method (word bank: `nextInt()`, `nextDouble()`, `next()`, `nextLine()`):
+    - a. A whole number → ?
+    - b. A decimal number → ?
+    - c. One word (stops at a space) → ?
+    - d. A full line of text (including spaces) → ?
     2. Fill in the blanks so this program reads an integer and prints it doubled:
     ```java
     _____________ java.util.Scanner;
@@ -199,8 +199,8 @@ double number = Double.parseDouble(text);
     System.out.println(n + 2);
     System.out.println("n + 2");
     ```
-    What is the difference between `n + 2` and `"n + 2"`?
-    6. Fill in the program below to ask the user to enter their age with the prompt `"Enter your age: "`, read it as an integer, then print `"In 10 years you will be "` followed by their age plus 10.
+    6. In the snippet above, what is the difference between `n + 2` and `"n + 2"`?
+    7. Fill in the program below to ask the user to enter their age with the prompt `"Enter your age: "`, read it as an integer, then print `"In 10 years you will be "` followed by their age plus 10.
     ```java
     import java.util.Scanner;
 
@@ -210,7 +210,7 @@ double number = Double.parseDouble(text);
         }
     }
     ```
-    7. Fill in the program below to ask the user for two decimal numbers, prompting for each one separately, then print their average.
+    8. Fill in the program below to ask the user for two decimal numbers, prompting for each one separately, then print their average.
     ```java
     import java.util.Scanner;
 
@@ -220,7 +220,7 @@ double number = Double.parseDouble(text);
         }
     }
     ```
-    8. This snippet has exactly one error. Identify the line and describe the problem.
+    9. This snippet has exactly one error. Identify the line and describe the problem.
     ```java
     import java.util.Scanner;
 
@@ -233,7 +233,7 @@ double number = Double.parseDouble(text);
         }
     }
     ```
-    9. This snippet has exactly one error. Identify the line and describe the problem.
+    10. This snippet has exactly one error. Identify the line and describe the problem.
     ```java
     import java.util.Scanner;
 
