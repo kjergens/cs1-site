@@ -149,16 +149,10 @@ Start with the left (most significant) digit, and fill in a 1 or 0. For example 
 
     *Assigned Class 2 · Due Class 3*
 
-    **Instructions:** Show all work. For conversion problems, write out the place values (powers of 2). For addition problems, show the carry row above each column.
-
-    #### Part A: Converting Binary to Decimal
 
     1. Convert the binary number `110101` to decimal. Show each bit's place value.
     2. What is the highest decimal value that can be represented with a 6-bit binary number? Explain why in one sentence.
-    3. In the binary number `10110`, list the decimal value represented by each bit position, from right (least significant) to left (most significant).
-
-    #### Part B: Converting Decimal to Binary
-
+    3. In the binary number `10110`, what does the `1` in the left-most (most significant) position represent?
     4. Convert the decimal number `47` to binary. Show your work (repeated division or place-value method).
     5. Convert the decimal number `29` to binary. Then count how many 1s appear in your answer.
     6. Convert `10011` and `10101` from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.
