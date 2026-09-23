@@ -62,8 +62,9 @@ In Scratch, scripts start when something happens — "when green flag clicked", 
     You'll build a Scratch program that draws a sequence of regular polygons using pure math — no hardcoded shapes — driven by a loop, a conditional, and a custom block with parameters.
 
     ### Setup ###
-    1. Change the sprite's costume to a ball (**Costumes** tab, top-left — pick your sprite from the list at the bottom first).
-    2. Click **Add Extension** (bottom-left) and add the **Pen** extension — you'll need it to draw.
+    1. Go to https://scratch.mit.edu/ and select Create (no need to make an account).
+    2. Change the sprite's costume to a ball (**Costumes** tab, top-left — pick your sprite from the list at the bottom first).
+    3. Click **Add Extension** (bottom-left) and add the **Pen** extension — you'll need it to draw.
     
     #### Phase 1: Custom Block — `drawShape`
 
