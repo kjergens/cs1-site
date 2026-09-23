@@ -92,7 +92,10 @@ In Scratch, scripts start when something happens — "when green flag clicked", 
 
     #### Phase 3: Test!
 
-    Run your engine with a few different inputs. What happens as the number of sides grows? Do you ever get blue shapes — why or why not?
+    Run your engine with a few different inputs. It should look something like the following:
+    ![8 sides](displayShape8.png)
+    ![5 sides](displayShape5.png)
+    What happens as the number of sides grows? Do you ever get blue shapes — why or why not?
 
     **Reflection** (2–3 sentences, in a comment block in Scratch or the Schoology text box): What was the hardest part of building this, and why?
 
