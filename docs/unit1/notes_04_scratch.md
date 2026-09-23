@@ -61,17 +61,19 @@ In Scratch, scripts start when something happens — "when green flag clicked", 
 
     You'll build a Scratch program that draws a sequence of regular polygons using pure math — no hardcoded shapes — driven by a loop, a conditional, and a custom block with parameters.
 
+    ### Setup ###
+    1. Change the sprite's costume to a ball (**Costumes** tab, top-left — pick your sprite from the list at the bottom first).
+    2. Click **Add Extension** (bottom-left) and add the **Pen** extension — you'll need it to draw.
+    
     #### Phase 1: Custom Block — `drawShape`
 
     1. In the **My Blocks** category, click **Make a Block**. Name it `drawShape`.
     2. Click **Add an input (number or text)** twice to create two parameters: `sides` and `size`.
     3. Inside the `drawShape` definition:
-        - Change the sprite's costume to a ball (**Costumes** tab, top-left — pick your sprite from the list at the bottom first).
-        - Click **Add Extension** (bottom-left) and add the **Pen** extension — you'll need it to draw.
         - Don't hardcode a shape. Calculate the turn angle yourself: make a `turnAngle` variable and use an **Operators** `/` block to compute `360 / sides`.
         - Use a `repeat (sides)` loop: move `size` steps, then turn `turnAngle` degrees.
         - Include a **pen down** block somewhere in here — without it, the sprite will move but nothing will actually draw.
-    4. Test it: attach a **when green flag clicked** block and call `drawShape` with test numbers (try 4 sides, size 50 — you should see a square).
+    4. Test it: Add a **when green flag clicked** block and call `drawShape` with test numbers (try 4 sides, size 50 — you should see a square).
 
     #### Phase 2: Loops & Conditionals
 
