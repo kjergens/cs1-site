@@ -62,7 +62,7 @@ The bottom line: while you may use AI tools, it is your responsibility to use th
 | Course Component | Weight | Notes |
 |---|---|---|
 | Community Building | 5% | For full credit, attend and actively participate in all classes. The only exemption is for approved absences, provided by your dean. |
-| Homework (about 15–20) | 15% | There are frequent homework assignments, which we go over in class and are your main way to study and practice for entry tickets, quizzes, and tests. Homework is graded for accuracy — see [Due Dates and Late Work](#homework-and-project-guidelines) above. ***The lowest homework score is dropped.*** |
+| Homework (about 10–15) | 15% | There are frequent homework assignments, which we go over in class and are your main way to study and practice for entry tickets, quizzes, and tests. Homework is graded for accuracy — see [Due Dates and Late Work](#homework-and-project-guidelines) above. ***The lowest homework score is dropped.*** |
 | Quizzes (about 4) | 24% | Quizzes cover at most one unit. |
 | Tests (3) | 38% | Tests cover multiple units, usually the three most recent. Previous quizzes and homeworks are your study guides. The last test of the course covers all the material in the course but is not weighed any differently from the other tests. ***The lowest test score is dropped.*** |
 | Projects (2) | 18% | Projects give students a chance to review and enhance the skills and knowledge covered in the course. There is a project assigned at the middle of the course and one at the end. |
