@@ -19,7 +19,12 @@ Remix one of these two games:
 - [Sword Throw on Scratch](https://scratch.mit.edu/projects/1142834613/editor/)
 - [Jetpack Wars on Scratch](https://scratch.mit.edu/projects/1143749214)
 
-Play both before deciding. Click the **Remix** button on the one you choose to create your own editable copy.
+### Make your own copy ###
+- If you are logged in and see a **Remix** button, select that to create you own editable copy.
+- If you do not see a **Remix** do the following:
+- <br>**File -> Save to your computer**
+- <br>**File -> New**
+- <br>**File -> Load from your computer** (Select the .sb3 file you downloded above).
 
 Before coding, study the original:
 - What is the objective?
