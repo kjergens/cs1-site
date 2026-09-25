@@ -22,9 +22,9 @@ Remix one of these two games:
 ### Make your own copy ###
 - If you are logged in and see a **Remix** button, select that to create you own editable copy.
 - If you do not see a **Remix** do the following:
-- <br>**File -> Save to your computer**
-- <br>**File -> New**
-- <br>**File -> Load from your computer** (Select the .sb3 file you downloded above).
+- **File -> Save to your computer**
+- **File -> New**
+- **File -> Load from your computer** (Select the .sb3 file you downloded above).
 
 Before coding, study the original:
 - What is the objective?
@@ -71,7 +71,7 @@ Your remix must clearly demonstrate all of the following:
 
 ## Submission
 
-- **Authorship:** Add your name to the background of the program. (**Steps:** Hover over the Backdrop icon in the lower right, select Paint icon (for edit), select Textbox icon, type your name and drag it to the corner.)
+- **Authorship:** Add your name to the background of the program. (**Steps:** Hover over the Backdrop icon in the lower right, select Paint icon, select Textbox icon, type your name and drag it to the corner of your backdrop.)
 - **File -> Save to your computer**
 - Attach the .sb3 file to the Schoology assignment
 - Be prepared to demonstrate and explain your code during class
