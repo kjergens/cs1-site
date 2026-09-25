@@ -71,8 +71,9 @@ Your remix must clearly demonstrate all of the following:
 
 ## Submission
 
-- Share your project on Scratch (set to Public or with link sharing enabled)
-- Submit the project link on Schoology
+- **Authorship:** Add your name to the background of the program. (Steps: Background icon, Paint icon (for edit), Textbox icon, type your name and drag it to the corner.
+- **File -> Save to your computer**
+- Attach the .sb3 file to the Schoology assignment
 - Be prepared to demonstrate and explain your code during class
 
 ---
