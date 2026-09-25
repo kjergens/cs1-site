@@ -71,7 +71,7 @@ Your remix must clearly demonstrate all of the following:
 
 ## Submission
 
-- **Authorship:** Add your name to the background of the program. (Steps: Background icon, Paint icon (for edit), Textbox icon, type your name and drag it to the corner.
+- **Authorship:** Add your name to the background of the program. (Steps: Hover over the Backdrop icon in the lower right, select Paint icon (for edit), select Textbox icon, type your name and drag it to the corner.
 - **File -> Save to your computer**
 - Attach the .sb3 file to the Schoology assignment
 - Be prepared to demonstrate and explain your code during class
