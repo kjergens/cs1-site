@@ -95,19 +95,19 @@ Key rule: multiplying by `0` gives a row of all zeros; multiplying by `1` copies
 !!! attention
     ### HW 2: Unit 1 Chapter 3: Binary Arithmetic
 
-    Add the following binary numbers:
+    
 
-    1. `1011 + 0110`
-    2. `11001 + 10110`
-    3. `1111 + 111`
-    4. `101010 + 11011`
-    5. `1001110 + 0110011`
-    6. Subtract the following binary numbers: `1101 − 0110`
-    7. `1010000 − 0110111`
-    8. Multiply the following binary numbers: `101 × 11`
-    9. `1101 × 101`
-    10. `111 × 10`
-    11. `1010 × 110`
-    12. `10011 × 101`
+    1. Give the answer in binary (1s and 0s): `1011 + 0110`
+    2. Give the answer in binary (1s and 0s): `11001 + 10110`
+    3. Give the answer in binary (1s and 0s): `1111 + 111`
+    4. Give the answer in binary (1s and 0s): `101010 + 11011`
+    5. Give the answer in binary (1s and 0s): `1001110 + 0110011`
+    6. Give the answer in binary (1s and 0s): `1101 − 0110`
+    7. Give the answer in binary (1s and 0s): `1010000 − 0110111`
+    8. Give the answer in binary (1s and 0s): `101 × 11`
+    9. Give the answer in binary (1s and 0s): `1101 × 101`
+    10. Give the answer in binary (1s and 0s): `111 × 10`
+    11. Give the answer in binary (1s and 0s): `1010 × 110`
+    12. Give the answer in binary (1s and 0s): `10011 × 101`
 
-    **Bonus Challenge (ungraded):** `11101 × 1011`
+    **Bonus Challenge (ungraded):** Give the answer in binary (1s and 0s): `11101 × 1011`
