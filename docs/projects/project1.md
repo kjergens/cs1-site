@@ -16,7 +16,8 @@ Remixing is a real programming practice — studying working code and building o
 
 Remix one of these two games:
 
-- One-player game: [Sword Throw on Scratch](https://scratch.mit.edu/projects/1142834613/editor/)
+- One-player game: [Sword Throw on Scratch](https://scratch.mit.edu/projects/1385283065)
+- <iframe src="https://scratch.mit.edu/projects/1385283065/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 - Two-player game: [Jetpack Wars on Scratch](https://scratch.mit.edu/projects/1143749214)
 
 ### Make your own copy ###
