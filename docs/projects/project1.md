@@ -35,7 +35,7 @@ Remix one of these two games:
 
 Before coding, study the original:
 - What is the objective?
-- Where do you see loops, conditions, and variables in the code?
+- Where do you see loops, conditions, and variables?
 - What would you change first?
 
 Then select **See Inside** to read the code.
@@ -89,11 +89,11 @@ Your remix must clearly demonstrate all of the following:
 
 ## Level-Up (Optional)
 
-**Small:** Add a scoring system with multiple variables; create smooth sprite animations.
+**Small:** Create smooth sprite animations, like a bird flapping its wings.
 
-**Medium:** Multiple levels; power-ups or different game modes; timer; custom block with parameters.
+**Medium:** Multiple levels; power-ups or different game modes.
 
-**Advanced:** Save high score with a list or cloud variable; procedural generation (random obstacles); multiplayer elements.
+**Advanced:** Random obstacles; player POV.
 
 ---
 
