@@ -87,7 +87,7 @@ Your remix must clearly demonstrate all of the following:
 
 ---
 
-## Level-Up (Optional)
+## Ideas for your Remix:
 
 **Small:** Create smooth sprite animations, like a bird flapping its wings.
 
