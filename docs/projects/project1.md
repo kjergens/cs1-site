@@ -92,9 +92,8 @@ Your remix must clearly demonstrate all of the following:
 
 | Category | Points |
 |---|---|
-| Core Programming Concepts (sequences, loops, conditions, variables, custom blocks) | 30 |
+| Core Programming Concepts (sequences, loops, conditions, variables, custom blocks) | 40 |
 | Gameplay & Functionality (clear objective, win/lose, playable) | 25 |
 | Originality & Creativity (distinct from original in theme and mechanics) | 20 |
 | User Experience & Polish (clear instructions, appealing visuals, good feedback) | 15 |
-| Process & Explanation (consistent effort, ability to explain code) | 10 |
 | **Total** | **100** |
