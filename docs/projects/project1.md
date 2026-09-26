@@ -16,12 +16,12 @@ Remixing is a real programming practice — studying working code and building o
 
 Remix one of these two games:
 
-- [Sword Throw on Scratch](https://scratch.mit.edu/projects/1142834613/editor/)
-- [Jetpack Wars on Scratch](https://scratch.mit.edu/projects/1143749214)
+- One-player game: [Sword Throw on Scratch](https://scratch.mit.edu/projects/1142834613/editor/)
+- Two-player game: [Jetpack Wars on Scratch](https://scratch.mit.edu/projects/1143749214)
 
 ### Make your own copy ###
-- If you are logged in and see a **Remix** button, select that to create you own editable copy.
-- If you do not see a **Remix** do the following:
+1. If you are logged in and see a **Remix** button, select that to create you own editable copy.
+2. If you do not see a **Remix** do the following:
 - **File -> Save to your computer**
 - **File -> New**
 - **File -> Load from your computer** (Select the .sb3 file you downloded above).
