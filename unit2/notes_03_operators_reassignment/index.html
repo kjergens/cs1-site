@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katie Jergens" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Chapter 3: Reassignment Operators - CS1 - Columbia Grammar and Preparatory School</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Chapter 3: Reassignment Operators";
+        var mkdocs_page_input_path = "unit2/notes_03_operators_reassignment.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CS1 - Columbia Grammar and Preparatory School
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Table of Contents</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../syllabus/">Syllabus, Policies & Contract</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 1 - Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_01_how_computers_work/">Chapter 1: How Computers Work</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_02_binary_numbers/">Chapter 2: Binary Numbers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_03_binary_operations/">Chapter 3: Binary Arithmetic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_04_scratch/">Chapter 4: Scratch</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/unit1_check_understanding/">Check Your Understanding: Unit 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/unit1_practice_quiz/">Practice Quiz #1 (Unit 1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project1/">Project 1: Scratch Remix</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 2 - Java Basics</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_01_java_structure/">Chapter 1: Structure, Printing & Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_02_variables/">Chapter 2: Variables and Data Types</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Chapter 3: Reassignment Operators</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#section-1-re-assignment">Section 1: Re-assignment</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#using-assignment-operator">Using assignment operator (=)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#increment-and-decrement">Increment and Decrement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#using-compound-assignments">Using Compound Assignments</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#hw-6-unit-2-chapter-3-reassignment-operators">HW 6: Unit 2 Chapter 3: Reassignment Operators</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_04_scanner/">Chapter 4: Scanner and User Input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit2_check_understanding/">Check Your Understanding: Unit 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit2_practice_test/">Practice Test #1 (Units 1 and 2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 3 - Conditionals and While Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_01_conditionals/">Chapter 1: Conditionals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_02_while_loops/">Chapter 2: While Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_check_understanding/">Check Your Understanding: Unit 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_practice_quiz/">Practice Quiz #2 (Unit 3)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 4 - For Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_01_for_loops/">Chapter 1: For Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_02_advanced_for_loops/">Chapter 2: Advanced For Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/unit4_check_understanding/">Check Your Understanding: Unit 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/unit4_practice_quiz/">Practice Quiz #3 (Unit 4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project2/">Project 2: Word Guessing Adventure</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 5 - Strings and Math</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_01_strings/">Chapter 1: String Methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_02_math/">Chapter 2: The Math Class</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/unit5_check_understanding/">Check Your Understanding: Unit 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/unit5_practice_test/">Practice Test #2 (Units 3 - 5)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CS1 - Columbia Grammar and Preparatory School</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Unit 2 - Java Basics</li>
+      <li class="breadcrumb-item active">Chapter 3: Reassignment Operators</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="chapter-3-operators-and-re-assignment">Chapter 3: Operators and Re-assignment</h1>
+<hr />
+<h2 id="section-1-re-assignment">Section 1: Re-assignment</h2>
+<h3 id="using-assignment-operator">Using assignment operator (=)</h3>
+<p>A variable's value isn't fixed — once declared, you can give it a new value at any time. This is called <strong>re-assignment</strong>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">   </span><span class="c1">// score is now 60</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">    </span><span class="c1">// score is now 120</span>
+</code></pre></div>
+<p><strong>Key points:</strong>
+- After the initial declaration (<code>int score = 50;</code>), later lines don't repeat the type — just <code>score = ...;</code>
+- The right side of <code>=</code> is evaluated first, using the variable's <em>current</em> value — then the result is stored back into the variable
+- Assigning one variable to another (<code>int b = a;</code>) copies the current value at that moment. Later changing <code>a</code> does <strong>not</strong> change <code>b</code>.</p>
+<hr />
+<h3 id="increment-and-decrement">Increment and Decrement</h3>
+<p><strong><code>++</code></strong> increases a variable by 1. <strong><code>--</code></strong> decreases a variable by 1. They're shorthand for the most common kind of re-assignment.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">count</span><span class="o">++</span><span class="p">;</span><span class="w">   </span><span class="c1">// same as: count = count + 1;   → count is 1</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">count</span><span class="o">++</span><span class="p">;</span><span class="w">   </span><span class="c1">// → count is 2</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kt">int</span><span class="w"> </span><span class="n">lives</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">lives</span><span class="o">--</span><span class="p">;</span><span class="w">   </span><span class="c1">// same as: lives = lives - 1;   → lives is 2</span>
+</code></pre></div>
+<p><strong>Key points:</strong>
+- <code>count++;</code> is exactly equivalent to <code>count = count + 1;</code>
+- <code>lives--;</code> is exactly equivalent to <code>lives = lives - 1;</code>
+- These stand alone as statements — they don't print or return a value by themselves</p>
+<hr />
+<h3 id="using-compound-assignments">Using Compound Assignments</h3>
+<p>Compound assignment operators combine an operation with re-assignment in one step.</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Equivalent to</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+=</code></td>
+<td><code>x = x + n</code></td>
+<td><code>x += 7;</code></td>
+</tr>
+<tr>
+<td><code>-=</code></td>
+<td><code>x = x - n</code></td>
+<td><code>x -= 3;</code></td>
+</tr>
+<tr>
+<td><code>*=</code></td>
+<td><code>x = x * n</code></td>
+<td><code>x *= 2;</code></td>
+</tr>
+<tr>
+<td><code>/=</code></td>
+<td><code>x = x / n</code></td>
+<td><code>x /= 4;</code></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">points</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span><span class="w">   </span><span class="c1">// points is now 150</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">points</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span><span class="w">   </span><span class="c1">// points is now 120</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">points</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">    </span><span class="c1">// points is now 240</span>
+</code></pre></div>
+<p><strong>Key points:</strong>
+- <code>x += 7;</code> means "take <code>x</code>, add 7, store the result back in <code>x</code>" — read it right to left, not as "x equals plus 7"
+- Watch out for <code>=+</code> vs <code>+=</code> — same two characters, different order, and they mean very different things in Java
+- Compound assignment works with <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, and more</p>
+<hr />
+<h2 id="homework">Homework</h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<h3 id="hw-6-unit-2-chapter-3-reassignment-operators">HW 6: Unit 2 Chapter 3: Reassignment Operators</h3>
+<p>Assume <code>int a = 10; int b = 3; double x = 10.0;</code> are declared. Write the result of each expression below. If the result is a decimal, include the <code>.0</code>.</p>
+<ol>
+<li><code>a + b</code></li>
+<li><code>a - b</code></li>
+<li><code>a * b</code></li>
+<li><code>a / b</code></li>
+<li><code>x / b</code> (compare to problem 4 — why are the answers different?)</li>
+<li><code>a % b</code></li>
+<li><code>a % 2</code></li>
+<li><code>b % a</code></li>
+<li>What will <code>score</code> be after each line of code executes?
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span><span class="w">          </span><span class="c1">// score = ____</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">      </span><span class="c1">// score = ____</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">       </span><span class="c1">// score = ____</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w">       </span><span class="c1">// score = ____</span>
+</code></pre></div></li>
+<li>What will <code>n</code> be after each line of code executes?
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span><span class="w">               </span><span class="c1">// n = ____</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w">               </span><span class="c1">// n = ____</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">               </span><span class="c1">// n = ____</span>
+</code></pre></div></li>
+<li>What will <code>a</code> and <code>b</code> be after each line of code executes?
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w">               </span><span class="c1">// a = ____</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w">                </span><span class="c1">// b = ____</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">99</span><span class="p">;</span><span class="w">                   </span><span class="c1">// a = ____</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">                           </span><span class="c1">// b = ____ (did b change?)</span>
+</code></pre></div></li>
+<li>What will the following code print?
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">count</span><span class="p">);</span>
+</code></pre></div></li>
+<li>What will the following code print?
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">lives</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">lives</span><span class="p">);</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">lives</span><span class="o">--</span><span class="p">;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">lives</span><span class="p">);</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">lives</span><span class="o">--</span><span class="p">;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">lives</span><span class="p">);</span>
+</code></pre></div></li>
+<li>
+<p>Rewrite each statement using a compound assignment operator (<code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Original</th>
+<th>Rewrite with compound operator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x = x + 7;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>x = x - 3;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>x = x * 2;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>x = x / 4;</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>What will the following code print?
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">points</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">points</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">points</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">points</span><span class="p">);</span>
+</code></pre></div></p>
+</li>
+<li>This snippet below has exactly one error. Identify the line and describe the problem.
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">total</span><span class="w"> </span><span class="o">=+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">total</span><span class="p">);</span>
+</code></pre></div>
+    (This code compiles and runs — but does not do what the programmer intended. What does <code>=+</code> actually do?)</li>
+</ol>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../notes_02_variables/" class="btn btn-neutral float-left" title="Chapter 2: Variables and Data Types"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../notes_04_scanner/" class="btn btn-neutral float-right" title="Chapter 4: Scanner and User Input">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../notes_02_variables/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../notes_04_scanner/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/nav_scroll_fix.js"></script>
+      <script src="../../js/copyright_footer.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        });
+    </script>
+
+</body>
+</html>
