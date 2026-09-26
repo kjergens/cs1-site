@@ -24,7 +24,7 @@ Remix one of these two games:
 2. If you do not see a **Remix** do the following:
 - **File -> Save to your computer**
 - **File -> New**
-- **File -> Load from your computer** (Select the .sb3 file you downloded above).
+- **File -> Load from your computer** (Select the .sb3 file you downloaded above).
 
 Before coding, study the original:
 - What is the objective?
