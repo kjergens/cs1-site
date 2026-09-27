@@ -14,19 +14,20 @@ Remixing is a real programming practice — studying working code and building o
 
 ## Step 1: Choose Your Base Project
 
-Remix one of these two games:
-
-**One-player game**: [Sword Throw on Scratch](https://scratch.mit.edu/projects/1385283065)
-<iframe src="https://scratch.mit.edu/projects/1385283065/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-
-<br><br>
+Play both of these two games:
 
 **Two-player game**: [Jetpack Wars on Scratch](https://scratch.mit.edu/projects/1385292032)
 <iframe src="https://scratch.mit.edu/projects/1385292032/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 <br><br>
 
-### Make your own copy ###
+**One-player game**: [Sword Throw on Scratch](https://scratch.mit.edu/projects/1385283065)
+<iframe src="https://scratch.mit.edu/projects/1385283065/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+<br><br>
+
+
+### Select One and Make A Copy ###
 1. If you are logged in, select **Remix** to create you own editable copy.
 2. If you do not see a **Remix** do the following:
 - **File -> Save to your computer**
