@@ -16,12 +16,12 @@ Remixing is a real programming practice — studying working code and building o
 
 Play both of these two games:
 
-**Two-player game**: [Jetpack Wars on Scratch](https://scratch.mit.edu/projects/1385292032)
+**Two-player game**: [Jetpack Wars on Scratch](https://scratch.mit.edu/projects/1385292032){target=_blank} 
 <iframe src="https://scratch.mit.edu/projects/1385292032/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 <br><br>
 
-**One-player game**: [Sword Throw on Scratch](https://scratch.mit.edu/projects/1385283065)
+**One-player game**: [Sword Throw on Scratch](https://scratch.mit.edu/projects/1385283065){target=_blank} 
 <iframe src="https://scratch.mit.edu/projects/1385283065/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 <br><br>
