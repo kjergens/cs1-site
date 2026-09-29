@@ -84,7 +84,7 @@ Your remix must clearly demonstrate all of the following:
 ## Submission
 
 - **Authorship:** Add your name to the background of the program. (**Steps:** Select the Backdrop tab in the upper left, select the  Textbox and type your name.)
-- Make sure you met all the requirements:
+- Make sure your game meets ALL the requirements:
    - **DESIGN:** 
      - Completely different setting, characters, and narrative
      - All new sprites — none from the original
@@ -93,7 +93,7 @@ Your remix must clearly demonstrate all of the following:
      - Add something the original does not have (obstacle, power-up, timer, level, etc.)
 
    - **PROGRAMMING:**
-     - At least one loop (forever or repeat), at least 2 if's, at least one variable
+     - **Basics** - At least one loop (forever or repeat), at least two if blocks, at least one variable
      - **Make a Block** — Create and use at least one custom block to organize a reusable chunk of code (animation, movement pattern, scoring routine, etc.).
 - **File -> Save to your computer**
 - Attach the .sb3 file to the Schoology assignment
@@ -105,8 +105,8 @@ Your remix must clearly demonstrate all of the following:
 
 | Category | Points |
 |---|---|
-| Met All the Programming Requirements (sequences, loops, conditions, variables, custom blocks) | 40 |
-| Met all the Design Requirements | 25 |
+| Met All the Programming Requirements (see list above) | 40 |
+| Met all the Design Requirements (see list above) | 25 |
 | Originality & Creativity (distinct from original in theme and mechanics) | 20 |
 | User Experience & Polish (clear instructions, appealing visuals, good feedback) | 15 |
 | **Total** | **100** |
