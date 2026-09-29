@@ -86,27 +86,18 @@ Your remix must clearly demonstrate all of the following:
 - **Authorship:** Add your name to the background of the program. (**Steps:** Select the Backdrop tab in the upper left, select the  Textbox and type your name.)
 - Make sure you met all the requirements:
    - **DESIGN:** 
-     -Completely different setting, characters, and narrative
-     -All new sprites — none from the original
-     -New background(s)
-     -Change how points are earned, or replace with a different win condition
-     -Add something the original does not have (obstacle, power-up, timer, level, etc.)
+     - Completely different setting, characters, and narrative
+     - All new sprites — none from the original
+     - New background(s)
+     - Change how points are earned, or replace with a different win condition
+     - Add something the original does not have (obstacle, power-up, timer, level, etc.)
 
    - **PROGRAMMING:**
-     -**Make a Block** — Create and use at least one custom block to organize a reusable chunk of code (animation, movement pattern, scoring routine, etc.).
+     - At least one loop (forever or repeat), at least 2 if's, at least one variable
+     - **Make a Block** — Create and use at least one custom block to organize a reusable chunk of code (animation, movement pattern, scoring routine, etc.).
 - **File -> Save to your computer**
 - Attach the .sb3 file to the Schoology assignment
 - Be prepared to demonstrate and explain your code during class
-
----
-
-## Ideas for your Remix:
-
-**Small:** Create smooth sprite animations, like a bird flapping its wings.
-
-**Medium:** Multiple levels; power-ups or different game modes.
-
-**Advanced:** Random obstacles; player POV.
 
 ---
 
@@ -114,8 +105,8 @@ Your remix must clearly demonstrate all of the following:
 
 | Category | Points |
 |---|---|
-| Core Programming Concepts (sequences, loops, conditions, variables, custom blocks) | 40 |
-| Gameplay & Functionality (clear objective, win/lose, playable) | 25 |
+| Met All the Programming Requirements (sequences, loops, conditions, variables, custom blocks) | 40 |
+| Met all the Design Requirements | 25 |
 | Originality & Creativity (distinct from original in theme and mechanics) | 20 |
 | User Experience & Polish (clear instructions, appealing visuals, good feedback) | 15 |
 | **Total** | **100** |
