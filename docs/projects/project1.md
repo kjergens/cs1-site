@@ -21,8 +21,8 @@ Play both of these two games:
 
 <br><br>
 
-**One-player game**: [Sword Throw on Scratch](https://scratch.mit.edu/projects/1385283065){target=_blank} 
-<iframe src="https://scratch.mit.edu/projects/1385283065/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+**One-player game**: [[Sword Throw on Scratch](https://scratch.mit.edu/projects/1386266771)){target=_blank} 
+<iframe src="https://scratch.mit.edu/projects/1386266771/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 <br><br>
 
