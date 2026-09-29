@@ -82,7 +82,7 @@ In Scratch, scripts start when something happens — "when green flag clicked", 
 
     Update **when green flag clicked** script to do the following:
 
-    1. As your first two instructions, add **erase all** (Pen) and **go to x: 0 y: 0** — this keeps every run starting from a clean stage. 
+    1. Remove the instructions from **when green flag clicked**. As your first two instructions, add **erase all** (Pen) and **go to x: 0 y: 0** — this keeps every run starting from a clean stage. 
     - Create a variable named `counter` 
     - Set `counter` to `3`.
     - Use **ask [ ] and wait** (Sensing) to prompt: *"How many sides should the engine build up to?"*
