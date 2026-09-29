@@ -107,6 +107,6 @@ Your remix must clearly demonstrate all of the following:
 |---|---|
 | Met all the Programming Requirements (see list above) | 40 |
 | Met all the Design Requirements (see list above) | 25 |
-| Originality & Creativity (distinct from original in theme and mechanics) | 20 |
-| User Experience & Polish (clear instructions, appealing visuals, good feedback) | 15 |
+| Code quality: Code is clear, organized, and efficient; all blocks and variables contribute meaningfully to the project. | 20 |
+| Submitted correctly and on time. | 15 |
 | **Total** | **100** |
