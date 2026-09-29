@@ -69,12 +69,14 @@ In Scratch, scripts start when something happens — "when green flag clicked", 
     #### Phase 1: Custom Block — `drawShape`
 
     1. In the **My Blocks** category, click **Make a Block**. Name it `drawShape`.
-    2. Click **Add an input (number or text)** twice to create two parameters: `sides` and `size`.
+    2. Click **Add an input (number or text)** and name the parameter: `sides`
+    3. Click **Add an input (number or text)** again and name the parameter: `length`
     3. Inside the `drawShape` definition:
-        - Don't hardcode a shape. Calculate the turn angle yourself: make a `turnAngle` variable and use an **Operators** `/` block to compute `360 / sides`.
+        - Make a `turnAngle` variable.
+        - Set `turnAngle` to the result of `360 / sides`. Hint: use an **Operators** `/` block.
         - Use a `repeat (sides)` loop: move `size` steps, then turn `turnAngle` degrees.
-        - Include a **pen down** block somewhere in here — without it, the sprite will move but nothing will actually draw.
-    4. Test it: Add a **when green flag clicked** block and call `drawShape` with test numbers (try 4 sides, size 50 — you should see a square).
+        - Include a **pen down** block somewhere in here — without it, the sprite will move but nothing will actually draw. (Figure out the best place to put it)
+    4. Try your block: Add a **when green flag clicked** block and call `drawShape` with test numbers (try 4 sides, size 50 — you should see a square).
 
     #### Phase 2: Loops & Conditionals
 
