@@ -81,16 +81,17 @@ In Scratch, scripts start when something happens — "when green flag clicked", 
     Update **when green flag clicked** script to do the following:
 
     1. As your first two instructions, add **erase all** (Pen) and **go to x: 0 y: 0** — this keeps every run starting from a clean stage. 
-    2. Create a variable named `counter` and set it to `3`.
-    3. Use **ask [ ] and wait** (Sensing) to prompt: *"How many sides should the engine build up to?"*
-    4. Build a loop that repeats exactly `answer` times — drag the **answer** (Sensing) directly into your `repeat ( )` block; you don't need a separate variable for it.
-    5. Inside the loop:
-        - **If** `counter` is less than half of `answer` → set the pen color to blue.
+    - Create a variable named `counter` 
+    - Set `counter` to `3`.
+    - Use **ask [ ] and wait** (Sensing) to prompt: *"How many sides should the engine build up to?"*
+    - Use a `repeat (  )` block that repeats exactly `answer` times — drag the **answer** (Sensing) directly into your `repeat ( )` block; you don't need a separate variable for it.
+    5. Inside the `repeat (  )` block:
+        - **If** `counter` is less than 5 → set the pen color to blue.
         - **Else** → set the pen color to red.
-        - Call `drawShape`, passing `counter` for `sides` and `counter + 20` for `size`.
-        - At the end of the loop, increase `counter` by 1.
+        - After the if/else, add your `drawShape` block, using inputs `counter` and `counter + 20`.
+        - After `drawShape` but still in the `repeat (  )` block, change `counter` by 1.
 
-    #### Phase 3: Test!
+    #### Phase 3: Run your program to make sure it works!
 
     Run your engine with a few different inputs. If the user types 8 it should look something like the following:
     <br>
