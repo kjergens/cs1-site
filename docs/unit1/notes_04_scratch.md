@@ -101,4 +101,6 @@ In Scratch, scripts start when something happens — "when green flag clicked", 
 
     **Reflection** (2–3 sentences, in a comment block in Scratch or the Schoology text box): What was the hardest part of building this, and why?
 
-    **How to submit:** In Scratch, go to File → Save to your computer — this downloads a `.sb3` file. Upload the `.sb3` to the Schoology assignment. (Backup: if you can't download the file, Share your project via File → Share, and paste the project link as a Schoology comment.)
+    **How to submit:** 
+    - In Scratch, go to **File → Save to your computer** — this downloads a `.sb3` file. 
+    - Upload the `.sb3` to the Schoology assignment. 
