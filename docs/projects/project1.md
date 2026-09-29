@@ -47,13 +47,15 @@ Then select **See Inside** to read the code.
 
 Your remix must be **unrecognizable** from the original. All of the following changes are required:
 
-| What to change | Requirement |
-|---|---|
-| Theme & story | Completely different setting, characters, and narrative |
-| Sprites | All new sprites — none from the original |
-| Background | New background(s) |
-| Scoring | Change how points are earned, or replace with a different win condition |
-| At least one new mechanic | Add something the original does not have (obstacle, power-up, timer, level, etc.) |
+**DESIGN:** 
+-Completely different setting, characters, and narrative
+-All new sprites — none from the original
+-New background(s)
+-Change how points are earned, or replace with a different win condition
+-Add something the original does not have (obstacle, power-up, timer, level, etc.)
+
+**PROGRAMMING:**
+-Make a Block — Create and use at least one custom block to organize a reusable chunk of code (animation, movement pattern, scoring routine, etc.).
 
 A surface-level remix — same gameplay with new pictures — will not receive full credit. The code structure can stay similar, but the experience must feel like a new game.
 
@@ -82,6 +84,16 @@ Your remix must clearly demonstrate all of the following:
 ## Submission
 
 - **Authorship:** Add your name to the background of the program. (**Steps:** Select the Backdrop tab in the upper left, select the  Textbox and type your name.)
+- Make sure you met all the requirements:
+   - **DESIGN:** 
+     -Completely different setting, characters, and narrative
+     -All new sprites — none from the original
+     -New background(s)
+     -Change how points are earned, or replace with a different win condition
+     -Add something the original does not have (obstacle, power-up, timer, level, etc.)
+
+   - **PROGRAMMING:**
+     -**Make a Block** — Create and use at least one custom block to organize a reusable chunk of code (animation, movement pattern, scoring routine, etc.).
 - **File -> Save to your computer**
 - Attach the .sb3 file to the Schoology assignment
 - Be prepared to demonstrate and explain your code during class
