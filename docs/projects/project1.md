@@ -34,10 +34,7 @@ Play both of these two games:
 - **File -> New**
 - **File -> Load from your computer** (Select the .sb3 file you downloaded above).
 
-Before coding, study the original:
-- What is the objective?
-- Where do you see loops, conditions, and variables?
-- What would you change first?
+Before coding, study the original. What is the objective? Where do you see loops, conditions, and variables? What would you change first?
 
 Then select **See Inside** to read the code.
 
