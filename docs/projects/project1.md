@@ -47,15 +47,17 @@ Then select **See Inside** to read the code.
 
 Your remix must be **unrecognizable** from the original. All of the following changes are required:
 
-**DESIGN:** 
-- Completely different setting, characters, and narrative
-- All new sprites — none from the original
-- New background(s)
-- Change how points are earned, or replace with a different win condition
-- Add something the original does not have (obstacle, power-up, timer, level, etc.)
+- **DESIGN:** 
+     1. Completely different setting, characters, and narrative
+     - All new sprites — none from the original
+     - New background(s)
+     - Change how points are earned, or replace with a different win condition
+     - Add something the original does not have (obstacle, power-up, timer, level, etc.)
 
-**PROGRAMMING:**
-- Make a Block — Create and use at least one custom block to organize a reusable chunk of code (animation, movement pattern, scoring routine, etc.).
+   - **PROGRAMMING:**
+     1. **Basics** - At least one loop (forever or repeat), at least two if blocks, at least one variable
+     - **Make a Block** — Create and use at least one custom block to organize a reusable chunk of code (animation, movement pattern, scoring routine, etc.).
+
 
 
 A surface-level remix — same gameplay with new pictures — will not receive full credit. The code structure can stay similar, but the experience must feel like a new game.
