@@ -21,7 +21,7 @@ Play both of these two games:
 
 <br><br>
 
-**One-player game**: [[Sword Throw on Scratch](https://scratch.mit.edu/projects/1386266771)){target=_blank} 
+**One-player game**: [Sword Throw on Scratch](https://scratch.mit.edu/projects/1386266771){target=_blank} 
 <iframe src="https://scratch.mit.edu/projects/1386266771/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 <br><br>
@@ -48,14 +48,15 @@ Then select **See Inside** to read the code.
 Your remix must be **unrecognizable** from the original. All of the following changes are required:
 
 **DESIGN:** 
--Completely different setting, characters, and narrative
--All new sprites — none from the original
--New background(s)
--Change how points are earned, or replace with a different win condition
--Add something the original does not have (obstacle, power-up, timer, level, etc.)
+- Completely different setting, characters, and narrative
+- All new sprites — none from the original
+- New background(s)
+- Change how points are earned, or replace with a different win condition
+- Add something the original does not have (obstacle, power-up, timer, level, etc.)
 
 **PROGRAMMING:**
--Make a Block — Create and use at least one custom block to organize a reusable chunk of code (animation, movement pattern, scoring routine, etc.).
+- Make a Block — Create and use at least one custom block to organize a reusable chunk of code (animation, movement pattern, scoring routine, etc.).
+
 
 A surface-level remix — same gameplay with new pictures — will not receive full credit. The code structure can stay similar, but the experience must feel like a new game.
 
