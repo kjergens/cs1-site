@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katie Jergens" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Chapter 2: The Math Class - CS1 - Columbia Grammar and Preparatory School</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Chapter 2: The Math Class";
+        var mkdocs_page_input_path = "unit5/notes_02_math.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CS1 - Columbia Grammar and Preparatory School
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Table of Contents</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../syllabus/">Syllabus, Policies & Contract</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 1 - Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_01_how_computers_work/">Chapter 1: How Computers Work</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_02_binary_numbers/">Chapter 2: Binary Numbers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_03_binary_operations/">Chapter 3: Binary Arithmetic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_04_scratch/">Chapter 4: Scratch</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/unit1_check_understanding/">Check Your Understanding: Unit 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/unit1_practice_quiz/">Practice Quiz #1 (Unit 1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project1/">Project 1: Scratch Remix</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 2 - Java Basics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_01_java_structure/">Chapter 1: Structure, Printing & Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_02_variables/">Chapter 2: Variables and Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_03_operators_reassignment/">Chapter 3: Reassignment Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_04_scanner/">Chapter 4: Scanner and User Input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/unit2_check_understanding/">Check Your Understanding: Unit 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/unit2_practice_test/">Practice Test #1 (Units 1 and 2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 3 - Conditionals and While Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_01_conditionals/">Chapter 1: Conditionals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_02_while_loops/">Chapter 2: While Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_check_understanding/">Check Your Understanding: Unit 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_practice_quiz/">Practice Quiz #2 (Unit 3)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 4 - For Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_01_for_loops/">Chapter 1: For Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_02_advanced_for_loops/">Chapter 2: Advanced For Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/unit4_check_understanding/">Check Your Understanding: Unit 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/unit4_practice_quiz/">Practice Quiz #3 (Unit 4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project2/">Project 2: Word Guessing Adventure</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 5 - Strings and Math</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_01_strings/">Chapter 1: String Methods</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Chapter 2: The Math Class</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#section-1-math-overview">Section 1: Math Overview</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mathmaxx-y-and-mathminx-y">Math.max(x, y) and Math.min(x, y)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mathsqrtx">Math.sqrt(x)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mathabsx">Math.abs(x)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mathpowx-y">Math.pow(x, y)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rounding-methods">Rounding Methods</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mathrandom">Math.random()</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#hw-13-unit-5-chapter-2-the-math-class">HW 13 - Unit 5 Chapter 2: The Math class</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit5_check_understanding/">Check Your Understanding: Unit 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit5_practice_test/">Practice Test #2 (Units 3 - 5)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CS1 - Columbia Grammar and Preparatory School</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Unit 5 - Strings and Math</li>
+      <li class="breadcrumb-item active">Chapter 2: The Math Class</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="chapter-2-the-math-class">Chapter 2: The Math Class</h1>
+<hr />
+<h2 id="section-1-math-overview">Section 1: Math Overview</h2>
+<p>Java's built-in <code>Math</code> class provides useful mathematical methods. You don't need to import anything — <code>Math</code> is always available.</p>
+<p>In this unit you'll learn nine of them: <code>Math.max</code>, <code>Math.min</code>, <code>Math.sqrt</code>, <code>Math.abs</code>, <code>Math.pow</code>, <code>Math.round</code>, <code>Math.ceil</code>, <code>Math.floor</code>, and <code>Math.random</code>.</p>
+<hr />
+<h3 id="mathmaxx-y-and-mathminx-y">Math.max(x, y) and Math.min(x, y)</h3>
+<p><code>Math.max</code> returns the larger value. <code>Math.min</code> returns the smaller.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">max</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span><span class="w">     </span><span class="c1">// 10</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">min</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span><span class="w">     </span><span class="c1">// 5</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kt">double</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">max</span><span class="p">(</span><span class="mf">5.3</span><span class="p">,</span><span class="w"> </span><span class="mf">10.8</span><span class="p">);</span><span class="w">   </span><span class="c1">// 10.8</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kt">double</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">min</span><span class="p">(</span><span class="mf">5.3</span><span class="p">,</span><span class="w"> </span><span class="mf">10.8</span><span class="p">);</span><span class="w">   </span><span class="c1">// 5.3</span>
+</code></pre></div>
+<hr />
+<h3 id="mathsqrtx">Math.sqrt(x)</h3>
+<p>Returns the square root of <code>x</code>. Always returns a <code>double</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="mi">64</span><span class="p">);</span><span class="w">    </span><span class="c1">// 8.0</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span><span class="w">     </span><span class="c1">// 1.4142135...</span>
+</code></pre></div>
+<hr />
+<h3 id="mathabsx">Math.abs(x)</h3>
+<p>Returns the absolute (positive) value of <code>x</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">);</span><span class="w">     </span><span class="c1">// 4</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">(</span><span class="o">-</span><span class="mf">4.7</span><span class="p">);</span><span class="w">   </span><span class="c1">// 4.7</span>
+</code></pre></div>
+<hr />
+<h3 id="mathpowx-y">Math.pow(x, y)</h3>
+<p>Returns <code>x</code> raised to the power of <code>y</code>. Always returns a <code>double</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">);</span><span class="w">   </span><span class="c1">// 256.0  (2⁸ = 256)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w">   </span><span class="c1">// 27.0</span>
+</code></pre></div>
+<p>Note: even if the result is a whole number, <code>Math.pow</code> returns a <code>double</code> (e.g., <code>256.0</code>, not <code>256</code>).</p>
+<hr />
+<h3 id="rounding-methods">Rounding Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Behavior</th>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Math.round(x)</code></td>
+<td>Rounds to nearest integer</td>
+<td><code>Math.round(4.6)</code></td>
+<td><code>5</code></td>
+</tr>
+<tr>
+<td><code>Math.ceil(x)</code></td>
+<td>Always rounds <strong>up</strong></td>
+<td><code>Math.ceil(4.1)</code></td>
+<td><code>5.0</code></td>
+</tr>
+<tr>
+<td><code>Math.floor(x)</code></td>
+<td>Always rounds <strong>down</strong></td>
+<td><code>Math.floor(4.9)</code></td>
+<td><code>4.0</code></td>
+</tr>
+</tbody>
+</table>
+<p>All three take a <code>double</code> as input.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">round</span><span class="p">(</span><span class="mf">4.6</span><span class="p">);</span><span class="w">   </span><span class="c1">// 5.0  (over .5 rounds up)</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">ceil</span><span class="p">(</span><span class="mf">4.1</span><span class="p">);</span><span class="w">    </span><span class="c1">// 5.0  (any decimal rounds up)</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kt">double</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="mf">4.9</span><span class="p">);</span><span class="w">   </span><span class="c1">// 4.0  (any decimal rounds down)</span>
+</code></pre></div>
+<hr />
+<h3 id="mathrandom">Math.random()</h3>
+<p>Returns a random <code>double</code> between <code>0.0</code> (inclusive) and <code>1.0</code> (exclusive).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">rand</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">();</span><span class="w">        </span><span class="c1">// e.g., 0.7342...</span>
+</code></pre></div>
+<p>To get a random number in a larger range, multiply:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">rand</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">   </span><span class="c1">// 0.0 to 9.999...</span>
+</code></pre></div>
+<p>To get a random integer from 0 to n-1:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">roll</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">6</span><span class="p">);</span><span class="w">   </span><span class="c1">// 0, 1, 2, 3, 4, or 5</span>
+</code></pre></div>
+<hr />
+<h2 id="homework">Homework</h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<h3 id="hw-13-unit-5-chapter-2-the-math-class">HW 13 - Unit 5 Chapter 2: The Math class</h3>
+<p>Use the Java <code>Math</code> methods from the notes above to answer each question.</p>
+<ol>
+<li>What does <code>Math.max(14, 9)</code> return?</li>
+<li>What does <code>Math.min(6.2, 3.8)</code> return?</li>
+<li>What does <code>Math.sqrt(81)</code> return?</li>
+<li>What does <code>Math.abs(-27)</code> return?</li>
+<li>What does <code>Math.pow(4, 3)</code> return?</li>
+<li>What does <code>Math.round(7.3)</code> return?</li>
+<li>What does <code>Math.ceil(5.1)</code> return?</li>
+<li>What does <code>Math.floor(9.9)</code> return?</li>
+<li>What <code>Math</code> expression generates a random number between <code>0.0</code> and <code>0.9999...</code>?</li>
+<li>Write a line of Java code that declares a <code>double</code> variable called <code>r</code> and assigns it a random number between <code>0.0</code> and <code>10.0</code>.</li>
+</ol>
+<hr />
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../notes_01_strings/" class="btn btn-neutral float-left" title="Chapter 1: String Methods"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../unit5_check_understanding/" class="btn btn-neutral float-right" title="Check Your Understanding: Unit 5">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../notes_01_strings/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../unit5_check_understanding/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/nav_scroll_fix.js"></script>
+      <script src="../../js/copyright_footer.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        });
+    </script>
+
+</body>
+</html>
