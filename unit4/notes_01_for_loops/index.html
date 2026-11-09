@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katie Jergens" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Chapter 1: For Loops - CS1 - Columbia Grammar and Preparatory School</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Chapter 1: For Loops";
+        var mkdocs_page_input_path = "unit4/notes_01_for_loops.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CS1 - Columbia Grammar and Preparatory School
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Table of Contents</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../syllabus/">Syllabus, Policies & Contract</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 1 - Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_01_how_computers_work/">Chapter 1: How Computers Work</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_02_binary_numbers/">Chapter 2: Binary Numbers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_03_binary_operations/">Chapter 3: Binary Arithmetic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/notes_04_scratch/">Chapter 4: Scratch</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/unit1_check_understanding/">Check Your Understanding: Unit 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit1/unit1_practice_quiz/">Practice Quiz #1 (Unit 1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project1/">Project 1: Scratch Remix</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 2 - Java Basics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_01_java_structure/">Chapter 1: Structure, Printing & Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_02_variables/">Chapter 2: Variables and Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_03_operators_reassignment/">Chapter 3: Reassignment Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_04_scanner/">Chapter 4: Scanner and User Input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/unit2_check_understanding/">Check Your Understanding: Unit 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/unit2_practice_test/">Practice Test #1 (Units 1 and 2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 3 - Conditionals and While Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_01_conditionals/">Chapter 1: Conditionals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_02_while_loops/">Chapter 2: While Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_check_understanding/">Check Your Understanding: Unit 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_practice_quiz/">Practice Quiz #2 (Unit 3)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 4 - For Loops</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Chapter 1: For Loops</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#section-1-for-loop">Section 1: For Loop</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#parts-of-a-for-loop">Parts of a For Loop</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-2-code-examples">Section 2: Code Examples</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#count-from-0-to-4">Count from 0 to 4</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#count-from-0-to-5-inclusive">Count from 0 to 5 (inclusive)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#count-down">Count down</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-3-why-curly-braces-matter">Section 3: Why Curly Braces Matter</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-4-key-vocabulary">Section 4: Key Vocabulary</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#hw-10-unit-4-chapter-1-for-loops">HW 10 - Unit 4 Chapter 1: For Loops</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#advanced-problems-not-required-for-extra-practice">Advanced Problems (Not Required, For Extra Practice)</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_02_advanced_for_loops/">Chapter 2: Advanced For Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit4_check_understanding/">Check Your Understanding: Unit 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit4_practice_quiz/">Practice Quiz #3 (Unit 4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project2/">Project 2: Word Guessing Adventure</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 5 - Strings and Math</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_01_strings/">Chapter 1: String Methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_02_math/">Chapter 2: The Math Class</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/unit5_check_understanding/">Check Your Understanding: Unit 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/unit5_practice_test/">Practice Test #2 (Units 3 - 5)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CS1 - Columbia Grammar and Preparatory School</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Unit 4 - For Loops</li>
+      <li class="breadcrumb-item active">Chapter 1: For Loops</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="chapter-1-for-loops">Chapter 1: For Loops</h1>
+<hr />
+<h2 id="section-1-for-loop">Section 1: For Loop</h2>
+<p>A <code>for</code> loop is another way to repeat code while a condition is true — just like a <code>while</code> loop. The difference is that a <code>for</code> loop keeps the <strong>initialization</strong>, <strong>condition</strong>, and <strong>update</strong> all in one line. In a <code>while</code> loop, those pieces are spread across separate lines.</p>
+<p><strong>Use a <code>for</code> loop</strong> when you know how many times the loop will run.<br />
+<strong>Use a <code>while</code> loop</strong> when you're not sure how many iterations you'll need.</p>
+<p><img alt="Comparing Loops" src="../images/while_for.jpg" /></p>
+<p><strong>The same loop, two ways:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// While loop</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">// For loop — same behavior, more compact</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
+</code></pre></div></p>
+<hr />
+<h3 id="parts-of-a-for-loop">Parts of a For Loop</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">initialization</span><span class="p">;</span><span class="w"> </span><span class="n">condition</span><span class="p">;</span><span class="w"> </span><span class="n">update</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="c1">// loop body</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Initialization</strong></td>
+<td>Sets the starting value of the loop variable. Runs once before the loop begins.</td>
+</tr>
+<tr>
+<td><strong>Condition</strong></td>
+<td>Checked before each iteration. If <code>true</code>, loop continues; if <code>false</code>, loop exits.</td>
+</tr>
+<tr>
+<td><strong>Update</strong></td>
+<td>Runs after each iteration — usually increments or decrements the loop variable.</td>
+</tr>
+<tr>
+<td><strong>Loop body</strong></td>
+<td>The code inside the curly braces that runs each iteration.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="section-2-code-examples">Section 2: Code Examples</h2>
+<h3 id="count-from-0-to-4">Count from 0 to 4</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+</code></pre></div>
+Output: <code>0 1 2 3 4</code> (one per line)</p>
+<h3 id="count-from-0-to-5-inclusive">Count from 0 to 5 (inclusive)</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span>
+</code></pre></div>
+Output: <code>0 1 2 3 4 5</code> — note the <code>&lt;=</code> instead of <code>&lt;</code>.</p>
+<h3 id="count-down">Count down</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">}</span>
+</code></pre></div>
+Output: <code>3 2 1</code></p>
+<hr />
+<h2 id="section-3-why-curly-braces-matter">Section 3: Why Curly Braces Matter</h2>
+<p><strong>With curly braces</strong> — both statements are inside the loop:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"~~~"</span><span class="p">);</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">}</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>0
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>~~~
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>1
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>~~~
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>2
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>~~~
+</code></pre></div></p>
+<p><strong>Without curly braces</strong> — only the first statement is inside the loop:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"---"</span><span class="p">);</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>0
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>1
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>2
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>---
+</code></pre></div></p>
+<p>Always use curly braces. Omitting them is a common source of bugs.</p>
+<hr />
+<h2 id="section-4-key-vocabulary">Section 4: Key Vocabulary</h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Increment</strong></td>
+<td>Add to a variable, usually by 1 (<code>i++</code> or <code>i += 1</code>)</td>
+</tr>
+<tr>
+<td><strong>Decrement</strong></td>
+<td>Subtract from a variable, usually by 1 (<code>i--</code> or <code>i -= 1</code>)</td>
+</tr>
+<tr>
+<td><strong>Loop body</strong></td>
+<td>The code inside the loop's curly braces</td>
+</tr>
+<tr>
+<td><strong>Iteration</strong></td>
+<td>One complete pass through the loop body</td>
+</tr>
+<tr>
+<td><strong>Loop variable</strong></td>
+<td>The variable that controls the loop (usually <code>i</code>)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="homework">Homework</h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<h3 id="hw-10-unit-4-chapter-1-for-loops">HW 10 - Unit 4 Chapter 1: For Loops</h3>
+<ol>
+<li>
+<p><strong>Vocabulary.</strong> Using these terms, fill in the blanks below with the corresponding definition:</p>
+<ul>
+<li>Iteration</li>
+<li>Loop Variable (or Counter)</li>
+<li>Initialization</li>
+<li>Condition</li>
+<li>Update (or Increment/Decrement)</li>
+<li>Loop Body</li>
+</ul>
+<p><strong>Definitions:</strong></p>
+<ul>
+<li>__________ A. The part of the loop that sets the starting value, like <code>int i = 0;</code>.</li>
+<li>__________ B. The Boolean expression checked before each iteration, like <code>i &lt; 10</code>.</li>
+<li>__________ C. The code inside the curly braces <code>{}</code> that executes repeatedly.</li>
+<li>__________ D. A single execution of the loop body.</li>
+<li>__________ E. The statement that changes the loop variable after each iteration, like <code>i++</code>.</li>
+<li>__________ F. The variable that controls the loop, often starting at 0 and increasing.</li>
+</ul>
+</li>
+<li>
+<p>Fill in the missing parts of this for loop, which is intended to run 10 times:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">__________</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">__________</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">__________</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="c1">// code (not shown)</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">}</span>
+</code></pre></div></p>
+</li>
+<li>The <code>__________</code> section runs only once at the beginning of the loop.</li>
+<li>If the <code>__________</code> is false at the start, the loop body won't execute even once.</li>
+<li>The <code>__________</code> happens at the end of each iteration to modify the loop variable.</li>
+<li>For loops are ideal when you know the exact <code>__________</code> of times you want to repeat code.</li>
+<li>Omitting the curly braces <code>{}</code> in a for loop causes only <code>__________</code> statement to repeat, instead of a whole block.</li>
+<li>What is the output of the following code?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" "</span><span class="p">);</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="p">}</span>
+</code></pre></div></li>
+<li>What happens if you forget the update statement in a for loop?</li>
+<li>Rewrite this while loop as an equivalent for loop. Keep the behavior identical.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Hello!"</span><span class="p">);</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="p">}</span>
+</code></pre></div></li>
+<li>Rewrite this while loop as an equivalent for loop. Keep the behavior identical.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" "</span><span class="p">);</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="n">num</span><span class="o">--</span><span class="p">;</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="p">}</span>
+</code></pre></div></li>
+</ol>
+<h4 id="advanced-problems-not-required-for-extra-practice">Advanced Problems (Not Required, For Extra Practice)</h4>
+<p>These are more challenging and may involve nested loops or creative problem-solving. Attempt them if you've mastered the basics above.</p>
+<ol>
+<li>Write a for loop that prints the even numbers from 2 to 20 (inclusive).</li>
+<li>Re-write this while loop as a for loop:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span><span class="n">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="p">}</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Sum: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">sum</span><span class="p">);</span>
+</code></pre></div></li>
+<li><strong>(Advanced) Nested Loops for Patterns:</strong> Write a program using nested for loops to print a 5x5 grid of asterisks (<code>*</code>):
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>*****
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>*****
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>*****
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>*****
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>*****
+</code></pre></div>
+    Then modify it to print a right-angled triangle:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>*
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>**
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>***
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>****
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>*****
+</code></pre></div></li>
+<li><strong>Prime Number Checker:</strong> Write a for loop that iterates from 2 to 50 and checks if each number is prime (hint: use a nested loop to test divisibility). Print only the prime numbers.</li>
+<li><strong>Fibonacci Sequence:</strong> Use a for loop to generate and print the first 10 numbers in the Fibonacci sequence (<code>0, 1, 1, 2, 3, 5, 8, ...</code>). Start with two variables for the first two numbers.</li>
+<li><strong>Infinite Loop Puzzle:</strong> Intentionally create an infinite for loop (e.g. <code>for (;;)</code>), but add a <code>break</code> statement inside to exit after 5 iterations. Explain how <code>break</code> and <code>continue</code> work in for loops, with examples.</li>
+</ol>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../unit3/unit3_practice_quiz/" class="btn btn-neutral float-left" title="Practice Quiz #2 (Unit 3)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../notes_02_advanced_for_loops/" class="btn btn-neutral float-right" title="Chapter 2: Advanced For Loops">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../unit3/unit3_practice_quiz/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../notes_02_advanced_for_loops/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/nav_scroll_fix.js"></script>
+      <script src="../../js/copyright_footer.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        });
+    </script>
+
+</body>
+</html>

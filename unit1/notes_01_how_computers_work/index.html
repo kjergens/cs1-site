@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katie Jergens" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Chapter 1: How Computers Work - CS1 - Columbia Grammar and Preparatory School</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Chapter 1: How Computers Work";
+        var mkdocs_page_input_path = "unit1/notes_01_how_computers_work.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CS1 - Columbia Grammar and Preparatory School
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Table of Contents</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../syllabus/">Syllabus, Policies & Contract</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 1 - Getting Started</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Chapter 1: How Computers Work</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#section-1-hardware-vs-software">Section 1. Hardware vs. Software</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#key-hardware-components">Key Hardware Components</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-they-work-together">How They Work Together</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-2-everything-is-data">Section 2. Everything Is Data</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ascii-letters-are-numbers">ASCII — Letters Are Numbers</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#hw-0-unit-1-chapter-1-how-computers-work">HW 0: Unit 1 Chapter 1: How Computers Work</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_02_binary_numbers/">Chapter 2: Binary Numbers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_03_binary_operations/">Chapter 3: Binary Arithmetic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_04_scratch/">Chapter 4: Scratch</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit1_check_understanding/">Check Your Understanding: Unit 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit1_practice_quiz/">Practice Quiz #1 (Unit 1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project1/">Project 1: Scratch Remix</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 2 - Java Basics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_01_java_structure/">Chapter 1: Structure, Printing & Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_02_variables/">Chapter 2: Variables and Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_03_operators_reassignment/">Chapter 3: Reassignment Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_04_scanner/">Chapter 4: Scanner and User Input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/unit2_check_understanding/">Check Your Understanding: Unit 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/unit2_practice_test/">Practice Test #1 (Units 1 and 2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 3 - Conditionals and While Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_01_conditionals/">Chapter 1: Conditionals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_02_while_loops/">Chapter 2: While Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_check_understanding/">Check Your Understanding: Unit 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_practice_quiz/">Practice Quiz #2 (Unit 3)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 4 - For Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_01_for_loops/">Chapter 1: For Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_02_advanced_for_loops/">Chapter 2: Advanced For Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/unit4_check_understanding/">Check Your Understanding: Unit 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/unit4_practice_quiz/">Practice Quiz #3 (Unit 4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project2/">Project 2: Word Guessing Adventure</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 5 - Strings and Math</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_01_strings/">Chapter 1: String Methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_02_math/">Chapter 2: The Math Class</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/unit5_check_understanding/">Check Your Understanding: Unit 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/unit5_practice_test/">Practice Test #2 (Units 3 - 5)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CS1 - Columbia Grammar and Preparatory School</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Unit 1 - Getting Started</li>
+      <li class="breadcrumb-item active">Chapter 1: How Computers Work</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="chapter-1-how-computers-work">Chapter 1: How Computers Work</h1>
+<hr />
+<h2 id="section-1-hardware-vs-software">Section 1. Hardware vs. Software</h2>
+<p>A computer has two sides: <strong>hardware</strong> (the physical parts) and <strong>software</strong> (the instructions that tell hardware what to do).</p>
+<p>This course is about software — specifically, writing programs in Java. But it helps to know what's running underneath.</p>
+<hr />
+<h3 id="key-hardware-components">Key Hardware Components</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CPU</strong> (Central Processing Unit)</td>
+<td>The "brain" — executes instructions</td>
+</tr>
+<tr>
+<td><strong>RAM</strong> (Random Access Memory)</td>
+<td>Fast, temporary storage for programs that are running</td>
+</tr>
+<tr>
+<td><strong>Storage</strong> (SSD/hard drive)</td>
+<td>Permanent storage — files, programs, the OS</td>
+</tr>
+<tr>
+<td><strong>Input devices</strong></td>
+<td>Keyboard, mouse, microphone — how data gets in</td>
+</tr>
+<tr>
+<td><strong>Output devices</strong></td>
+<td>Monitor, speakers, printer — how results come out</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="how-they-work-together">How They Work Together</h3>
+<p>When you run a program:</p>
+<ol>
+<li>The program is loaded from <strong>storage</strong> into <strong>RAM</strong></li>
+<li>The <strong>CPU</strong> reads instructions from RAM one at a time</li>
+<li>The CPU executes each instruction (add numbers, compare values, display output)</li>
+<li>Results go to <strong>output</strong> (screen, file, etc.)</li>
+</ol>
+<p>RAM is fast but temporary — everything in it disappears when you shut down. Storage is slow but permanent.</p>
+<hr />
+<h2 id="section-2-everything-is-data">Section 2. Everything Is Data</h2>
+<p>The most important idea in this unit: <strong>computers only understand numbers.</strong> Everything — text, images, sound, video, programs — is stored as numbers. The rest of the unit explores how.</p>
+<hr />
+<h3 id="ascii-letters-are-numbers">ASCII — Letters Are Numbers</h3>
+<p>Computers only understand numbers. So how do they store text?</p>
+<p><strong>ASCII</strong> (American Standard Code for Information Interchange) is a system that assigns a number to every character: letters, digits, punctuation, and special characters.</p>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>ASCII Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A</code></td>
+<td>65</td>
+</tr>
+<tr>
+<td><code>B</code></td>
+<td>66</td>
+</tr>
+<tr>
+<td><code>Z</code></td>
+<td>90</td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td>97</td>
+</tr>
+<tr>
+<td><code>z</code></td>
+<td>122</td>
+</tr>
+<tr>
+<td><code>0</code></td>
+<td>48</td>
+</tr>
+<tr>
+<td><code>9</code></td>
+<td>57</td>
+</tr>
+<tr>
+<td>space</td>
+<td>32</td>
+</tr>
+</tbody>
+</table>
+<p>When your program stores the String <code>"Hello"</code>, the computer stores the numbers <code>72 101 108 108 111</code>. Text is always numbers underneath.</p>
+<hr />
+<h2 id="homework">Homework</h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<h3 id="hw-0-unit-1-chapter-1-how-computers-work">HW 0: Unit 1 Chapter 1: How Computers Work</h3>
+<p><em>Graded as Community Building/Class Engagement — try your best, no points off for incorrect answers</em></p>
+<ol>
+<li>Match each description to its component (<code>CPU</code>, <code>RAM</code>, <code>Hard Drive/SSD</code>, <code>Motherboard</code>, <code>Monitor</code>): Stores data and programs for quick access during operation</li>
+<li>Match each description to its component (<code>CPU</code>, <code>RAM</code>, <code>Hard Drive/SSD</code>, <code>Motherboard</code>, <code>Monitor</code>): The "brain" of the computer that performs calculations and executes instructions</li>
+<li>Match each description to its component (<code>CPU</code>, <code>RAM</code>, <code>Hard Drive/SSD</code>, <code>Motherboard</code>, <code>Monitor</code>): Displays the output of the computer's processing, like text or images</li>
+<li>Match each description to its component (<code>CPU</code>, <code>RAM</code>, <code>Hard Drive/SSD</code>, <code>Motherboard</code>, <code>Monitor</code>): Long-term storage for files, programs, and the operating system</li>
+<li>Match each description to its component (<code>CPU</code>, <code>RAM</code>, <code>Hard Drive/SSD</code>, <code>Motherboard</code>, <code>Monitor</code>): Connects all components, allowing them to communicate</li>
+<li>Transistors are tiny electronic switches that control the flow of electricity in a computer, and are the foundation of modern computing. True or False: Transistors can act as switches, turning electrical signals on or off.</li>
+<li>True or False: A single modern computer chip can contain billions of transistors.</li>
+<li>True or False: Transistors are only used in the CPU and not in other parts of a computer.</li>
+<li>True or False: Transistors work by using materials like silicon to control electrical flow.</li>
+<li><strong>Timeline:</strong> fill in the blanks using each term once — <code>1943</code>, <code>ENIAC</code>, <code>1971</code>, <code>Microprocessor</code>, <code>1984</code>, <code>Apple Macintosh</code>, <code>1822</code>, <code>Difference Engine</code>.<ul>
+<li><code>______</code>: Charles Babbage designs the <code>______</code>, a mechanical calculator considered an early precursor to modern computers.</li>
+<li><code>______</code>: The <code>______</code>, one of the first general-purpose electronic computers, is built using vacuum tubes.</li>
+<li><code>______</code>: Intel introduces the first <code>______</code>, putting the power of a computer's CPU on a single chip.</li>
+<li><code>______</code>: The <code>______</code> is released, making personal computers user-friendly with a graphical interface.</li>
+</ul>
+</li>
+<li><strong>Short answer:</strong> The ENIAC weighed over 30 tons and took up an entire room! What allowed computers to become small enough to fit in your pocket?</li>
+</ol>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../syllabus/" class="btn btn-neutral float-left" title="Syllabus, Policies & Contract"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../notes_02_binary_numbers/" class="btn btn-neutral float-right" title="Chapter 2: Binary Numbers">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../syllabus/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../notes_02_binary_numbers/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/nav_scroll_fix.js"></script>
+      <script src="../../js/copyright_footer.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        });
+    </script>
+
+</body>
+</html>
