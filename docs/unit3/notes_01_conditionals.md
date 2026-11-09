@@ -2,7 +2,7 @@
 
 ---
 
-## Section 1: What Is a Conditional Block?
+## Section 1: What Is a Conditional?
 
 A **conditional block** lets your program decide whether to run certain code based on whether a condition is `true` or `false`. Think of it like a fork in the road — the program chooses one path depending on the situation.
 
