@@ -80,13 +80,6 @@ while (x <= 4) {
 - **Without an update step, the loop can run forever**
 - A well-designed while loop ensures the condition eventually becomes false
 
----
-
-## Section 6: When to Use While vs. For
-
-Use a `while` loop when you **don't know in advance** how many times the loop will run — for example, reading input until the user types `"quit"`.
-
-Use a `for` loop when you **do know** how many times it will run. (Covered in Unit 4.)
 
 ---
 
