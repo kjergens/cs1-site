@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Katie Jergens" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Chapter 2: Binary Numbers - CS1 - Columbia Grammar and Preparatory School</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Chapter 2: Binary Numbers";
+        var mkdocs_page_input_path = "unit1/notes_02_binary_numbers.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CS1 - Columbia Grammar and Preparatory School
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Table of Contents</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../syllabus/">Syllabus, Policies & Contract</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 1 - Getting Started</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_01_how_computers_work/">Chapter 1: How Computers Work</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Chapter 2: Binary Numbers</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#section-1-binary-everything-is-a-binary-number">Section 1: Binary — Everything Is a Binary Number</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#review-base-10-decimal">Review: Base 10 (Decimal)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#base-2-binary">Base 2 (Binary)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-2-converting-to-and-from-binary">Section 2: Converting to and from Binary</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#convert-from-binary">Convert from binary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#convert-to-binary">Convert to binary</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#division-method">Division method</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#places-method">Places method</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#homework">Homework</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#hw-1-unit-1-chapter-2-binary">HW 1: Unit 1 Chapter 2: Binary</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#optionalnot-required-extra-challenges-ungraded">Optional/Not Required Extra Challenges (ungraded):</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_03_binary_operations/">Chapter 3: Binary Arithmetic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../notes_04_scratch/">Chapter 4: Scratch</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit1_check_understanding/">Check Your Understanding: Unit 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unit1_practice_quiz/">Practice Quiz #1 (Unit 1)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project1/">Project 1: Scratch Remix</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 2 - Java Basics</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_01_java_structure/">Chapter 1: Structure, Printing & Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_02_variables/">Chapter 2: Variables and Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_03_operators_reassignment/">Chapter 3: Reassignment Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/notes_04_scanner/">Chapter 4: Scanner and User Input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/unit2_check_understanding/">Check Your Understanding: Unit 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit2/unit2_practice_test/">Practice Test #1 (Units 1 and 2)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 3 - Conditionals and While Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_01_conditionals/">Chapter 1: Conditionals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/notes_02_while_loops/">Chapter 2: While Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_check_understanding/">Check Your Understanding: Unit 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit3/unit3_practice_quiz/">Practice Quiz #2 (Unit 3)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 4 - For Loops</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_01_for_loops/">Chapter 1: For Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/notes_02_advanced_for_loops/">Chapter 2: Advanced For Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/unit4_check_understanding/">Check Your Understanding: Unit 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit4/unit4_practice_quiz/">Practice Quiz #3 (Unit 4)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/project2/">Project 2: Word Guessing Adventure</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unit 5 - Strings and Math</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_01_strings/">Chapter 1: String Methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/notes_02_math/">Chapter 2: The Math Class</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/unit5_check_understanding/">Check Your Understanding: Unit 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../unit5/unit5_practice_test/">Practice Test #2 (Units 3 - 5)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CS1 - Columbia Grammar and Preparatory School</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Unit 1 - Getting Started</li>
+      <li class="breadcrumb-item active">Chapter 2: Binary Numbers</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="chapter-2-binary-numbers">Chapter 2: Binary Numbers</h1>
+<hr />
+<h2 id="section-1-binary-everything-is-a-binary-number">Section 1: Binary — Everything Is a Binary Number</h2>
+<p>Numbers themselves are stored in <strong>binary</strong> (base 2) — using only the digits <code>0</code> and <code>1</code>.</p>
+<h3 id="review-base-10-decimal">Review: Base 10 (Decimal)</h3>
+<p>In the number system you use every day, each position represents a power of 10:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>  4    2    7
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  ↑    ↑    ↑
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a> 10²  10¹  10⁰
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>(100) (10) (1)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Value: 4×100 + 2×10 + 7×1 = 427
+</code></pre></div>
+<h3 id="base-2-binary">Base 2 (Binary)</h3>
+<p>Binary works the same way, but each position represents a power of 2:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>  1    0    1    1
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  ↑    ↑    ↑    ↑
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  2³   2²   2¹   2⁰
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a> (8)  (4)  (2)  (1)
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Value: 1×8 + 0×4 + 1×2 + 1×1 = 11
+</code></pre></div>
+<p>Each <code>0</code> or <code>1</code> is called a <strong>bit</strong>. 8 bits = 1 <strong>byte</strong>.</p>
+<hr />
+<h2 id="section-2-converting-to-and-from-binary">Section 2: Converting to and from Binary</h2>
+<h3 id="convert-from-binary">Convert from binary</h3>
+<p>Write out the positional values (powers of 2), multiply each bit, then add.</p>
+<p><strong>Example: <code>1011</code></strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>  1    0    1    1
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  ↑    ↑    ↑    ↑
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  2³   2²   2¹   2⁰
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a> (8)  (4)  (2)  (1)
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Value: 1×8 + 0×4 + 1×2 + 1×1 = 11
+</code></pre></div>
+<p><strong>Common powers of 2 to memorize:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a> 128   64   32   16   8    4    2    1
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  2⁷   2⁶   2⁵   2⁴   2³   2²   2¹   2⁰
+</code></pre></div>
+<hr />
+<h3 id="convert-to-binary">Convert to binary</h3>
+<h4 id="division-method">Division method</h4>
+<p>Repeatedly divide by 2 and record the remainders. Read remainders bottom to top.</p>
+<p><strong>Example: 13 → binary</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>13 ÷ 2 = 6  remainder 1  ← last bit
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a> 6 ÷ 2 = 3  remainder 0
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a> 3 ÷ 2 = 1  remainder 1
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a> 1 ÷ 2 = 0  remainder 1  ← first bit
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>Read bottom to top: 1101
+</code></pre></div>
+<p>Check: <code>1101</code> = 8 + 4 + 0 + 1 = 13 ✓</p>
+<h4 id="places-method">Places method</h4>
+<p>Set up your powers of two like this:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>  _    _    _    _    _
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a> 16    8    4    2    1
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  2⁴   2³   2²   2¹   2⁰
+</code></pre></div>
+<p>Start with the left (most significant) digit, and fill in a 1 or 0. For example for the number <code>13</code></p>
+<ol>
+<li>
+<p>The left-most digit is 16. 16 is bigger than 13 so put 0:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>  0 
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  _    _    _    _    _
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a> 16    8    4    2    1
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  2⁴   2³   2²   2¹   2⁰
+</code></pre></div></p>
+</li>
+<li>
+<p>The next digit is 8. 8 fits into to 13 so put a 1:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>  0    1    
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  _    _    _    _    _
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a> 16    8    4    2    1
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  2⁴   2³   2²   2¹   2⁰
+</code></pre></div></p>
+</li>
+<li>
+<p>The 8 is accounted for so (13 - 8) = 5 remains. The next spot is 4. 4 fits into 5 so put 1 there:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>  0    1    1   
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  _    _    _    _    _
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a> 16    8    4    2    1
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  2⁴   2³   2²   2¹   2⁰
+</code></pre></div></p>
+</li>
+<li>
+<p>4 is accounted for so (5 - 4) = 1 remains. The next spot is 2. 2 is bigger than 1 so put a 0 there:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>  0    1    1    0 
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  _    _    _    _    _
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a> 16    8    4    2    1
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  2⁴   2³   2²   2¹   2⁰
+</code></pre></div></p>
+</li>
+<li>
+<p>1 still remains. The next spot is 1. 1 fits into 1 so put a 1 there:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>  0    1    1    0    1
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>  _    _    _    _    _
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a> 16    8    4    2    1
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  2⁴   2³   2²   2¹   2⁰
+</code></pre></div></p>
+</li>
+</ol>
+<p>1 is accounteed for so 1 - 1 = 0, 0 remains so we're done! <code>13</code> converted to binary is <code>01101</code>.</p>
+<hr />
+<h2 id="homework">Homework</h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<h3 id="hw-1-unit-1-chapter-2-binary">HW 1: Unit 1 Chapter 2: Binary</h3>
+<ol>
+<li>Convert the binary number <code>110101</code> to decimal (base-10). Show each bit's place value, e.g. 16+2+1 = 19.</li>
+<li>What is the highest decimal value that can be represented with a 6-bit binary number? Explain why in one sentence.</li>
+<li>In the binary number <code>10110</code>, what does the <code>1</code> in the left-most (most significant) position represent?</li>
+<li>Convert the decimal number <code>47</code> to binary. </li>
+<li>Convert the decimal number <code>29</code> to binary. </li>
+<li>Convert <code>10011</code> and <code>10101</code> from binary to decimal. Add them in decimal. Then convert the decimal sum back to binary.</li>
+<li>To multiply a binary number by 2, simply appemd a 0 at the end in the right-most (least significant) bit position. E.g. <code>111</code> is <code>7</code>, and <code>1110</code> is <code>14</code>. Explain in one sentence why this works.</li>
+</ol>
+<h4 id="optionalnot-required-extra-challenges-ungraded"><strong>Optional/Not Required Extra Challenges (ungraded):</strong></h4>
+<ol>
+<li>Add the binary numbers <code>1011</code> and <code>1101</code>. Show the carry row.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>  carry:
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>   1011
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>+  1101
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>------
+</code></pre></div></li>
+<li>Add the binary numbers <code>11101</code> and <code>11011</code>. Show the carry row.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>  carry:
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>  11101
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>+ 11011
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>-------
+</code></pre></div></li>
+</ol>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../notes_01_how_computers_work/" class="btn btn-neutral float-left" title="Chapter 1: How Computers Work"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../notes_03_binary_operations/" class="btn btn-neutral float-right" title="Chapter 3: Binary Arithmetic">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../notes_01_how_computers_work/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../notes_03_binary_operations/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/nav_scroll_fix.js"></script>
+      <script src="../../js/copyright_footer.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        });
+    </script>
+
+</body>
+</html>
