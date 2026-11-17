@@ -85,12 +85,8 @@ while (x <= 4) {
 
 ## In-Class Activity: FortuneTeller (Partner Activity)
 
-!!! attention
+!!! information
     ### FortuneTeller — In-Class Partner Activity
-
-    *Complete with a partner in class, in JuiceMind.com — go to Teams/Classes, select our CS section, then Code Sandbox.*
-
-    Create a new Code Sandbox named `FortuneTeller` (language: Java). Start from this template:
 
     ```java
     import java.util.Random;
@@ -187,9 +183,7 @@ while (x <= 4) {
 
     #### FizzBuzz Challenge
 
-    *Complete in JuiceMind.com — go to Teams/Classes, select our CS section, then Code Sandbox.*
-
-    Create a new Code Sandbox named `FizzBuzz` (language: Java). Write a program that prints the numbers from 1 to 500, with these rules:
+    Write a program that prints the numbers from 1 to 500, with these rules:
 
     - For numbers divisible by both 3 and 5, print `"FizzBuzz"` instead of the number (hint: use the modulus operator `%`)
     - For numbers divisible by 3, print `"Fizz"` instead of the number
