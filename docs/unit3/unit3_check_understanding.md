@@ -47,7 +47,7 @@
 
     2. `=` is **assignment** (store a value in a variable). `==` is **comparison** (check if two values are equal). Mixing them up is one of the most common bugs in Java.
 
-    3. 
+    3. Print `"even"` if a number is divisible by 2, and `"odd"` otherwise.
     ```java
     if (number % 2 == 0) {
         System.out.println("even");
@@ -56,13 +56,13 @@
     }
     ```
 
-    4.
+    4. The output is:
     ```
     10
     9
     8
     ```
-    `count` starts at 10, decrements each iteration. When `count = 7`, `7 > 7` is false and the loop exits.
+    Explanation: `count` starts at 10, decrements each iteration. When `count = 7`, `7 > 7` is false and the loop exits.
 
     5. Variable `n` is never incremented leading to an infinite loop. Fix: add `n *= 2;` (or `n++`, etc.) inside the loop body.
 
