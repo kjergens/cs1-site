@@ -30,6 +30,7 @@ while (x <= 4) {
 ```
 
 Trace:
+
 - `x = 0`: `0 <= 4` is true → print `Number: 0` → `x` becomes `1`
 - `x = 1`: `1 <= 4` is true → print `Number: 1` → `x` becomes `2`
 - `x = 2`: `2 <= 4` is true → print `Number: 2` → `x` becomes `3`
@@ -87,7 +88,7 @@ while (x <= 4) {
 ## Homework
 
 !!! attention
-    ### HW 9 - Unit 3 Chapter 2: While Loops
+    ### Unit 3 Chapter 2: While Loops
 
     1. What does this loop print?
     ```java
