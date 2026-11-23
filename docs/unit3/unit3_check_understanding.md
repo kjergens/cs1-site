@@ -66,7 +66,7 @@
 
     5. Variable `n` is never incremented leading to an infinite loop. Fix: add `n *= 2;` (or `n++`, etc.) inside the loop body.
 
-    6.
+    6. Write a while loop that prints the even numbers from 2 to 10:
     ```java
     int n = 2;
     while (n <= 10) {
@@ -75,4 +75,5 @@
     }
     ```
 
-    7. `n >= 1 && n <= 100` — both conditions must be true at once, which is what actually narrows the check to a range. `n >= 1 || n <= 100` doesn't work because it's true for *every* number: any `n` satisfies at least one side (either it's ≥ 1, or it's ≤ 100, or both), so the check never actually excludes anything.
+    7. `n >= 1 && n <= 100` 
+    Explanation: Both conditions must be true at once, which is what actually narrows the check to a range. `n >= 1 || n <= 100` doesn't work because it's true for *every* number: any `n` satisfies at least one side (either it's ≥ 1, or it's ≤ 100, or both), so the check never actually excludes anything.
