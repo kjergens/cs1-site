@@ -153,6 +153,69 @@ if (num == 50) {
 
 ---
 
+## In-Class Activity: FortuneTeller
+
+!!! information
+    ### FortuneTeller 
+
+    ```java
+    import java.util.Random;
+
+    public class Main {
+        public static void main(String[] args) {
+
+            // 1. Generate random number (DO NOT CHANGE)
+            Random random = new Random();
+            int num = random.nextInt(100) + 1;
+
+            // 4. Display greeting with fortune number
+            // YOUR CODE HERE
+
+            // 5. Use if-else statements for fortune rules
+            // YOUR CODE HERE
+
+            // 6. Display ending message
+            // YOUR CODE HERE
+
+        }
+    }
+    ```
+
+    Finish writing the program. It should:
+
+    - Generate a random number `num` between 1 and 100 (already provided)
+    - Display a personalized fortune message based on `num`, using the rules below
+    - End with: `"Thanks for using Fortune Teller!"`
+
+    | Range | Type | Message |
+    |---|---|---|
+    | 1–33 | Negative | "Tough times ahead - watch out for surprises!" |
+    | 34–66 | Neutral | "An average day - nothing special happens." |
+    | 67–100 | Positive | "Great luck awaits you - amazing things coming!" |
+
+    **Additional rules (these override the ranges above):**
+
+    - If the number is exactly `50`: `"Perfectly balanced - a day of harmony!"`
+    - If the number is exactly `100`: `"JACKPOT! The best day of your life!"`
+    - If the number is exactly `1`: `"Yikes! Total disaster ahead - stay in bed!"`
+
+    **Hint:** use the logical operator `&&` for multiple conditions (see Chapter 1, Section 7).
+
+    **Sample output:**
+    ```
+    Hello! Your fortune number is: 85
+    Great luck awaits you - amazing things coming!
+    Thanks for using Fortune Teller!
+    ```
+    ```
+    Hello! Your fortune number is: 1
+    Yikes! Total disaster ahead - stay in bed!
+    Thanks for using Fortune Teller!
+    ```
+
+---
+
+
 ## Homework
 
 !!! attention
